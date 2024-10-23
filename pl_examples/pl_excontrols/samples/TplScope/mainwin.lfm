@@ -1,0 +1,245 @@
+object Form1: TForm1
+  Left = 429
+  Height = 319
+  Top = 351
+  Width = 633
+  Caption = 'TplScope LAB Test'
+  ClientHeight = 319
+  ClientWidth = 633
+  LCLVersion = '6.2'
+  object plScope1: TplScope
+    Left = 16
+    Height = 232
+    Top = 8
+    Width = 272
+    Baseline = 50
+    Gridsize = 16
+    Active = False
+    Position = 50
+    Interval = 15
+    Color = clBlack
+    Gridcolor = clGreen
+    Linecolor = clLime
+    Basecolor = clRed
+    OnUpdate = plScope1Update
+  end
+  object Label1: TLabel
+    Left = 384
+    Height = 15
+    Top = 30
+    Width = 51
+    Caption = 'Basecolor'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 384
+    Height = 15
+    Top = 58
+    Width = 29
+    Caption = 'Color'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 384
+    Height = 15
+    Top = 86
+    Width = 49
+    Caption = 'Gridcolor'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 384
+    Height = 15
+    Top = 114
+    Width = 49
+    Caption = 'Linecolor'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 512
+    Height = 15
+    Top = 30
+    Width = 43
+    Caption = 'Baseline'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 513
+    Height = 15
+    Top = 86
+    Width = 42
+    Caption = 'GridSize'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 439
+    Height = 15
+    Top = 188
+    Width = 39
+    Caption = 'Interval'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 32
+    Height = 45
+    Top = 256
+    Width = 116
+    Caption = 'CodeTyphon '#13#10'TplScope Component'#13#10'LAB Test'
+    Font.Color = clBlue
+    ParentColor = False
+    ParentFont = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 328
+    Height = 240
+    Top = 8
+    Width = 25
+    Max = 100
+    Orientation = trVertical
+    Position = 50
+    TabOrder = 0
+  end
+  object plColorPanel1: TplColorPanel
+    Tag = 1
+    Left = 450
+    Height = 22
+    Top = 24
+    Width = 41
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 1
+    Color = clRed
+    ParentColor = False
+    TabOrder = 1
+    UseDockManager = True
+    OnClick = plColorPanel1Click
+  end
+  object plColorPanel2: TplColorPanel
+    Tag = 2
+    Left = 450
+    Height = 22
+    Top = 52
+    Width = 41
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 1
+    Color = clBlack
+    ParentColor = False
+    TabOrder = 2
+    UseDockManager = True
+    OnClick = plColorPanel1Click
+  end
+  object plColorPanel3: TplColorPanel
+    Tag = 3
+    Left = 450
+    Height = 22
+    Top = 80
+    Width = 41
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 1
+    Color = clGreen
+    ParentColor = False
+    TabOrder = 3
+    UseDockManager = True
+    OnClick = plColorPanel1Click
+  end
+  object plColorPanel4: TplColorPanel
+    Tag = 4
+    Left = 450
+    Height = 22
+    Top = 108
+    Width = 41
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 1
+    Color = clLime
+    ParentColor = False
+    TabOrder = 4
+    UseDockManager = True
+    OnClick = plColorPanel1Click
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 567
+    Height = 23
+    Top = 24
+    Width = 50
+    OnChange = SpinEdit1Change
+    TabOrder = 5
+    Value = 50
+  end
+  object SpinEdit2: TSpinEdit
+    Left = 567
+    Height = 23
+    Top = 80
+    Width = 50
+    OnChange = SpinEdit2Change
+    TabOrder = 6
+    Value = 16
+  end
+  object SpinEdit3: TSpinEdit
+    Left = 496
+    Height = 23
+    Top = 184
+    Width = 50
+    MinValue = 5
+    OnChange = SpinEdit3Change
+    TabOrder = 7
+    Value = 15
+  end
+  object CheckBox1: TCheckBox
+    Left = 448
+    Height = 19
+    Top = 248
+    Width = 102
+    Caption = 'Random Values'
+    TabOrder = 8
+  end
+  object Button1: TButton
+    Left = 296
+    Height = 33
+    Top = 269
+    Width = 123
+    Caption = 'Start Test'
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Button2: TButton
+    Left = 193
+    Height = 33
+    Top = 269
+    Width = 75
+    Caption = 'Exit'
+    OnClick = Button2Click
+    TabOrder = 10
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 584
+    top = 232
+  end
+end

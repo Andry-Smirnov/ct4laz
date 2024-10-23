@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 701
+  Height = 261
+  Top = 267
+  Width = 383
+  ActiveControl = BitBtn1
+  Caption = 'TplLCDLine Demo'
+  ClientHeight = 261
+  ClientWidth = 383
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  LCLVersion = '6.2'
+  object LCDLine1: TplLCDLine
+    Left = 48
+    Height = 65
+    Top = 8
+    Width = 225
+    CellSize = 3
+    CellSpace = 1
+    FrameSize = 8
+    FrameColor = clBtnFace
+    BoardColor = clBlack
+    CellColorOn = clLime
+    CellColorOff = 23296
+    CharSpace = True
+    FrameStyle = Raised
+  end
+  object LCDLine2: TplLCDLine
+    Left = 40
+    Height = 47
+    Top = 88
+    Width = 305
+    CellSize = 3
+    CellSpace = 1
+    FrameSize = 0
+    FrameColor = clBtnFace
+    BoardColor = 8454016
+    CellColorOn = clBlack
+    CellColorOff = 65408
+  end
+  object Label1: TLabel
+    Left = 195
+    Height = 30
+    Top = 150
+    Width = 145
+    Caption = 'CodeTyphon LAB Demo'#13#10'for TplLCDLine component'
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 140
+    Height = 45
+    Top = 195
+    Width = 75
+    Caption = 'Close'
+    Kind = bkClose
+    TabOrder = 0
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    left = 24
+    top = 152
+  end
+end

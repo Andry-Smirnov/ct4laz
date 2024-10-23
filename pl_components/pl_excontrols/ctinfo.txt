@@ -1,0 +1,21 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_ExControls
+
+Version: 7.2.1 Date: 2020-05-04 22:23
+
+------ To Do -----------
+
+-Fix TplPageControl
+
+-Fix ComboBoxies:   
+            TplComboBox,
+            TplColorComboBox,
+            TplFontComboBox,
+            TplBrushComboBox,
+            TplPenStyleComboBox,
+            TplPenWidthComboBox,  

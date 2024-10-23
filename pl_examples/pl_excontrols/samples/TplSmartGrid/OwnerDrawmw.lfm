@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Left = 394
+  Height = 419
+  Top = 243
+  Width = 472
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Customizing Cells Based on Conditions'
+  ClientHeight = 419
+  ClientWidth = 472
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '6.2'
+  object SmartGrid1: TplSmartGrid
+    Cursor = 101
+    Left = 16
+    Height = 385
+    Top = 16
+    Width = 441
+    ColCount = 5
+    RowCount = 20
+    HeaderFont.Color = clWindowText
+    HeaderFont.Height = -11
+    HeaderFont.Name = 'MS Sans Serif'
+    FooterFont.Color = clWindowText
+    FooterFont.Height = -11
+    FooterFont.Name = 'MS Sans Serif'
+    FitToWidth = True
+    Columns = <    
+      item
+        Title = 'Column 1'
+        Width = 84
+      end    
+      item
+        Title = 'Column 2'
+        Width = 84
+      end    
+      item
+        Title = 'Column 3'
+        Width = 83
+      end    
+      item
+        Title = 'Column 4'
+        Width = 83
+      end    
+      item
+        Title = 'Column 5'
+        Width = 83
+      end>
+    GutterFont.Color = clWindowText
+    GutterFont.Height = -11
+    GutterFont.Name = 'MS Sans Serif'
+    ShowFooter = False
+    OnDrawCell = SmartGrid1DrawCell
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    TabOrder = 0
+  end
+end

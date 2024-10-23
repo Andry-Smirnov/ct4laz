@@ -1,0 +1,38 @@
+object Form1: TForm1
+  Left = 349
+  Height = 348
+  Top = 231
+  Width = 373
+  Caption = 'TplCheckListBox Demo'
+  ClientHeight = 348
+  ClientWidth = 373
+  LCLVersion = '6.2'
+  object plCheckListBox1: TplCheckListBox
+    Left = 24
+    Height = 195
+    Top = 16
+    Width = 193
+    Items.Strings = (
+      'Value1'
+      'Value2'
+      'Value3'
+      'Value4'
+      'Value5'
+      'Value6'
+      'Value7'
+      'Value8'
+      'Value9'
+      'Value10'
+    )
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 288
+    Height = 25
+    Top = 294
+    Width = 75
+    Caption = 'Exit'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end

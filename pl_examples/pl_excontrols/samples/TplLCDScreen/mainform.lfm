@@ -1,0 +1,1348 @@
+object Form1: TForm1
+  Left = 451
+  Height = 538
+  Top = 204
+  Width = 772
+  Caption = 'LCDScreen v3.0 Demo'
+  ClientHeight = 538
+  ClientWidth = 772
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Script'
+  Font.Style = [fsBold]
+  Icon.Data = {
+    361000000000010002002020000001001800A80C000026000000101000000100
+    180068030000CE0C00002800000020000000400000000100180000000000000C
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000F0FBFFFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFE
+    FEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFFFFFFFEFEFEFEFEFEF0FBFF
+    0000000000000000000000000000000000000000000000000000000000000000
+    00F0FBFFBFE1BF0E620E0E620E0E620E0E620E0E620E0E620E0E620E0E620E02
+    62020E620E026202026202026202026202026202026202026202026202A4D9A4
+    F0FBFF000000000000000000000000000000000000000000000000000000F0FB
+    FFBFE1BF0262020D740D0D740D197B19197B19197B19197B19197B19197B1919
+    7B19197B190C7D0C0C7D0C0C7D0C0C7D0C0C7D0C027C02027C02027202026202
+    A4D9A4F0FBFF000000000000000000000000000000000000000000000000FFFF
+    FF0D740D0D740D269826339833339833339833339833339833339833339833FE
+    FEFEF2F8F2029D02029D02029D02029D02029D02029D02029D02029D02027C02
+    026202FEFEFE000000000000000000000000000000000000000000000000FFFF
+    FF088608198B193398333398333FA03F3FA03F3FA03F3FA03F3FA03F34A934E5
+    F3E5FEFEFE34A93422AD2222AD2222AD220FB30F0FB30F0FB30F029D02027C02
+    026202FFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF108410198B193398333FA03F3FA03F3FA03F3FA03F3FA03F3FA03F34A934FF
+    FFFFFEFEFE34A93422AD2222AD2222AD2222AD220FB30F0FB30F029D02197B19
+    026202FFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF1084102698263FA03F4BA54B4BA54BFFFFFFFFFFFF4BA54B3FA03F44C344FE
+    FEFEFFFFFF34A93422AD2222AD22FFFFFFE2F5E20FB30F0FB30F029D02197B19
+    026202FFFFFF000000000000000000000000000000000000000000000000FEFE
+    FE198B192698264BA54B4BA54B4BA54BFFFFFFE9F4E9FEFEFE4BA54B3FA03FFF
+    FFFFFFFFFF35BB352ABC2AFFFFFFFFFFFFFEFEFE0FB30F0FB30F029D02197B19
+    026202FFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF198B193398334BA54B4BA54B4BA54B4BA54BFEFEFEE8F4E8FEFEFE3FA03F35
+    BB3534A93434A934FFFFFFFFFFFFFEFEFE22AD220FB30F1EAE1E029D02197B19
+    026202FFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF198B193398334BA54B51A85151A85151A85155AA55FFFFFFFEFEFE4BA54B3F
+    A03F3FA03F34A934FEFEFEFEFEFE22AD2222AD221AAF1A0FB30F029D02197B19
+    0E620EFEFEFE000000000000000000000000000000000000000000000000FEFE
+    FE2698263FA03F57AB5757AB5757AB5757AB574BA54B4BA54B4BA54B3FA03F3F
+    A03F34A93434A93434A93422AD2222AD2222AD2222AD221A981A029D02197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FEFE
+    FE2698263FA03FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4BA54B4BA54B3FA03F3F
+    A03F33983334A93434A934269826FFFFFFFFFFFFFFFFFFE4F2E4FEFEFE197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF2698263FA03FFFFFFFFFFFFFFEFEFEFEFEFEFFFFFF4BA54B4BA54B3FA03F3F
+    A03F34A93434A73434A93422AD22FFFFFFFEFEFEFFFFFFFEFEFEF1FAF1197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF2698264BA54B57AB5757AB5767B46757AB574BA54B4BA54B4BA54B3FA03F3F
+    A03F33983333983326982626982626982622AD221A981A269826029D02197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF3398334BA54B67B46767B46757AB5757AB5757AB57FFFFFFFEFEFE3FA03F3F
+    A03F339833339833FFFFFFFFFFFF269826269826269826269826269826197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF33983357AB5767B46767B46767B46757AB57FFFFFFFFFFFFFEFEFE3FA03F3F
+    A03F3FA03F339833FFFFFFFFFFFFFFFFFF269826269826269826269826197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF33983357AB5767B46767B46767B467FFFFFFFFFFFFFEFEFE4BA54B3FA03FFE
+    FEFEF3F9F3339833339833FFFFFFFFFFFFFFFFFF3198312D982D2B962B197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FEFE
+    FE3FA03F57AB5778BC7867B46767B467FEFEFEFEFEFE57AB574BA54B4BA54BE7
+    F3E7FEFEFE3FA03F339833339833FFFFFFFFFFFF2698262D982D2D982D197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000FFFF
+    FF3FA03F67B46778BC7878BC7878BC7867B46767B46757AB5757AB5757AB57FE
+    FEFEF4FAF44BA54B3FA03F3FA03F3FA03F3FA03F339833339833339833197B19
+    0E620EFEFEFE000000000000000000000000000000000000000000000000FFFF
+    FF3FA03F78BC7888D18878BC7878BC7867B46767B46767B46767B46757AB57FE
+    FEFEFFFFFF57AB574BA54B4BA54B4BA54B3FA03F3FA03F3FA03F339833197B19
+    0E620EFEFEFE000000000000000000000000000000000000000000000000FEFE
+    FE4BA54B78BC7888D18888D18878BC7878BC7867B46767B46767B46767B467FE
+    FEFEFFFFFF57AB5757AB5757AB5757AB574BA54B4BA54B3FA03F3FA03F197B19
+    0E620EFFFFFF000000000000000000000000000000000000000000000000F0FB
+    FFBFE1BF4BA54B78BC7867B46767B46757AB5757AB5757AB574BA54B4BA54B4B
+    A54B4BA54B4BA54B4BA54B3FA03F3FA03F3FA03F3398333398330D740D0E620E
+    BFE1BFF0FBFF0000000000000000000000000000000000000000000000000000
+    00F0FBFFBFE1BF3FA03F3FA03F33983333983333983333983333983333983333
+    9833339833269826269826269826268726269826198B19198B190D740DA4D9A4
+    F0FBFF0000000000000000000000000000000000000000000000000000000000
+    00000000F0FBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0FBFF
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFC00003FF800001FF000000FF000000FF000000FF000000FF000000FF000
+    000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000
+    000FF000000FF000000FF000000FF000000FF000000FF000000FF800001FFC00
+    003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2800000010000000200000000100
+    1800000000000003000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000ECFFF19EC79DA2CAA2A3CAA398C7989BC79B9ECA9E9FCA9F9BC79BDFFF
+    E5000000000000000000000000000000ECFFF0005D00158215178217107E1055
+    9E553A9E3A008100008400008500006200DFFFE5000000000000000000000000
+    9DDE9C178C173FA13F2B972B309930A3DBA3B2DEB20FA80F06A8060FBD0F0085
+    009BC89B000000000000000000000000A6E0A6299929399B39FFFFFF55A955B3
+    E3B3ADE1AD32B832FFFFFF00AE000082009FCB9F000000000000000000000000
+    A6E1A62D962D3E9E3E5CAD5CFFFFFF1D991D119511FFFFFF31B23101AF01007F
+    00A2CBA2000000000000000000000000A8E7A871B971BDDDBDB8DBB82B942B3E
+    9D3E33A533049504A4E0A49BD69B46A0469FC89F000000000000000000000000
+    A8E7A871B871C0E0C0B7DBB72A942A3E9F3E339F33008F00A5DAA5A6D5A63D9F
+    3D9FC89F000000000000000000000000B4E9B44FA84F56AB5660AF60FFFFFF1C
+    8F1C0F850FFFFFFF349E341190110C800CA4CCA4000000000000000000000000
+    B6EAB65AAD5A52AA52FFFFFF59AC59AAD4AAA9D4A93D9D3DFFFFFF128C121482
+    14A4CCA4000000000000000000000000B4EAB376C0767CBD7C53AA5351A851BC
+    DDBCB7DBB7349A342A962A3B9D3B1984199DC69D000000000000000000000000
+    F4FFF95CB25B70BD705BAC5B4EA74E7BBD7B77BB7741A04140A040349C340061
+    00EBFFF0000000000000000000000000000000F0FFF4B1E7B0B2E7B2B3E8B3AF
+    E6AFACE6ACACEAACAEE4AEA3E0A2E0FFE4000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000FFFF0000FFFF
+    0000E0070000C0030000C0030000C0030000C0030000C0030000C0030000C003
+    0000C0030000C0030000C0030000E0070000FFFF0000FFFF0000
+  }
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object Label1: TLabel
+    Left = 112
+    Height = 17
+    Top = 280
+    Width = 525
+    Alignment = taCenter
+    Caption = 'CodeTyphon LAB Demo for TplLCDSceen and TplLCDAnimator components'
+    Color = clBtnFace
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object LCDScreen1: TplLCDScreen
+    Left = 8
+    Height = 212
+    Top = 312
+    Width = 752
+    AnimationDelay = 51
+    AnimationEnabled = False
+    AnimationRepeating = True
+    Bitmap.Data = {
+      36020000424D36020000000000003E000000280000003C0000003F0000000100
+      010000000000F8010000C30E0000C30E0000020000000200000000000000FFFF
+      FF00FFFFFFFFCFFFFFF0FFFFFFFF87FFFFF0FFFFFFFF37FFFFF0FFFFFFFE73FF
+      FFF0FFFFFFFEF3FFFFF0FFFFFFFCF3FFFFF0FFFFFFFDFBFFFFF0FFFFFFF9F9FF
+      FFF0FFFFFFF3FDF8FFF0FFFFE3E7FCFAFFF0FFFFC9CFFE06FFF0FFFF9C1FFF8E
+      FFF0FFFFBFFFFFFEFE70FFFF6FFFFFFEF830FFFE4FFFFFFC0390C3FEEFFFFFFD
+      FF90D07EAFFFFFF9FFB09F04AFFFFFFBFFB0DFE1BFFFFFF7FFB0CFFDBFFFFFEF
+      FF30EFF9FFFFFF9FFF70E7FBFFFFFF3FFF70F7FBFFFFFE7FFE70F3FBFFFFFCFF
+      FEF0F9FBFFFFFDFFFEF0FDFBFFFFFBFFFCF0FCFBFFFFF3FFFDF0FE7BFFFFF7FF
+      F9F0FF79FFFFF7FFF9F0FFBDFFFFE7FFFBF0FF9DF01FEFFFFBF0FFCDE00FE7FF
+      FBF0FFECE007E7FFF9F0FFF6C003E7FFF9F0FFF2DFF9E3FFFDF0FFFA5FFDE3FF
+      FDF0FFF97FFFEBFF1CF0FFFD3CC7C9FE0EF0FFFCB843CDFE06F0FFFCD843DCFC
+      1270FFFEC801DEFCFE70FFFE64239E7FFF70FFFF72739F3FFF70FFFF39FFBF9E
+      2370FFFFBEFF3FCE0170FFFF9F3C1FE60170FFFFDFC01FFB0170FFFFCFE20FFD
+      1A70FFFFE7E22FFCFE70FFFFF3E22FFEFEF0FFFFF8E3EFFE7EF0FFFFFE3FEFFF
+      7CF0FFFFFF1FEFFF3DF0FFFFFFC7EFFFB9F0FFFFFFF3EFFFC3F1FFFFFFFBCFFF
+      EFF0FFFFFFFDDFFFFFF0FFFFFFFDDFFFFFF0FFFFFFFC9FFFFFF0FFFFFFFE3FFF
+      FFF0FFFFFFFFFFFFFFF0FFFFFFFFFFFFFFF1FFFFFFFFFFFFFFFF
+    }
+    BitmapCopyMode = cmTransparent
+    BitmapAnimMode = amDynamic
+    BitmapXOffset = 0
+    BitmapYOffset = 0
+    BorderSpace = 3
+    BorderStyle = bsLowered
+    Color = clBtnFace
+    DisplayMode = dmBoth
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Intensity = 127
+    LCDAnimator = WaveLCDAnimator
+    Lines.Strings = (
+      ''
+      '                        <u><b>TplLCDScreen</b> <i>Demo</i></u> <s>v3.0</s>'
+      ''
+      '                    <bl>by</bl> <inv><u>jacques.voirin@iname.com</u></inv>'
+      ''
+      ''
+    )
+    LinesAnimMode = amDynamic
+    LinesXOffset = 0
+    LinesYOffset = 0
+    PixelHeight = 2
+    PixelOff = clLime
+    PixelShape = psSquare
+    PixelSize = pix2x2
+    PixelSpacing = 1
+    PixelWidth = 2
+    SpecialEffects = []
+  end
+  object BitmapGB: TGroupBox
+    Left = 562
+    Height = 233
+    Top = -1
+    Width = 198
+    Caption = ' Bitmap properties '
+    ClientHeight = 215
+    ClientWidth = 194
+    TabOrder = 3
+    object Label13: TLabel
+      Left = 3
+      Height = 16
+      Top = 116
+      Width = 170
+      Caption = 'BitmapXOffset:                           0'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label14: TLabel
+      Left = 3
+      Height = 16
+      Top = 84
+      Width = 73
+      Alignment = taRightJustify
+      Caption = 'BitmapMode:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label15: TLabel
+      Left = 4
+      Height = 16
+      Top = 144
+      Width = 170
+      Caption = 'BitmapYOffset:                           0'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ParentColor = False
+      ParentFont = False
+    end
+    object BitmapModeCB: TComboBox
+      Left = 80
+      Height = 23
+      Top = 81
+      Width = 108
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ItemHeight = 15
+      ItemIndex = 1
+      Items.Strings = (
+        'amStatic'
+        'amDynamic'
+      )
+      OnChange = BitmapModeCBChange
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'amDynamic'
+    end
+    object BitmapXTB: TTrackBar
+      Left = 92
+      Height = 20
+      Top = 115
+      Width = 77
+      Frequency = 20
+      Max = 127
+      Min = -127
+      OnChange = BitmapXTBChange
+      PageSize = 1
+      Position = 0
+      TickMarks = tmTopLeft
+      TickStyle = tsNone
+      TabOrder = 1
+    end
+    object BitmapYTB: TTrackBar
+      Left = 92
+      Height = 20
+      Top = 142
+      Width = 77
+      Frequency = 20
+      Max = 127
+      Min = -127
+      OnChange = BitmapYTBChange
+      Position = 0
+      TickMarks = tmTopLeft
+      TickStyle = tsNone
+      TabOrder = 2
+    end
+    object RadioGroup1: TRadioGroup
+      Left = 3
+      Height = 54
+      Top = 15
+      Width = 192
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      TabOrder = 3
+    end
+    object NTrspRB: TRadioButton
+      Left = 24
+      Height = 19
+      Top = 28
+      Width = 123
+      Caption = 'cmNotTransparent'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = NTrspRBClick
+      ParentFont = False
+      TabOrder = 4
+      TabStop = False
+    end
+    object TrspRB: TRadioButton
+      Left = 24
+      Height = 19
+      Top = 46
+      Width = 104
+      Caption = 'cmTransparent'
+      Checked = True
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = TrspRBClick
+      ParentFont = False
+      State = cbChecked
+      TabOrder = 5
+    end
+  end
+  object Look: TGroupBox
+    Left = 2
+    Height = 232
+    Top = 0
+    Width = 167
+    Caption = ' LCDScreen properties '
+    ClientHeight = 214
+    ClientWidth = 163
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    object Label3: TLabel
+      Left = 29
+      Height = 14
+      Top = 19
+      Width = 41
+      Alignment = taRightJustify
+      Caption = 'DotSize:'
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 44
+      Height = 14
+      Top = 69
+      Width = 28
+      Alignment = taRightJustify
+      Caption = 'Color:'
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 25
+      Height = 14
+      Top = 90
+      Width = 43
+      Alignment = taRightJustify
+      Caption = 'Intensity:'
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 20
+      Height = 14
+      Top = 43
+      Width = 49
+      Alignment = taRightJustify
+      Caption = 'PixShape:'
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 2
+      Height = 14
+      Top = 115
+      Width = 65
+      Alignment = taRightJustify
+      Caption = 'DisplayMode:'
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 536
+      Height = 17
+      Top = 152
+      Width = 185
+      AutoSize = False
+      Caption = 'Code synthax analysis example:'
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Visible = False
+    end
+    object IntensityTB: TTrackBar
+      Left = 78
+      Height = 20
+      Top = 89
+      Width = 85
+      Frequency = 20
+      Max = 127
+      Min = -127
+      OnChange = IntensityTBChange
+      Position = -127
+      TickMarks = tmTopLeft
+      TickStyle = tsNone
+      TabOrder = 0
+    end
+    object DotSizeCB: TComboBox
+      Left = 74
+      Height = 21
+      Top = 14
+      Width = 87
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ItemHeight = 13
+      ItemIndex = 1
+      Items.Strings = (
+        'pix1x1'
+        'pix2x2'
+        'pix3x3'
+        'pix4x4'
+        'pix5x5'
+        'pix6x6'
+        'pix7x7'
+      )
+      OnChange = DotSizeCBChange
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 1
+      Text = 'pix2x2'
+    end
+    object ColorCB: TComboBox
+      Left = 74
+      Height = 21
+      Top = 64
+      Width = 87
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ItemHeight = 13
+      ItemIndex = 2
+      Items.Strings = (
+        'Blue'
+        'Gray'
+        'Green'
+        'Pink'
+        'Red'
+        'Yellow'
+      )
+      OnChange = ColorCBChange
+      ParentFont = False
+      Sorted = True
+      Style = csDropDownList
+      TabOrder = 2
+      Text = 'Green'
+    end
+    object PixShapeCB: TComboBox
+      Left = 74
+      Height = 21
+      Top = 39
+      Width = 87
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ItemHeight = 13
+      ItemIndex = 0
+      Items.Strings = (
+        'psSquare'
+        'psRound'
+      )
+      OnChange = PixShapeCBChange
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 3
+      Text = 'psSquare'
+    end
+    object DisplayModeCB: TComboBox
+      Left = 76
+      Height = 21
+      Top = 110
+      Width = 85
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ItemHeight = 13
+      ItemIndex = 2
+      Items.Strings = (
+        'dmText'
+        'dmBitmap'
+        'dmBoth'
+      )
+      OnChange = DisplayModeCBChange
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 4
+      Text = 'dmBoth'
+    end
+  end
+  object Animation: TGroupBox
+    Left = 169
+    Height = 232
+    Top = 0
+    Width = 201
+    Caption = ' LCDScreen Animation '
+    ClientHeight = 214
+    ClientWidth = 197
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    object DecSpB: TSpeedButton
+      Left = 88
+      Height = 27
+      Top = 128
+      Width = 62
+      Caption = 'Speed -'
+      Color = clBtnFace
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      NumGlyphs = 0
+      OnClick = DecSpBClick
+      ParentFont = False
+    end
+    object GoSpB: TSpeedButton
+      Left = 29
+      Height = 40
+      Top = 160
+      Width = 121
+      Caption = 'GO!'
+      Color = clBtnFace
+      Font.Color = clGreen
+      Font.Height = -27
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      NumGlyphs = 0
+      OnClick = GoSpBClick
+      ParentFont = False
+    end
+    object IncSpB: TSpeedButton
+      Left = 29
+      Height = 27
+      Top = 128
+      Width = 59
+      Caption = 'Speed +'
+      Color = clBtnFace
+      NumGlyphs = 0
+      OnClick = IncSpBClick
+    end
+    object SpeedButton4: TSpeedButton
+      Left = 145
+      Height = 15
+      Top = 26
+      Width = 16
+      AllowAllUp = True
+      Caption = 'p'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton4Click
+      ParentFont = False
+    end
+    object SpeedButton5: TSpeedButton
+      Left = 145
+      Height = 15
+      Top = 15
+      Width = 16
+      AllowAllUp = True
+      Caption = 'p'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton5Click
+      ParentFont = False
+    end
+    object SpeedButton8: TSpeedButton
+      Left = 145
+      Height = 15
+      Top = 37
+      Width = 16
+      AllowAllUp = True
+      Caption = 'p'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton8Click
+      ParentFont = False
+    end
+    object SpeedButton9: TSpeedButton
+      Left = 145
+      Height = 15
+      Top = 80
+      Width = 16
+      AllowAllUp = True
+      Caption = 'q'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton9Click
+      ParentFont = False
+    end
+    object SpeedButton10: TSpeedButton
+      Left = 145
+      Height = 15
+      Top = 70
+      Width = 16
+      AllowAllUp = True
+      Caption = 'q'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton10Click
+      ParentFont = False
+    end
+    object SpeedButton11: TSpeedButton
+      Left = 145
+      Height = 15
+      Top = 60
+      Width = 16
+      AllowAllUp = True
+      Caption = 'q'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      GroupIndex = 3
+      Layout = blGlyphRight
+      NumGlyphs = 0
+      OnClick = SpeedButton11Click
+      ParentFont = False
+    end
+    object SpeedButton12: TSpeedButton
+      Left = 110
+      Height = 15
+      Top = 48
+      Width = 15
+      AllowAllUp = True
+      Caption = 't'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton12Click
+      ParentFont = False
+    end
+    object SpeedButton13: TSpeedButton
+      Left = 181
+      Height = 15
+      Top = 48
+      Width = 15
+      AllowAllUp = True
+      Caption = 'u'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton13Click
+      ParentFont = False
+    end
+    object SpeedButton14: TSpeedButton
+      Left = 171
+      Height = 15
+      Top = 48
+      Width = 15
+      AllowAllUp = True
+      Caption = 'u'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      Layout = blGlyphRight
+      NumGlyphs = 0
+      OnClick = SpeedButton14Click
+      ParentFont = False
+    end
+    object SpeedButton15: TSpeedButton
+      Left = 161
+      Height = 15
+      Top = 48
+      Width = 15
+      AllowAllUp = True
+      Caption = 'u'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton15Click
+      ParentFont = False
+    end
+    object SpeedButton16: TSpeedButton
+      Left = 120
+      Height = 15
+      Top = 48
+      Width = 15
+      AllowAllUp = True
+      Caption = 't'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton16Click
+      ParentFont = False
+    end
+    object SpeedButton17: TSpeedButton
+      Left = 130
+      Height = 15
+      Top = 48
+      Width = 15
+      AllowAllUp = True
+      Caption = 't'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton17Click
+      ParentFont = False
+    end
+    object CycleSpB: TSpeedButton
+      Left = 5
+      Height = 22
+      Top = 58
+      Width = 88
+      AllowAllUp = True
+      Caption = 'Cycling'
+      Color = clBtnFace
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Layout = blGlyphBottom
+      NumGlyphs = 0
+      OnClick = CyclingClick
+      ParentFont = False
+    end
+    object FlashSpB: TSpeedButton
+      Left = 5
+      Height = 22
+      Top = 82
+      Width = 88
+      AllowAllUp = True
+      Caption = 'Flashing'
+      Color = clBtnFace
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Layout = blGlyphBottom
+      NumGlyphs = 0
+      OnClick = FlashingClick
+      ParentFont = False
+    end
+    object WaveSpB: TSpeedButton
+      Left = 5
+      Height = 22
+      Top = 30
+      Width = 88
+      AllowAllUp = True
+      Caption = 'Waving'
+      Color = clBtnFace
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Layout = blGlyphBottom
+      NumGlyphs = 0
+      OnClick = WavingClick
+      ParentFont = False
+    end
+    object GravitySpB: TSpeedButton
+      Left = 5
+      Height = 22
+      Top = 6
+      Width = 88
+      AllowAllUp = True
+      Caption = 'Gravity'
+      Color = clBtnFace
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Layout = blGlyphBottom
+      NumGlyphs = 0
+      OnClick = GravityClick
+      ParentFont = False
+    end
+    object SpeedButton6: TSpeedButton
+      Left = 158
+      Height = 15
+      Top = 59
+      Width = 15
+      AllowAllUp = True
+      Caption = 'y'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton6Click
+      ParentFont = False
+    end
+    object SpeedButton7: TSpeedButton
+      Left = 166
+      Height = 15
+      Top = 66
+      Width = 15
+      AllowAllUp = True
+      Caption = 'y'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton7Click
+      ParentFont = False
+    end
+    object SpeedButton18: TSpeedButton
+      Left = 126
+      Height = 15
+      Top = 28
+      Width = 15
+      AllowAllUp = True
+      Caption = 'z'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton18Click
+      ParentFont = False
+    end
+    object SpeedButton19: TSpeedButton
+      Left = 134
+      Height = 15
+      Top = 36
+      Width = 15
+      AllowAllUp = True
+      Caption = 'z'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton19Click
+      ParentFont = False
+    end
+    object SpeedButton21: TSpeedButton
+      Left = 158
+      Height = 15
+      Top = 35
+      Width = 15
+      AllowAllUp = True
+      Caption = '{'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton21Click
+      ParentFont = False
+    end
+    object SpeedButton23: TSpeedButton
+      Left = 166
+      Height = 15
+      Top = 29
+      Width = 15
+      AllowAllUp = True
+      Caption = '{'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton23Click
+      ParentFont = False
+    end
+    object SpeedButton24: TSpeedButton
+      Left = 134
+      Height = 15
+      Top = 59
+      Width = 15
+      AllowAllUp = True
+      Caption = 'x'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton24Click
+      ParentFont = False
+    end
+    object SpeedButton25: TSpeedButton
+      Left = 126
+      Height = 15
+      Top = 66
+      Width = 15
+      AllowAllUp = True
+      Caption = 'x'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'Wingdings 3'
+      NumGlyphs = 0
+      OnClick = SpeedButton25Click
+      ParentFont = False
+    end
+    object SpeedButton26: TSpeedButton
+      Left = 145
+      Height = 15
+      Top = 49
+      Width = 16
+      AllowAllUp = True
+      Caption = '©'
+      Color = clBtnFace
+      Flat = True
+      Font.Height = -12
+      Font.Name = 'System'
+      NumGlyphs = 0
+      OnClick = SpeedButton26Click
+      ParentFont = False
+    end
+  end
+  object LinesGB: TGroupBox
+    Left = 370
+    Height = 233
+    Top = -1
+    Width = 192
+    Caption = ' Lines properties '
+    ClientHeight = 215
+    ClientWidth = 188
+    TabOrder = 2
+    object Label11: TLabel
+      Left = 5
+      Height = 16
+      Top = 136
+      Width = 162
+      Caption = 'LinesXOffset:                           0'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 6
+      Height = 16
+      Top = 111
+      Width = 65
+      Alignment = taRightJustify
+      Caption = 'LinesMode:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label10: TLabel
+      Left = 5
+      Height = 16
+      Top = 157
+      Width = 162
+      Caption = 'LinesYOffset:                           0'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ParentColor = False
+      ParentFont = False
+    end
+    object FontNameCB: TComboBox
+      Left = 6
+      Height = 23
+      Top = 16
+      Width = 121
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'Arial'
+        'Arial Black'
+        'Calisto MT'
+        'Comic Sans MS'
+        'Georgia'
+        'Haettenschweiler'
+        'Impact'
+        'Symbol'
+        'Times New Roman'
+        'Westminster'
+      )
+      OnChange = FontNameCBChange
+      ParentFont = False
+      Sorted = True
+      TabOrder = 0
+      Text = 'Arial'
+    end
+    object FontSizeCB: TComboBox
+      Left = 136
+      Height = 23
+      Top = 16
+      Width = 49
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        '8'
+        '9'
+        '10'
+        '11'
+        '12'
+        '14'
+        '16'
+        '18'
+        '20'
+        '22'
+      )
+      OnChange = FontSizeCBChange
+      ParentFont = False
+      TabOrder = 1
+      Text = '8'
+    end
+    object BlinkChckB: TCheckBox
+      Left = 117
+      Height = 19
+      Top = 67
+      Width = 64
+      Caption = 'Blinking'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = BlinkChckBClick
+      ParentFont = False
+      TabOrder = 2
+    end
+    object InverseChckB: TCheckBox
+      Left = 53
+      Height = 19
+      Top = 67
+      Width = 60
+      Caption = 'Inverse'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = InverseChckBClick
+      ParentFont = False
+      TabOrder = 3
+    end
+    object UnderlineChckB: TCheckBox
+      Left = 117
+      Height = 19
+      Top = 50
+      Width = 74
+      Caption = 'Underline'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = UnderlineChckBClick
+      ParentFont = False
+      TabOrder = 4
+    end
+    object StrikeChckB: TCheckBox
+      Left = 54
+      Height = 19
+      Top = 51
+      Width = 51
+      Caption = 'Strike'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = StrikeChckBClick
+      ParentFont = False
+      TabOrder = 5
+    end
+    object ItalicChckB: TCheckBox
+      Left = 6
+      Height = 19
+      Top = 67
+      Width = 45
+      Caption = 'Italic'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = ItalicChckBClick
+      ParentFont = False
+      TabOrder = 6
+    end
+    object BoldChckB: TCheckBox
+      Left = 6
+      Height = 19
+      Top = 51
+      Width = 45
+      Caption = 'Bold'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      OnClick = BoldChckBClick
+      ParentFont = False
+      TabOrder = 7
+    end
+    object LinesModeCB: TComboBox
+      Left = 76
+      Height = 23
+      Top = 108
+      Width = 110
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Script'
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'amStatic'
+        'amDynamic'
+      )
+      OnChange = LinesModeCBChange
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 8
+      Text = 'amStatic'
+    end
+    object LinesXTB: TTrackBar
+      Left = 84
+      Height = 20
+      Top = 137
+      Width = 77
+      Frequency = 20
+      Max = 127
+      Min = -127
+      OnChange = LinesXTBChange
+      PageSize = 1
+      Position = 0
+      TickMarks = tmTopLeft
+      TickStyle = tsNone
+      TabOrder = 9
+    end
+    object LinesYTB: TTrackBar
+      Left = 84
+      Height = 20
+      Top = 157
+      Width = 77
+      Frequency = 20
+      Max = 127
+      Min = -127
+      OnChange = LinesYTBChange
+      Position = 0
+      TickMarks = tmTopLeft
+      TickStyle = tsNone
+      TabOrder = 10
+    end
+  end
+  object CycleLCDAnimator: TplLCDAnimator
+    Code.Strings = (
+      '[HorzScroll(2); ]'
+      '[HorzScroll(1); VertScroll(1); ]'
+      '[HorzScroll(1); VertScroll(1); ]'
+      '[VertScroll(1); ]'
+      '[VertScroll(1); ]'
+      '[HorzScroll(-1); VertScroll(1); ]'
+      '[HorzScroll(-1); VertScroll(1); ]'
+      '[HorzScroll(-2); ]'
+      '[HorzScroll(-2); ]'
+      '[HorzScroll(-1); VertScroll(-1); ]'
+      '[HorzScroll(-1); VertScroll(-1); ]'
+      '[VertScroll(-1); ]'
+      '[VertScroll(-1); ]'
+      '[HorzScroll(1); VertScroll(-1); ]'
+      '[HorzScroll(1); VertScroll(-1);]'
+      '[HorzScroll(2); ]'
+    )
+    CodeErrorFound = False
+    CurrentLine = 0
+    left = 48
+    top = 232
+  end
+  object WaveLCDAnimator: TplLCDAnimator
+    Code.Strings = (
+      '[VertScroll(1); HorzScroll(2); ]'
+      '[VertScroll(2); HorzScroll(2); ]'
+      '[VertScroll(3); HorzScroll(3); ]'
+      '[VertScroll(2); HorzScroll(2); ]'
+      '[VertScroll(1); HorzScroll(2); ]'
+      '[HorzScroll(2); ]'
+      '[VertScroll(-1); HorzScroll(2); ]'
+      '[VertScroll(-2); HorzScroll(2); ]'
+      '[VertScroll(-3); HorzScroll(3); ]'
+      '[VertScroll(-2); HorzScroll(2); ]'
+      '[VertScroll(-1); HorzScroll(2); ]'
+      '[HorzScroll(2); ]'
+    )
+    CodeErrorFound = False
+    CurrentLine = 0
+    left = 296
+    top = 232
+  end
+  object FlashLCDAnimator: TplLCDAnimator
+    Code.Strings = (
+      '[SetIntensity(-127); ]'
+      '[SetIntensity(127); ]'
+    )
+    CodeErrorFound = False
+    CurrentLine = 0
+    left = 408
+    top = 232
+  end
+  object GravityLCDAnimator: TplLCDAnimator
+    Code.Strings = (
+      '[VertScroll(1); ]'
+      '[VertScroll(1); ]'
+      '[VertScroll(2); ]'
+      '[VertScroll(3); ]'
+      '[VertScroll(4); ]'
+      '[VertScroll(-4); ]'
+      '[VertScroll(-3); ]'
+      '[VertScroll(-1); ]'
+      '[VertScroll(1); ]'
+      '[VertScroll(2); ]'
+      '[VertScroll(2); ]'
+      '[VertScroll(3); ]'
+      '[VertScroll(-2); ]'
+      '[VertScroll(-1); ]'
+      '[VertScroll(1); ]'
+      '[VertScroll(1); ]'
+      '[VertScroll(1); ]'
+      '[VertScroll(-1); ]'
+      '[VertScroll(1); ]'
+      '[VertScroll(0); ]'
+      '[VertScroll(0); ]'
+      '[VertScroll(0); ]'
+    )
+    CodeErrorFound = False
+    CurrentLine = 0
+    left = 168
+    top = 232
+  end
+  object ScrollLCDAnimator: TplLCDAnimator
+    Code.Strings = (
+      '[HorzScroll(1); ]'
+    )
+    CodeErrorFound = False
+    CurrentLine = 0
+    left = 520
+    top = 232
+  end
+  object LCDAnimator1: TplLCDAnimator
+    Code.Strings = (
+      '[SetIntensity(0); ]'
+      ''
+      '[SetIntensity(10); ]'
+      'SetIntensity(20); ]'
+      '[SetIntensity(30);]'
+      '[SetIntensity(40);'
+      '[SetIntensity(50); ]'
+      '[SetIntensity(60]'
+      '[SetIntensity(70); ]'
+      '[SetIntensity(80)]'
+      '[SetIntensity(90); ]'
+      '[SetIntensity(100); ]'
+      '[SetIntensity(110); ]'
+      '[SetIntensity(120); ]'
+    )
+    CodeErrorFound = True
+    CurrentLine = 0
+    left = 616
+    top = 232
+  end
+end

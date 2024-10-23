@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <General>
+      <MainUnit Value="0"/>
+      <Title Value="WebSocketServer"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="2"/>
+      <RevisionNr Value="1"/>
+      <BuildNr Value="17"/>
+      <StringTable FileDescription="Bauglir WebSocket server demo" LegalCopyright="Copyright 2011; Bronislav Klucka" ProductVersion="2.0.1.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="pl_synapsevs"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="WebSocketServer.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="24"/>
+        <UsageCount Value="66"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="websocketservermw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="WebSocketservermw"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="12"/>
+        <UsageCount Value="66"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../../synapse/source/lib/ssl_openssl_lib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="11" Y="81"/>
+        <UsageCount Value="32"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../../../../usr/share/fpcsrc/2.4.0/rtl/unix/classes.pp"/>
+        <UnitName Value="Classes"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../../../usr/lib/typhon/0.9.28.2/lcl/actnlist.pas"/>
+        <UnitName Value="ActnList"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../mine/pascal/Bauglir/internet/websocket2.pas"/>
+        <UnitName Value="WebSocket2"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="470"/>
+        <CursorPos X="5" Y="488"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../BauglirWebSocket2_pascal_library.2.0.4/library/bclasses.pas"/>
+        <UnitName Value="BClasses"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="37" Y="57"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../typhon/components/pl_SynapseWebSocket/source/swsbaseclasses.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../../../typhon/components/pl_SynapseWebSocket/source/swsbasesysutils.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../../../typhon/components/pl_SynapseWebSocket/source/swswebsocket.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="694"/>
+        <CursorPos X="109" Y="503"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../../typhon/components/pl_SynapseWebSocket/source/swscustomserver.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="187"/>
+        <CursorPos X="47" Y="131"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../../../fpcsrc/rtl/win/wininc/struct.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1439"/>
+        <CursorPos X="6" Y="1465"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../../../fpcsrc/packages/fcl-base/src/syncobjs.pp"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="../xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <CStyleOperator Value="False"/>
+        <AllowLabel Value="False"/>
+        <CPPInline Value="False"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="UTF8Decode(s)"/>
+      </Item1>
+    </Watches>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

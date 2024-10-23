@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="BasicDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="BasicDemomw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="BasicDemomw"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="3"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="BasicDemomw.frm"/>
+        <HasResources Value="True"/>
+        <ExtraEditorCount Value="2"/>
+        <ExtraEditor1>
+          <CursorPos X="47" Y="9"/>
+        </ExtraEditor1>
+        <ExtraEditor2>
+          <EditorIndex Value="2"/>
+        </ExtraEditor2>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="FRM"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSmartGridUnit.pas"/>
+        <UnitName Value="TplSmartGridUnit"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="812"/>
+        <CursorPos X="10" Y="820"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="BasicDemomw.pas"/>
+        <Caret Line="9" Column="35"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSmartGridUnit.pas"/>
+        <Caret Line="11"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSmartGridUnit.pas"/>
+        <Caret Line="571" Column="27" TopLine="550"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSmartGridUnit.pas"/>
+        <Caret Line="575" Column="27" TopLine="554"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSmartGridUnit.pas"/>
+        <Caret Line="584" Column="27" TopLine="563"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSmartGridUnit.pas"/>
+        <Caret Line="3447" Column="21" TopLine="3426"/>
+      </Position6>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

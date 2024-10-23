@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="plScrollbar.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="plscrollbarmw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="plScrollbarmw"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="36" Y="47"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplCheckBoxUnit.pas"/>
+        <UnitName Value="TplCheckBoxUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="27" Y="117"/>
+        <UsageCount Value="11"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\lcl\controls.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2243"/>
+        <CursorPos X="25" Y="2269"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <UnitName Value="TplScrollbarUnit"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="656"/>
+        <CursorPos X="32" Y="653"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\lcl\forms.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="56"/>
+        <CursorPos X="35" Y="76"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="21" HistoryIndex="20">
+      <Position1>
+        <Filename Value="plscrollbarmw.pas"/>
+        <Caret Line="16" Column="19"/>
+      </Position1>
+      <Position2>
+        <Filename Value="plscrollbarmw.pas"/>
+        <Caret Line="17" Column="19"/>
+      </Position2>
+      <Position3>
+        <Filename Value="plscrollbarmw.pas"/>
+        <Caret Line="18" Column="19"/>
+      </Position3>
+      <Position4>
+        <Filename Value="plscrollbarmw.pas"/>
+        <Caret Line="17" Column="26"/>
+      </Position4>
+      <Position5>
+        <Filename Value="plscrollbarmw.pas"/>
+        <Caret Line="17" Column="26"/>
+      </Position5>
+      <Position6>
+        <Filename Value="plscrollbarmw.pas"/>
+        <Caret Line="44" Column="19" TopLine="7"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="135" Column="30" TopLine="116"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="138" Column="31" TopLine="116"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="654" Column="13" TopLine="633"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="72" Column="64" TopLine="43"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="113" Column="26" TopLine="94"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="134" Column="64" TopLine="101"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="661" Column="37" TopLine="638"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="647" Column="36" TopLine="624"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="653" Column="30" TopLine="622"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="649" Column="27" TopLine="624"/>
+      </Position16>
+      <Position17>
+        <Filename Value="plscrollbarmw.pas"/>
+        <Caret Line="46" Column="36" TopLine="9"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="635" Column="45" TopLine="619"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="652" Column="47" TopLine="625"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="655" Column="28" TopLine="633"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScrollbarUnit.pas"/>
+        <Caret Line="654" Column="35" TopLine="624"/>
+      </Position21>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

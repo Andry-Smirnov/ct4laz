@@ -1,0 +1,38 @@
+object Form1: TForm1
+  Left = 349
+  Height = 314
+  Top = 231
+  Width = 381
+  Caption = 'Form1'
+  ClientHeight = 314
+  ClientWidth = 381
+  LCLVersion = '6.4'
+  object plListBox1: TplListBox
+    Left = 40
+    Height = 136
+    Top = 40
+    Width = 137
+    Items.Strings = (
+      'demo1'
+      'demo2'
+      'demo3'
+      'demo4'
+      'demo5'
+    )
+    ParentColor = False
+  end
+  object plButton1: TplButton
+    Left = 272
+    Height = 23
+    Top = 256
+    Width = 76
+    Caption = 'Exit'
+    Glyph.Data = {
+      00000000
+    }
+    Layout = blGlyphLeft
+    ParentColor = False
+    TabOrder = 1
+    OnClick = plButton1Click
+  end
+end

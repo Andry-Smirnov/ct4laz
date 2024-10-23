@@ -1,0 +1,211 @@
+object Form1: TForm1
+  Left = 448
+  Height = 543
+  Top = 255
+  Width = 638
+  Caption = 'SmartGrid Demo'
+  ClientHeight = 543
+  ClientWidth = 638
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '6.2'
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 199
+    Caption = '- Try to copy paste a block between Excel'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 32
+    Width = 307
+    Caption = '- Try type something then press * and Enter. Try also > and Enter.'
+    ParentColor = False
+  end
+  object SmartGrid1: TplSmartGrid
+    Cursor = 1
+    Left = 16
+    Height = 370
+    Top = 56
+    Width = 597
+    ColCount = 5
+    RowCount = 20
+    AutoAddRow = True
+    DefColWidth = 100
+    GridColor = clSilver
+    HeaderLine = 2
+    HeaderColor = 14614528
+    HeaderLightColor = 16744448
+    HeaderDarkColor = clBlack
+    HeaderFont.Color = clWhite
+    HeaderFont.Height = -11
+    HeaderFont.Name = 'MS Sans Serif'
+    FooterFont.Color = clRed
+    FooterFont.Height = -11
+    FooterFont.Name = 'MS Sans Serif'
+    SelectionColor = 13816575
+    Columns = <    
+      item
+        Title = 'Merged;Multilined|Merged;Multilined'
+        Footer = 'Footer 0'
+        Width = 100
+        CanResize = False
+      end    
+      item
+        Title = 'First Group|One'
+        Footer = 'Footer 1'
+        Width = 100
+        Color = 14024703
+        HorzAlign = haCenter
+        Strings.Strings = (
+          'Satu'
+          'Dua'
+          'Tiga'
+        )
+      end    
+      item
+        Title = 'First Group|Two'
+        Footer = 'Footer 2'
+        Width = 100
+      end    
+      item
+        Title = 'Second Group|One'
+        Footer = 'Footer 3'
+        Width = 100
+        Color = clWhite
+        HorzAlign = haRight
+      end    
+      item
+        Title = 'Second Group|Two'
+        Footer = 'Footer 4'
+        Width = 100
+        HorzAlign = haCenter
+      end>
+    GutterKind = gkNumber
+    GutterWidth = 40
+    GutterFont.Color = clWhite
+    GutterFont.Height = -11
+    GutterFont.Name = 'MS Sans Serif'
+    ShowFooter = True
+    OnDrawHeader = SmartGrid1DrawHeader
+    OnInsertRow = SmartGrid1InsertRow
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+  end
+  object CheckBox1: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 436
+    Width = 37
+    Anchors = [akLeft, akBottom]
+    Caption = 'Flat'
+    Checked = True
+    OnClick = CheckBox1Click
+    State = cbChecked
+    TabOrder = 1
+  end
+  object CheckBox2: TCheckBox
+    Left = 88
+    Height = 19
+    Top = 436
+    Width = 86
+    Anchors = [akLeft, akBottom]
+    Caption = 'System Colors'
+    Checked = True
+    OnClick = CheckBox2Click
+    State = cbChecked
+    TabOrder = 2
+  end
+  object CheckBox3: TCheckBox
+    Left = 192
+    Height = 19
+    Top = 436
+    Width = 74
+    Anchors = [akLeft, akBottom]
+    Caption = 'Fit to Width'
+    OnClick = CheckBox3Click
+    TabOrder = 3
+  end
+  object CheckBox4: TCheckBox
+    Left = 288
+    Height = 19
+    Top = 436
+    Width = 111
+    Anchors = [akLeft, akBottom]
+    Caption = 'Auto Column Width'
+    OnClick = CheckBox4Click
+    TabOrder = 4
+  end
+  object CheckBox5: TCheckBox
+    Left = 424
+    Height = 19
+    Top = 436
+    Width = 74
+    Anchors = [akLeft, akBottom]
+    Caption = 'Show Grids'
+    Checked = True
+    OnClick = CheckBox5Click
+    State = cbChecked
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 272
+    Height = 25
+    Top = 473
+    Width = 129
+    Anchors = [akLeft, akBottom]
+    Caption = '&Hide 3rd Column'
+    OnClick = Button1Click
+    TabOrder = 8
+  end
+  object Button2: TButton
+    Left = 16
+    Height = 25
+    Top = 473
+    Width = 121
+    Anchors = [akLeft, akBottom]
+    Caption = '&Insert New Row'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object Button3: TButton
+    Left = 144
+    Height = 25
+    Top = 473
+    Width = 121
+    Anchors = [akLeft, akBottom]
+    Caption = '&Delete Current Row'
+    OnClick = Button3Click
+    TabOrder = 7
+  end
+  object Button4: TButton
+    Left = 416
+    Height = 25
+    Top = 473
+    Width = 161
+    Anchors = [akLeft, akBottom]
+    Caption = 'Toggle ReadOnly 3rd Column'
+    OnClick = Button4Click
+    TabOrder = 9
+  end
+  object CheckBox6: TCheckBox
+    Left = 528
+    Height = 19
+    Top = 436
+    Width = 80
+    Anchors = [akLeft, akBottom]
+    Caption = 'Show Footer'
+    OnClick = CheckBox6Click
+    TabOrder = 10
+  end
+end

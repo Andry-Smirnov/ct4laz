@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="pl_ExControls"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Lazarus port: PilotLogic Software House"/>
+    <HasRegisterProc Value="True"/>
+    <ComponentCount Value="130"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <CStyleOperator Value="False"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+    </CompilerOptions>
+    <Description Value="Extra Visual Controls
+"/>
+    <License Value="GPL"/>
+    <Version Major="7" Minor="2" Release="1"/>
+    <Files Count="66">
+      <Item1>
+        <Filename Value="source\AllExControlsRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="AllExControlsRegister"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\AllExControlsRegister.inc"/>
+        <Type Value="Include"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\plUtils.pas"/>
+        <UnitName Value="plUtils"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\plUtilsForHSL.pas"/>
+        <UnitName Value="plUtilsForHSL"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\TplA3nalogGaugeUnit.pas"/>
+        <UnitName Value="TplA3nalogGaugeUnit"/>
+      </Item5>
+      <Item6>
+        <Filename Value="source\TplButtonExUnit.pas"/>
+        <UnitName Value="TplButtonExUnit"/>
+      </Item6>
+      <Item7>
+        <Filename Value="source\TplButtonsPanelUnit.pas"/>
+        <UnitName Value="TplButtonsPanelUnit"/>
+      </Item7>
+      <Item8>
+        <Filename Value="source\TplButtonUnit.pas"/>
+        <UnitName Value="TplButtonUnit"/>
+      </Item8>
+      <Item9>
+        <Filename Value="source\TplCheckBoxUnit.pas"/>
+        <UnitName Value="TplCheckBoxUnit"/>
+      </Item9>
+      <Item10>
+        <Filename Value="source\TplCheckListBoxUnit.pas"/>
+        <UnitName Value="TplCheckListBoxUnit"/>
+      </Item10>
+      <Item11>
+        <Filename Value="source\TplCircleProgressUnit.pas"/>
+        <UnitName Value="TplCircleProgressUnit"/>
+      </Item11>
+      <Item12>
+        <Filename Value="source\TplColorPanelUnit.pas"/>
+        <UnitName Value="TplColorPanelUnit"/>
+      </Item12>
+      <Item13>
+        <Filename Value="source\TplComboBoxBrushUnit.pas"/>
+        <UnitName Value="TplComboBoxBrushUnit"/>
+      </Item13>
+      <Item14>
+        <Filename Value="source\TplComboBoxColorUnit.pas"/>
+        <UnitName Value="TplComboBoxColorUnit"/>
+      </Item14>
+      <Item15>
+        <Filename Value="source\TplComboBoxFontUnit.pas"/>
+        <UnitName Value="TplComboBoxFontUnit"/>
+      </Item15>
+      <Item16>
+        <Filename Value="source\TplComboBoxPenStyleUnit.pas"/>
+        <UnitName Value="TplComboBoxPenStyleUnit"/>
+      </Item16>
+      <Item17>
+        <Filename Value="source\TplComboBoxPenWidthUnit.pas"/>
+        <UnitName Value="TplComboBoxPenWidthUnit"/>
+      </Item17>
+      <Item18>
+        <Filename Value="source\TplComboBoxUnit.pas"/>
+        <UnitName Value="TplComboBoxUnit"/>
+      </Item18>
+      <Item19>
+        <Filename Value="source\TplEditUnit.pas"/>
+        <UnitName Value="TplEditUnit"/>
+      </Item19>
+      <Item20>
+        <Filename Value="source\TplGalleryUnit.pas"/>
+        <UnitName Value="TplGalleryUnit"/>
+      </Item20>
+      <Item21>
+        <Filename Value="source\TplGaugeUnit.pas"/>
+        <UnitName Value="TplGaugeUnit"/>
+      </Item21>
+      <Item22>
+        <Filename Value="source\TplGifAnimatorUnit.pas"/>
+        <UnitName Value="TplGifAnimatorUnit"/>
+      </Item22>
+      <Item23>
+        <Filename Value="source\TplGnouMeterUnit.pas"/>
+        <UnitName Value="TplGnouMeterUnit"/>
+      </Item23>
+      <Item24>
+        <Filename Value="source\TplGradGaugeUnit.pas"/>
+        <UnitName Value="TplGradGaugeUnit"/>
+      </Item24>
+      <Item25>
+        <Filename Value="source\TplGradientUnit.pas"/>
+        <UnitName Value="TplGradientUnit"/>
+      </Item25>
+      <Item26>
+        <Filename Value="source\TplGradUnit.pas"/>
+        <UnitName Value="TplGradUnit"/>
+      </Item26>
+      <Item27>
+        <Filename Value="source\TplGroupBoxUnit.pas"/>
+        <UnitName Value="TplGroupBoxUnit"/>
+      </Item27>
+      <Item28>
+        <Filename Value="source\TplHorVerRulersUnit.pas"/>
+        <UnitName Value="TplHorVerRulersUnit"/>
+      </Item28>
+      <Item29>
+        <Filename Value="source\TplImageButtonUnit.pas"/>
+        <UnitName Value="TplImageButtonUnit"/>
+      </Item29>
+      <Item30>
+        <Filename Value="source\TplKnobUnit.pas"/>
+        <UnitName Value="TplKnobUnit"/>
+      </Item30>
+      <Item31>
+        <Filename Value="source\TplLabelUnit.pas"/>
+        <UnitName Value="TplLabelUnit"/>
+      </Item31>
+      <Item32>
+        <Filename Value="source\TplLCDAnimatorEditor.pas"/>
+        <FRMtype Value="200"/>
+        <UnitName Value="TplLCDAnimatorEditor"/>
+      </Item32>
+      <Item33>
+        <Filename Value="source\TplLCDLineUnit.pas"/>
+        <UnitName Value="TplLCDLineUnit"/>
+      </Item33>
+      <Item34>
+        <Filename Value="source\TplLCDLineUnit_Char.pas"/>
+        <UnitName Value="TplLCDLineUnit_Char"/>
+      </Item34>
+      <Item35>
+        <Filename Value="source\TplLCDScreenEditor.pas"/>
+        <FRMtype Value="200"/>
+        <UnitName Value="TplLCDScreenEditor"/>
+      </Item35>
+      <Item36>
+        <Filename Value="source\TplLCDScreenUnit.pas"/>
+        <UnitName Value="TplLCDScreenUnit"/>
+      </Item36>
+      <Item37>
+        <Filename Value="source\TplLed7SegUnit.pas"/>
+        <UnitName Value="TplLed7SegUnit"/>
+      </Item37>
+      <Item38>
+        <Filename Value="source\TplLEDIndicatorUnit.pas"/>
+        <UnitName Value="TplLEDIndicatorUnit"/>
+      </Item38>
+      <Item39>
+        <Filename Value="source\TplListBoxUnit.pas"/>
+        <UnitName Value="TplListBoxUnit"/>
+      </Item39>
+      <Item40>
+        <Filename Value="source\TplMagnifayUnit.pas"/>
+        <UnitName Value="TplMagnifayUnit"/>
+      </Item40>
+      <Item41>
+        <Filename Value="source\TplMaskEditUnit.pas"/>
+        <UnitName Value="TplMaskEditUnit"/>
+      </Item41>
+      <Item42>
+        <Filename Value="source\TplMemoUnit.pas"/>
+        <UnitName Value="TplMemoUnit"/>
+      </Item42>
+      <Item43>
+        <Filename Value="source\TplMultiGraphUnit.pas"/>
+        <UnitName Value="TplMultiGraphUnit"/>
+      </Item43>
+      <Item44>
+        <Filename Value="source\TplPageControlUnit.pas"/>
+        <UnitName Value="TplPageControlUnit"/>
+      </Item44>
+      <Item45>
+        <Filename Value="source\TplPaintGridUnit.pas"/>
+        <UnitName Value="TplPaintGridUnit"/>
+      </Item45>
+      <Item46>
+        <Filename Value="source\TplPanelTextureUnit.pas"/>
+        <UnitName Value="TplPanelTextureUnit"/>
+      </Item46>
+      <Item47>
+        <Filename Value="source\TplPanelTextureUnitForm.pas"/>
+        <FRMtype Value="200"/>
+        <UnitName Value="TplPanelTextureUnitForm"/>
+      </Item47>
+      <Item48>
+        <Filename Value="source\TplPanelUnit.pas"/>
+        <UnitName Value="TplPanelUnit"/>
+      </Item48>
+      <Item49>
+        <Filename Value="source\TplRadioButtonUnit.pas"/>
+        <UnitName Value="TplRadioButtonUnit"/>
+      </Item49>
+      <Item50>
+        <Filename Value="source\TplRulerUnit.pas"/>
+        <UnitName Value="TplRulerUnit"/>
+      </Item50>
+      <Item51>
+        <Filename Value="source\TplScopeUnit.pas"/>
+        <UnitName Value="TplScopeUnit"/>
+      </Item51>
+      <Item52>
+        <Filename Value="source\TplScrollbarUnit.pas"/>
+        <UnitName Value="TplScrollbarUnit"/>
+      </Item52>
+      <Item53>
+        <Filename Value="source\TplSearchPanelUnit.pas"/>
+        <UnitName Value="TplSearchPanelUnit"/>
+      </Item53>
+      <Item54>
+        <Filename Value="source\TplShapeProgressUnit.pas"/>
+        <UnitName Value="TplShapeProgressUnit"/>
+      </Item54>
+      <Item55>
+        <Filename Value="source\TplSideBarUnit.pas"/>
+        <UnitName Value="TplSideBarUnit"/>
+      </Item55>
+      <Item56>
+        <Filename Value="source\TplSimpleChartUnit.pas"/>
+        <UnitName Value="TplSimpleChartUnit"/>
+      </Item56>
+      <Item57>
+        <Filename Value="source\TplSimplePieUnit.pas"/>
+        <UnitName Value="TplSimplePieUnit"/>
+      </Item57>
+      <Item58>
+        <Filename Value="source\TplSliderUnit.pas"/>
+        <UnitName Value="TplSliderUnit"/>
+      </Item58>
+      <Item59>
+        <Filename Value="source\TplSmartGridUnit.pas"/>
+        <UnitName Value="TplSmartGridUnit"/>
+      </Item59>
+      <Item60>
+        <Filename Value="source\TplSpeedButtonUnit.pas"/>
+        <UnitName Value="TplSpeedButtonUnit"/>
+      </Item60>
+      <Item61>
+        <Filename Value="source\TplSpiderGraphUnit.pas"/>
+        <UnitName Value="TplSpiderGraphUnit"/>
+      </Item61>
+      <Item62>
+        <Filename Value="source\TplSpinButtonUnit.pas"/>
+        <UnitName Value="TplSpinButtonUnit"/>
+      </Item62>
+      <Item63>
+        <Filename Value="source\TplSpinEditUnit.pas"/>
+        <UnitName Value="TplSpinEditUnit"/>
+      </Item63>
+      <Item64>
+        <Filename Value="source\TplStatusBarUnit.pas"/>
+        <UnitName Value="TplStatusBarUnit"/>
+      </Item64>
+      <Item65>
+        <Filename Value="source\TplTabControlUnit.pas"/>
+        <UnitName Value="TplTabControlUnit"/>
+      </Item65>
+      <Item66>
+        <Filename Value="source\TplTreeListViewUnit.pas"/>
+        <UnitName Value="TplTreeListViewUnit"/>
+      </Item66>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="IDEIntf"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
