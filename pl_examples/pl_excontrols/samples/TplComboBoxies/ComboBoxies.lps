@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="ComboBoxies.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="comboboxiesmw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="comboboxiesmw"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="27" Y="19"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxUnit.pas"/>
+        <UnitName Value="TplComboBoxUnit"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="98"/>
+        <CursorPos X="30" Y="142"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxFontUnit.pas"/>
+        <UnitName Value="TplComboBoxFontUnit"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="133"/>
+        <CursorPos X="8" Y="166"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\lcl\stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="435"/>
+        <CursorPos X="31" Y="467"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxBrushUnit.pas"/>
+        <UnitName Value="TplComboBoxBrushUnit"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="11"/>
+        <CursorPos X="20" Y="35"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxColorUnit.pas"/>
+        <UnitName Value="TplComboBoxColorUnit"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="12"/>
+        <CursorPos X="43" Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxPenStyleUnit.pas"/>
+        <UnitName Value="TplComboBoxPenStyleUnit"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="5"/>
+        <CursorPos X="46" Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxPenWidthUnit.pas"/>
+        <UnitName Value="TplComboBoxPenWidthUnit"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="8"/>
+        <CursorPos X="46" Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit8>
+    </Units>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="comboboxiesmw.pas"/>
+        <Caret Line="19" Column="27"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxFontUnit.pas"/>
+        <Caret Line="29" Column="26"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxFontUnit.pas"/>
+        <Caret Line="41" Column="51" TopLine="6"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxUnit.pas"/>
+        <Caret Line="22" Column="32"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxUnit.pas"/>
+        <Caret Line="183" Column="31" TopLine="143"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxUnit.pas"/>
+        <Caret Line="119" Column="22" TopLine="102"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxUnit.pas"/>
+        <Caret Line="89" Column="40" TopLine="71"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplComboBoxUnit.pas"/>
+        <Caret Line="142" Column="22" TopLine="123"/>
+      </Position8>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

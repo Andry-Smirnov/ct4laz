@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="pl_SynapseVS"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Artee; Lazarus port: PilotLogic Software House"/>
+    <HasRegisterProc Value="True"/>
+    <ComponentCount Value="30"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="Visual Synapse Components"/>
+    <License Value="GPL3, LGPL3, MPL 1.1"/>
+    <Version Major="6" Minor="7" Release="1"/>
+    <Files Count="20">
+      <Item1>
+        <Filename Value="source\allsynapsevsregister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="allsynapsevsregister"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\vsauthentication.pas"/>
+        <UnitName Value="vsAuthentication"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\vscomport.pas"/>
+        <UnitName Value="vsComPort"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\vscomportbase.pas"/>
+        <UnitName Value="vsComPortbase"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\vscomportsetup.pas"/>
+        <FRMtype Value="200"/>
+        <UnitName Value="vsComPortsetup"/>
+      </Item5>
+      <Item6>
+        <Filename Value="source\vsexeccgi.pas"/>
+        <UnitName Value="vsExecCGI"/>
+      </Item6>
+      <Item7>
+        <Filename Value="source\vsfilelogger.pas"/>
+        <UnitName Value="vsFileLogger"/>
+      </Item7>
+      <Item8>
+        <Filename Value="source\vsftpserver.pas"/>
+        <UnitName Value="vsFtpServer"/>
+      </Item8>
+      <Item9>
+        <Filename Value="source\vshttpserver.pas"/>
+        <UnitName Value="vsHttpServer"/>
+      </Item9>
+      <Item10>
+        <Filename Value="source\vspastella.pas"/>
+        <UnitName Value="vsPastella"/>
+      </Item10>
+      <Item11>
+        <Filename Value="source\vsping.pas"/>
+        <UnitName Value="vsping"/>
+      </Item11>
+      <Item12>
+        <Filename Value="source\vssmtpserver.pas"/>
+        <UnitName Value="vsSmtpServer"/>
+      </Item12>
+      <Item13>
+        <Filename Value="source\vstcpserver.pas"/>
+        <UnitName Value="vsTcpServer"/>
+      </Item13>
+      <Item14>
+        <Filename Value="source\vstypedef.pas"/>
+        <UnitName Value="vsTypeDef"/>
+      </Item14>
+      <Item15>
+        <Filename Value="source\vsvisualserverbase.pas"/>
+        <UnitName Value="vsVisualServerBase"/>
+      </Item15>
+      <Item16>
+        <Filename Value="source\vswebclient.pp"/>
+        <UnitName Value="vswebclient"/>
+      </Item16>
+      <Item17>
+        <Filename Value="source\vswebsocket.pas"/>
+        <UnitName Value="vswebsocket"/>
+      </Item17>
+      <Item18>
+        <Filename Value="source\vsxmailer.pas"/>
+        <UnitName Value="vsXMailer"/>
+      </Item18>
+      <Item19>
+        <Filename Value="source\vsgeoip.pas"/>
+        <UnitName Value="vsGeoIP"/>
+      </Item19>
+      <Item20>
+        <Filename Value="source\vsgeoipbase.pas"/>
+        <UnitName Value="vsGeoIPBase"/>
+      </Item20>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="laz_synapse"/>
+        <MaxVersion Major="40" Minor="1" Release="4"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

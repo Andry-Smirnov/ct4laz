@@ -1,0 +1,169 @@
+object Form1: TForm1
+  Left = 340
+  Height = 570
+  Top = 234
+  Width = 719
+  Caption = 'Tabel Budget'
+  ClientHeight = 570
+  ClientWidth = 719
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poDesktopCenter
+  LCLVersion = '6.2'
+  object Panel1: TPanel
+    Left = 16
+    Height = 504
+    Top = 16
+    Width = 678
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 504
+    ClientWidth = 678
+    TabOrder = 0
+    object Splitter1: TSplitter
+      Left = 329
+      Height = 504
+      Top = 0
+      Width = 5
+    end
+    object SmartGrid1: TplSmartGrid
+      Cursor = 101
+      Left = 334
+      Height = 504
+      Top = 0
+      Width = 344
+      ColCount = 12
+      RowCount = 20
+      GridColor = clSilver
+      HeaderLine = 2
+      HeaderFont.Color = clWindowText
+      HeaderFont.Height = -11
+      HeaderFont.Name = 'MS Sans Serif'
+      FooterFont.Color = clWindowText
+      FooterFont.Height = -11
+      FooterFont.Name = 'MS Sans Serif'
+      Columns = <      
+        item
+          Title = '0|Capital'
+          Width = 80
+          Color = 16775924
+        end      
+        item
+          Title = '0|Non Capital'
+          Width = 80
+          Color = 16773601
+        end      
+        item
+          Title = '2000|Capital'
+          Width = 80
+          Color = 16775924
+        end      
+        item
+          Title = '2000|Non Capital'
+          Width = 80
+          Color = 16773601
+        end      
+        item
+          Title = '2001|Capital'
+          Width = 80
+          Color = 16775924
+        end      
+        item
+          Title = '2001|Non Capital'
+          Width = 80
+          Color = 16773601
+        end      
+        item
+          Title = '2002|Capital'
+          Width = 80
+          Color = 16775924
+        end      
+        item
+          Title = '2002|Non Capital'
+          Width = 80
+          Color = 16773601
+        end      
+        item
+          Title = '2003|Capital'
+          Width = 80
+          Color = 16775924
+        end      
+        item
+          Title = '2003|Non Capital'
+          Width = 80
+          Color = 16773601
+        end      
+        item
+          Title = '2004|Capital'
+          Width = 80
+          Color = 16775924
+        end      
+        item
+          Title = '2004|Non Capital'
+          Width = 80
+          Color = 16773601
+        end>
+      GutterKind = gkNone
+      GutterWidth = 40
+      GutterFont.Color = clWindowText
+      GutterFont.Height = -11
+      GutterFont.Name = 'MS Sans Serif'
+      ShowFooter = False
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Align = alClient
+      TabOrder = 0
+    end
+    object SmartGridSync1: TplSmartGridSync
+      Cursor = 101
+      Left = 0
+      Height = 504
+      Top = 0
+      Width = 329
+      ColCount = 3
+      RowCount = 20
+      AutoAddRow = True
+      GridColor = clSilver
+      HeaderLine = 2
+      HeaderFont.Color = clWindowText
+      HeaderFont.Height = -11
+      HeaderFont.Name = 'MS Sans Serif'
+      FooterFont.Color = clWindowText
+      FooterFont.Height = -11
+      FooterFont.Name = 'MS Sans Serif'
+      FitToWidth = True
+      Columns = <      
+        item
+          Title = 'Unit Name'
+          Width = 135
+        end      
+        item
+          Title = 'Unit Cost|Capital'
+          Width = 80
+          Color = 15790335
+          CanResize = False
+        end      
+        item
+          Title = 'Unit Cost|Non Capital'
+          Width = 80
+          Color = 14671871
+          CanResize = False
+        end>
+      GutterKind = gkNumber
+      GutterWidth = 30
+      GutterFont.Color = clWindowText
+      GutterFont.Height = -11
+      GutterFont.Name = 'MS Sans Serif'
+      ShowFooter = False
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Align = alLeft
+      TabOrder = 1
+      Grid = SmartGrid1
+    end
+  end
+end

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="SimpleChart.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="16" Y="11"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="SimpleChartmw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SimpleChartmw"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="49" Y="27"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <UnitName Value="TplSimpleChartUnit"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="16" Y="9"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\lcl\graphics.pp"/>
+        <TopLine Value="839"/>
+        <CursorPos X="15" Y="859"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\lcl\extctrls.pp"/>
+        <TopLine Value="943"/>
+        <CursorPos X="28" Y="948"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\lcl\controls.pp"/>
+        <TopLine Value="2203"/>
+        <CursorPos X="3" Y="2224"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSearchPanelUnit.pas"/>
+        <TopLine Value="385"/>
+        <CursorPos X="32" Y="406"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\BSplines.pas"/>
+        <TopLine Value="607"/>
+        <CursorPos X="5" Y="648"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="23" HistoryIndex="22">
+      <Position1>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="368" Column="16" TopLine="334"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="380" Column="18" TopLine="346"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="425" Column="18" TopLine="391"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="434" Column="18" TopLine="400"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="461" Column="42" TopLine="427"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="521" Column="12" TopLine="487"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="530" Column="12" TopLine="496"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="539" Column="12" TopLine="505"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="548" Column="12" TopLine="514"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="557" Column="12" TopLine="523"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="566" Column="12" TopLine="532"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="575" Column="42" TopLine="541"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="577" Column="10" TopLine="543"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="585" Column="12" TopLine="551"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="594" Column="12" TopLine="560"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="605" Column="12" TopLine="571"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="616" Column="12" TopLine="582"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="645" Column="10" TopLine="622"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="74" Column="14" TopLine="53"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="470" Column="12" TopLine="436"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="640" Column="12" TopLine="609"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="645" Column="12" TopLine="611"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimpleChartUnit.pas"/>
+        <Caret Line="549" Column="32" TopLine="528"/>
+      </Position23>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,982 @@
+object Form1: TForm1
+  Left = 407
+  Height = 670
+  Top = 122
+  Width = 720
+  Caption = 'TplSpiderGraph LAB demo'
+  ClientHeight = 670
+  ClientWidth = 720
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 400
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  LCLVersion = '6.2'
+  object GroupBox1: TGroupBox
+    Left = 200
+    Height = 169
+    Top = 8
+    Width = 113
+    Caption = '  Title  '
+    ClientHeight = 151
+    ClientWidth = 109
+    TabOrder = 0
+    object Label3: TLabel
+      Left = 6
+      Height = 13
+      Top = 84
+      Width = 56
+      Caption = 'titlePosition '
+      ParentColor = False
+    end
+    object Button1: TButton
+      Left = 16
+      Height = 21
+      Top = 20
+      Width = 81
+      Caption = 'Font ...'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Edit1: TEdit
+      Left = 16
+      Height = 21
+      Top = 48
+      Width = 81
+      BorderStyle = bsNone
+      OnChange = Edit1Change
+      TabOrder = 1
+      Text = '--- Title ---'
+    end
+    object RadioButton1: TRadioButton
+      Left = 22
+      Height = 19
+      Top = 100
+      Width = 54
+      Caption = 'qtpTop'
+      Checked = True
+      OnClick = RadioButton1Click
+      TabOrder = 2
+      TabStop = True
+    end
+    object RadioButton2: TRadioButton
+      Left = 22
+      Height = 19
+      Top = 120
+      Width = 68
+      Caption = 'qtpBottom'
+      OnClick = RadioButton1Click
+      TabOrder = 3
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 80
+    Top = 184
+    Width = 305
+    Caption = '  Axes  '
+    ClientHeight = 62
+    ClientWidth = 301
+    TabOrder = 1
+    object Label4: TLabel
+      Left = 32
+      Height = 13
+      Top = 0
+      Width = 49
+      Caption = 'axesColor '
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 144
+      Height = 13
+      Top = 0
+      Width = 50
+      Caption = 'axesCount'
+      ParentColor = False
+    end
+    object CheckBox1: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 33
+      Width = 75
+      Caption = 'polygonFill :'
+      OnClick = CheckBox1Click
+      TabOrder = 0
+    end
+    object Panel1: TPanel
+      Left = 85
+      Height = 20
+      Top = 32
+      Width = 50
+      ClientHeight = 20
+      ClientWidth = 50
+      TabOrder = 1
+      object Panel2: TPanel
+        Cursor = crHandPoint
+        Left = 1
+        Height = 15
+        Top = 2
+        Width = 43
+        BevelOuter = bvLowered
+        Color = clWhite
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel2Click
+      end
+    end
+    object Panel3: TPanel
+      Left = 85
+      Height = 20
+      Top = 0
+      Width = 50
+      ClientHeight = 20
+      ClientWidth = 50
+      TabOrder = 2
+      object Panel4: TPanel
+        Cursor = crHandPoint
+        Left = 3
+        Height = 15
+        Top = 2
+        Width = 43
+        BevelOuter = bvLowered
+        Color = 16711808
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel4Click
+      end
+    end
+    object SpinEdit1: TSpinEdit
+      Left = 208
+      Height = 21
+      Top = 0
+      Width = 49
+      MaxValue = 150
+      MinValue = 3
+      OnChange = SpinEdit1Change
+      TabOrder = 3
+      Value = 6
+    end
+    object CheckBox2: TCheckBox
+      Left = 144
+      Height = 19
+      Top = 33
+      Width = 118
+      Caption = 'axesCaptionsFramed'
+      OnClick = CheckBox2Click
+      TabOrder = 4
+    end
+    object Button7: TButton
+      Left = 264
+      Height = 41
+      Top = 16
+      Width = 33
+      Caption = 'Font'
+      OnClick = Button7Click
+      TabOrder = 5
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 8
+    Height = 169
+    Top = 8
+    Width = 185
+    Caption = '  General layout  '
+    ClientHeight = 151
+    ClientWidth = 181
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 8
+      Height = 13
+      Top = 13
+      Width = 68
+      Caption = 'borderStyle := '
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 8
+      Height = 13
+      Top = 80
+      Width = 86
+      Caption = 'backGroundColor '
+      Enabled = False
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 8
+      Height = 13
+      Top = 45
+      Width = 74
+      Caption = 'backGround := '
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 8
+      Height = 13
+      Top = 104
+      Width = 78
+      Caption = 'backGStartColor'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 8
+      Height = 13
+      Top = 128
+      Width = 81
+      Caption = 'backGFinalColor '
+      ParentColor = False
+    end
+    object ComboBox1: TComboBox
+      Left = 80
+      Height = 23
+      Top = 8
+      Width = 65
+      ItemHeight = 13
+      ItemIndex = 1
+      Items.Strings = (
+        'bsNone'
+        'bsFlat'
+        'bs3D'
+      )
+      OnChange = ComboBox1Change
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'bsFlat'
+    end
+    object Panel5: TPanel
+      Left = 111
+      Height = 17
+      Top = 78
+      Width = 50
+      ClientHeight = 17
+      ClientWidth = 50
+      TabOrder = 1
+      object Panel6: TPanel
+        Cursor = crHandPoint
+        Left = 3
+        Height = 10
+        Top = 3
+        Width = 43
+        BevelOuter = bvNone
+        Color = clSkyBlue
+        Enabled = False
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel6Click
+      end
+    end
+    object ComboBox2: TComboBox
+      Left = 80
+      Height = 23
+      Top = 40
+      Width = 97
+      ItemHeight = 13
+      ItemIndex = 2
+      Items.Strings = (
+        'bgTransparent'
+        'bgColored'
+        'bgTopBottom'
+        'bgBottomTop'
+        'bgLeftToRight'
+        'bgRightToLeft'
+      )
+      OnChange = ComboBox2Change
+      Style = csDropDownList
+      TabOrder = 2
+      Text = 'bgTopBottom'
+    end
+    object Panel7: TPanel
+      Left = 111
+      Height = 17
+      Top = 102
+      Width = 50
+      ClientHeight = 17
+      ClientWidth = 50
+      TabOrder = 3
+      object Panel8: TPanel
+        Cursor = crHandPoint
+        Left = 3
+        Height = 10
+        Top = 3
+        Width = 43
+        BevelOuter = bvLowered
+        Color = 15132390
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel8Click
+      end
+    end
+    object Panel9: TPanel
+      Left = 111
+      Height = 17
+      Top = 126
+      Width = 50
+      ClientHeight = 17
+      ClientWidth = 50
+      TabOrder = 4
+      object Panel10: TPanel
+        Cursor = crHandPoint
+        Left = 3
+        Height = 10
+        Top = 3
+        Width = 43
+        BevelOuter = bvLowered
+        Color = 13430271
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel10Click
+      end
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 8
+    Height = 377
+    Top = 264
+    Width = 305
+    Caption = '  Lines  '
+    ClientHeight = 359
+    ClientWidth = 301
+    TabOrder = 3
+    object Label14: TLabel
+      Left = 8
+      Height = 13
+      Top = 52
+      Width = 79
+      Caption = 'defaultPenWidth'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 38
+      Height = 57
+      Top = 296
+      Width = 245
+      AutoSize = False
+      Caption = 'All anchors set (Uncheck this to avoid flickering if the mouse box exceeds the form''s  dimensions or check it so that the graph is resized when the form is resized)'
+      ParentColor = False
+      WordWrap = True
+      OnClick = Label10Click
+    end
+    object Panel11: TPanel
+      Left = 213
+      Height = 20
+      Top = 25
+      Width = 50
+      ClientHeight = 20
+      ClientWidth = 50
+      TabOrder = 0
+      object Panel12: TPanel
+        Cursor = crHandPoint
+        Left = 3
+        Height = 15
+        Top = 2
+        Width = 43
+        BevelOuter = bvLowered
+        Color = clWhite
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel12Click
+      end
+    end
+    object CheckBox3: TCheckBox
+      Left = 6
+      Height = 19
+      Top = 25
+      Width = 206
+      Caption = 'linesBoxTransparent or linesBoxColor ->'
+      OnClick = CheckBox3Click
+      TabOrder = 1
+    end
+    object CheckBox4: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 0
+      Width = 111
+      Caption = 'showLinesCaptions'
+      Checked = True
+      OnClick = CheckBox4Click
+      State = cbChecked
+      TabOrder = 2
+    end
+    object SpinEdit2: TSpinEdit
+      Left = 93
+      Height = 21
+      Top = 48
+      Width = 50
+      MaxValue = 0
+      OnChange = SpinEdit2Change
+      TabOrder = 3
+    end
+    object CheckBox8: TCheckBox
+      Left = 160
+      Height = 19
+      Top = 0
+      Width = 99
+      Caption = 'showLinesPoints'
+      OnClick = CheckBox8Click
+      TabOrder = 4
+    end
+    object GroupBox6: TGroupBox
+      Left = 152
+      Height = 115
+      Top = 168
+      Width = 137
+      Caption = ' .highlightMode '
+      ClientHeight = 97
+      ClientWidth = 133
+      TabOrder = 5
+      object CheckBox9: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 16
+        Width = 90
+        Caption = 'hmShowPoints'
+        Checked = True
+        OnClick = CheckBox9Click
+        State = cbChecked
+        TabOrder = 0
+      end
+      object CheckBox10: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 32
+        Width = 77
+        Caption = 'hmWidened'
+        OnClick = CheckBox9Click
+        TabOrder = 1
+      end
+      object CheckBox11: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 48
+        Width = 93
+        Caption = 'hmColorLine  ->'
+        OnClick = CheckBox9Click
+        TabOrder = 2
+      end
+      object CheckBox12: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 64
+        Width = 94
+        Caption = 'hmFlashLine  ->'
+        Checked = True
+        OnClick = CheckBox9Click
+        State = cbChecked
+        TabOrder = 3
+      end
+      object Panel17: TPanel
+        Left = 105
+        Height = 32
+        Top = 48
+        Width = 17
+        ClientHeight = 32
+        ClientWidth = 17
+        TabOrder = 4
+        object Panel18: TPanel
+          Cursor = crHandPoint
+          Left = 2
+          Height = 26
+          Top = 3
+          Width = 12
+          BevelOuter = bvLowered
+          Color = clYellow
+          ParentColor = False
+          TabOrder = 0
+          OnClick = Panel18Click
+        end
+      end
+    end
+    object GroupBox7: TGroupBox
+      Left = 11
+      Height = 122
+      Top = 160
+      Width = 134
+      Caption = ' .HighlightBy '
+      ClientHeight = 104
+      ClientWidth = 130
+      TabOrder = 6
+      object SpeedButton1: TSpeedButton
+        Left = 16
+        Height = 17
+        Top = 120
+        Width = 49
+        Caption = 'Apply !'
+        OnClick = SpeedButton1Click
+      end
+      object SpeedButton2: TSpeedButton
+        Left = 64
+        Height = 17
+        Top = 120
+        Width = 49
+        Caption = 'Reset'
+        OnClick = SpeedButton2Click
+      end
+      object Label15: TLabel
+        Left = 8
+        Height = 30
+        Top = 5
+        Width = 113
+        Alignment = taCenter
+        AutoSize = False
+        Caption = '(uses above "best" definition too)'
+        Color = clBtnFace
+        Font.Color = clTeal
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentColor = False
+        ParentFont = False
+        Transparent = False
+        WordWrap = True
+      end
+      object RadioButton3: TRadioButton
+        Left = 8
+        Height = 19
+        Top = 32
+        Width = 72
+        Caption = 'HC_NONE'
+        TabOrder = 0
+      end
+      object RadioButton4: TRadioButton
+        Left = 8
+        Height = 19
+        Top = 48
+        Width = 70
+        Caption = 'HC_AREA'
+        Checked = True
+        TabOrder = 1
+        TabStop = True
+      end
+      object RadioButton5: TRadioButton
+        Left = 8
+        Height = 19
+        Top = 64
+        Width = 72
+        Caption = 'Axe index :'
+        TabOrder = 2
+      end
+      object SpinEdit3: TSpinEdit
+        Left = 84
+        Height = 21
+        Top = 69
+        Width = 41
+        MaxValue = 0
+        TabOrder = 3
+      end
+      object RadioButton8: TRadioButton
+        Left = 8
+        Height = 19
+        Top = 80
+        Width = 74
+        Caption = 'Line index :'
+        TabOrder = 4
+      end
+    end
+    object GroupBox8: TGroupBox
+      Left = 10
+      Height = 80
+      Top = 80
+      Width = 273
+      Caption = ' GetBest(s) line(s)  '
+      ClientHeight = 62
+      ClientWidth = 269
+      TabOrder = 7
+      object Label12: TLabel
+        Left = 24
+        Height = 13
+        Top = 16
+        Width = 65
+        Caption = '"best" being :'
+        Font.Color = clTeal
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentColor = False
+        ParentFont = False
+      end
+      object RadioButton6: TRadioButton
+        Left = 8
+        Height = 19
+        Top = 34
+        Width = 39
+        Caption = 'max'
+        Checked = True
+        Font.Color = clTeal
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+        TabOrder = 0
+        TabStop = True
+      end
+      object RadioButton7: TRadioButton
+        Left = 56
+        Height = 19
+        Top = 34
+        Width = 51
+        Caption = ' or min'
+        Font.Color = clTeal
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+        TabOrder = 1
+      end
+      object Button4: TButton
+        Left = 137
+        Height = 25
+        Top = 5
+        Width = 83
+        Caption = 'by area'
+        OnClick = Button4Click
+        TabOrder = 2
+      end
+      object Button5: TButton
+        Left = 136
+        Height = 25
+        Top = 32
+        Width = 85
+        Caption = 'by axe :'
+        OnClick = Button5Click
+        TabOrder = 3
+      end
+      object Edit3: TEdit
+        Left = 228
+        Height = 21
+        Top = 34
+        Width = 33
+        TabOrder = 4
+        Text = '0'
+      end
+    end
+    object Button8: TButton
+      Left = 208
+      Height = 25
+      Top = 48
+      Width = 75
+      Caption = 'Font ...'
+      OnClick = Button8Click
+      TabOrder = 8
+    end
+    object CheckBox14: TCheckBox
+      Left = 14
+      Height = 19
+      Top = 296
+      Width = 20
+      Checked = True
+      OnClick = CheckBox14Click
+      State = cbChecked
+      TabOrder = 9
+    end
+  end
+  object GroupBox5: TGroupBox
+    Left = 320
+    Height = 186
+    Top = 8
+    Width = 384
+    Caption = '  Tracking mouse  '
+    ClientHeight = 168
+    ClientWidth = 380
+    TabOrder = 4
+    object Label17: TLabel
+      Left = 232
+      Height = 13
+      Top = 49
+      Width = 75
+      Caption = 'mBoxBackColor'
+      ParentColor = False
+    end
+    object Label16: TLabel
+      Left = 130
+      Height = 13
+      Top = 85
+      Width = 92
+      Caption = 'or mBoxforColor  -> '
+      ParentColor = False
+    end
+    object Label18: TLabel
+      Left = 8
+      Height = 13
+      Top = 49
+      Width = 222
+      Caption = 'The mouse info box uses  a background color :'
+      ParentColor = False
+    end
+    object Label19: TLabel
+      Left = 24
+      Height = 13
+      Top = 64
+      Width = 249
+      Caption = 'and either the lines color as forecolor, or a fixed one :'
+      ParentColor = False
+    end
+    object Label21: TLabel
+      Left = 8
+      Height = 17
+      Top = 112
+      Width = 81
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Mouse events :'
+      Font.Color = clGray
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object CheckBox5: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 6
+      Width = 108
+      Caption = 'trackMouseMoves'
+      Checked = True
+      OnClick = CheckBox5Click
+      State = cbChecked
+      TabOrder = 0
+    end
+    object CheckBox6: TCheckBox
+      Left = 152
+      Height = 19
+      Top = 6
+      Width = 116
+      Caption = 'and showMouseBox'
+      Checked = True
+      OnClick = CheckBox6Click
+      State = cbChecked
+      TabOrder = 1
+    end
+    object Panel15: TPanel
+      Left = 326
+      Height = 20
+      Top = 48
+      Width = 50
+      ClientHeight = 20
+      ClientWidth = 50
+      TabOrder = 2
+      object Panel16: TPanel
+        Cursor = crHandPoint
+        Left = 3
+        Height = 15
+        Top = 2
+        Width = 43
+        BevelOuter = bvLowered
+        Color = clInfoBk
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel16Click
+      end
+    end
+    object CheckBox7: TCheckBox
+      Left = 24
+      Height = 19
+      Top = 84
+      Width = 91
+      Caption = 'usesLinesColor'
+      Checked = True
+      OnClick = CheckBox7Click
+      State = cbChecked
+      TabOrder = 3
+    end
+    object Panel13: TPanel
+      Left = 221
+      Height = 20
+      Top = 82
+      Width = 50
+      ClientHeight = 20
+      ClientWidth = 50
+      TabOrder = 4
+      object Panel14: TPanel
+        Cursor = crHandPoint
+        Left = 3
+        Height = 15
+        Top = 2
+        Width = 43
+        BevelOuter = bvLowered
+        Color = clBlack
+        ParentColor = False
+        TabOrder = 0
+        OnClick = Panel14Click
+      end
+    end
+    object Memo1: TMemo
+      Left = 96
+      Height = 54
+      Top = 112
+      Width = 270
+      BorderStyle = bsNone
+      ScrollBars = ssVertical
+      TabOrder = 5
+    end
+    object Button6: TButton
+      Left = 16
+      Height = 21
+      Top = 128
+      Width = 73
+      Caption = '( Empty )'
+      OnClick = Button6Click
+      TabOrder = 6
+    end
+    object CheckBox13: TCheckBox
+      Left = 152
+      Height = 19
+      Top = 22
+      Width = 178
+      Caption = 'mouse box parent = the form itself'
+      Checked = True
+      OnClick = CheckBox13Click
+      State = cbChecked
+      TabOrder = 7
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 647
+    Width = 720
+    Panels = <    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object QSpiderGraph1: TplSpiderGraph
+    Left = 320
+    Height = 352
+    Top = 240
+    Width = 392
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    polygonFill = False
+    polygonColor = clWhite
+    axesColor = 16711808
+    axesCount = 6
+    axesCaptionsFramed = False
+    axesAutoSized = False
+    borderStyle = bsFlat
+    backGround = bgTopBottom
+    backGroundColor = clSkyBlue
+    backGStartColor = 15132390
+    backGFinalColor = 13430271
+    titleCaption = '--- Title ---'
+    titlePosition = qtpTop
+    defaultPenWidth = 2
+    showMouseBox = True
+    mBoxForColor = clBlack
+    mBoxBackColor = clInfoBk
+    mBoxUsesLnColor = True
+    showLinesCaption = True
+    linesBoxTransparent = False
+    linesBoxColor = clWhite
+    highlightColor = clYellow
+    trackMouseMoves = True
+    OnMouseEnterLine = QSpiderGraph1MouseEnterLine
+    OnMouseExitLine = QSpiderGraph1MouseExitLine
+  end
+  object Button2: TButton
+    Left = 328
+    Height = 25
+    Top = 200
+    Width = 97
+    Caption = 'AddLine();'
+    Font.Color = clGreen
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Button3: TButton
+    Left = 432
+    Height = 25
+    Top = 200
+    Width = 120
+    Caption = 'Remove Line No ->'
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Edit2: TEdit
+    Left = 560
+    Height = 21
+    Top = 200
+    Width = 32
+    TabOrder = 9
+    Text = '0'
+  end
+  object Button10: TButton
+    Left = 464
+    Height = 25
+    Top = 608
+    Width = 113
+    Anchors = [akLeft, akBottom]
+    Caption = 'Save2File ( Jpeg )'
+    OnClick = Button10Click
+    TabOrder = 10
+  end
+  object Button9: TButton
+    Left = 328
+    Height = 25
+    Top = 608
+    Width = 113
+    Anchors = [akLeft, akBottom]
+    Caption = 'Save2File (32b bmp)'
+    OnClick = Button9Click
+    TabOrder = 11
+  end
+  object Button11: TButton
+    Left = 600
+    Height = 30
+    Top = 608
+    Width = 75
+    Caption = 'Exit'
+    OnClick = Button11Click
+    TabOrder = 12
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 120
+  end
+  object FontDialog1: TFontDialog
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 152
+  end
+  object FontDialog2: TFontDialog
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 184
+  end
+  object FontDialog3: TFontDialog
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 168
+  end
+end

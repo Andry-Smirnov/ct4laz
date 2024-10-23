@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 349
+  Height = 240
+  Top = 231
+  Width = 320
+  Caption = 'TplScrollbar Demo'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '6.2'
+  object plScrollbar1: TplScrollbar
+    Left = 24
+    Height = 12
+    Top = 32
+    Width = 150
+    ParentColor = False
+  end
+  object plCheckBox1: TplCheckBox
+    Left = 192
+    Height = 17
+    Top = 32
+    Width = 121
+    Caption = 'Horizontal'
+    Checked = True
+    Color = clBtnFace
+    Font.Color = clBlack
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    TabStop = True
+    OnClick = plCheckBox1Click
+  end
+  object plButton1: TplButton
+    Left = 248
+    Height = 23
+    Top = 200
+    Width = 60
+    Caption = 'Exit'
+    Glyph.Data = {
+      00000000
+    }
+    Layout = blGlyphLeft
+    ParentColor = False
+    TabOrder = 2
+    OnClick = plButton1Click
+  end
+  object plScrollbar2: TplScrollbar
+    Left = 112
+    Height = 152
+    Top = 56
+    Width = 12
+    Kind = sbVertical
+    ParentColor = False
+  end
+end

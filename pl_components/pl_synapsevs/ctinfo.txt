@@ -1,0 +1,14 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_SynapseVS
+
+Version: 6.7.1 Date: 2020-05-12 08:57
+
+
+
+
+

@@ -1,0 +1,801 @@
+object Form1: TForm1
+  Left = 292
+  Height = 452
+  Top = 216
+  Width = 934
+  Caption = 'TpMultiGraph LAB Demo 1 '
+  ClientHeight = 452
+  ClientWidth = 934
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  LCLVersion = '6.2'
+  object Image1: TImage
+    Left = 200
+    Height = 105
+    Top = 16
+    Width = 257
+  end
+  object Image2: TImage
+    Left = 472
+    Height = 105
+    Top = 16
+    Width = 257
+  end
+  object Image3: TImage
+    Left = 200
+    Height = 105
+    Top = 152
+    Width = 257
+  end
+  object Image4: TImage
+    Left = 472
+    Height = 105
+    Top = 152
+    Width = 257
+  end
+  object Image5: TImage
+    Left = 200
+    Height = 105
+    Top = 280
+    Width = 257
+  end
+  object Image6: TImage
+    Left = 472
+    Height = 105
+    Top = 280
+    Width = 257
+  end
+  object Label12: TLabel
+    Left = 24
+    Height = 27
+    Top = 408
+    Width = 255
+    Caption = 'CodeTyphon TplMultiGraph LAB test project '#13#10' -build graphs with hard-code way'
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnStartStopTest: TButton
+    Left = 456
+    Height = 33
+    Top = 407
+    Width = 153
+    Caption = 'Start/Stop Test'
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    OnClick = btnStartStopTestClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 120
+    Top = 16
+    Width = 185
+    Caption = 'RAG1 (Demo: GraphType)'
+    ClientHeight = 102
+    ClientWidth = 181
+    TabOrder = 1
+    object Label3: TLabel
+      Left = 9
+      Height = 14
+      Top = 16
+      Width = 37
+      Caption = 'Length:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 9
+      Height = 14
+      Top = 32
+      Width = 28
+      Caption = 'Type:'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 9
+      Height = 14
+      Top = 48
+      Width = 41
+      Caption = 'XScalar:'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 9
+      Height = 14
+      Top = 64
+      Width = 67
+      Caption = 'GridStepHorz:'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 9
+      Height = 14
+      Top = 80
+      Width = 64
+      Caption = 'GridStepVert:'
+      ParentColor = False
+    end
+    object Label1: TLabel
+      Left = 38
+      Height = 14
+      Top = 32
+      Width = 72
+      Caption = 'gtBarsAbsolute'
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 46
+      Height = 14
+      Top = 16
+      Width = 19
+      Caption = '125'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 54
+      Height = 14
+      Top = 48
+      Width = 7
+      Caption = '2'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 78
+      Height = 14
+      Top = 64
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label11: TLabel
+      Left = 78
+      Height = 14
+      Top = 80
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label15: TLabel
+      Left = 152
+      Height = 14
+      Top = 16
+      Width = 7
+      Caption = '1'
+      ParentColor = False
+    end
+    object Label14: TLabel
+      Left = 104
+      Height = 14
+      Top = 16
+      Width = 38
+      Caption = 'Graphs:'
+      ParentColor = False
+    end
+    object pnlRAG1GridColor: TPanel
+      Left = 136
+      Height = 17
+      Top = 72
+      Width = 17
+      Color = clGray
+      ParentColor = False
+      TabOrder = 0
+      OnClick = pnlRAG1GridColorClick
+    end
+    object pnlRAG1BackColor: TPanel
+      Left = 112
+      Height = 17
+      Top = 72
+      Width = 17
+      Color = clWhite
+      ParentColor = False
+      TabOrder = 1
+      OnClick = pnlRAG1BackColorClick
+    end
+    object pnlRAG1GraphColor: TPanel
+      Left = 160
+      Height = 17
+      Top = 72
+      Width = 17
+      Color = clBlue
+      ParentColor = False
+      TabOrder = 2
+      OnClick = pnlRAG1GraphColorClick
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 736
+    Height = 121
+    Top = 16
+    Width = 185
+    Caption = 'RAG2 (Demo: GraphType; GridStep)'
+    ClientHeight = 103
+    ClientWidth = 181
+    TabOrder = 2
+    object Label16: TLabel
+      Left = 9
+      Height = 14
+      Top = 16
+      Width = 37
+      Caption = 'Length:'
+      ParentColor = False
+    end
+    object Label17: TLabel
+      Left = 9
+      Height = 14
+      Top = 32
+      Width = 28
+      Caption = 'Type:'
+      ParentColor = False
+    end
+    object Label18: TLabel
+      Left = 9
+      Height = 14
+      Top = 48
+      Width = 41
+      Caption = 'XScalar:'
+      ParentColor = False
+    end
+    object Label19: TLabel
+      Left = 9
+      Height = 14
+      Top = 64
+      Width = 67
+      Caption = 'GridStepHorz:'
+      ParentColor = False
+    end
+    object Label20: TLabel
+      Left = 9
+      Height = 14
+      Top = 80
+      Width = 64
+      Caption = 'GridStepVert:'
+      ParentColor = False
+    end
+    object Label21: TLabel
+      Left = 38
+      Height = 14
+      Top = 32
+      Width = 70
+      Caption = 'gtBarsRelative'
+      ParentColor = False
+    end
+    object Label22: TLabel
+      Left = 46
+      Height = 14
+      Top = 16
+      Width = 19
+      Caption = '125'
+      ParentColor = False
+    end
+    object Label23: TLabel
+      Left = 54
+      Height = 14
+      Top = 48
+      Width = 7
+      Caption = '2'
+      ParentColor = False
+    end
+    object Label24: TLabel
+      Left = 78
+      Height = 14
+      Top = 64
+      Width = 13
+      Caption = '20'
+      ParentColor = False
+    end
+    object Label25: TLabel
+      Left = 78
+      Height = 14
+      Top = 80
+      Width = 13
+      Caption = '40'
+      ParentColor = False
+    end
+    object Label26: TLabel
+      Left = 152
+      Height = 14
+      Top = 16
+      Width = 7
+      Caption = '1'
+      ParentColor = False
+    end
+    object Label27: TLabel
+      Left = 104
+      Height = 14
+      Top = 16
+      Width = 38
+      Caption = 'Graphs:'
+      ParentColor = False
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 8
+    Height = 120
+    Top = 152
+    Width = 185
+    Caption = 'RAG3 (Demo: BackColor; GridColor)'
+    ClientHeight = 102
+    ClientWidth = 181
+    TabOrder = 3
+    object Label2: TLabel
+      Left = 9
+      Height = 14
+      Top = 16
+      Width = 37
+      Caption = 'Length:'
+      ParentColor = False
+    end
+    object Label28: TLabel
+      Left = 9
+      Height = 14
+      Top = 32
+      Width = 28
+      Caption = 'Type:'
+      ParentColor = False
+    end
+    object Label29: TLabel
+      Left = 9
+      Height = 14
+      Top = 48
+      Width = 41
+      Caption = 'XScalar:'
+      ParentColor = False
+    end
+    object Label30: TLabel
+      Left = 9
+      Height = 14
+      Top = 64
+      Width = 67
+      Caption = 'GridStepHorz:'
+      ParentColor = False
+    end
+    object Label31: TLabel
+      Left = 9
+      Height = 14
+      Top = 80
+      Width = 64
+      Caption = 'GridStepVert:'
+      ParentColor = False
+    end
+    object Label32: TLabel
+      Left = 38
+      Height = 14
+      Top = 32
+      Width = 35
+      Caption = 'gtLines'
+      ParentColor = False
+    end
+    object Label33: TLabel
+      Left = 46
+      Height = 14
+      Top = 16
+      Width = 19
+      Caption = '125'
+      ParentColor = False
+    end
+    object Label34: TLabel
+      Left = 54
+      Height = 14
+      Top = 48
+      Width = 7
+      Caption = '2'
+      ParentColor = False
+    end
+    object Label35: TLabel
+      Left = 78
+      Height = 14
+      Top = 64
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label36: TLabel
+      Left = 78
+      Height = 14
+      Top = 80
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label37: TLabel
+      Left = 152
+      Height = 14
+      Top = 16
+      Width = 7
+      Caption = '2'
+      ParentColor = False
+    end
+    object Label38: TLabel
+      Left = 104
+      Height = 14
+      Top = 16
+      Width = 38
+      Caption = 'Graphs:'
+      ParentColor = False
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 736
+    Height = 120
+    Top = 152
+    Width = 185
+    Caption = 'RAG4 (Demo: Length; XScalar)'
+    ClientHeight = 102
+    ClientWidth = 181
+    TabOrder = 4
+    object Label39: TLabel
+      Left = 9
+      Height = 14
+      Top = 8
+      Width = 37
+      Caption = 'Length:'
+      ParentColor = False
+    end
+    object Label40: TLabel
+      Left = 9
+      Height = 14
+      Top = 32
+      Width = 28
+      Caption = 'Type:'
+      ParentColor = False
+    end
+    object Label41: TLabel
+      Left = 9
+      Height = 14
+      Top = 48
+      Width = 41
+      Caption = 'XScalar:'
+      ParentColor = False
+    end
+    object Label42: TLabel
+      Left = 9
+      Height = 14
+      Top = 64
+      Width = 67
+      Caption = 'GridStepHorz:'
+      ParentColor = False
+    end
+    object Label43: TLabel
+      Left = 9
+      Height = 14
+      Top = 80
+      Width = 64
+      Caption = 'GridStepVert:'
+      ParentColor = False
+    end
+    object Label44: TLabel
+      Left = 38
+      Height = 14
+      Top = 32
+      Width = 35
+      Caption = 'gtLines'
+      ParentColor = False
+    end
+    object Label45: TLabel
+      Left = 46
+      Height = 14
+      Top = 8
+      Width = 13
+      Caption = '63'
+      ParentColor = False
+    end
+    object Label46: TLabel
+      Left = 54
+      Height = 14
+      Top = 48
+      Width = 7
+      Caption = '4'
+      ParentColor = False
+    end
+    object Label47: TLabel
+      Left = 78
+      Height = 14
+      Top = 64
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label48: TLabel
+      Left = 78
+      Height = 14
+      Top = 80
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label49: TLabel
+      Left = 152
+      Height = 14
+      Top = 8
+      Width = 7
+      Caption = '1'
+      ParentColor = False
+    end
+    object Label50: TLabel
+      Left = 104
+      Height = 14
+      Top = 8
+      Width = 38
+      Caption = 'Graphs:'
+      ParentColor = False
+    end
+  end
+  object GroupBox5: TGroupBox
+    Left = 8
+    Height = 121
+    Top = 280
+    Width = 185
+    Caption = 'RAG5 (Demo: Graphs; AddValues)'
+    ClientHeight = 103
+    ClientWidth = 181
+    TabOrder = 5
+    object Label51: TLabel
+      Left = 9
+      Height = 14
+      Top = 16
+      Width = 37
+      Caption = 'Length:'
+      ParentColor = False
+    end
+    object Label52: TLabel
+      Left = 9
+      Height = 14
+      Top = 32
+      Width = 28
+      Caption = 'Type:'
+      ParentColor = False
+    end
+    object Label53: TLabel
+      Left = 9
+      Height = 14
+      Top = 48
+      Width = 41
+      Caption = 'XScalar:'
+      ParentColor = False
+    end
+    object Label54: TLabel
+      Left = 9
+      Height = 14
+      Top = 64
+      Width = 67
+      Caption = 'GridStepHorz:'
+      ParentColor = False
+    end
+    object Label55: TLabel
+      Left = 9
+      Height = 14
+      Top = 80
+      Width = 64
+      Caption = 'GridStepVert:'
+      ParentColor = False
+    end
+    object Label56: TLabel
+      Left = 38
+      Height = 14
+      Top = 32
+      Width = 35
+      Caption = 'gtLines'
+      ParentColor = False
+    end
+    object Label57: TLabel
+      Left = 46
+      Height = 14
+      Top = 16
+      Width = 19
+      Caption = '125'
+      ParentColor = False
+    end
+    object Label58: TLabel
+      Left = 54
+      Height = 14
+      Top = 48
+      Width = 7
+      Caption = '2'
+      ParentColor = False
+    end
+    object Label59: TLabel
+      Left = 78
+      Height = 14
+      Top = 64
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label60: TLabel
+      Left = 78
+      Height = 14
+      Top = 80
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label61: TLabel
+      Left = 152
+      Height = 14
+      Top = 16
+      Width = 7
+      Caption = '4'
+      ParentColor = False
+    end
+    object Label62: TLabel
+      Left = 104
+      Height = 14
+      Top = 16
+      Width = 38
+      Caption = 'Graphs:'
+      ParentColor = False
+    end
+  end
+  object GroupBox6: TGroupBox
+    Left = 736
+    Height = 129
+    Top = 280
+    Width = 185
+    Caption = 'RAG6 (Demo: Graphs; AddValue)'
+    ClientHeight = 111
+    ClientWidth = 181
+    TabOrder = 6
+    object Label63: TLabel
+      Left = 9
+      Height = 14
+      Top = 16
+      Width = 37
+      Caption = 'Length:'
+      ParentColor = False
+    end
+    object Label64: TLabel
+      Left = 9
+      Height = 14
+      Top = 32
+      Width = 28
+      Caption = 'Type:'
+      ParentColor = False
+    end
+    object Label65: TLabel
+      Left = 9
+      Height = 14
+      Top = 48
+      Width = 41
+      Caption = 'XScalar:'
+      ParentColor = False
+    end
+    object Label66: TLabel
+      Left = 9
+      Height = 14
+      Top = 64
+      Width = 67
+      Caption = 'GridStepHorz:'
+      ParentColor = False
+    end
+    object Label67: TLabel
+      Left = 9
+      Height = 14
+      Top = 80
+      Width = 64
+      Caption = 'GridStepVert:'
+      ParentColor = False
+    end
+    object Label68: TLabel
+      Left = 38
+      Height = 14
+      Top = 32
+      Width = 35
+      Caption = 'gtLines'
+      ParentColor = False
+    end
+    object Label69: TLabel
+      Left = 46
+      Height = 14
+      Top = 16
+      Width = 19
+      Caption = '125'
+      ParentColor = False
+    end
+    object Label70: TLabel
+      Left = 54
+      Height = 14
+      Top = 48
+      Width = 7
+      Caption = '2'
+      ParentColor = False
+    end
+    object Label71: TLabel
+      Left = 78
+      Height = 14
+      Top = 64
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label72: TLabel
+      Left = 78
+      Height = 14
+      Top = 80
+      Width = 13
+      Caption = '10'
+      ParentColor = False
+    end
+    object Label73: TLabel
+      Left = 152
+      Height = 14
+      Top = 16
+      Width = 7
+      Caption = '4'
+      ParentColor = False
+    end
+    object Label74: TLabel
+      Left = 104
+      Height = 14
+      Top = 16
+      Width = 38
+      Caption = 'Graphs:'
+      ParentColor = False
+    end
+  end
+  object Button4: TButton
+    Left = 632
+    Height = 25
+    Top = 408
+    Width = 75
+    Caption = 'Single Step'
+    Enabled = False
+    OnClick = Button4Click
+    TabOrder = 7
+  end
+  object Button1: TButton
+    Left = 840
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'Change Type'
+    OnClick = Button1Click
+    TabOrder = 8
+  end
+  object Button2: TButton
+    Left = 323
+    Height = 34
+    Top = 407
+    Width = 85
+    Caption = 'Exit'
+    OnClick = Button2Click
+    TabOrder = 9
+  end
+  object tmrTest: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = tmrTestTimer
+    left = 200
+  end
+  object dlgColor: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 232
+  end
+end

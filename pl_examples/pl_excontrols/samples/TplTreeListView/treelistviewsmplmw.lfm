@@ -1,0 +1,60 @@
+object Form1: TForm1
+  Left = 996
+  Height = 485
+  Top = 812
+  Width = 624
+  Caption = 'Form1'
+  ClientHeight = 485
+  ClientWidth = 624
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.4'
+  object TreeListView1: TplTreeListView
+    Left = 0
+    Height = 485
+    Top = 0
+    Width = 624
+    Options = [tlvoToolTips, tlvoRightMouseSelects, tlvoStriped]
+    Columns = <    
+      item
+        Alignment = taLeftJustify
+        Width = 1000
+        Visible = True
+      end>
+    RowHeight = 16
+    HorizontalLineMode = lmNone
+    HorizontalLineColor = clWindowFrame
+    VerticalLineMode = lmDot
+    VerticalLineColor = clWindowFrame
+    RootLineMode = lmDot
+    RootLineColor = clWindowFrame
+    ColorSearchMark = clAqua
+    ColorSearchMarkField = 16744320
+    ExpandMode = emExpandByClick
+    HotTrackFont.Color = clBlue
+    HotTrackFont.Style = [fsUnderline]
+    SelectedFont.Color = clHighlightText
+    SelectedHotTrackFont.Color = clHighlightText
+    SelectedHotTrackFont.Style = [fsBold, fsUnderline]
+    StripedOddColor = clWindow
+    StripedEvenColor = 14745599
+    SelectBackColor = clHighlight
+    ButtonColor = clWindow
+    BackGroundColor = clWindow
+    Scrollbars = ssBoth
+    HeaderVisible = True
+    OnClickAtItem = TreeListView1ClickAtItem
+    Font.Color = clWindowText
+    TabOrder = 0
+    Align = alClient
+  end
+  object ImageList: TImageList
+    Left = 464
+    Top = 40
+  end
+  object pmenu: TPopupMenu
+    Left = 455
+    Top = 120
+  end
+end

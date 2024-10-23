@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="pl_excontrols"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="25">
+      <Unit0>
+        <Filename Value="gallery1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="gallery1"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="12"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainwin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mainwin"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="38" Y="9"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <UnitName Value="TplGalleryUnit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="758"/>
+        <CursorPos X="22" Y="90"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\typhon\lcl\lmessages.pp"/>
+        <UnitName Value="LMessages"/>
+        <TopLine Value="131"/>
+        <CursorPos X="3" Y="154"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\typhon\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <TopLine Value="129"/>
+        <CursorPos X="3" Y="152"/>
+        <UsageCount Value="11"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\pp\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="1764"/>
+        <CursorPos X="10" Y="1787"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\typhon\lcl\include\winapih.inc"/>
+        <TopLine Value="182"/>
+        <CursorPos X="10" Y="206"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\typhon\lcl\extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <TopLine Value="295"/>
+        <CursorPos X="24" Y="318"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\typhon\lcl\customtimer.pas"/>
+        <UnitName Value="CustomTimer"/>
+        <TopLine Value="171"/>
+        <CursorPos X="1" Y="207"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplPaintGridUnit.pas"/>
+        <UnitName Value="TplPaintGridUnit"/>
+        <TopLine Value="327"/>
+        <CursorPos X="33" Y="351"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\typhon\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <TopLine Value="172"/>
+        <CursorPos X="5" Y="189"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplKnobUnit.pas"/>
+        <UnitName Value="TplKnobUnit"/>
+        <TopLine Value="366"/>
+        <CursorPos X="30" Y="336"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplGradientUnit.pas"/>
+        <UnitName Value="TplGradientUnit"/>
+        <TopLine Value="391"/>
+        <CursorPos X="3" Y="398"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplColorPanelUnit.pas"/>
+        <UnitName Value="TplColorPanelUnit"/>
+        <TopLine Value="121"/>
+        <CursorPos X="48" Y="132"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplSpiderGraphUnit.pas"/>
+        <UnitName Value="TplSpiderGraphUnit"/>
+        <TopLine Value="187"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <UnitName Value="TplScopeUnit"/>
+        <TopLine Value="257"/>
+        <CursorPos X="21" Y="280"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplLEDIndicatorUnit.pas"/>
+        <UnitName Value="TplLEDIndicatorUnit"/>
+        <TopLine Value="105"/>
+        <CursorPos X="33" Y="122"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\typhon\lcl\include\custombitmap.inc"/>
+        <TopLine Value="276"/>
+        <CursorPos X="32" Y="291"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplSideBarUnit.pas"/>
+        <UnitName Value="TplSideBarUnit"/>
+        <TopLine Value="1177"/>
+        <CursorPos X="30" Y="1212"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplMultiGraphUnit.pas"/>
+        <UnitName Value="TplMultiGraphUnit"/>
+        <TopLine Value="302"/>
+        <CursorPos X="31" Y="326"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplGnouMeterUnit.pas"/>
+        <UnitName Value="TplGnouMeterUnit"/>
+        <TopLine Value="369"/>
+        <CursorPos X="30" Y="395"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplA3nalogGaugeUnit.pas"/>
+        <UnitName Value="TplA3nalogGaugeUnit"/>
+        <TopLine Value="444"/>
+        <CursorPos X="33" Y="468"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplColorProgressUnit.pas"/>
+        <UnitName Value="TplColorProgressUnit"/>
+        <TopLine Value="85"/>
+        <CursorPos X="34" Y="109"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\typhon\lcl\include\rasterimage.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="282"/>
+        <CursorPos X="1" Y="305"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <UnitName Value="TplGalleryUnit"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="17" Y="9"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit24>
+    </Units>
+    <JumpHistory Count="23" HistoryIndex="22">
+      <Position1>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="48" Column="64" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="107" Column="3" TopLine="87"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="108" Column="27" TopLine="88"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="51" Column="64" TopLine="28"/>
+      </Position4>
+      <Position5>
+        <Filename Value="gallery1.lpr"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="gallery1.lpr"/>
+        <Caret Line="12" Column="1" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="9" Column="38" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="24" Column="30" TopLine="1"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="94" Column="27" TopLine="59"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="223" Column="15" TopLine="188"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="227" Column="34" TopLine="192"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="656" Column="15" TopLine="621"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="682" Column="15" TopLine="647"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="94" Column="27" TopLine="75"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="223" Column="15" TopLine="188"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="258" Column="39" TopLine="229"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="29" Column="59" TopLine="16"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="95" Column="27" TopLine="60"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="226" Column="15" TopLine="191"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="10" Column="3" TopLine="1"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="32" Column="25" TopLine="11"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="189" Column="24" TopLine="169"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGalleryUnit.pas"/>
+        <Caret Line="732" Column="21" TopLine="707"/>
+      </Position23>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+  <EditorMacros Count="0"/>
+</CONFIG>

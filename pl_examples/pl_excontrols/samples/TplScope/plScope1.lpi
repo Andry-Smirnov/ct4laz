@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="pl_excontrols"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="plScope1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="plScope1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="17" Y="10"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainwin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mainwin"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="52" Y="5"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <UnitName Value="TplScopeUnit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="53"/>
+        <CursorPos X="14" Y="53"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <UnitName Value="TplScopeUnit"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="181"/>
+        <CursorPos X="1" Y="321"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="mainwin.frm"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="204"/>
+        <CursorPos X="37" Y="224"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="FRM"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplGaugeUnit.pas"/>
+        <UnitName Value="TplGaugeUnit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="37"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplSimplePieUnit.pas"/>
+        <UnitName Value="TplSimplePieUnit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="4"/>
+        <CursorPos X="31" Y="57"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="25" HistoryIndex="24">
+      <Position1>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="54" Column="18" TopLine="6"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="30" Column="5" TopLine="6"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="31" Column="48" TopLine="31"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="63" Column="63" TopLine="41"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="22" Column="20" TopLine="22"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="34" Column="48" TopLine="22"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="61" Column="21" TopLine="43"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="34" Column="48" TopLine="11"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="23" Column="20" TopLine="11"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="37" Column="48" TopLine="11"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="55" Column="3" TopLine="42"/>
+      </Position11>
+      <Position12>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="59" Column="3" TopLine="16"/>
+      </Position12>
+      <Position13>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="36" Column="5" TopLine="16"/>
+      </Position13>
+      <Position14>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="118" Column="35" TopLine="77"/>
+      </Position14>
+      <Position15>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="26" Column="20" TopLine="26"/>
+      </Position15>
+      <Position16>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="111" Column="25" TopLine="82"/>
+      </Position16>
+      <Position17>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="38" Column="45" TopLine="17"/>
+      </Position17>
+      <Position18>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="121" Column="14" TopLine="89"/>
+      </Position18>
+      <Position19>
+        <Filename Value="mainwin.pas"/>
+        <Caret Line="9" Column="47" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <Caret Line="50" Column="65" TopLine="23"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <Caret Line="219" Column="64" TopLine="188"/>
+      </Position21>
+      <Position22>
+        <Filename Value="plScope1.lpr"/>
+        <Caret Line="13" Column="43" TopLine="1"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <Caret Line="30" Column="68" TopLine="6"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <Caret Line="303" Column="41" TopLine="280"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExControls\source\TplScopeUnit.pas"/>
+        <Caret Line="107" Column="39" TopLine="80"/>
+      </Position25>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+  <EditorMacros Count="0"/>
+</CONFIG>
