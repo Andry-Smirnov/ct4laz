@@ -1,0 +1,258 @@
+object Form1: TForm1
+  Left = 351
+  Height = 398
+  Top = 225
+  Width = 592
+  Caption = 'RSAKeys - Public/private key manager (using TLbRSA component)'
+  ClientHeight = 398
+  ClientWidth = 592
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object GroupBox4: TGroupBox
+    Left = 8
+    Height = 81
+    Top = 8
+    Width = 569
+    Caption = ' Public/private key pair '
+    ClientHeight = 63
+    ClientWidth = 565
+    TabOrder = 0
+    object Label5: TLabel
+      Left = 182
+      Height = 13
+      Top = 32
+      Width = 43
+      Caption = 'Iterations'
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 182
+      Height = 13
+      Top = 18
+      Width = 46
+      Caption = 'Prime test'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 14
+      Height = 13
+      Top = 24
+      Width = 41
+      Caption = 'Key Size'
+      ParentColor = False
+    end
+    object btnCreateKeys: TButton
+      Left = 318
+      Height = 25
+      Top = 18
+      Width = 137
+      Caption = 'Generate new key pair '
+      OnClick = btnCreateKeysClick
+      TabOrder = 0
+    end
+    object edtIterations: TEdit
+      Left = 238
+      Height = 21
+      Top = 20
+      Width = 33
+      TabOrder = 1
+      Text = '20'
+    end
+    object btnClear: TButton
+      Left = 494
+      Height = 25
+      Top = 18
+      Width = 57
+      Caption = 'Clear'
+      OnClick = btnClearClick
+      TabOrder = 2
+    end
+    object cbxKeySize: TComboBox
+      Left = 62
+      Height = 21
+      Top = 20
+      Width = 81
+      ItemHeight = 13
+      Items.Strings = (
+        '128'
+        '256'
+        '512'
+        '768'
+        '1024'
+      )
+      Style = csDropDownList
+      TabOrder = 3
+    end
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 121
+    Top = 96
+    Width = 569
+    Caption = ' Public key '
+    ClientHeight = 103
+    ClientWidth = 565
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 14
+      Height = 13
+      Top = 10
+      Width = 45
+      Caption = 'Exponent'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 14
+      Height = 13
+      Top = 42
+      Width = 40
+      Caption = 'Modulus'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 318
+      Height = 13
+      Top = 72
+      Width = 55
+      Caption = 'Passphrase'
+      ParentColor = False
+    end
+    object edtPublicE: TEdit
+      Left = 70
+      Height = 21
+      Top = 6
+      Width = 481
+      TabOrder = 0
+    end
+    object edtPublicM: TEdit
+      Left = 70
+      Height = 21
+      Top = 38
+      Width = 481
+      TabOrder = 1
+    end
+    object btnLoadPublic: TButton
+      Left = 86
+      Height = 25
+      Top = 66
+      Width = 105
+      Caption = 'Load ASN.1 set'
+      OnClick = btnLoadPublicClick
+      TabOrder = 2
+    end
+    object btnSavePublic: TButton
+      Left = 198
+      Height = 25
+      Top = 66
+      Width = 105
+      Caption = 'Save ASN.1 set'
+      OnClick = btnSavePublicClick
+      TabOrder = 3
+    end
+    object edtPublicPhrase: TEdit
+      Left = 382
+      Height = 21
+      Top = 68
+      Width = 121
+      TabOrder = 4
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 121
+    Top = 224
+    Width = 569
+    Caption = ' Private key '
+    ClientHeight = 103
+    ClientWidth = 565
+    TabOrder = 2
+    object Label3: TLabel
+      Left = 14
+      Height = 13
+      Top = 10
+      Width = 45
+      Caption = 'Exponent'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 14
+      Height = 13
+      Top = 42
+      Width = 40
+      Caption = 'Modulus'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 318
+      Height = 13
+      Top = 72
+      Width = 55
+      Caption = 'Passphrase'
+      ParentColor = False
+    end
+    object edtPrivateE: TEdit
+      Left = 70
+      Height = 21
+      Top = 6
+      Width = 481
+      TabOrder = 0
+    end
+    object edtPrivateM: TEdit
+      Left = 70
+      Height = 21
+      Top = 38
+      Width = 481
+      TabOrder = 1
+    end
+    object btnLoadPrivate: TButton
+      Left = 86
+      Height = 25
+      Top = 66
+      Width = 105
+      Caption = 'Load ASN.1 set'
+      OnClick = btnLoadPrivateClick
+      TabOrder = 2
+    end
+    object btnSavePrivate: TButton
+      Left = 198
+      Height = 25
+      Top = 66
+      Width = 105
+      Caption = 'Save ASN.1 set'
+      OnClick = btnSavePrivateClick
+      TabOrder = 3
+    end
+    object edtPrivatePhrase: TEdit
+      Left = 382
+      Height = 21
+      Top = 68
+      Width = 121
+      TabOrder = 4
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 375
+    Width = 592
+    Panels = <>
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 24
+    Top = 176
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 56
+    Top = 176
+  end
+  object LbRSA1: TLbRSA
+    PrimeTestIterations = 20
+    KeySize = aks128
+    Left = 288
+    Top = 40
+  end
+end

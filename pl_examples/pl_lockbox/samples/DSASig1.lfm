@@ -1,0 +1,358 @@
+object frmDSASig: TfrmDSASig
+  Left = 430
+  Height = 665
+  Top = 167
+  Width = 852
+  Caption = 'DSASig - DSA Digital Signature Example'
+  ClientHeight = 645
+  ClientWidth = 852
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Menu = mnuMain
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 622
+    Width = 852
+    Panels = <>
+  end
+  object GroupBox1: TGroupBox
+    Left = 448
+    Height = 225
+    Top = 8
+    Width = 385
+    Caption = ' DSA Private Key '
+    ClientHeight = 207
+    ClientWidth = 381
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 22
+      Height = 13
+      Top = 15
+      Width = 8
+      Caption = 'Q'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 22
+      Height = 13
+      Top = 50
+      Width = 7
+      Caption = 'P'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 22
+      Height = 13
+      Top = 114
+      Width = 8
+      Caption = 'G'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 22
+      Height = 13
+      Top = 178
+      Width = 7
+      Caption = 'X'
+      ParentColor = False
+    end
+    object edtPriQ: TEdit
+      Left = 46
+      Height = 22
+      Top = 10
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 0
+    end
+    object mmoPriP: TMemo
+      Left = 46
+      Height = 57
+      Top = 42
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 1
+    end
+    object mmoPriG: TMemo
+      Left = 46
+      Height = 57
+      Top = 106
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 2
+    end
+    object edtPriX: TEdit
+      Left = 46
+      Height = 22
+      Top = 173
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 448
+    Height = 257
+    Top = 240
+    Width = 385
+    Caption = ' DSA Public Key '
+    ClientHeight = 239
+    ClientWidth = 381
+    TabOrder = 2
+    object Label5: TLabel
+      Left = 22
+      Height = 13
+      Top = 15
+      Width = 8
+      Caption = 'Q'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 22
+      Height = 13
+      Top = 50
+      Width = 7
+      Caption = 'P'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 22
+      Height = 13
+      Top = 114
+      Width = 8
+      Caption = 'G'
+      ParentColor = False
+    end
+    object Label11: TLabel
+      Left = 22
+      Height = 13
+      Top = 178
+      Width = 7
+      Caption = 'Y'
+      ParentColor = False
+    end
+    object edtPubQ: TEdit
+      Left = 46
+      Height = 22
+      Top = 10
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 0
+    end
+    object mmoPubP: TMemo
+      Left = 46
+      Height = 57
+      Top = 42
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 1
+    end
+    object mmoPubG: TMemo
+      Left = 46
+      Height = 57
+      Top = 106
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 2
+    end
+    object mmoPubY: TMemo
+      Left = 46
+      Height = 57
+      Top = 170
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 448
+    Height = 89
+    Top = 504
+    Width = 385
+    Caption = ' DSA Signature '
+    ClientHeight = 71
+    ClientWidth = 381
+    TabOrder = 3
+    object Label7: TLabel
+      Left = 22
+      Height = 13
+      Top = 10
+      Width = 8
+      Caption = 'R'
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 24
+      Height = 13
+      Top = 42
+      Width = 7
+      Caption = 'S'
+      ParentColor = False
+    end
+    object edtR: TEdit
+      Left = 46
+      Height = 22
+      Top = 5
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 0
+    end
+    object edtS: TEdit
+      Left = 46
+      Height = 22
+      Top = 37
+      Width = 321
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 8
+    Height = 585
+    Top = 8
+    Width = 425
+    Caption = ' Message '
+    ClientHeight = 567
+    ClientWidth = 421
+    TabOrder = 4
+    object mmoMsg: TMemo
+      Left = 0
+      Height = 567
+      Top = 0
+      Width = 421
+      Align = alClient
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+  object LbDSA1: TLbDSA
+    PrimeTestIterations = 10
+    KeySize = aks512
+    OnGetR = LbDSA1GetR
+    OnGetS = LbDSA1GetS
+    OnProgress = LbDSA1Progress
+    Left = 344
+    Top = 240
+  end
+  object mnuMain: TMainMenu
+    Left = 304
+    Top = 240
+    object mnuFile: TMenuItem
+      Caption = '&File'
+      object mnuFileOpen: TMenuItem
+        Caption = '&Open Message...'
+        OnClick = mnuFileOpenClick
+      end
+      object mnuFileSign: TMenuItem
+        Caption = '&Sign Message'
+        OnClick = mnuFileSignClick
+      end
+      object mnuFileVerify: TMenuItem
+        Caption = '&Verify Signature'
+        OnClick = mnuFileVerifyClick
+      end
+      object mnuFileClose: TMenuItem
+        Caption = '&Close'
+        OnClick = mnuFileCloseClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object mnuFileExit: TMenuItem
+        Caption = 'E&xit'
+        OnClick = mnuFileExitClick
+      end
+    end
+    object mnuDSAKeys: TMenuItem
+      Caption = '&DSA Keys'
+      object mnuDSAKeysGenerate: TMenuItem
+        Caption = '&Generate Key Pair...'
+        OnClick = mnuDSAKeysGenerateClick
+      end
+      object mnuDSAKeysPub: TMenuItem
+        Caption = 'P&ublic Key'
+        object mnuDSAKeysPubSave: TMenuItem
+          Caption = '&Save ASN.1 ...'
+          OnClick = mnuDSAKeysPubSaveClick
+        end
+        object mnuDSAKeysPubLoad: TMenuItem
+          Caption = '&Load ASN.1 ...'
+          OnClick = mnuDSAKeysPubLoadClick
+        end
+        object mnuDSAKeysPubClear: TMenuItem
+          Caption = '&Clear'
+          OnClick = mnuDSAKeysPubClearClick
+        end
+      end
+      object mnuDSAKeysPri: TMenuItem
+        Caption = 'P&rivate Key'
+        object mnuDSAKeysPriSave: TMenuItem
+          Caption = '&Save ASN.1 ...'
+          OnClick = mnuDSAKeysPriSaveClick
+        end
+        object mnuDSAKeysPriLoad: TMenuItem
+          Caption = '&Load ASN.1 ...'
+          OnClick = mnuDSAKeysPriLoadClick
+        end
+        object mnuDSAKeysPriClear: TMenuItem
+          Caption = '&Clear'
+          OnClick = mnuDSAKeysPriClearClick
+        end
+      end
+    end
+  end
+  object dlgOpenTxt: TOpenDialog
+    Title = 'Open Text File'
+    DefaultExt = '.txt'
+    Filter = 'Text Files (*.txt)|*.txt|All Files|*.*'
+    Left = 264
+    Top = 240
+  end
+  object dlgOpenASN: TOpenDialog
+    Title = 'Open ASN.1 DSA Key File'
+    DefaultExt = '.asn'
+    Filter = 'ASN.1 Files (*.asn)|*.asn|AllFiles|*.*'
+    Left = 264
+    Top = 200
+  end
+  object dlgSaveASN: TSaveDialog
+    Title = 'Save ASN.1 DSA Key File'
+    DefaultExt = '.asn'
+    Filter = 'ASN.1 Files (*.asn)|*.asn|All Files|*.*'
+    Left = 304
+    Top = 200
+  end
+end

@@ -1,0 +1,132 @@
+object Form1: TForm1
+  Left = 390
+  Height = 171
+  Top = 296
+  Width = 451
+  Caption = 'ExFile - Encrypt/Decrypt file'
+  ClientHeight = 171
+  ClientWidth = 451
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object Label4: TLabel
+    Left = 19
+    Height = 13
+    Top = 20
+    Width = 30
+    Caption = 'Cipher'
+    ParentColor = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 408
+    Height = 23
+    Top = 47
+    Width = 23
+    Caption = '...'
+    OnClick = SpeedButton1Click
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 408
+    Height = 23
+    Top = 79
+    Width = 23
+    Caption = '...'
+    OnClick = SpeedButton2Click
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 52
+    Width = 25
+    Caption = 'InFile'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 84
+    Width = 33
+    Caption = 'OutFile'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 200
+    Height = 13
+    Top = 20
+    Width = 55
+    Caption = 'Passphrase'
+    ParentColor = False
+  end
+  object btnGo: TButton
+    Left = 184
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Go'
+    OnClick = btnGoClick
+    TabOrder = 0
+  end
+  object cbxCipher: TComboBox
+    Left = 59
+    Height = 21
+    Top = 16
+    Width = 118
+    ItemHeight = 13
+    Items.Strings = (
+      'Blowfish'
+      'Blowfish (CBC)'
+      'DES'
+      'DES (CBC)'
+      'Triple DES'
+      'Triple DES (CBC)'
+      'Rijndael'
+      'Rijndael (CBC)'
+    )
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object edtInFile: TEdit
+    Left = 59
+    Height = 21
+    Top = 48
+    Width = 345
+    TabOrder = 2
+  end
+  object edtOutFile: TEdit
+    Left = 59
+    Height = 21
+    Top = 80
+    Width = 345
+    TabOrder = 3
+  end
+  object chkEncrypt: TCheckBox
+    Left = 96
+    Height = 19
+    Top = 116
+    Width = 56
+    Caption = 'Encrypt'
+    Checked = True
+    State = cbChecked
+    TabOrder = 4
+  end
+  object edtPassphrase: TEdit
+    Left = 267
+    Height = 21
+    Top = 16
+    Width = 145
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 5
+  end
+  object OpenDialog1: TOpenDialog
+    left = 280
+    top = 112
+  end
+  object SaveDialog1: TSaveDialog
+    left = 320
+    top = 112
+  end
+end

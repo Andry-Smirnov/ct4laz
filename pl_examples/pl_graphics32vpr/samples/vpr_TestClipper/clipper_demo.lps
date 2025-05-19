@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="14">
+      <Unit0>
+        <Filename Value="clipper_demo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="70" Y="14"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="clipper_demomw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="461"/>
+        <CursorPos X="5" Y="507"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="GR32_Misc.pas"/>
+        <TopLine Value="159"/>
+        <CursorPos X="11" Y="176"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Clipper.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="424"/>
+        <CursorPos X="10" Y="5178"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Polygons.pas"/>
+        <CursorPos X="6"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_VPR2.pas"/>
+        <CursorPos X="6"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Transforms.pas"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_VectorUtils.pas"/>
+        <CursorPos X="87" Y="11"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_CFDG.pas"/>
+        <CursorPos X="107" Y="16"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_PolygonsEx.pas"/>
+        <CursorPos X="98" Y="13"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_VectorGraphics.pas"/>
+        <TopLine Value="37"/>
+        <CursorPos X="96" Y="10"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Misc.pas"/>
+        <TopLine Value="174"/>
+        <CursorPos X="59" Y="191"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="206"/>
+        <CursorPos X="3" Y="249"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\AllGraphics32vprReg.pas"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit13>
+    </Units>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="clipper_demomw.pas"/>
+        <Caret Line="359" Column="22" TopLine="349"/>
+      </Position1>
+      <Position2>
+        <Filename Value="clipper_demomw.pas"/>
+        <Caret Line="684" Column="111" TopLine="7"/>
+      </Position2>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

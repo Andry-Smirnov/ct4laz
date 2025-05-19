@@ -1,0 +1,125 @@
+object frmMain: TfrmMain
+  Left = 1110
+  Height = 640
+  Top = 955
+  Width = 721
+  Caption = 'Histogram Equalize'
+  ClientHeight = 640
+  ClientWidth = 721
+  Color = clBtnFace
+  Constraints.MinHeight = 480
+  Constraints.MinWidth = 640
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 49
+    Top = 0
+    Width = 721
+    Align = alTop
+    ClientHeight = 49
+    ClientWidth = 721
+    TabOrder = 0
+    object lblZoom: TLabel
+      Left = 406
+      Height = 13
+      Top = 14
+      Width = 30
+      Caption = 'Zoom:'
+      Enabled = False
+      ParentColor = False
+    end
+    object btnLoadImage: TButton
+      Cursor = crHandPoint
+      Left = 6
+      Height = 25
+      Top = 8
+      Width = 120
+      Caption = 'Load Image...'
+      OnClick = btnLoadImageClick
+      TabOrder = 0
+    end
+    object btnExecute: TButton
+      Cursor = crHandPoint
+      Left = 262
+      Height = 25
+      Top = 8
+      Width = 120
+      Caption = 'Equalize'
+      Enabled = False
+      OnClick = btnExecuteClick
+      TabOrder = 1
+    end
+    object btnRestore: TButton
+      Cursor = crHandPoint
+      Left = 134
+      Height = 25
+      Top = 8
+      Width = 120
+      Caption = 'Restore'
+      Enabled = False
+      OnClick = btnRestoreClick
+      TabOrder = 2
+    end
+    object cmbbxZoom: TComboBox
+      Cursor = crHandPoint
+      Left = 443
+      Height = 21
+      Top = 10
+      Width = 116
+      Enabled = False
+      ItemHeight = 13
+      ItemIndex = 3
+      Items.Strings = (
+        '25%'
+        '50%'
+        '75%'
+        '100%'
+        '125%'
+        '150%'
+        '175%'
+        '200%'
+      )
+      OnChange = cmbbxZoomChange
+      TabOrder = 3
+      Text = '100%'
+    end
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 617
+    Width = 721
+    Panels = <    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object imgView: TImgView32
+    Left = 0
+    Height = 568
+    Top = 49
+    Width = 721
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsDefault
+    ScrollBars.Size = 13
+    OverSize = 0
+    TabOrder = 2
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 104
+    Top = 128
+  end
+end

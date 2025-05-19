@@ -1,0 +1,158 @@
+object Form1: TForm1
+  Left = 428
+  Height = 327
+  Top = 276
+  Width = 425
+  Caption = 'RSASSA - Digital signature (RSASSA component)'
+  ClientHeight = 327
+  ClientWidth = 425
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object Label1: TLabel
+    Left = 8
+    Height = 13
+    Top = 192
+    Width = 45
+    Caption = 'Signature'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 13
+    Top = 144
+    Width = 43
+    Caption = 'Message'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 216
+    Height = 13
+    Top = 22
+    Width = 64
+    Caption = 'Hash Method'
+    ParentColor = False
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 304
+    Width = 425
+    Panels = <>
+  end
+  object mmoSignature: TMemo
+    Left = 8
+    Height = 65
+    Top = 208
+    Width = 401
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    ParentFont = False
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 121
+    Top = 8
+    Width = 177
+    Caption = ' Keys '
+    ClientHeight = 103
+    ClientWidth = 173
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 14
+      Height = 13
+      Top = 8
+      Width = 41
+      Caption = 'Key Size'
+      ParentColor = False
+    end
+    object cbxKeySize: TComboBox
+      Left = 62
+      Height = 21
+      Top = 4
+      Width = 65
+      ItemHeight = 13
+      Items.Strings = (
+        '256'
+        '512'
+        '768'
+        '1024'
+      )
+      OnChange = cbxKeySizeChange
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object btnGenKeys: TButton
+      Left = 14
+      Height = 25
+      Top = 66
+      Width = 85
+      Caption = 'New key pair'
+      OnClick = btnGenKeysClick
+      TabOrder = 1
+    end
+    object chkAbort: TCheckBox
+      Left = 118
+      Height = 19
+      Top = 70
+      Width = 45
+      Caption = 'Abort'
+      TabOrder = 2
+    end
+  end
+  object edtMsg: TEdit
+    Left = 8
+    Height = 21
+    Top = 160
+    Width = 401
+    TabOrder = 3
+    Text = 'abc'
+  end
+  object btnSign: TButton
+    Left = 232
+    Height = 25
+    Top = 64
+    Width = 49
+    Caption = 'Sign'
+    OnClick = btnSignClick
+    TabOrder = 4
+  end
+  object btnVerify: TButton
+    Left = 304
+    Height = 25
+    Top = 64
+    Width = 49
+    Caption = 'Verify'
+    OnClick = btnVerifyClick
+    TabOrder = 5
+  end
+  object cbxHashMethod: TComboBox
+    Left = 288
+    Height = 21
+    Top = 18
+    Width = 65
+    ItemHeight = 13
+    Items.Strings = (
+      'MD5'
+      'SHA-1'
+    )
+    OnChange = cbxHashMethodChange
+    Style = csDropDownList
+    TabOrder = 6
+  end
+  object LbRSASSA1: TLbRSASSA
+    HashMethod = hmMD5
+    PrimeTestIterations = 50
+    KeySize = aks256
+    OnGetSignature = LbRSASSA1GetSignature
+    OnProgress = LbRSASSA1Progress
+    Left = 328
+    Top = 96
+  end
+end

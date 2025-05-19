@@ -1,0 +1,12 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_LockBox
+
+Version: 6.2.1 Date: 2020-05-12 09:03
+
+
+

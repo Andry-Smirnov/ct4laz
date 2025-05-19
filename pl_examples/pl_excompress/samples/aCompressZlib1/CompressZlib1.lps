@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="CompressZlib1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="compresszlib1mw.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CompressZlib1mw"/>
+        <TopLine Value="42"/>
+        <CursorPos X="41" Y="61"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\TplZlibUnit.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="17"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="3" Y="76"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ubufferedfs.pas"/>
+        <UnitName Value="UBufferedFS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="85"/>
+        <CursorPos X="33" Y="101"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\TplLzmaUnit.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="413"/>
+        <CursorPos Y="16"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ulzmaencoder.pas"/>
+        <UnitName Value="ULZMAEncoder"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="1180"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\compressbase.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="459"/>
+        <CursorPos X="30" Y="383"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="17" HistoryIndex="16">
+      <Position1>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="54" Column="25" TopLine="22"/>
+      </Position1>
+      <Position2>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="47" Column="15" TopLine="22"/>
+      </Position2>
+      <Position3>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="53" Column="25" TopLine="22"/>
+      </Position3>
+      <Position4>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="52" Column="9" TopLine="25"/>
+      </Position4>
+      <Position5>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="51" Column="7" TopLine="24"/>
+      </Position5>
+      <Position6>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="53" Column="13" TopLine="24"/>
+      </Position6>
+      <Position7>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="19" Column="30"/>
+      </Position7>
+      <Position8>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="51" Column="18" TopLine="25"/>
+      </Position8>
+      <Position9>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="61" Column="81" TopLine="31"/>
+      </Position9>
+      <Position10>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="63" Column="27" TopLine="28"/>
+      </Position10>
+      <Position11>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="70" Column="50" TopLine="32"/>
+      </Position11>
+      <Position12>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="45" Column="24" TopLine="28"/>
+      </Position12>
+      <Position13>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="44" Column="24" TopLine="27"/>
+      </Position13>
+      <Position14>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="43" Column="24" TopLine="26"/>
+      </Position14>
+      <Position15>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="44" Column="24" TopLine="27"/>
+      </Position15>
+      <Position16>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="43" Column="24" TopLine="26"/>
+      </Position16>
+      <Position17>
+        <Filename Value="compresszlib1mw.pas"/>
+        <Caret Line="18" Column="32"/>
+      </Position17>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

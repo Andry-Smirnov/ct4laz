@@ -1,0 +1,1 @@
+Win32,Win64,Lin32,Lin64,Sol32,Sol64,FB32,FB64

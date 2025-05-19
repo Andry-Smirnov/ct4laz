@@ -1,0 +1,10 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_Graphics32VPR
+
+Version: 7.1.1 Date: 2020-09-19 08:11
+

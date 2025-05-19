@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <Title Value="Ext_particle1"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="pl_graphics32ext"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_graphics32"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="30">
+      <Unit0>
+        <Filename Value="Ext_particle1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="9" Y="10"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="partcle1mainwin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="80"/>
+        <CursorPos X="18" Y="95"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_AniEffects.pas"/>
+        <TopLine Value="403"/>
+        <CursorPos Y="426"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_AniGEffetcts.pas"/>
+        <TopLine Value="37"/>
+        <CursorPos X="36" Y="261"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\typhon\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <TopLine Value="897"/>
+        <CursorPos X="15" Y="920"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_ParticleAniEffects.pas"/>
+        <TopLine Value="27"/>
+        <CursorPos X="3" Y="93"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Sprites.pas"/>
+        <CursorPos X="3" Y="13"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Bmp32Func.pas"/>
+        <TopLine Value="17"/>
+        <CursorPos X="29" Y="496"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Algebra.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_BitmapEx.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Blendmodes.pas"/>
+        <UnitName Value="XGR32_BlendModes"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Bmp32Draw.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_DesktopControl.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Controls.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_FlareFX.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_FilterEx.pas"/>
+        <TopLine Value="620"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_RasterizerEx.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_RedEye.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_ParticleSnow.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Graphics.pas"/>
+        <TopLine Value="614"/>
+        <CursorPos X="27" Y="145"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_GausianBlur.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_ExtLayers_transform.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Effects.pas"/>
+        <TopLine Value="2"/>
+        <CursorPos X="57" Y="115"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_Emboss.pas"/>
+        <CursorPos X="32" Y="32"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_ExtLayers.pas"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_ExtLayers_cursors.pas"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\typhon\components\pl_Graphics32EXT\source\XGR32_GraphUtils.pas"/>
+        <TopLine Value="34"/>
+        <CursorPos X="2" Y="26"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_ParticleAniEffects.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="70"/>
+        <CursorPos X="16" Y="10"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_Sprites.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="145"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_AniEffects.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="22" Y="41"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit29>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="partcle1mainwin.pas"/>
+        <Caret Line="73" Column="22" TopLine="51"/>
+      </Position1>
+      <Position2>
+        <Filename Value="partcle1mainwin.pas"/>
+        <Caret Line="18" Column="53" TopLine="3"/>
+      </Position2>
+      <Position3>
+        <Filename Value="partcle1mainwin.pas"/>
+        <Caret Line="14" Column="47"/>
+      </Position3>
+      <Position4>
+        <Filename Value="partcle1mainwin.pas"/>
+        <Caret Line="95" Column="18" TopLine="80"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_ParticleAniEffects.pas"/>
+        <Caret Line="10" Column="16"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_AniEffects.pas"/>
+        <Caret Line="213" Column="48" TopLine="198"/>
+      </Position6>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

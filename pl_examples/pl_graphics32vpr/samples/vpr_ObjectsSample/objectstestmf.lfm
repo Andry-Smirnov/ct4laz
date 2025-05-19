@@ -1,0 +1,41 @@
+object Form1: TForm1
+  Left = 403
+  Height = 663
+  Top = 204
+  Width = 836
+  Caption = 'Form1'
+  ClientHeight = 663
+  ClientWidth = 836
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.0'
+  object Image: TImage32
+    Left = 0
+    Height = 663
+    Top = 0
+    Width = 600
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smNormal
+    TabOrder = 0
+    OnMouseDown = ImageMouseDown
+  end
+  object OI: TplObjectInspector
+    Left = 600
+    Height = 663
+    Top = 0
+    Width = 236
+    ShowEventsPage = False
+    Align = alRight
+    BevelOuter = bvNone
+    ClientHeight = 663
+    ClientWidth = 236
+    TabOrder = 1
+  end
+  object Timer1: TTimer
+    Left = 120
+    Top = 61
+  end
+end

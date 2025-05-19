@@ -1,0 +1,79 @@
+object Form1: TForm1
+  Left = 373
+  Height = 184
+  Top = 258
+  Width = 523
+  Caption = 'ExHash - hashing strings'
+  ClientHeight = 184
+  ClientWidth = 523
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object Label1: TLabel
+    Left = 8
+    Height = 13
+    Top = 52
+    Width = 76
+    Caption = 'Message Digest'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 13
+    Top = 20
+    Width = 43
+    Caption = 'Message'
+    ParentColor = False
+  end
+  object edtDigest: TEdit
+    Left = 96
+    Height = 21
+    Top = 48
+    Width = 409
+    TabOrder = 0
+  end
+  object edtMessage: TEdit
+    Left = 96
+    Height = 21
+    Top = 16
+    Width = 409
+    TabOrder = 1
+  end
+  object rgHashMethod: TRadioGroup
+    Left = 8
+    Height = 65
+    Top = 80
+    Width = 281
+    AutoFill = True
+    Caption = ' Hash Algorithm '
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 4
+    ClientHeight = 47
+    ClientWidth = 277
+    Columns = 4
+    ItemIndex = 1
+    Items.Strings = (
+      'MD5'
+      'SHA-1'
+      'LMD'
+      'ELF'
+    )
+    TabOrder = 2
+  end
+  object btnGo: TButton
+    Left = 384
+    Height = 25
+    Top = 100
+    Width = 75
+    Caption = 'Go'
+    OnClick = btnGoClick
+    TabOrder = 3
+  end
+end

@@ -1,0 +1,28 @@
+object Form1: TForm1
+  Left = 354
+  Height = 480
+  Top = 292
+  Width = 480
+  AutoSize = True
+  Caption = 'VPR example  project'
+  ClientHeight = 480
+  ClientWidth = 480
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '6.2'
+  object Img: TImage32
+    Left = 0
+    Height = 480
+    Top = 0
+    Width = 480
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smNormal
+    TabOrder = 0
+  end
+end

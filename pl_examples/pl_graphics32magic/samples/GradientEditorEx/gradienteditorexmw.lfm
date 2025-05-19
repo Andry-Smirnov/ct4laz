@@ -1,0 +1,1397 @@
+object frmMain: TfrmMain
+  Left = 86
+  Height = 640
+  Top = 86
+  Width = 804
+  Caption = 'Gradient Editor Example'
+  ClientHeight = 620
+  ClientWidth = 804
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Menu = MainMenu
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Splitter1: TSplitter
+    Left = 393
+    Height = 620
+    Top = 0
+    Width = 4
+  end
+  object pnlEdit: TPanel
+    Left = 0
+    Height = 620
+    Top = 0
+    Width = 393
+    Align = alLeft
+    ClientHeight = 620
+    ClientWidth = 393
+    TabOrder = 0
+    object Bevel1: TBevel
+      Left = 1
+      Height = 9
+      Top = 420
+      Width = 391
+      Align = alBottom
+      Shape = bsSpacer
+    end
+    object Bevel2: TBevel
+      Left = 1
+      Height = 9
+      Top = 351
+      Width = 391
+      Align = alBottom
+      Shape = bsSpacer
+    end
+    object grpbxStops: TGroupBox
+      Left = 1
+      Height = 190
+      Top = 429
+      Width = 391
+      Align = alBottom
+      Caption = 'Stops'
+      ClientHeight = 172
+      ClientWidth = 387
+      TabOrder = 0
+      object lbl2: TLabel
+        Left = 70
+        Height = 13
+        Top = 8
+        Width = 233
+        Caption = 'Right click on any color stop to swtich stop types.'
+        ParentColor = False
+      end
+      object lblOpacity: TLabel
+        Left = 14
+        Height = 13
+        Top = 38
+        Width = 56
+        Caption = 'Opacity: 0%'
+        ParentColor = False
+      end
+      object lblColor: TLabel
+        Left = 14
+        Height = 13
+        Top = 94
+        Width = 27
+        Caption = 'Color:'
+        ParentColor = False
+      end
+      object lblAlphaLocation: TLabel
+        Left = 150
+        Height = 13
+        Top = 58
+        Width = 44
+        Caption = 'Location:'
+        ParentColor = False
+      end
+      object lblColorLocation: TLabel
+        Left = 150
+        Height = 13
+        Top = 94
+        Width = 44
+        Caption = 'Location:'
+        ParentColor = False
+      end
+      object lblAlphaLocationPercent: TLabel
+        Left = 244
+        Height = 13
+        Top = 58
+        Width = 8
+        Caption = '%'
+        ParentColor = False
+      end
+      object lblColorLocationPercent: TLabel
+        Left = 244
+        Height = 13
+        Top = 94
+        Width = 8
+        Caption = '%'
+        ParentColor = False
+      end
+      object rdbtnDirectMode: TRadioButton
+        Cursor = crHandPoint
+        Left = 190
+        Height = 19
+        Top = 138
+        Width = 99
+        Caption = 'Direct Edit Mode'
+        OnClick = ChangeEditMode
+        TabOrder = 0
+      end
+      object rdbtnCopyMode: TRadioButton
+        Cursor = crHandPoint
+        Left = 46
+        Height = 19
+        Top = 138
+        Width = 95
+        Caption = 'Copy Edit Mode'
+        OnClick = ChangeEditMode
+        TabOrder = 1
+      end
+      object ggbrOpacity: TGaugeBar
+        Cursor = crHandPoint
+        Left = 14
+        Height = 16
+        Top = 58
+        Width = 121
+        Color = clScrollBar
+        Backgnd = bgPattern
+        ShowHandleGrip = True
+        Style = rbsMac
+        Position = 0
+        OnChange = ggbrOpacityChange
+      end
+      object pnlPrimaryColor: TPanel
+        Left = 46
+        Height = 21
+        Top = 90
+        Width = 89
+        BevelInner = bvLowered
+        ClientHeight = 21
+        ClientWidth = 89
+        TabOrder = 3
+        object shpStopColor: TShape
+          Cursor = crHandPoint
+          Left = 2
+          Height = 17
+          Top = 2
+          Width = 85
+          Align = alClient
+          OnMouseDown = shpStopColorMouseDown
+          Visible = False
+        end
+      end
+      object edtAlphaLocation: TEdit
+        Left = 198
+        Height = 21
+        Top = 54
+        Width = 40
+        Color = clBtnFace
+        OnChange = edtAlphaLocationChange
+        TabOrder = 4
+      end
+      object edtColorLocation: TEdit
+        Left = 198
+        Height = 21
+        Top = 90
+        Width = 40
+        Color = clBtnFace
+        OnChange = edtColorLocationChange
+        TabOrder = 5
+      end
+      object btnDeleteSelectedAlphaValue: TButton
+        Cursor = crHandPoint
+        Left = 270
+        Height = 25
+        Top = 52
+        Width = 50
+        Caption = 'Delete'
+        Enabled = False
+        OnClick = btnDeleteSelectedAlphaValueClick
+        TabOrder = 6
+      end
+      object btnDeleteSelectedColor: TButton
+        Cursor = crHandPoint
+        Left = 270
+        Height = 25
+        Top = 88
+        Width = 50
+        Caption = 'Delete'
+        Enabled = False
+        OnClick = btnDeleteSelectedColorClick
+        TabOrder = 7
+      end
+      object btnAverageAlphaValues: TButton
+        Cursor = crHandPoint
+        Left = 326
+        Height = 25
+        Top = 52
+        Width = 50
+        Caption = 'Average'
+        OnClick = btnAverageAlphaValuesClick
+        TabOrder = 8
+      end
+      object btnAverageColors: TButton
+        Cursor = crHandPoint
+        Left = 326
+        Height = 25
+        Top = 88
+        Width = 50
+        Caption = 'Average'
+        OnClick = btnAverageColorsClick
+        TabOrder = 9
+      end
+    end
+    object geGradientEditor: TgmGradientEditor
+      Left = 1
+      Height = 60
+      Top = 360
+      Width = 391
+      Align = alBottom
+      OnMouseDown = geGradientEditorMouseDown
+      OnMouseMove = geGradientEditorMouseMove
+      OnMouseUp = geGradientEditorMouseUp
+      EditMode = eemCopyEdit
+      Gradients = glGradientList
+      GradientIndex = -1
+      DefaultNewColor = clBlack
+      DefaultNewAlpha = 255
+      OnStateChanged = geGradientEditorStateChanged
+      OnCursorPosChanged = geGradientEditorCursorPosChanged
+    end
+    object pnlNewGradient: TPanel
+      Left = 1
+      Height = 43
+      Top = 308
+      Width = 391
+      Align = alBottom
+      ClientHeight = 43
+      ClientWidth = 391
+      TabOrder = 2
+      object lblGradientName: TLabel
+        Left = 14
+        Height = 13
+        Top = 14
+        Width = 31
+        Caption = 'Name:'
+        ParentColor = False
+      end
+      object edtGradientName: TEdit
+        Left = 54
+        Height = 21
+        Top = 10
+        Width = 265
+        TabOrder = 0
+      end
+      object btnAdd: TButton
+        Cursor = crHandPoint
+        Left = 326
+        Height = 25
+        Top = 8
+        Width = 43
+        Caption = 'Add'
+        OnClick = btnAddClick
+        TabOrder = 1
+      end
+    end
+    object Panel1: TPanel
+      Left = 1
+      Height = 307
+      Top = 1
+      Width = 391
+      Align = alClient
+      ClientHeight = 307
+      ClientWidth = 391
+      TabOrder = 3
+      object Label1: TLabel
+        Left = 22
+        Height = 13
+        Top = 222
+        Width = 84
+        Caption = 'Foreground Color:'
+        ParentColor = False
+      end
+      object shpForeColor: TShape
+        Cursor = crHandPoint
+        Left = 110
+        Height = 16
+        Top = 222
+        Width = 65
+        Brush.Color = clBlack
+        OnMouseDown = shpForeColorMouseDown
+      end
+      object Label2: TLabel
+        Left = 190
+        Height = 13
+        Top = 222
+        Width = 88
+        Caption = 'Background Color:'
+        ParentColor = False
+      end
+      object shpBackColor: TShape
+        Cursor = crHandPoint
+        Left = 286
+        Height = 16
+        Top = 222
+        Width = 65
+        OnMouseDown = shpBackColorMouseDown
+      end
+      object grpbxPreset: TGroupBox
+        Left = 1
+        Height = 208
+        Top = 1
+        Width = 389
+        Align = alTop
+        Caption = 'Presets'
+        ClientHeight = 190
+        ClientWidth = 385
+        TabOrder = 0
+        object ScrollBox1: TScrollBox
+          Left = 6
+          Height = 170
+          Top = 9
+          Width = 369
+          HorzScrollBar.Page = 321
+          VertScrollBar.Page = 65
+          ClientHeight = 166
+          ClientWidth = 365
+          TabOrder = 0
+          object glvGradientListView: TgmGradientListView
+            Left = 0
+            Height = 65
+            Top = 0
+            Width = 321
+            AutoSize = True
+            GradientList = glGradientList
+            ParentShowHint = False
+            Scale = 1
+            ScaleMode = smNormal
+            ShowHint = True
+            TabOrder = 0
+            GridOptions = [goDragable, goSelection]
+            CellBorderStyle = borContrastGrid
+            OnChange = glvGradientListViewChange
+            OnMouseDown = glvGradientListViewMouseDown
+          end
+        end
+      end
+    end
+  end
+  object Panel2: TPanel
+    Left = 397
+    Height = 620
+    Top = 0
+    Width = 407
+    Align = alClient
+    ClientHeight = 620
+    ClientWidth = 407
+    TabOrder = 1
+    object grp1: TGroupBox
+      Left = 1
+      Height = 460
+      Top = 1
+      Width = 405
+      Align = alClient
+      Caption = 'Draw Gradient Test:'
+      ClientHeight = 442
+      ClientWidth = 401
+      TabOrder = 0
+      object imgvwDrawingArea: TImgView32
+        Cursor = crCross
+        Left = 14
+        Height = 416
+        Top = 10
+        Width = 361
+        Anchors = [akTop, akLeft, akBottom]
+        Bitmap.ResamplerClassName = 'TNearestResampler'
+        BitmapAlign = baCustom
+        Scale = 1
+        ScaleMode = smScale
+        ScrollBars.Color = clScrollBar
+        ScrollBars.ShowHandleGrip = True
+        ScrollBars.Style = rbsMac
+        ScrollBars.Size = 21
+        ScrollBars.Visibility = svAuto
+        OverSize = 0
+        TabOrder = 0
+        OnMouseDown = imgvwDrawingAreaMouseDown
+        OnMouseMove = imgvwDrawingAreaMouseMove
+        OnMouseUp = imgvwDrawingAreaMouseUp
+        OnPaintStage = imgvwDrawingAreaPaintStage
+      end
+    end
+    object grp2: TGroupBox
+      Left = 1
+      Height = 158
+      Top = 461
+      Width = 405
+      Align = alBottom
+      Caption = 'Drawing Settings:'
+      ClientHeight = 140
+      ClientWidth = 401
+      TabOrder = 1
+      object btnLinearGradient: TSpeedButton
+        Cursor = crHandPoint
+        Left = 14
+        Height = 22
+        Hint = 'Linear Gradient'
+        Top = 13
+        Width = 23
+        Down = True
+        Flat = True
+        Glyph.Data = {
+          36050000424D3605000000000000360400002800000010000000100000000100
+          0800000000000001000000000000000000000001000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+          A6000020400000206000002080000020A0000020C0000020E000004000000040
+          20000040400000406000004080000040A0000040C0000040E000006000000060
+          20000060400000606000006080000060A0000060C0000060E000008000000080
+          20000080400000806000008080000080A0000080C0000080E00000A0000000A0
+          200000A0400000A0600000A0800000A0A00000A0C00000A0E00000C0000000C0
+          200000C0400000C0600000C0800000C0A00000C0C00000C0E00000E0000000E0
+          200000E0400000E0600000E0800000E0A00000E0C00000E0E000400000004000
+          20004000400040006000400080004000A0004000C0004000E000402000004020
+          20004020400040206000402080004020A0004020C0004020E000404000004040
+          20004040400040406000404080004040A0004040C0004040E000406000004060
+          20004060400040606000406080004060A0004060C0004060E000408000004080
+          20004080400040806000408080004080A0004080C0004080E00040A0000040A0
+          200040A0400040A0600040A0800040A0A00040A0C00040A0E00040C0000040C0
+          200040C0400040C0600040C0800040C0A00040C0C00040C0E00040E0000040E0
+          200040E0400040E0600040E0800040E0A00040E0C00040E0E000800000008000
+          20008000400080006000800080008000A0008000C0008000E000802000008020
+          20008020400080206000802080008020A0008020C0008020E000804000008040
+          20008040400080406000804080008040A0008040C0008040E000806000008060
+          20008060400080606000806080008060A0008060C0008060E000808000008080
+          20008080400080806000808080008080A0008080C0008080E00080A0000080A0
+          200080A0400080A0600080A0800080A0A00080A0C00080A0E00080C0000080C0
+          200080C0400080C0600080C0800080C0A00080C0C00080C0E00080E0000080E0
+          200080E0400080E0600080E0800080E0A00080E0C00080E0E000C0000000C000
+          2000C0004000C0006000C0008000C000A000C000C000C000E000C0200000C020
+          2000C0204000C0206000C0208000C020A000C020C000C020E000C0400000C040
+          2000C0404000C0406000C0408000C040A000C040C000C040E000C0600000C060
+          2000C0604000C0606000C0608000C060A000C060C000C060E000C0800000C080
+          2000C0804000C0806000C0808000C080A000C080C000C080E000C0A00000C0A0
+          2000C0A04000C0A06000C0A08000C0A0A000C0A0C000C0A0E000C0C00000C0C0
+          2000C0C04000C0C06000C0C08000C0C0A000F0FBFF00A4A0A000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+          0000000000000000000000FFFFFFFFA4A4A4525252000000000000FFFFFFA4FF
+          A452A45200520000000000FFFFFFFFA4A4A4525252000000000000FFFFFFA4FF
+          A452A45200520000000000FFFFFFFFA4A4A4525252000000000000FFFFFFA4FF
+          A452A45200520000000000FFFFFFFFA4A4A4525252000000000000FFFFFFA4FF
+          A452A45200520000000000FFFFFFFFA4A4A4525252000000000000FFFFFFA4FF
+          A452A45200520000000000000000000000000000000000000000FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        }
+        GroupIndex = 1
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object btnRadialGradient: TSpeedButton
+        Cursor = crHandPoint
+        Left = 38
+        Height = 22
+        Hint = 'Radial Gradient'
+        Top = 13
+        Width = 23
+        Flat = True
+        Glyph.Data = {
+          36050000424D3605000000000000360400002800000010000000100000000100
+          0800000000000001000000000000000000000001000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+          A6000020400000206000002080000020A0000020C0000020E000004000000040
+          20000040400000406000004080000040A0000040C0000040E000006000000060
+          20000060400000606000006080000060A0000060C0000060E000008000000080
+          20000080400000806000008080000080A0000080C0000080E00000A0000000A0
+          200000A0400000A0600000A0800000A0A00000A0C00000A0E00000C0000000C0
+          200000C0400000C0600000C0800000C0A00000C0C00000C0E00000E0000000E0
+          200000E0400000E0600000E0800000E0A00000E0C00000E0E000400000004000
+          20004000400040006000400080004000A0004000C0004000E000402000004020
+          20004020400040206000402080004020A0004020C0004020E000404000004040
+          20004040400040406000404080004040A0004040C0004040E000406000004060
+          20004060400040606000406080004060A0004060C0004060E000408000004080
+          20004080400040806000408080004080A0004080C0004080E00040A0000040A0
+          200040A0400040A0600040A0800040A0A00040A0C00040A0E00040C0000040C0
+          200040C0400040C0600040C0800040C0A00040C0C00040C0E00040E0000040E0
+          200040E0400040E0600040E0800040E0A00040E0C00040E0E000800000008000
+          20008000400080006000800080008000A0008000C0008000E000802000008020
+          20008020400080206000802080008020A0008020C0008020E000804000008040
+          20008040400080406000804080008040A0008040C0008040E000806000008060
+          20008060400080606000806080008060A0008060C0008060E000808000008080
+          20008080400080806000808080008080A0008080C0008080E00080A0000080A0
+          200080A0400080A0600080A0800080A0A00080A0C00080A0E00080C0000080C0
+          200080C0400080C0600080C0800080C0A00080C0C00080C0E00080E0000080E0
+          200080E0400080E0600080E0800080E0A00080E0C00080E0E000C0000000C000
+          2000C0004000C0006000C0008000C000A000C000C000C000E000C0200000C020
+          2000C0204000C0206000C0208000C020A000C020C000C020E000C0400000C040
+          2000C0404000C0406000C0408000C040A000C040C000C040E000C0600000C060
+          2000C0604000C0606000C0608000C060A000C060C000C060E000C0800000C080
+          2000C0804000C0806000C0808000C080A000C080C000C080E000C0A00000C0A0
+          2000C0A04000C0A06000C0A08000C0A0A000C0A0C000C0A0E000C0C00000C0C0
+          2000C0C04000C0C06000C0C08000C0C0A000F0FBFF00A4A0A000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+          00000000000000000000000000525252525252525252000000000000525252A4
+          A4A4A4A452525200000000525252A4A4A4A4A4A4A45252520000005252A4A4A4
+          FFFFFFA4A4A452520000005252A4A4FFFFFFFFFFA4A452520000005252A4A4FF
+          FFFFFFFFA4A452520000005252A4A4FFFFFFFFFFA4A452520000005252A4A4A4
+          FFFFFFA4A4A45252000000525252A4A4A4A4A4A4A452525200000000525252A4
+          A4A4A4A452525200000000000052525252525252525200000000FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        }
+        GroupIndex = 1
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object btnAngleGradient: TSpeedButton
+        Cursor = crHandPoint
+        Left = 62
+        Height = 22
+        Hint = 'Angle Gradient'
+        Top = 13
+        Width = 23
+        Flat = True
+        Glyph.Data = {
+          36050000424D3605000000000000360400002800000010000000100000000100
+          0800000000000001000000000000000000000001000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+          A6000020400000206000002080000020A0000020C0000020E000004000000040
+          20000040400000406000004080000040A0000040C0000040E000006000000060
+          20000060400000606000006080000060A0000060C0000060E000008000000080
+          20000080400000806000008080000080A0000080C0000080E00000A0000000A0
+          200000A0400000A0600000A0800000A0A00000A0C00000A0E00000C0000000C0
+          200000C0400000C0600000C0800000C0A00000C0C00000C0E00000E0000000E0
+          200000E0400000E0600000E0800000E0A00000E0C00000E0E000400000004000
+          20004000400040006000400080004000A0004000C0004000E000402000004020
+          20004020400040206000402080004020A0004020C0004020E000404000004040
+          20004040400040406000404080004040A0004040C0004040E000406000004060
+          20004060400040606000406080004060A0004060C0004060E000408000004080
+          20004080400040806000408080004080A0004080C0004080E00040A0000040A0
+          200040A0400040A0600040A0800040A0A00040A0C00040A0E00040C0000040C0
+          200040C0400040C0600040C0800040C0A00040C0C00040C0E00040E0000040E0
+          200040E0400040E0600040E0800040E0A00040E0C00040E0E000800000008000
+          20008000400080006000800080008000A0008000C0008000E000802000008020
+          20008020400080206000802080008020A0008020C0008020E000804000008040
+          20008040400080406000804080008040A0008040C0008040E000806000008060
+          20008060400080606000806080008060A0008060C0008060E000808000008080
+          20008080400080806000808080008080A0008080C0008080E00080A0000080A0
+          200080A0400080A0600080A0800080A0A00080A0C00080A0E00080C0000080C0
+          200080C0400080C0600080C0800080C0A00080C0C00080C0E00080E0000080E0
+          200080E0400080E0600080E0800080E0A00080E0C00080E0E000C0000000C000
+          2000C0004000C0006000C0008000C000A000C000C000C000E000C0200000C020
+          2000C0204000C0206000C0208000C020A000C020C000C020E000C0400000C040
+          2000C0404000C0406000C0408000C040A000C040C000C040E000C0600000C060
+          2000C0604000C0606000C0608000C060A000C060C000C060E000C0800000C080
+          2000C0804000C0806000C0808000C080A000C080C000C080E000C0A00000C0A0
+          2000C0A04000C0A06000C0A08000C0A0A000C0A0C000C0A0E000C0C00000C0C0
+          2000C0C04000C0C06000C0C08000C0C0A000F0FBFF00A4A0A000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+          000000000000000000000052A452A4525252525200520000000000A4A4A452A4
+          5252520052000000000000A4A4A4A4525252525200000000000000A4A4A4A4A4
+          5252520000000000000000A4FFA4FFA4A452000052005200000000FFA4FFA4FF
+          FFFF525200520052000000FFFFFFFFFFFFA4A45252525252520000FFFFFFA4FF
+          A4A4A4A452525252520000FFFFA4FFA4A4A4A452A4525252520000FFA4FFA4A4
+          A4A4A4A452A452A4520000000000000000000000000000000000FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        }
+        GroupIndex = 1
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object btnReflectedGradient: TSpeedButton
+        Cursor = crHandPoint
+        Left = 86
+        Height = 22
+        Hint = 'Reflected Gradient'
+        Top = 13
+        Width = 23
+        Flat = True
+        Glyph.Data = {
+          36050000424D3605000000000000360400002800000010000000100000000100
+          0800000000000001000000000000000000000001000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+          A6000020400000206000002080000020A0000020C0000020E000004000000040
+          20000040400000406000004080000040A0000040C0000040E000006000000060
+          20000060400000606000006080000060A0000060C0000060E000008000000080
+          20000080400000806000008080000080A0000080C0000080E00000A0000000A0
+          200000A0400000A0600000A0800000A0A00000A0C00000A0E00000C0000000C0
+          200000C0400000C0600000C0800000C0A00000C0C00000C0E00000E0000000E0
+          200000E0400000E0600000E0800000E0A00000E0C00000E0E000400000004000
+          20004000400040006000400080004000A0004000C0004000E000402000004020
+          20004020400040206000402080004020A0004020C0004020E000404000004040
+          20004040400040406000404080004040A0004040C0004040E000406000004060
+          20004060400040606000406080004060A0004060C0004060E000408000004080
+          20004080400040806000408080004080A0004080C0004080E00040A0000040A0
+          200040A0400040A0600040A0800040A0A00040A0C00040A0E00040C0000040C0
+          200040C0400040C0600040C0800040C0A00040C0C00040C0E00040E0000040E0
+          200040E0400040E0600040E0800040E0A00040E0C00040E0E000800000008000
+          20008000400080006000800080008000A0008000C0008000E000802000008020
+          20008020400080206000802080008020A0008020C0008020E000804000008040
+          20008040400080406000804080008040A0008040C0008040E000806000008060
+          20008060400080606000806080008060A0008060C0008060E000808000008080
+          20008080400080806000808080008080A0008080C0008080E00080A0000080A0
+          200080A0400080A0600080A0800080A0A00080A0C00080A0E00080C0000080C0
+          200080C0400080C0600080C0800080C0A00080C0C00080C0E00080E0000080E0
+          200080E0400080E0600080E0800080E0A00080E0C00080E0E000C0000000C000
+          2000C0004000C0006000C0008000C000A000C000C000C000E000C0200000C020
+          2000C0204000C0206000C0208000C020A000C020C000C020E000C0400000C040
+          2000C0404000C0406000C0408000C040A000C040C000C040E000C0600000C060
+          2000C0604000C0606000C0608000C060A000C060C000C060E000C0800000C080
+          2000C0804000C0806000C0808000C080A000C080C000C080E000C0A00000C0A0
+          2000C0A04000C0A06000C0A08000C0A0A000C0A0C000C0A0E000C0C00000C0C0
+          2000C0C04000C0C06000C0C08000C0C0A000F0FBFF00A4A0A000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+          00000000000000000000005252525252525252525252525252000052A452A452
+          A452A452A452A452A40000A4A4A4A4A4A4A4A4A4A4A4A4A4A40000FFA4FFA4FF
+          A4FFA4FFA4FFA4FFA40000FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFF
+          FFFFFFFFFFFFFFFFFF0000A4FFA4FFA4FFA4FFA4FFA4FFA4FF0000A4A4A4A4A4
+          A4A4A4A4A4A4A4A4A40000A452A452A452A452A452A452A45200005252525252
+          5252525252525252520000000000000000000000000000000000FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        }
+        GroupIndex = 1
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object btnDiamondGradient: TSpeedButton
+        Cursor = crHandPoint
+        Left = 110
+        Height = 22
+        Hint = 'Diamond Gradient'
+        Top = 13
+        Width = 23
+        Flat = True
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          0400000000008000000000000000000000001000000000000000000000000000
+          8000008000000080800080000000800080008080000080808000C0C0C0000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000000000000000000070F07000000000070F7F07
+          0000000070F7F7F0700000070F7FFF7F07000070F7FFFFF7F07000070F7FFF7F
+          0700000070F7F7F070000000070F7F07000000000070F0700000000000070700
+          00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        }
+        GroupIndex = 1
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object lblBlendMode: TLabel
+        Left = 166
+        Height = 13
+        Top = 82
+        Width = 30
+        Caption = 'Mode:'
+        Enabled = False
+        ParentColor = False
+      end
+      object lblBlendOpacity: TLabel
+        Left = 158
+        Height = 13
+        Top = 106
+        Width = 39
+        Caption = 'Opacity:'
+        Enabled = False
+        ParentColor = False
+      end
+      object lblBlendOpacityPercent: TLabel
+        Left = 350
+        Height = 13
+        Top = 106
+        Width = 26
+        Caption = '100%'
+        Enabled = False
+        ParentColor = False
+      end
+      object lblChannel: TLabel
+        Left = 154
+        Height = 13
+        Top = 54
+        Width = 42
+        Caption = 'Channel:'
+        Enabled = False
+        ParentColor = False
+      end
+      object chkReverse: TCheckBox
+        Cursor = crHandPoint
+        Left = 214
+        Height = 19
+        Top = 16
+        Width = 60
+        Caption = 'Reverse'
+        TabOrder = 0
+      end
+      object cbbBlendModes: TComboBox
+        Cursor = crHandPoint
+        Left = 214
+        Height = 21
+        Top = 78
+        Width = 169
+        DropDownCount = 40
+        Enabled = False
+        ItemHeight = 13
+        TabOrder = 1
+      end
+      object rdbtnDrawNormal: TRadioButton
+        Cursor = crHandPoint
+        Left = 14
+        Height = 19
+        Top = 48
+        Width = 81
+        Caption = 'Draw Normal'
+        Checked = True
+        OnClick = ChangeDrawingModeClick
+        TabOrder = 2
+        TabStop = True
+      end
+      object rdbtnDrawBlend: TRadioButton
+        Cursor = crHandPoint
+        Left = 14
+        Height = 19
+        Top = 74
+        Width = 75
+        Caption = 'Draw Blend'
+        OnClick = ChangeDrawingModeClick
+        TabOrder = 3
+      end
+      object scrollBlendOpacity: TGaugeBar
+        Cursor = crHandPoint
+        Left = 214
+        Height = 16
+        Top = 106
+        Width = 129
+        Color = clScrollBar
+        Backgnd = bgPattern
+        Enabled = False
+        ShowHandleGrip = True
+        Style = rbsMac
+        Position = 100
+        OnChange = scrollBlendOpacityChange
+      end
+      object cbbChannel: TComboBox
+        Cursor = crHandPoint
+        Left = 214
+        Height = 21
+        Top = 50
+        Width = 169
+        Enabled = False
+        ItemHeight = 13
+        ItemIndex = 0
+        Items.Strings = (
+          'RGB'
+          'Red'
+          'Green'
+          'Blue'
+        )
+        TabOrder = 5
+        Text = 'RGB'
+      end
+    end
+  end
+  object glGradientList: TgmGradientList
+    Gradients = <    
+      item
+        DisplayName = 'Foreground to Background'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = clDefault
+          end        
+          item
+            Value = clBackground
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Foreground to Transparent'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clBlack
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = clDefault
+          end        
+          item
+            Value = clDefault
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Black, White'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = clBlack
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Red, Green'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 1638625
+          end        
+          item
+            Value = 1794048
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Violet, Orange'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 5835305
+          end        
+          item
+            Value = 31999
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Blue, Red, Yellow'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 11665418
+          end        
+          item
+            Value = clRed
+            LocationScale = 0.5
+          end        
+          item
+            Value = 64767
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Blue, Yellow, Blue'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 12058891
+            LocationScale = 0.100000001490116
+          end        
+          item
+            Value = 260861
+            LocationScale = 0.5
+          end        
+          item
+            Value = 11141643
+            LocationScale = 0.899999976158142
+          end>
+      end    
+      item
+        DisplayName = 'Orange, Yellow, Orange'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 159487
+          end        
+          item
+            Value = clYellow
+            LocationScale = 0.5
+            MidPoint = 0.469999998807907
+          end        
+          item
+            Value = 28159
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Violet, Green, Orange'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 7083375
+          end        
+          item
+            Value = 1794048
+            LocationScale = 0.5
+          end        
+          item
+            Value = 31997
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Yellow, Violet, Orange, Blue'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 59129
+            LocationScale = 0.0500000007450581
+          end        
+          item
+            Value = 7083375
+            LocationScale = 0.349999994039536
+          end        
+          item
+            Value = 31997
+            LocationScale = 0.649999976158142
+          end        
+          item
+            Value = 7612416
+            LocationScale = 0.949999988079071
+          end>
+      end    
+      item
+        DisplayName = 'Copper'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 1722007
+          end        
+          item
+            Value = 12966139
+            LocationScale = 0.300000011920929
+          end        
+          item
+            Value = 1453676
+            LocationScale = 0.829999983310699
+            MidPoint = 0.600000023841858
+          end        
+          item
+            Value = 13491183
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Chrome'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = 13404457
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.5
+            MidPoint = 0.129999995231628
+          end        
+          item
+            Value = 27280
+            LocationScale = 0.519999980926514
+          end        
+          item
+            Value = 40921
+            LocationScale = 0.639999985694885
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Spectrum'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = clRed
+          end        
+          item
+            Value = clFuchsia
+            LocationScale = 0.150000005960465
+          end        
+          item
+            Value = clBlue
+            LocationScale = 0.330000013113022
+          end        
+          item
+            Value = clAqua
+            LocationScale = 0.490000009536743
+          end        
+          item
+            Value = clLime
+            LocationScale = 0.670000016689301
+          end        
+          item
+            Value = clYellow
+            LocationScale = 0.839999973773956
+          end        
+          item
+            Value = clRed
+            LocationScale = 1
+          end>
+      end    
+      item
+        DisplayName = 'Transparent Rainbow'
+        AlphaGradient = <        
+          item
+            Value = clBlack
+          end        
+          item
+            Value = 13421772
+            LocationScale = 0.0700000002980232
+            MidPoint = 0.699999988079071
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.109999999403954
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.879999995231628
+            MidPoint = 0.200000002980232
+          end        
+          item
+            Value = 13421772
+            LocationScale = 0.930000007152557
+          end        
+          item
+            Value = clBlack
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = clRed
+            LocationScale = 0.119999997317791
+          end        
+          item
+            Value = 64767
+            LocationScale = 0.280000001192093
+          end        
+          item
+            Value = 3781633
+            LocationScale = 0.449999988079071
+            MidPoint = 0.600000023841858
+          end        
+          item
+            Value = 16771584
+            LocationScale = 0.600000023841858
+            MidPoint = 0.349999994039536
+          end        
+          item
+            Value = 9437952
+            LocationScale = 0.75
+            MidPoint = 0.600000023841858
+          end        
+          item
+            Value = 12976383
+            LocationScale = 0.879999995231628
+          end>
+      end    
+      item
+        DisplayName = 'Transparent Stripes'
+        AlphaGradient = <        
+          item
+            Value = clWhite
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.0900000035762787
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.100000001490116
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.189999997615814
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.200000002980232
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.28999999165535
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.300000011920929
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.389999985694885
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.400000005960464
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.490000009536743
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.5
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.589999973773956
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.600000023841858
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.689999997615814
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.699999988079071
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.790000021457672
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.800000011920929
+          end        
+          item
+            Value = clWhite
+            LocationScale = 0.889999985694885
+          end        
+          item
+            Value = clBlack
+            LocationScale = 0.899999976158142
+          end        
+          item
+            Value = clBlack
+            LocationScale = 1
+          end>
+        RGBGradient = <        
+          item
+            Value = clDefault
+          end        
+          item
+            Value = clDefault
+            LocationScale = 1
+          end>
+      end>
+    ForegroundColor = clBlack
+    BackgroundColor = clWhite
+    Left = 472
+    Top = 224
+  end
+  object ActionList: TActionList
+    Left = 472
+    Top = 192
+    object actDelete: TAction
+      Category = 'Options'
+      Caption = 'actDelete'
+      OnExecute = actDeleteExecute
+      OnUpdate = actDeleteUpdate
+    end
+    object actClear: TAction
+      Category = 'Options'
+      Caption = 'actClear'
+      OnExecute = actClearExecute
+      OnUpdate = actClearUpdate
+    end
+    object actLoadGradients: TAction
+      Category = 'Options'
+      Caption = 'actLoadGradients'
+      OnExecute = actLoadGradientsExecute
+    end
+    object actReplaceGradients: TAction
+      Category = 'Options'
+      Caption = 'actReplaceGradients'
+      OnExecute = actReplaceGradientsExecute
+    end
+    object actSaveGradients: TAction
+      Category = 'Options'
+      Caption = 'actSaveGradients'
+      OnExecute = actSaveGradientsExecute
+    end
+    object actThumbSize16: TAction
+      Tag = 16
+      Category = 'Options'
+      Caption = 'actThumbSize16'
+      OnExecute = ChangeThumbSize
+      OnUpdate = ThumbSizeUpdate
+    end
+    object actThumbSize32: TAction
+      Tag = 32
+      Category = 'Options'
+      Caption = 'actThumbSize32'
+      OnExecute = ChangeThumbSize
+      OnUpdate = ThumbSizeUpdate
+    end
+    object actThumbSize48: TAction
+      Tag = 48
+      Category = 'Options'
+      Caption = 'actThumbSize48'
+      OnExecute = ChangeThumbSize
+      OnUpdate = ThumbSizeUpdate
+    end
+    object actThumbSize64: TAction
+      Tag = 64
+      Category = 'Options'
+      Caption = 'actThumbSize64'
+      OnExecute = ChangeThumbSize
+      OnUpdate = ThumbSizeUpdate
+    end
+    object actExit: TAction
+      Category = 'Options'
+      Caption = 'Exit'
+      OnExecute = actExitExecute
+    end
+  end
+  object MainMenu: TMainMenu
+    Left = 512
+    Top = 192
+    object mnitmOptions: TMenuItem
+      Caption = 'Options'
+      object mnitmClear: TMenuItem
+        Action = actClear
+        Caption = 'Clear'
+      end
+      object mnitmDelete: TMenuItem
+        Action = actDelete
+        Caption = 'Delete'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object mnitmLoadGradients: TMenuItem
+        Action = actLoadGradients
+        Caption = 'Load Gradients...'
+      end
+      object mnitmReplaceGradients1: TMenuItem
+        Action = actReplaceGradients
+        Caption = 'Replace Gradients...'
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object mnitmSaveGradients: TMenuItem
+        Action = actSaveGradients
+        Caption = 'Save Gradients...'
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object mnitmThumbSize16: TMenuItem
+        Action = actThumbSize16
+        Caption = 'Thumbnail Size 16 x 16'
+      end
+      object mnitmThumbSize32: TMenuItem
+        Action = actThumbSize32
+        Caption = 'Thumbnail Size 32 x 32'
+      end
+      object mnitmThumbSize48: TMenuItem
+        Action = actThumbSize48
+        Caption = 'Thumbnail Size 48 x 48'
+      end
+      object mnitmThumbSize64: TMenuItem
+        Action = actThumbSize64
+        Caption = 'Thumbnail Size 64 x 64'
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object mnitmExit: TMenuItem
+        Action = actExit
+      end
+    end
+  end
+  object ColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 552
+    Top = 192
+  end
+end

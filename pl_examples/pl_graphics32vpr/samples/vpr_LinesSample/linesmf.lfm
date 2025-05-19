@@ -1,0 +1,40 @@
+object Form1: TForm1
+  Left = 394
+  Height = 431
+  Top = 433
+  Width = 615
+  Caption = 'Form1'
+  ClientHeight = 431
+  ClientWidth = 615
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnMouseWheel = FormMouseWheel
+  Position = poScreenCenter
+  LCLVersion = '6.0'
+  object ScrollBar1: TScrollBar
+    Left = 598
+    Height = 431
+    Top = 0
+    Width = 17
+    Align = alRight
+    Kind = sbVertical
+    PageSize = 0
+    TabOrder = 0
+    OnChange = ScrollBar1Change
+  end
+  object Image: TImage32
+    Left = 0
+    Height = 431
+    Top = 0
+    Width = 598
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smNormal
+    TabOrder = 1
+    OnMouseDown = ImageMouseDown
+    OnMouseMove = ImageMouseMove
+    OnMouseUp = ImageMouseUp
+  end
+end

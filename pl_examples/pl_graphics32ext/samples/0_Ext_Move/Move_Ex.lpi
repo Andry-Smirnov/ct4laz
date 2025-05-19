@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <Title Value="Rotate Example"/>
+      <Icon Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="4">
+      <Item1>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_graphics32ext"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="pl_Graphics32"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+    </RequiredPackages>
+    <Units Count="40">
+      <Unit0>
+        <Filename Value="Move_Ex.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="12" Y="12"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Move_Exmw.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRotateExample"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="30"/>
+        <CursorPos X="11" Y="50"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="MainUnit.lrs"/>
+        <CursorPos X="17" Y="3"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../../typhon/lcl/lclintf.pas"/>
+        <UnitName Value="LCLIntf"/>
+        <TopLine Value="164"/>
+        <CursorPos X="8" Y="167"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../typhon/lcl/include/lclintf.inc"/>
+        <TopLine Value="84"/>
+        <CursorPos X="18" Y="92"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../typhon/lcl/interfacebase.pp"/>
+        <UnitName Value="InterfaceBase"/>
+        <CursorPos X="3" Y="132"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../fpc/packages/extra/univint/FPCMacOSAll.pas"/>
+        <TopLine Value="696"/>
+        <CursorPos X="9" Y="710"/>
+        <UsageCount Value="11"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../GR32.pas"/>
+        <TopLine Value="4414"/>
+        <CursorPos X="13" Y="4745"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../../fpc/rtl/objpas/classes/classesh.inc"/>
+        <TopLine Value="338"/>
+        <CursorPos X="37" Y="352"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../../GR32_Backends_LCL_Gtk.pas"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../GR32_Backends_LCL_Carbon.pas"/>
+        <TopLine Value="304"/>
+        <CursorPos X="24" Y="317"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../../GR32_DrawingEx.pas"/>
+        <TopLine Value="26"/>
+        <CursorPos X="41" Y="67"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../../Packages/GR32_L.pas"/>
+        <CursorPos X="46" Y="7"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../../Typhon/lcl/utrace.pp"/>
+        <UnitName Value="UTrace"/>
+        <TopLine Value="42"/>
+        <CursorPos X="18" Y="44"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32.pas"/>
+        <TopLine Value="26"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_Backends.inc"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_Backends_aa.inc"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_Filters.inc"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_Filters_aa.inc"/>
+        <TopLine Value="959"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_Image.inc"/>
+        <TopLine Value="313"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_LowLevel_aa.inc"/>
+        <TopLine Value="806"/>
+        <CursorPos X="5" Y="814"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_Transforms.inc"/>
+        <TopLine Value="28"/>
+        <CursorPos X="24" Y="61"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i.inc"/>
+        <TopLine Value="218"/>
+        <CursorPos X="10" Y="240"/>
+        <UsageCount Value="10"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/GR32i_Layers.inc"/>
+        <TopLine Value="239"/>
+        <CursorPos X="14" Y="271"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/XGR32_Blendmodes.pas"/>
+        <UnitName Value="XGR32_BlendModes"/>
+        <CursorPos X="59" Y="1929"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/XGR32_Blending.pas"/>
+        <CursorPos Y="3"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/XGR32_RedEye.pas"/>
+        <CursorPos X="19" Y="17"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/XGR32_basic.pas"/>
+        <UnitName Value="XGR32_Basic"/>
+        <CursorPos X="52" Y="423"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/XGR32_GimpEmbossLib.pas"/>
+        <TopLine Value="162"/>
+        <UsageCount Value="10"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/XGR32_GimpFunctions.pas"/>
+        <CursorPos X="7" Y="11"/>
+        <UsageCount Value="10"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/Source/XGR32_GimpLibrary.pas"/>
+        <TopLine Value="788"/>
+        <CursorPos X="18" Y="1238"/>
+        <UsageCount Value="10"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32/source/GR32i_Backends_LCL_Win_aa.inc"/>
+        <TopLine Value="107"/>
+        <CursorPos X="63" Y="132"/>
+        <UsageCount Value="10"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32EXT/source/XGR32_Color.pas"/>
+        <TopLine Value="5"/>
+        <CursorPos X="5" Y="13"/>
+        <UsageCount Value="11"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32EXT/source/XGR32_Bmp32Draw.pas"/>
+        <TopLine Value="9"/>
+        <CursorPos X="81" Y="29"/>
+        <UsageCount Value="11"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32EXT/source/XGR32_Bmp32Func.pas"/>
+        <TopLine Value="449"/>
+        <CursorPos X="6" Y="485"/>
+        <UsageCount Value="11"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32EXT/source/XGR32_ExtLayers.pas"/>
+        <UsageCount Value="10"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32EXT/source/XGR32_ExtLayers_transform.pas"/>
+        <UsageCount Value="10"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32EXT/source/XGR32_ExtLayers_cursors.pas"/>
+        <UsageCount Value="10"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="../../../../../typhon/lcl/graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <TopLine Value="208"/>
+        <CursorPos X="5" Y="232"/>
+        <UsageCount Value="10"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="../../../../../typhon/components/pl_Graphics32EXT/source/XGR32_Controls.pas"/>
+        <TopLine Value="1754"/>
+        <CursorPos X="4" Y="1771"/>
+        <UsageCount Value="10"/>
+      </Unit39>
+    </Units>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="Move_Exmw.pas"/>
+        <Caret Line="4" Column="12"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Move_Exmw.pas"/>
+        <Caret Line="13" Column="25"/>
+      </Position2>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(TyphonDir)/components/pl_Graphics32/Source"/>
+      <OtherUnitFiles Value="$(TyphonDir)/components/pl_Graphics32"/>
+      <UnitOutputDirectory Value="../xbin"/>
+      <ObjectPath Value="../../.."/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <CPPInline Value="False"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <LinkSmart Value="True"/>
+      <Options>
+        <LinkerOptions Value="-framework carbon"/>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,169 @@
+object frmMain: TfrmMain
+  Left = 1110
+  Height = 640
+  Top = 955
+  Width = 861
+  Caption = 'Linear Auto Level'
+  ClientHeight = 640
+  ClientWidth = 861
+  Color = clBtnFace
+  Constraints.MinHeight = 480
+  Constraints.MinWidth = 640
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Panel1: TPanel
+    Left = 663
+    Height = 617
+    Top = 0
+    Width = 198
+    Align = alRight
+    ClientHeight = 617
+    ClientWidth = 198
+    TabOrder = 0
+    object lblZoom: TLabel
+      Left = 22
+      Height = 13
+      Top = 17
+      Width = 30
+      Caption = 'Zoom:'
+      Enabled = False
+      ParentColor = False
+    end
+    object lblShadowsClip: TLabel
+      Left = 22
+      Height = 13
+      Top = 198
+      Width = 67
+      Caption = 'Shadows Clip:'
+      ParentColor = False
+    end
+    object lblHighlightsClip: TLabel
+      Left = 22
+      Height = 13
+      Top = 246
+      Width = 66
+      Caption = 'Highlights Clip'
+      ParentColor = False
+    end
+    object btnLoadImage: TButton
+      Cursor = crHandPoint
+      Left = 22
+      Height = 25
+      Top = 56
+      Width = 153
+      Caption = 'Load Image...'
+      OnClick = btnLoadImageClick
+      TabOrder = 0
+    end
+    object btnExecute: TButton
+      Cursor = crHandPoint
+      Left = 22
+      Height = 25
+      Top = 134
+      Width = 153
+      Caption = 'Execute Auto Level'
+      Enabled = False
+      OnClick = btnExecuteClick
+      TabOrder = 1
+    end
+    object cmbbxZoom: TComboBox
+      Cursor = crHandPoint
+      Left = 59
+      Height = 21
+      Top = 14
+      Width = 116
+      Enabled = False
+      ItemHeight = 13
+      ItemIndex = 3
+      Items.Strings = (
+        '25%'
+        '50%'
+        '75%'
+        '100%'
+        '125%'
+        '150%'
+        '175%'
+        '200%'
+      )
+      OnChange = cmbbxZoomChange
+      TabOrder = 2
+      Text = '100%'
+    end
+    object btnRestore: TButton
+      Cursor = crHandPoint
+      Left = 22
+      Height = 25
+      Top = 94
+      Width = 153
+      Caption = 'Restore'
+      Enabled = False
+      OnClick = btnRestoreClick
+      TabOrder = 3
+    end
+    object ggbrShadowsClip: TGaugeBar
+      Cursor = crHandPoint
+      Left = 22
+      Height = 16
+      Top = 214
+      Width = 153
+      Color = clScrollBar
+      Backgnd = bgPattern
+      Max = 999
+      ShowHandleGrip = True
+      Style = rbsMac
+      Position = 0
+      OnChange = ggbrShadowsClipChange
+    end
+    object ggbrHighlightsClip: TGaugeBar
+      Cursor = crHandPoint
+      Left = 22
+      Height = 16
+      Top = 262
+      Width = 153
+      Color = clScrollBar
+      Backgnd = bgPattern
+      Max = 999
+      ShowHandleGrip = True
+      Style = rbsMac
+      Position = 0
+      OnChange = ggbrHighlightsClipChange
+    end
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 617
+    Width = 861
+    Panels = <    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object imgView: TImgView32
+    Left = 0
+    Height = 617
+    Top = 0
+    Width = 663
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsDefault
+    ScrollBars.Size = 21
+    OverSize = 0
+    TabOrder = 2
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 136
+    Top = 48
+  end
+end

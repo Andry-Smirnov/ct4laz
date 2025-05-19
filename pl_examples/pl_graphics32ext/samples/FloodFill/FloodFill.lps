@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="FloodFill.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="10" Y="10"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="MainUnit.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmFloodFill"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="44"/>
+        <CursorPos X="18" Y="61"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Gr32_FloodFill.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="3" Y="36"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Media.rc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="222"/>
+        <CursorPos X="6" Y="6"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FlareFX.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="29" HistoryIndex="28">
+      <Position1>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="120" Column="33" TopLine="104"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="126" Column="12" TopLine="109"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="132" Column="10" TopLine="114"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="142" Column="16" TopLine="127"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="146" Column="13" TopLine="127"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="149" Column="14" TopLine="133"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="150" Column="24" TopLine="134"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="180" Column="16" TopLine="164"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="181" Column="25" TopLine="165"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="184" Column="27" TopLine="168"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="198" Column="38" TopLine="183"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="199" Column="31" TopLine="184"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="205" Column="48" TopLine="190"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="206" Column="27" TopLine="191"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="209" Column="27" TopLine="194"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="210" Column="29" TopLine="195"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="211" Column="53" TopLine="196"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="213" Column="16" TopLine="198"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="238" Column="31" TopLine="222"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="249" Column="33" TopLine="234"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="92" Column="10" TopLine="76"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="249" Column="20" TopLine="233"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32EXT\source\XGR32_FloodFill.pas"/>
+        <Caret Line="284" Column="25" TopLine="266"/>
+      </Position23>
+      <Position24>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="79" Column="4" TopLine="73"/>
+      </Position24>
+      <Position25>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="49"/>
+      </Position25>
+      <Position26>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="53" TopLine="22"/>
+      </Position26>
+      <Position27>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="52" TopLine="52"/>
+      </Position27>
+      <Position28>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="120" Column="97" TopLine="117"/>
+      </Position28>
+      <Position29>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="126" Column="89" TopLine="103"/>
+      </Position29>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,150 @@
+object frmMain: TfrmMain
+  Left = 1491
+  Height = 435
+  Top = 926
+  Width = 547
+  Caption = 'Magnetic Lasso Demo for GR32'
+  ClientHeight = 415
+  ClientWidth = 547
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Splitter1: TSplitter
+    Left = 392
+    Height = 374
+    Top = 0
+    Width = 16
+    Beveled = True
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 41
+    Top = 374
+    Width = 547
+    Align = alBottom
+    ClientHeight = 41
+    ClientWidth = 547
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 1
+      Height = 39
+      Top = 1
+      Width = 288
+      Align = alLeft
+      BevelInner = bvLowered
+      ClientHeight = 39
+      ClientWidth = 288
+      TabOrder = 0
+      object chckbxInteractive: TCheckBox
+        Cursor = crHandPoint
+        Left = 6
+        Height = 19
+        Top = 8
+        Width = 70
+        Caption = 'Interactive'
+        OnClick = chckbxInteractiveClick
+        TabOrder = 0
+      end
+      object cmbbxZoomer: TComboBox
+        Cursor = crHandPoint
+        Left = 94
+        Height = 21
+        Top = 6
+        Width = 89
+        ItemHeight = 13
+        ItemIndex = 4
+        Items.Strings = (
+          '1600%'
+          '800%'
+          '400%'
+          '200%'
+          '100%'
+          '50%'
+          '25%'
+          '12.5%'
+          '6.25%'
+        )
+        OnChange = cmbbxZoomerChange
+        TabOrder = 1
+        Text = '100%'
+      end
+      object btnReset: TButton
+        Cursor = crHandPoint
+        Left = 198
+        Height = 21
+        Top = 6
+        Width = 75
+        Caption = 'Reset'
+        OnClick = btnResetClick
+        TabOrder = 2
+      end
+    end
+    object pnlStatus: TPanel
+      Left = 289
+      Height = 39
+      Top = 1
+      Width = 257
+      Align = alClient
+      BevelInner = bvLowered
+      TabOrder = 1
+    end
+  end
+  object imgvwWorkArea: TImgView32
+    Left = 0
+    Height = 374
+    Top = 0
+    Width = 392
+    Align = alLeft
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsDefault
+    ScrollBars.Size = 13
+    OverSize = 0
+    TabOrder = 1
+    OnMouseDown = imgvwWorkAreaMouseDown
+    OnMouseMove = imgvwWorkAreaMouseMove
+    OnMouseUp = imgvwWorkAreaMouseUp
+  end
+  object imgvwMask: TImgView32
+    Left = 408
+    Height = 374
+    Top = 0
+    Width = 139
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsDefault
+    ScrollBars.Size = 13
+    OverSize = 0
+    TabOrder = 2
+  end
+  object MainMenu1: TMainMenu
+    Left = 120
+    Top = 88
+    object File1: TMenuItem
+      Caption = 'File'
+      object mnitmOpenImage: TMenuItem
+        Caption = 'Open...'
+        OnClick = OpenImageClick
+      end
+    end
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 240
+    Top = 88
+  end
+end

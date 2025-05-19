@@ -1,0 +1,186 @@
+object frmMain: TfrmMain
+  Left = 1558
+  Height = 640
+  Top = 856
+  Width = 870
+  Caption = 'Smart Blur Demo'
+  ClientHeight = 640
+  ClientWidth = 870
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Splitter1: TSplitter
+    Left = 393
+    Height = 580
+    Top = 60
+    Width = 8
+    Beveled = True
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 60
+    Top = 0
+    Width = 870
+    Align = alTop
+    ClientHeight = 60
+    ClientWidth = 870
+    TabOrder = 0
+    object lblRadius: TLabel
+      Left = 94
+      Height = 13
+      Top = 10
+      Width = 36
+      Caption = 'Radius:'
+      Enabled = False
+      ParentColor = False
+    end
+    object lblThreshold: TLabel
+      Left = 310
+      Height = 13
+      Top = 10
+      Width = 50
+      Caption = 'Threshold:'
+      Enabled = False
+      ParentColor = False
+    end
+    object ggbrRadius: TGaugeBar
+      Cursor = crHandPoint
+      Left = 94
+      Height = 16
+      Top = 26
+      Width = 200
+      Color = clScrollBar
+      Backgnd = bgPattern
+      Enabled = False
+      Max = 1000
+      Min = 1
+      ShowHandleGrip = True
+      Style = rbsMac
+      Position = 1
+      OnChange = ggbrRadiusChange
+      OnMouseUp = ggbrRadiusMouseUp
+    end
+    object ggbrThreshold: TGaugeBar
+      Cursor = crHandPoint
+      Left = 310
+      Height = 16
+      Top = 26
+      Width = 200
+      Color = clScrollBar
+      Backgnd = bgPattern
+      Enabled = False
+      Max = 1000
+      Min = 1
+      ShowHandleGrip = True
+      Style = rbsMac
+      Position = 1
+      OnChange = ggbrThresholdChange
+      OnMouseUp = ggbrThresholdMouseUp
+    end
+    object btnOpenImage: TButton
+      Cursor = crHandPoint
+      Left = 6
+      Height = 25
+      Top = 14
+      Width = 75
+      Caption = 'Open...'
+      OnClick = btnOpenImageClick
+      TabOrder = 2
+    end
+  end
+  object pnlOriginal: TPanel
+    Left = 0
+    Height = 580
+    Top = 60
+    Width = 393
+    Align = alLeft
+    ClientHeight = 580
+    ClientWidth = 393
+    TabOrder = 1
+    object Panel3: TPanel
+      Left = 1
+      Height = 25
+      Top = 1
+      Width = 391
+      Align = alTop
+      Caption = 'Original'
+      Color = clBtnShadow
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object imgvwOriginal: TImgView32
+      Left = 1
+      Height = 553
+      Top = 26
+      Width = 391
+      Align = alClient
+      Bitmap.ResamplerClassName = 'TNearestResampler'
+      BitmapAlign = baCustom
+      Color = clBtnFace
+      ParentColor = False
+      Scale = 1
+      ScaleMode = smScale
+      ScrollBars.Color = clScrollBar
+      ScrollBars.ShowHandleGrip = True
+      ScrollBars.Style = rbsDefault
+      ScrollBars.Size = 13
+      OverSize = 0
+      TabOrder = 1
+    end
+  end
+  object pnlResult: TPanel
+    Left = 401
+    Height = 580
+    Top = 60
+    Width = 469
+    Align = alClient
+    ClientHeight = 580
+    ClientWidth = 469
+    TabOrder = 2
+    object Panel2: TPanel
+      Left = 1
+      Height = 25
+      Top = 1
+      Width = 467
+      Align = alTop
+      Caption = 'Result'
+      Color = clBtnShadow
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object imgvwResult: TImgView32
+      Left = 1
+      Height = 553
+      Top = 26
+      Width = 467
+      Align = alClient
+      Bitmap.ResamplerClassName = 'TNearestResampler'
+      BitmapAlign = baCustom
+      Scale = 1
+      ScaleMode = smScale
+      ScrollBars.Color = clScrollBar
+      ScrollBars.ShowHandleGrip = True
+      ScrollBars.Style = rbsDefault
+      ScrollBars.Size = 13
+      OverSize = 0
+      TabOrder = 1
+    end
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 116
+    Top = 159
+  end
+end

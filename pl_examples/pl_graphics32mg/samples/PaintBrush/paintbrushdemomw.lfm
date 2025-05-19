@@ -1,0 +1,164 @@
+object frmMain: TfrmMain
+  Left = 214
+  Height = 640
+  Top = 134
+  Width = 870
+  Caption = 'Paint Brush Demo'
+  ClientHeight = 640
+  ClientWidth = 870
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object pntbxDrawingArea: TigPaintBox
+    Left = 0
+    Height = 429
+    Top = 211
+    Width = 870
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smNormal
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 211
+    Top = 0
+    Width = 870
+    Align = alTop
+    ClientHeight = 211
+    ClientWidth = 870
+    TabOrder = 1
+    object lblBrushSize: TLabel
+      Left = 210
+      Height = 13
+      Top = 8
+      Width = 79
+      Caption = 'Brush Size: 50px'
+      ParentColor = False
+    end
+    object lblBrushOpacity: TLabel
+      Left = 209
+      Height = 13
+      Top = 64
+      Width = 98
+      Caption = 'Brush Opacity: 100%'
+      ParentColor = False
+    end
+    object lblBrushColor: TLabel
+      Left = 377
+      Height = 13
+      Top = 8
+      Width = 57
+      Caption = 'Brush Color:'
+      ParentColor = False
+    end
+    object shpBrushColor: TShape
+      Cursor = crHandPoint
+      Left = 377
+      Height = 21
+      Top = 30
+      Width = 134
+      Brush.Color = clAqua
+      OnMouseDown = shpBrushColorMouseDown
+    end
+    object lblBlendMode: TLabel
+      Left = 377
+      Height = 13
+      Top = 64
+      Width = 60
+      Caption = 'Blend Mode:'
+      ParentColor = False
+    end
+    object imgStrokePreview: TImage32
+      Left = 6
+      Height = 192
+      Top = 6
+      Width = 192
+      Bitmap.ResamplerClassName = 'TNearestResampler'
+      BitmapAlign = baCenter
+      Color = clWhite
+      ParentColor = False
+      Scale = 1
+      ScaleMode = smNormal
+      TabOrder = 0
+    end
+    object scrlbrBrushSize: TScrollBar
+      Cursor = crHandPoint
+      Left = 209
+      Height = 21
+      Top = 30
+      Width = 133
+      Min = 1
+      PageSize = 0
+      Position = 20
+      TabOrder = 1
+      OnChange = scrlbrBrushSizeChange
+    end
+    object btnResetBackground: TButton
+      Cursor = crHandPoint
+      Left = 206
+      Height = 25
+      Top = 133
+      Width = 137
+      Caption = 'Reset Background'
+      OnClick = btnResetBackgroundClick
+      TabOrder = 2
+    end
+    object scrlbrBrushOpacity: TScrollBar
+      Cursor = crHandPoint
+      Left = 209
+      Height = 21
+      Top = 86
+      Width = 133
+      Max = 255
+      PageSize = 0
+      Position = 255
+      TabOrder = 3
+      OnChange = scrlbrBrushOpacityChange
+    end
+    object cmbbxBlendMode: TComboBox
+      Cursor = crHandPoint
+      Left = 374
+      Height = 21
+      Top = 86
+      Width = 145
+      DropDownCount = 40
+      ItemHeight = 13
+      OnChange = cmbbxBlendModeChange
+      TabOrder = 4
+    end
+  end
+  object ColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 8
+    top = 224
+  end
+end

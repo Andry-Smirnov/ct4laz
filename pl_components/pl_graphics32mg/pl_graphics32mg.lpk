@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="pl_Graphics32MG"/>
+    <Type Value="RunAndDesignTime"/>
+	<Author Value="Lazarus port: PilotLogic Software House"/>
+    <HasRegisterProc Value="True"/>
+    <ComponentCount Value="16"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+        </SyntaxOptions>
+      </Parsing>
+      <Other>
+        <CustomOptions Value="-dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Graphics32 MiniGlue library"/>
+    <License Value="MPL 1.1 or LGPL 2.1 with linking exception"/>
+    <Version Major="7" Minor="1" Release="1"/>
+    <Files Count="32">
+      <Item1>
+        <Filename Value="source\alligregister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="alligregister"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\bivTheme_Standard.pas"/>
+        <UnitName Value="bivTheme_Standard"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\igBase.pas"/>
+        <UnitName Value="igBase"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\igbestream.pas"/>
+        <UnitName Value="igbestream"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\igBmp.pas"/>
+        <UnitName Value="igBmp"/>
+      </Item5>
+      <Item6>
+        <Filename Value="source\igBrightContrastLayer.pas"/>
+        <UnitName Value="igBrightContrastLayer"/>
+      </Item6>
+      <Item7>
+        <Filename Value="source\igComboboxBlendModes.pas"/>
+        <UnitName Value="igComboboxBlendModes"/>
+      </Item7>
+      <Item8>
+        <Filename Value="source\igCore_Items.pas"/>
+        <UnitName Value="igCore_Items"/>
+      </Item8>
+      <Item9>
+        <Filename Value="source\igCore_rw.pas"/>
+        <UnitName Value="igCore_rw"/>
+      </Item9>
+      <Item10>
+        <Filename Value="source\igCore_Viewer.pas"/>
+        <UnitName Value="igCore_Viewer"/>
+      </Item10>
+      <Item11>
+        <Filename Value="source\igGradient.pas"/>
+        <UnitName Value="igGradient"/>
+      </Item11>
+      <Item12>
+        <Filename Value="source\igGradient_rwPhotoshopGRD.pas"/>
+        <UnitName Value="igGradient_rwPhotoshopGRD"/>
+      </Item12>
+      <Item13>
+        <Filename Value="source\igGrid.pas"/>
+        <UnitName Value="igGrid"/>
+      </Item13>
+      <Item14>
+        <Filename Value="source\igGrid_ListView.pas"/>
+        <UnitName Value="igGrid_ListView"/>
+      </Item14>
+      <Item15>
+        <Filename Value="source\igGrid_ListView_Layers.pas"/>
+        <UnitName Value="igGrid_ListView_Layers"/>
+      </Item15>
+      <Item16>
+        <Filename Value="source\igJpg.pas"/>
+        <UnitName Value="igJpg"/>
+      </Item16>
+      <Item17>
+        <Filename Value="source\igLayerIO.pas"/>
+        <UnitName Value="igLayerIO"/>
+      </Item17>
+      <Item18>
+        <Filename Value="source\igLayerPanelManager.pas"/>
+        <UnitName Value="igLayerPanelManager"/>
+      </Item18>
+      <Item19>
+        <Filename Value="source\igLayers.pas"/>
+        <UnitName Value="igLayers"/>
+      </Item19>
+      <Item20>
+        <Filename Value="source\igLayersListBox.pas"/>
+        <UnitName Value="igLayersListBox"/>
+      </Item20>
+      <Item21>
+        <Filename Value="source\igMath.pas"/>
+        <UnitName Value="igMath"/>
+      </Item21>
+      <Item22>
+        <Filename Value="source\igPaintFuncs.pas"/>
+        <UnitName Value="igPaintFuncs"/>
+      </Item22>
+      <Item23>
+        <Filename Value="source\igPattern.pas"/>
+        <UnitName Value="igPattern"/>
+      </Item23>
+      <Item24>
+        <Filename Value="source\igSwatch.pas"/>
+        <UnitName Value="igSwatch"/>
+      </Item24>
+      <Item25>
+        <Filename Value="source\igSwatch_ListView.pas"/>
+        <UnitName Value="igSwatch_ListView"/>
+      </Item25>
+      <Item26>
+        <Filename Value="source\igSwatch_rwACO.pas"/>
+        <UnitName Value="igSwatch_rwACO"/>
+      </Item26>
+      <Item27>
+        <Filename Value="source\igSwatch_rwASE.pas"/>
+        <UnitName Value="igSwatch_rwASE"/>
+      </Item27>
+      <Item28>
+        <Filename Value="source\igSwatch_rwGPL.pas"/>
+        <UnitName Value="igSwatch_rwGPL"/>
+      </Item28>
+      <Item29>
+        <Filename Value="source\igTool_BrushSimple.pas"/>
+        <UnitName Value="igTool_BrushSimple"/>
+      </Item29>
+      <Item30>
+        <Filename Value="source\igTool_CustomBrush.pas"/>
+        <UnitName Value="igTool_CustomBrush"/>
+      </Item30>
+      <Item31>
+        <Filename Value="source\igTool_PaintBrush.pas"/>
+        <UnitName Value="igTool_PaintBrush"/>
+      </Item31>
+      <Item32>
+        <Filename Value="source\igTool_PencilSimple.pas"/>
+        <UnitName Value="igTool_PencilSimple"/>
+      </Item32>
+    </Files>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="mbcolorliblaz"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_graphics32ext"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="pl_graphics32"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

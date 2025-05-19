@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="CompressLZMA1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="13" Y="8"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="compresslzma1mw.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="compressLZMA1mw"/>
+        <TopLine Value="27"/>
+        <CursorPos X="35" Y="61"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\TplZlibUnit.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="298"/>
+        <CursorPos X="16" Y="423"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="3" Y="76"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ubufferedfs.pas"/>
+        <UnitName Value="UBufferedFS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="85"/>
+        <CursorPos X="33" Y="101"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\TplLzmaUnit.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="29" Y="37"/>
+        <UsageCount Value="13"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ulzmaencoder.pas"/>
+        <UnitName Value="ULZMAEncoder"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="191"/>
+        <CursorPos X="24" Y="243"/>
+        <UsageCount Value="11"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ulzmadecoder.pas"/>
+        <UnitName Value="ULZMADecoder"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="267"/>
+        <UsageCount Value="12"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\fpcsrc\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1218"/>
+        <CursorPos X="20" Y="1238"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\compressbase.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos X="65" Y="105"/>
+        <UsageCount Value="11"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ulzmacommon.pas"/>
+        <UnitName Value="ULZMACommon"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="28"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ulzbintree.pas"/>
+        <UnitName Value="ULZBinTree"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6"/>
+        <CursorPos X="7" Y="50"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExCompress\source\ulzinwindow.pas"/>
+        <UnitName Value="ULZInWindow"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <CursorPos X="30" Y="95"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="compresslzma1mw.pas"/>
+        <Caret Line="42" Column="18" TopLine="17"/>
+      </Position1>
+      <Position2>
+        <Filename Value="compresslzma1mw.pas"/>
+        <Caret Line="8" Column="32"/>
+      </Position2>
+      <Position3>
+        <Filename Value="compresslzma1mw.pas"/>
+        <Caret Line="42" Column="21" TopLine="28"/>
+      </Position3>
+      <Position4>
+        <Filename Value="compresslzma1mw.pas"/>
+        <Caret Line="43" Column="21" TopLine="29"/>
+      </Position4>
+      <Position5>
+        <Filename Value="compresslzma1mw.pas"/>
+        <Caret Line="61" Column="35" TopLine="24"/>
+      </Position5>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

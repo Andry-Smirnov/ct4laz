@@ -1,0 +1,148 @@
+object frmMain: TfrmMain
+  Left = 388
+  Height = 503
+  Top = 268
+  Width = 622
+  Caption = 'Crop Demo'
+  ClientHeight = 503
+  ClientWidth = 622
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Panel1: TPanel
+    Left = 437
+    Height = 503
+    Top = 0
+    Width = 185
+    Align = alRight
+    ClientHeight = 503
+    ClientWidth = 185
+    TabOrder = 0
+    object Button1: TButton
+      Cursor = crHandPoint
+      Left = 6
+      Height = 25
+      Top = 6
+      Width = 169
+      Caption = 'Load Image...'
+      OnClick = LoadImageClick
+      TabOrder = 0
+    end
+    object GroupBox: TGroupBox
+      Left = 6
+      Height = 153
+      Top = 46
+      Width = 169
+      Caption = 'Crop Options:'
+      ClientHeight = 135
+      ClientWidth = 165
+      TabOrder = 1
+      Visible = False
+      object lblShieldOpacity: TLabel
+        Left = 6
+        Height = 13
+        Top = 10
+        Width = 71
+        Caption = 'Shield Opacity:'
+        ParentColor = False
+      end
+      object Label1: TLabel
+        Left = 6
+        Height = 13
+        Top = 50
+        Width = 59
+        Caption = 'Shield Color:'
+        ParentColor = False
+      end
+      object shpShieldColor: TShape
+        Cursor = crHandPoint
+        Left = 6
+        Height = 17
+        Top = 66
+        Width = 153
+        OnMouseDown = shpShieldColorMouseDown
+      end
+      object ggbrShieldOpacity: TGaugeBar
+        Cursor = crHandPoint
+        Left = 6
+        Height = 16
+        Top = 26
+        Width = 153
+        Color = clScrollBar
+        Backgnd = bgPattern
+        ShowHandleGrip = True
+        Style = rbsMac
+        Position = 0
+        OnChange = ggbrShieldOpacityChange
+      end
+      object btnCommit: TButton
+        Cursor = crHandPoint
+        Left = 6
+        Height = 25
+        Top = 98
+        Width = 153
+        Caption = 'Commit Crop'
+        OnClick = CommitCropClick
+        TabOrder = 1
+      end
+    end
+  end
+  object imgvwWorkArea: TImgView32
+    Cursor = crCross
+    Left = 0
+    Height = 503
+    Top = 0
+    Width = 437
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsMac
+    ScrollBars.Size = 17
+    OverSize = 0
+    TabOrder = 1
+    OnMouseDown = imgvwWorkAreaMouseDown
+    OnMouseMove = imgvwWorkAreaMouseMove
+    OnMouseUp = imgvwWorkAreaMouseUp
+    OnResize = imgvwWorkAreaResize
+  end
+  object ColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 168
+    Top = 56
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 64
+    Top = 64
+  end
+end

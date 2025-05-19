@@ -1,0 +1,103 @@
+object frmMain: TfrmMain
+  Left = 390
+  Height = 320
+  Top = 274
+  Width = 574
+  Caption = 'Gimp Levels Tool for GR32'
+  ClientHeight = 320
+  ClientWidth = 574
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 574
+    Align = alTop
+    ClientHeight = 41
+    ClientWidth = 574
+    TabOrder = 0
+    object lblZoom: TLabel
+      Left = 270
+      Height = 13
+      Top = 12
+      Width = 30
+      Caption = 'Zoom:'
+      Enabled = False
+      ParentColor = False
+    end
+    object btnOpenImage: TButton
+      Cursor = crHandPoint
+      Left = 6
+      Height = 25
+      Top = 6
+      Width = 120
+      Caption = 'Open Image...'
+      OnClick = OpenImage
+      TabOrder = 0
+    end
+    object btnOpenLevelsDlg: TButton
+      Cursor = crHandPoint
+      Left = 134
+      Height = 25
+      Top = 6
+      Width = 120
+      Caption = 'Open Levels Dialog...'
+      Enabled = False
+      OnClick = OpenLevelsDialog
+      TabOrder = 1
+    end
+    object cmbbxZoom: TComboBox
+      Cursor = crHandPoint
+      Left = 310
+      Height = 21
+      Top = 8
+      Width = 145
+      Enabled = False
+      ItemHeight = 13
+      ItemIndex = 3
+      Items.Strings = (
+        '25%'
+        '50%'
+        '75%'
+        '100%'
+        '125%'
+        '150%'
+        '175%'
+        '200%'
+      )
+      OnChange = cmbbxZoomChange
+      TabOrder = 2
+      Text = '100%'
+    end
+  end
+  object imgViewer: TImgView32
+    Left = 0
+    Height = 279
+    Top = 41
+    Width = 574
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Centered = False
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsMac
+    ScrollBars.Size = 21
+    OverSize = 0
+    TabOrder = 1
+    OnMouseDown = imgViewerMouseDown
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 192
+    Top = 136
+  end
+end

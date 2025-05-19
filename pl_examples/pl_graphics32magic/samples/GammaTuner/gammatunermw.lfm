@@ -1,0 +1,117 @@
+object frmMain: TfrmMain
+  Left = 392
+  Height = 361
+  Top = 274
+  Width = 577
+  Caption = 'Gamma Tuner'
+  ClientHeight = 341
+  ClientWidth = 577
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Menu = mnMain
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object pnlGammaOptionsHolder: TPanel
+    Left = 392
+    Height = 341
+    Top = 0
+    Width = 185
+    Align = alRight
+    ClientHeight = 341
+    ClientWidth = 185
+    TabOrder = 0
+    Visible = False
+    object lblChannel: TLabel
+      Left = 14
+      Height = 13
+      Top = 14
+      Width = 42
+      Caption = 'Channel:'
+      ParentColor = False
+    end
+    object lblGammaValue: TLabel
+      Left = 14
+      Height = 13
+      Top = 70
+      Width = 15
+      Caption = '1.0'
+      ParentColor = False
+    end
+    object cmbbxChannel: TComboBox
+      Cursor = crHandPoint
+      Left = 14
+      Height = 21
+      Top = 30
+      Width = 145
+      ItemHeight = 13
+      Items.Strings = (
+        'RGB'
+        'Red'
+        'Green'
+        'Blue'
+      )
+      OnChange = cmbbxChannelChange
+      TabOrder = 0
+    end
+    object ggbrGammaValue: TGaugeBar
+      Cursor = crHandPoint
+      Left = 14
+      Height = 16
+      Top = 86
+      Width = 145
+      Color = clScrollBar
+      Backgnd = bgPattern
+      Max = 500
+      Min = 1
+      ShowHandleGrip = True
+      Position = 1
+      OnChange = ggbrGammaValueChange
+      OnMouseUp = ggbrGammaValueMouseUp
+    end
+  end
+  object imgWorkArea: TImgView32
+    Left = 0
+    Height = 341
+    Top = 0
+    Width = 392
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsDefault
+    ScrollBars.Size = 13
+    OverSize = 0
+    TabOrder = 1
+  end
+  object mnMain: TMainMenu
+    Left = 24
+    Top = 24
+    object mnhdFile: TMenuItem
+      Caption = '&File'
+      object mnitmOpenFile: TMenuItem
+        Caption = 'Open...'
+        ShortCut = 16463
+        OnClick = mnitmOpenFileClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object mnitmExitProgram: TMenuItem
+        Caption = 'Exit'
+        ShortCut = 16465
+        OnClick = mnitmExitProgramClick
+      end
+    end
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 184
+    Top = 40
+  end
+end

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="Crypto3DES.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="9"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="crypto3desmw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Crypto3DESmw"/>
+        <TopLine Value="38"/>
+        <CursorPos X="21" Y="28"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="converters.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="35"/>
+        <CursorPos X="9" Y="78"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbclass.pas"/>
+        <UnitName Value="LbClass"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="782"/>
+        <CursorPos Y="799"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <UnitName Value="LbCipher"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="754"/>
+        <CursorPos Y="762"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbproc.pas"/>
+        <UnitName Value="LbProc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1065"/>
+        <CursorPos Y="1077"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="26" HistoryIndex="25">
+      <Position1>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="569" TopLine="548"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="570" TopLine="548"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="571" TopLine="548"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="568" TopLine="548"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="569" TopLine="548"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="573" TopLine="548"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="574" TopLine="548"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="579" TopLine="550"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="580" TopLine="551"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="581" TopLine="552"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="582" TopLine="553"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="771" TopLine="753"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="765" TopLine="753"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="765" TopLine="753"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="766" TopLine="753"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="767" TopLine="753"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="768" TopLine="753"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="769" TopLine="753"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="770" Column="58" TopLine="753"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="755" Column="37" TopLine="754"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="766" TopLine="753"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="767" TopLine="753"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="768" TopLine="753"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="769" TopLine="753"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\..\..\typhon\components\pl_LockBox\source\lbcipher.pas"/>
+        <Caret Line="770" TopLine="753"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Crypto3DES.lpr"/>
+      </Position26>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

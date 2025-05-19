@@ -1,0 +1,37 @@
+object Form1: TForm1
+  Left = 328
+  Height = 560
+  Top = 244
+  Width = 527
+  Caption = 'Curves Example'
+  ClientHeight = 560
+  ClientWidth = 527
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poScreenCenter
+  LCLVersion = '6.0'
+  object Img: TImage32
+    Left = 8
+    Height = 512
+    Top = 8
+    Width = 512
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baTopLeft
+    Color = 3355443
+    ParentColor = False
+    Scale = 1
+    ScaleMode = smNormal
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 25
+    Top = 528
+    Width = 75
+    Caption = 'Draw Curve'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+end

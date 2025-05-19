@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 200
+  Height = 204
+  Top = 100
+  Width = 671
+  Caption = '3DES crypto test'
+  ClientHeight = 204
+  ClientWidth = 671
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object Button1: TButton
+    Left = 464
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Get Random'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 24
+    Width = 440
+    TabOrder = 1
+    Text = '0x1 0x2 0x3 0x4 0x5 0x6 0x7 0x8'
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 23
+    Top = 72
+    Width = 576
+    TabOrder = 2
+    Text = '0x49 0x45 0x4D 0x4B 0x41 0x45 0x52 0x42 0x21 0x4E 0x41 0x43 0x55 0x4F 0x59 0x46'
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 56
+    Width = 53
+    Caption = 'Secret key'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 52
+    Caption = 'Plain data'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 104
+    Width = 79
+    Caption = 'Encrypted data'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 592
+    Height = 25
+    Top = 70
+    Width = 75
+    Caption = 'Set Key'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 8
+    Height = 23
+    Top = 120
+    Width = 576
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 592
+    Height = 25
+    Top = 118
+    Width = 75
+    Caption = 'Encrypt'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+  object Edit4: TEdit
+    Left = 8
+    Height = 23
+    Top = 168
+    Width = 576
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 15
+    Top = 152
+    Width = 307
+    Caption = 'Decrypted data - must be same as plain data after decrypt!'
+    ParentColor = False
+  end
+  object Button4: TButton
+    Left = 592
+    Height = 25
+    Top = 166
+    Width = 75
+    Caption = 'Decrypt'
+    OnClick = Button4Click
+    TabOrder = 7
+  end
+  object Lb3DES1: TLb3DES
+    CipherMode = cmCBC
+    Left = 568
+    Top = 16
+  end
+end

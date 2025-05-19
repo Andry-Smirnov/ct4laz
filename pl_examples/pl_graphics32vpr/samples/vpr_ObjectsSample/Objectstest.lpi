@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="5">
+      <Item1>
+        <PackageName Value="pl_exdesign"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="pl_graphics32vpr"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="pl_graphics32"/>
+        <MinVersion Major="3" Minor="1" Valid="True"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+    </RequiredPackages>
+    <Units Count="20">
+      <Unit0>
+        <Filename Value="Objectstest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="54" Y="13"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="objectstestmf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Objectstestmf"/>
+        <CursorPos X="46" Y="13"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\pp\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="658"/>
+        <CursorPos X="3" Y="936"/>
+        <UsageCount Value="11"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\typhon\components\pl_Graphics32\source\GR32i_Backends_LCL_Win_aa.inc"/>
+        <TopLine Value="32"/>
+        <CursorPos Y="55"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <TopLine Value="1884"/>
+        <CursorPos X="19" Y="1898"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\typhon\bs_IDEIntf\propedits.pp"/>
+        <TopLine Value="2076"/>
+        <CursorPos Y="2099"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\typhon\components\pl_Graphics32VPR\source\VGR32_Misc.pas"/>
+        <TopLine Value="233"/>
+        <CursorPos X="43" Y="18"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\typhon\components\pl_Graphics32\source\GR32i.inc"/>
+        <TopLine Value="344"/>
+        <CursorPos X="3" Y="97"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\typhon\components\pl_Graphics32\source\GR32i_Layers.inc"/>
+        <TopLine Value="166"/>
+        <CursorPos X="3" Y="189"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\typhon\lcl\extctrls.pp"/>
+        <TopLine Value="433"/>
+        <CursorPos X="3" Y="446"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\typhon\components\pl_Graphics32VPR\source\VGR32_Clipper.pas"/>
+        <TopLine Value="8"/>
+        <CursorPos X="13" Y="31"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\typhon\components\pl_Graphics32VPR\source\VGR32_Text.pas"/>
+        <TopLine Value="1093"/>
+        <CursorPos X="15" Y="1116"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\pp\rtl\win\wininc\redef.inc"/>
+        <TopLine Value="603"/>
+        <CursorPos X="48" Y="626"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\pp\rtl\win\wininc\struct.inc"/>
+        <TopLine Value="5059"/>
+        <CursorPos X="6" Y="5082"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Image.pas"/>
+        <CursorPos X="20" Y="30"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Layers.pas"/>
+        <CursorPos X="6"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Misc.pas"/>
+        <TopLine Value="1479"/>
+        <CursorPos Y="1492"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\..\typhon\components\pl_ExDesign\source\ELDsgxObjectInsp.pas"/>
+        <TopLine Value="811"/>
+        <CursorPos X="50" Y="828"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\typhon\lcl\graphics.pp"/>
+        <TopLine Value="2004"/>
+        <CursorPos X="39" Y="2021"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="461"/>
+        <CursorPos X="15" Y="461"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit19>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="objectstestmf.pas"/>
+        <Caret Line="99" Column="58"/>
+      </Position1>
+      <Position2>
+        <Filename Value="objectstestmf.pas"/>
+        <Caret Line="12" Column="36" TopLine="5"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="486" Column="22" TopLine="469"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="487" Column="28" TopLine="469"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="3223" Column="32" TopLine="3205"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="53" Column="3" TopLine="43"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="40" Column="102" TopLine="37"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="486" Column="22" TopLine="458"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="487" Column="28" TopLine="459"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <Caret Line="3210" Column="30" TopLine="3205"/>
+      </Position10>
+      <Position11>
+        <Filename Value="objectstestmf.pas"/>
+        <Caret Line="60" Column="14" TopLine="60"/>
+      </Position11>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

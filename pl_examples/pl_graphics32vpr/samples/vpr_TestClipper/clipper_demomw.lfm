@@ -1,0 +1,293 @@
+object MainForm: TMainForm
+  Left = 427
+  Height = 520
+  Top = 273
+  Width = 723
+  Caption = 'Clipper Demo for CodeTyphon Studio'
+  ClientHeight = 520
+  ClientWidth = 723
+  Color = clBtnFace
+  Font.CharSet = ARABIC_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Arial'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnMouseWheel = FormMouseWheel
+  OnResize = FormResize
+  Position = poDesktopCenter
+  LCLVersion = '6.1'
+  object Panel1: TPanel
+    Left = 0
+    Height = 497
+    Top = 0
+    Width = 183
+    Align = alLeft
+    ClientHeight = 497
+    ClientWidth = 183
+    TabOrder = 0
+    object lblClipOpacity: TLabel
+      Left = 15
+      Height = 15
+      Top = 406
+      Width = 100
+      Caption = 'Clip Opacity (255):'
+      FocusControl = tbClipOpacity
+      ParentColor = False
+    end
+    object lblSubjOpacity: TLabel
+      Left = 15
+      Height = 15
+      Top = 363
+      Width = 103
+      Caption = 'Subj &Opacity (255):'
+      FocusControl = tbSubjOpacity
+      ParentColor = False
+    end
+    object GroupBox1: TGroupBox
+      Left = 11
+      Height = 115
+      Top = 6
+      Width = 159
+      Caption = 'Clipping  Oper&ation'
+      ClientHeight = 95
+      ClientWidth = 155
+      TabOrder = 0
+      object rbIntersection: TRadioButton
+        Left = 12
+        Height = 19
+        Top = 24
+        Width = 84
+        Caption = 'Intersection'
+        Checked = True
+        OnClick = rbIntersectionClick
+        TabOrder = 1
+        TabStop = True
+      end
+      object rbUnion: TRadioButton
+        Left = 12
+        Height = 19
+        Top = 42
+        Width = 53
+        Caption = 'Union'
+        OnClick = rbIntersectionClick
+        TabOrder = 2
+      end
+      object rbDifference: TRadioButton
+        Left = 12
+        Height = 19
+        Top = 60
+        Width = 76
+        Caption = 'Difference'
+        OnClick = rbIntersectionClick
+        TabOrder = 3
+      end
+      object rbXOR: TRadioButton
+        Left = 12
+        Height = 19
+        Top = 78
+        Width = 45
+        Caption = 'XOR'
+        OnClick = rbIntersectionClick
+        TabOrder = 4
+      end
+      object rbNone: TRadioButton
+        Left = 12
+        Height = 19
+        Top = 6
+        Width = 50
+        Caption = 'None'
+        OnClick = rbIntersectionClick
+        TabOrder = 0
+      end
+    end
+    object rbStatic: TRadioButton
+      Left = 14
+      Height = 19
+      Top = 127
+      Width = 104
+      Caption = '&Static Polygons'
+      Checked = True
+      OnClick = rbStaticClick
+      TabOrder = 1
+      TabStop = True
+    end
+    object bExit: TButton
+      Left = 107
+      Height = 25
+      Top = 451
+      Width = 52
+      Caption = 'E&xit'
+      OnClick = bExitClick
+      TabOrder = 7
+    end
+    object gbRandom: TGroupBox
+      Left = 9
+      Height = 169
+      Top = 182
+      Width = 159
+      ClientHeight = 149
+      ClientWidth = 155
+      TabOrder = 4
+      object lblSubjCount: TLabel
+        Left = 2
+        Height = 15
+        Top = 26
+        Width = 129
+        Caption = 'No. Subject edges: (20)'
+        Enabled = False
+        FocusControl = tbSubj
+        ParentColor = False
+      end
+      object lblClipCount: TLabel
+        Left = 2
+        Height = 15
+        Top = 73
+        Width = 110
+        Caption = 'No. Clip edges (20):'
+        Enabled = False
+        FocusControl = tbClip
+        ParentColor = False
+      end
+      object tbSubj: TTrackBar
+        Left = 3
+        Height = 28
+        Top = 44
+        Width = 145
+        Max = 100
+        Min = 3
+        OnChange = tbSubjChange
+        Position = 20
+        TickStyle = tsNone
+        Enabled = False
+        TabOrder = 2
+      end
+      object tbClip: TTrackBar
+        Left = 3
+        Height = 28
+        Top = 92
+        Width = 145
+        Max = 100
+        Min = 3
+        OnChange = tbSubjChange
+        Position = 20
+        TickStyle = tsNone
+        Enabled = False
+        TabOrder = 3
+      end
+      object bNext: TButton
+        Left = 8
+        Height = 25
+        Top = 118
+        Width = 134
+        Caption = '&New Polygons'
+        OnClick = bNextClick
+        TabOrder = 4
+      end
+      object rbEvenOdd: TRadioButton
+        Left = 3
+        Height = 19
+        Top = 0
+        Width = 70
+        Caption = 'E&venOdd'
+        Checked = True
+        Enabled = False
+        OnClick = rbEvenOddClick
+        TabOrder = 0
+        TabStop = True
+      end
+      object rbNonZero: TRadioButton
+        Left = 80
+        Height = 19
+        Top = 0
+        Width = 68
+        Caption = 'Non&Zero'
+        Enabled = False
+        OnClick = rbEvenOddClick
+        TabOrder = 1
+      end
+    end
+    object rbRandom1: TRadioButton
+      Left = 14
+      Height = 19
+      Top = 144
+      Width = 132
+      Caption = 'Random Polygons &1'
+      OnClick = rbStaticClick
+      TabOrder = 2
+    end
+    object tbClipOpacity: TTrackBar
+      Left = 10
+      Height = 28
+      Top = 423
+      Width = 158
+      Max = 255
+      OnChange = tbClipOpacityChange
+      Position = 255
+      TickStyle = tsNone
+      TabOrder = 6
+    end
+    object tbSubjOpacity: TTrackBar
+      Left = 10
+      Height = 28
+      Top = 380
+      Width = 158
+      Max = 255
+      OnChange = tbSubjOpacityChange
+      Position = 255
+      TickStyle = tsNone
+      TabOrder = 5
+    end
+    object rbRandom2: TRadioButton
+      Left = 14
+      Height = 19
+      Top = 162
+      Width = 132
+      Caption = 'Random Polygons &2'
+      OnClick = rbStaticClick
+      TabOrder = 3
+    end
+    object bSaveSvg: TButton
+      Left = 17
+      Height = 25
+      Top = 451
+      Width = 82
+      Caption = 'Save S&VG ...'
+      OnClick = bSaveSvgClick
+      TabOrder = 8
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 497
+    Width = 723
+    Panels = <>
+  end
+  object ImgView321: TImgView32
+    Left = 183
+    Height = 497
+    Top = 0
+    Width = 540
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsDefault
+    ScrollBars.Size = 16
+    OverSize = 0
+    TabOrder = 2
+    OnDblClick = bNextClick
+    OnResize = ImgView321Resize
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.svg'
+    Filter = 'SVG Files (*.svg)|*.svg'
+    Left = 239
+    Top = 32
+  end
+end

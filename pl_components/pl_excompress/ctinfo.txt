@@ -1,0 +1,21 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_ExCompress
+
+Version: 7.2.1 Date: 2020-05-12 09:07
+ 
+
+
+
+
+
+
+
+
+
+
+

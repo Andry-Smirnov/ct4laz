@@ -1,0 +1,100 @@
+Test for "LZMA" Compress
+
+Pascal of CodeTyphon Studio
+is an imperative and procedural programming language, which Niklaus Wirth designed in 1968–69 and published in 1970, as a small, efficient language intended to encourage good programming practices using structured programming and data structuring. It is named in honor of the French mathematician, philosopher and physicist Blaise Pascal.
+
+Pascal was developed on the pattern of the ALGOL 60 language. Wirth had already developed several improvements to this language as part of the ALGOL X proposals, but these were not accepted and Pascal was developed separately and released in 1970. A derivative known as Object Pascal designed for object-oriented programming was developed in 1985; this was used by Apple Computer and Borland in the late 1980s and later developed into Delphi on the Microsoft Windows platform. Extensions to the Pascal concepts led to the Pascal-like languages Modula-2 and Oberon.
+
+History
+
+Earlier efforts
+
+Much of the history of computer language design during the 1960s traces its history to the ALGOL 60 language. ALGOL was developed during the 1950s with the explicit goal to be able to clearly describe algorithms. It included a number of features for structured programming that remain common in languages to this day.
+
+Shortly after its introduction, in 1962 Wirth began working on his dissertation with Helmut Weber on the Euler programming language. Euler was based on ALGOL's syntax and many concepts but was not a derivative. Its primary goal was to add dynamic lists and types, allowing it to be used in roles similar to the Lisp. The language was published in 1965.
+
+By this time, a number of problems in ALGOL had been identified, notably the lack of a standardized string system. The group tasked with maintaining the language had begun the ALGOL X process to identify improvements, calling for submissions. Wirth and Tony Hoare submitted a conservative set of modifications to add strings and clean up some of the syntax. These were considered too minor to be worth using as the new standard ALGOL, so Wirth wrote a compiler for the language, which became known as ALGOL W.
+
+The ALGOL X efforts would go on to choose a dramatically more complex language, ALGOL 68. The complexity of this language led to considerable difficulty producing high-performance compilers, and it was not widely used in the industry. This left an opening for newer languages.
+Pascal
+
+Pascal was influenced by the ALGOL W efforts, with the explicit goals of producing a language that would be efficient both in the compiler and at run-time, allow for the development of well-structured programs, and to be useful for teaching students structured programming.[4] A generation of students used Pascal as an introductory language in undergraduate courses.
+
+One of the early successes for language was the introduction of UCSD Pascal, a version that ran on a custom operating system that could be ported to different platforms. A key platform was the Apple II, where it saw widespread use. This led to the use of Pascal becoming the primary high-level language used for development in the Apple Lisa, and later, the Macintosh. Parts of the original Macintosh operating system were hand-translated into Motorola 68000 assembly language from the Pascal sources.[5]
+
+The typesetting system TeX by Donald E. Knuth was written in WEB, the original literate programming system, based on DEC PDP-10 Pascal, while applications like Total Commander, Skype and Macromedia Captivate were written in Delphi (Object Pascal). Apollo Computer used Pascal as the systems programming language for its operating systems beginning in 1980.
+
+Variants of Pascal have also frequently been used for everything from research projects to PC games and embedded systems. Newer Pascal compilers exist which are widely used.[6]
+Object Pascal
+
+During work on the Lisa, Larry Tesler began corresponding with Wirth on the idea of adding object oriented extensions to the language. This led initially to Clascal, introduced in 1983. As the Lisa program faded and was replaced by the Mac, a further version known as Object Pascal was created. This was introduced on the Macintosh in 1985 as part of the MacApp application framework, and became Apple's primary development language into the early 1990s.
+
+The Object Pascal extensions were later added to Turbo Pascal, and over the years became the Delphi system for Microsoft Windows. Delphi is still used for developing Windows applications, but also has the ability to cross-compile the same code to Mac, iOS and Android. Another cross-platform version called Free Pascal, with the Typhon IDE, is popular with Linux users since it also offers write once, compile anywhere development. CodeTyphon is a Typhon distribution with more preinstalled packages and cross-compilers.
+Brief description
+
+Wirth's intention was to create an efficient language (regarding both compilation speed and generated code) based on structured programming, a recently popularized concept that he promoted in his book Algorithms + Data Structures = Programs. Pascal has its roots in the ALGOL 60 language, but also introduced concepts and mechanisms which (on top of ALGOL's scalars and arrays) enabled programmers to define their own complex (structured) datatypes, and also made it easier to build dynamic and recursive data structures such as lists, trees and graphs. Important features included for this were records, enumerations, subranges, dynamically allocated variables with associated pointers, and sets. To make this possible and meaningful, Pascal has a strong typing on all objects, which means that one type of data cannot be converted or interpreted as another without explicit conversions. Similar mechanisms are standard in many programming languages today. Other languages that influenced Pascal's development were Simula 67 and Wirth's own ALGOL W.
+
+Pascal, like many programming languages of today (but unlike most languages in the C family), allows nested procedure definitions to any level of depth, and also allows most kinds of definitions and declarations inside subroutines (procedures and functions). This enables a very simple and coherent syntax where a complete program is syntactically nearly identical to a single procedure or function (except for the heading, which has one of these three keywords).
+Implementations
+Early Pascal compilers
+
+The first Pascal compiler was designed in Zurich for the CDC 6000 series mainframe computer family. Niklaus Wirth reports that a first attempt to implement it in Fortran in 1969 was unsuccessful due to Fortran's inadequacy to express complex data structures. The second attempt was implemented in a C-like language (Scallop by Max Engeli) and then translated by hand (by R. Schild) to Pascal itself for boot-strapping.[7] It was operational by mid-1970. Many Pascal compilers since have been similarly self-hosting, that is, the compiler is itself written in Pascal, and the compiler is usually capable of recompiling itself when new features are added to the language, or when the compiler is to be ported to a new environment. The GNU Pascal compiler is one notable exception, being written in C.
+
+The first successful port of the CDC Pascal compiler to another mainframe was completed by Welsh and Quinn at the Queen's University of Belfast (QUB) in 1972. The target was the ICL 1900 series. This compiler, in turn, was the parent of the Pascal compiler for the Information Computer Systems (ICS) Multum minicomputer. The Multum port was developed – with a view to using Pascal as a systems programming language – by Findlay, Cupples, Cavouras and Davis, working at the Department of Computing Science in Glasgow University. It is thought that Multum Pascal, which was completed in the summer of 1973, may have been the first 16-bit implementation.
+
+A completely new compiler was completed by Welsh et al. at QUB in 1977. It offered a source-language diagnostic feature (incorporating profiling, tracing and type-aware formatted postmortem dumps) that was implemented by Findlay and Watt at Glasgow University. This implementation was ported in 1980 to the ICL 2900 series by a team based at Southampton University and Glasgow University. The Standard Pascal Model Implementation was also based on this compiler, having been adapted, by Welsh and Hay at Manchester University in 1984, to check rigorously for conformity to the BSI 6192/ISO 7185 Standard and to generate code for a portable abstract machine.
+
+The first Pascal compiler written in North America was constructed at the University of Illinois under Donald B. Gillies for the PDP-11 and generated native machine code.
+The Pascal-P system
+
+To propagate the language rapidly, a compiler "porting kit" was created in Zurich that included a compiler that generated code for a "virtual" stack machine, i.e., code that lends itself to reasonably efficient interpretation, along with an interpreter for that code – the Pascal-P system. The P-system compilers were termed Pascal-P1, Pascal-P2, Pascal-P3, and Pascal-P4. Pascal-P1 was the first version, and Pascal-P4 was the last to come from Zurich. The version termed Pascal-P1 was coined after the fact for the many different sources for Pascal-P that existed. The compiler was redesigned to enhance portability, and issued as Pascal-P2. This code was later enhanced to become Pascal-P3, with an intermediate code backward compatible with Pascal-P2, and Pascal-P4, which was not backward compatible.
+
+The Pascal-P4 compiler/interpreter can still be run and compiled on systems compatible with original Pascal. However, it only accepts a subset of the Pascal language.
+
+Pascal-P5, created outside the Zurich group, accepts the full Pascal language and includes ISO 7185 compatibility.
+
+UCSD Pascal branched off Pascal-P2, where Kenneth Bowles utilized it to create the interpretive UCSD p-System. The UCSD p-System was one of three operating systems available at the launch of the original IBM Personal Computer.[8] UCSD Pascal used an intermediate code based on byte values, and thus was one of the earliest "byte code compilers". Pascal-P1 through Pascal-P4 was not, but rather based on the CDC 6600 60 bit word length.
+
+A compiler based on the Pascal-P4 compiler, which created native binaries, was released for the IBM System/370 mainframe computer by the Australian Atomic Energy Commission; it was called the "AAEC Pascal Compiler" after the abbreviation of the name of the Commission.[9]
+
+In the early 1980s, Watcom Pascal was developed, also for the IBM System 370.
+
+Into the 1990s, Pascal was still running on VAX terminals at George Mason University to teach computer programming.
+Object Pascal and Turbo Pascal
+
+Apple Computer created its own Lisa Pascal for the Lisa Workshop in 1982, and ported the compiler to the Apple Macintosh and MPW in 1985. In 1985 Larry Tesler, in consultation with Niklaus Wirth, defined Object Pascal and these extensions were incorporated in both the Lisa Pascal and Mac Pascal compilers.
+
+In the 1980s, Anders Hejlsberg wrote the Blue Label Pascal compiler for the Nascom-2. A reimplementation of this compiler for the IBM PC was marketed under the names Compas Pascal and PolyPascal before it was acquired by Borland and renamed Turbo Pascal.
+
+Turbo Pascal became hugely popular, thanks to an aggressive pricing strategy, having one of the first full-screen integrated development environments, and very fast turnaround time (just seconds to compile, link, and run). It was written and highly optimized entirely in assembly language, making it smaller and faster than much of the competition.
+
+In 1986, Anders ported Turbo Pascal to the Macintosh and incorporated Apple's Object Pascal extensions into Turbo Pascal. These extensions were then added back into the PC version of Turbo Pascal for version 5.5. At the same time Microsoft also implemented the Object Pascal compiler.[10][11] Turbo Pascal 5.5 had a large influence on the Pascal community, which began concentrating mainly on the IBM PC in the late 1980s. Many PC hobbyists in search of a structured replacement for BASIC used this product. It also began to be adopted by professional developers. Around the same time a number of concepts were imported from C to let Pascal programmers use the C-based API of Microsoft Windows directly. These extensions included null-terminated strings, pointer arithmetic, function pointers, an address-of operator and unsafe typecasts.
+
+Turbo Pascal, and other derivatives with units or module concepts are modular languages. However, it does not provide a nested module concept or qualified import and export of specific symbols.
+Other variants
+
+Super Pascal was a variant that added non-numeric labels, a return statement and expressions as names of types.
+
+The universities of Wisconsin-Madison, Zurich, Karlsruhe and Wuppertal developed the Pascal-SC[12][13] and Pascal-XSC[14][15][16] (Extensions for Scientific Computation) compilers, aimed at programming numerical computations. TMT Pascal the first Borland-compatible compiler for 32-bit DOS protected mode, OS/2 and Win32 operating systems. Also the TMT Pascal language was the first one which allowed function and operator overloading. Development for Pascal-SC started in 1978 supporting ISO 7185 Pascal level 0, but level 2 support was added at a later stage.[17] Pascal-SC originally targeted the Z80 processor, but was later rewritten for DOS (x86) and 68000. Pascal-XSC has at various times been ported to Unix (Linux, SunOS, HP-UX, AIX) and Microsoft/IBM (DOS with EMX, OS/2, Windows) operating systems. It operates by generating intermediate C source code which is then compiled to a native executable. Some of the Pascal-SC language extensions have been adopted by GNU Pascal.
+
+Pascal Sol was designed around 1983 by a French team to implement a Unix-like systems named Sol. It was standard Pascal level-1 (with parametrized array bounds) but the definition allowed alternative keywords and predefined identifiers in French and the language included a few extensions to ease system programming (e.g. an equivalent to lseek).[18] The Sol team later on moved to the ChorusOS project to design a distributed operating system.[19]
+
+IP Pascal was an implementation of the Pascal programming language using Micropolis DOS, but was moved rapidly to CP/M-80 running on the Z80. It was moved to the 80386 machine types in 1994, and exists today as Windows/XP and Linux implementations. In 2008, the system was brought up to a new level and the resulting language termed "Pascaline" (after Pascal's calculator). It includes objects, namespace controls, dynamic arrays, along with many other extensions, and generally features the same functionality and type protection as C#. It is the only such implementation that is also compatible with the original Pascal implementation, which is standardized as ISO 7185.
+
+Smart Mobile Studio[20] was created by Jon Aasenden and compiles his own dialect of Object Pascal to HTML5/Javascript
+
+Smart Mobile Studio has an IDE which includes a visual component set, its language is unusual in that it incorporates extensions for the Javascript language
+Language constructs
+
+Pascal, in its original form, is a purely procedural language and includes the traditional array of ALGOL-like control structures with reserved words such as if, then, else, while, for, and case ranging on a single statement or a begin-end statements block. Pascal also has data structuring constructs not included in the original ALGOL 60 types, like records, variants, pointers, enumerations, and sets and procedure/pointers. Such constructs were in part inherited or inspired from Simula 67, ALGOL 68, Niklaus Wirth's own ALGOL W and suggestions by C. A. R. Hoare.
+
+Pascal programs start with the program keyword with a list of external file descriptors as parameters[21] (not required in Turbo Pascal etc.); then follows the main block bracketed by the begin and end keywords. Semicolons separate statements, and the full stop (i.e., a period) ends the whole program (or unit). Letter case is ignored in Pascal source.
+
+Here is an example of the source code in use for a very simple "Hello world" program:
+
+program HelloWorld(output);
+begin
+  Write('Hello, world!')
+  {no ";" is required after the last statement of a block -
+   adding one adds a "null statement" to the program;}
+end.

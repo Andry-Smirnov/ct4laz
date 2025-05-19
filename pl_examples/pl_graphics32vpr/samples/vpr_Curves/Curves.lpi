@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="pl_graphics32vpr"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_graphics32"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="20">
+      <Unit0>
+        <Filename Value="Curves.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="118" Y="19"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="52" Y="13"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\typhon\components\pl_Graphics32\Source\GR32i_LowLevel_aa.inc"/>
+        <TopLine Value="755"/>
+        <CursorPos X="22" Y="780"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\typhon\components\pl_Graphics32V\source\GR32_PolygonsEx.pas"/>
+        <TopLine Value="778"/>
+        <CursorPos X="10" Y="817"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\typhon\components\pl_Graphics32\Source\GR32i_LowLevel.inc"/>
+        <TopLine Value="19"/>
+        <CursorPos X="38" Y="27"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\pp\rtl\inc\heaph.inc"/>
+        <TopLine Value="54"/>
+        <CursorPos X="10" Y="91"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\typhon\components\pl_Graphics32V\source\GR32_VectorGraphics.pas"/>
+        <CursorPos X="39" Y="4"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\typhon\components\pl_Graphics32V\source\GR32_VectorUtils.pas"/>
+        <TopLine Value="742"/>
+        <CursorPos X="10" Y="781"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\typhon\lcl\include\lclintf.inc"/>
+        <TopLine Value="161"/>
+        <CursorPos Y="184"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\typhon\components\pl_Graphics32VPR\source\VGR32_Text.pas"/>
+        <TopLine Value="30"/>
+        <CursorPos X="4" Y="44"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Lines.pas"/>
+        <TopLine Value="16"/>
+        <CursorPos X="18" Y="41"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_VectorGraphics.pas"/>
+        <TopLine Value="12"/>
+        <CursorPos X="21" Y="32"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Objects.pas"/>
+        <TopLine Value="18"/>
+        <CursorPos X="4" Y="38"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_CFDG.pas"/>
+        <CursorPos X="20" Y="328"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_VectorUtils.pas"/>
+        <TopLine Value="11"/>
+        <CursorPos X="31" Y="36"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_VPR.pas"/>
+        <TopLine Value="9"/>
+        <CursorPos X="35" Y="33"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Text.pas"/>
+        <TopLine Value="26"/>
+        <CursorPos X="33" Y="51"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_Misc.pas"/>
+        <TopLine Value="9"/>
+        <CursorPos X="36" Y="32"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\VGR32_PolygonsEx.pas"/>
+        <TopLine Value="11"/>
+        <CursorPos X="17" Y="35"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32VPR\source\AllGraphics32vprReg.pas"/>
+        <CursorPos X="10" Y="10"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,126 @@
+object frmMain: TfrmMain
+  Left = 1491
+  Height = 495
+  Top = 926
+  Width = 738
+  Caption = 'Gimp Curves Tool for GR32'
+  ClientHeight = 495
+  ClientWidth = 738
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 738
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 41
+    ClientWidth = 738
+    TabOrder = 0
+    object lblZoom: TLabel
+      Left = 374
+      Height = 13
+      Top = 12
+      Width = 30
+      Caption = 'Zoom:'
+      Enabled = False
+      ParentColor = False
+    end
+    object btnOpenBitmap: TButton
+      Cursor = crHandPoint
+      Left = 14
+      Height = 25
+      Top = 6
+      Width = 105
+      Caption = 'Open Bitmap...'
+      OnClick = OpenBitmap
+      TabOrder = 0
+    end
+    object btnGimpCurves: TButton
+      Cursor = crHandPoint
+      Left = 126
+      Height = 25
+      Top = 6
+      Width = 105
+      Caption = 'Curves...'
+      Enabled = False
+      OnClick = OpenGimpCurvesDialog
+      TabOrder = 1
+    end
+    object btnRestore: TButton
+      Cursor = crHandPoint
+      Left = 238
+      Height = 25
+      Top = 6
+      Width = 105
+      Caption = 'Restore'
+      Enabled = False
+      OnClick = btnRestoreClick
+      TabOrder = 2
+    end
+    object cmbbxZoom: TComboBox
+      Cursor = crHandPoint
+      Left = 414
+      Height = 21
+      Top = 8
+      Width = 145
+      Enabled = False
+      ItemHeight = 13
+      ItemIndex = 3
+      Items.Strings = (
+        '25%'
+        '50%'
+        '75%'
+        '100%'
+        '125%'
+        '150%'
+        '175%'
+        '200%'
+      )
+      OnChange = cmbbxZoomChange
+      TabOrder = 3
+      Text = '100%'
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 454
+    Top = 41
+    Width = 738
+    HorzScrollBar.Page = 717
+    VertScrollBar.Page = 433
+    Align = alClient
+    ClientHeight = 433
+    ClientWidth = 717
+    TabOrder = 1
+    object imgPreview: TImgView32
+      Left = 0
+      Height = 2062
+      Top = 0
+      Width = 3836
+      Align = alClient
+      Bitmap.ResamplerClassName = 'TNearestResampler'
+      BitmapAlign = baCustom
+      Centered = False
+      Scale = 1
+      ScaleMode = smScale
+      ScrollBars.Color = clScrollBar
+      ScrollBars.ShowHandleGrip = True
+      ScrollBars.Style = rbsDefault
+      ScrollBars.Size = 21
+      OverSize = 0
+      TabOrder = 0
+    end
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Left = 190
+    Top = 115
+  end
+end

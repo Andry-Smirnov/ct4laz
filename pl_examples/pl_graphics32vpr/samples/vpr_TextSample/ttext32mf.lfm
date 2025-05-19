@@ -1,0 +1,309 @@
+object Form1: TForm1
+  Left = 343
+  Height = 419
+  Top = 200
+  Width = 592
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'TText32 Demo'
+  ClientHeight = 419
+  ClientWidth = 592
+  Color = clBtnFace
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -13
+  Font.Name = 'Arial'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 90
+    Top = 329
+    Width = 592
+    Align = alBottom
+    ClientHeight = 90
+    ClientWidth = 592
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    ParentFont = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 105
+      Height = 16
+      Top = 7
+      Width = 52
+      Caption = 'Rotation:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 105
+      Height = 16
+      Top = 33
+      Width = 36
+      Caption = 'Skew:'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 105
+      Height = 16
+      Top = 59
+      Width = 37
+      Caption = 'Scale:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 157
+      Height = 16
+      Top = 33
+      Width = 35
+      Caption = 'x-axis'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 371
+      Height = 16
+      Top = 33
+      Width = 35
+      Caption = 'y-axis'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 157
+      Height = 16
+      Top = 59
+      Width = 35
+      Caption = 'x-axis'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 372
+      Height = 16
+      Top = 59
+      Width = 35
+      Caption = 'y-axis'
+      ParentColor = False
+    end
+    object lblRotation: TLabel
+      Left = 549
+      Height = 16
+      Top = 7
+      Width = 12
+      Caption = '0º'
+      ParentColor = False
+    end
+    object lblSkewY: TLabel
+      Left = 547
+      Height = 16
+      Top = 33
+      Width = 7
+      Caption = '0'
+      ParentColor = False
+    end
+    object lblScaleY: TLabel
+      Left = 547
+      Height = 16
+      Top = 59
+      Width = 25
+      Caption = '0.00'
+      ParentColor = False
+    end
+    object lblSkewX: TLabel
+      Left = 333
+      Height = 16
+      Top = 33
+      Width = 7
+      Caption = '0'
+      ParentColor = False
+    end
+    object lblScaleX: TLabel
+      Left = 333
+      Height = 16
+      Top = 59
+      Width = 25
+      Caption = '0.00'
+      ParentColor = False
+    end
+    object sbRotation: TScrollBar
+      Left = 170
+      Height = 17
+      Top = 8
+      Width = 373
+      Max = 180
+      Min = -180
+      PageSize = 0
+      TabOrder = 1
+      OnChange = sbRotationChange
+    end
+    object sbSkewX: TScrollBar
+      Left = 199
+      Height = 17
+      Top = 34
+      Width = 130
+      Max = 10
+      Min = -10
+      PageSize = 0
+      TabOrder = 2
+      OnChange = sbRotationChange
+    end
+    object sbSkewY: TScrollBar
+      Left = 413
+      Height = 17
+      Top = 34
+      Width = 130
+      Max = 40
+      Min = -40
+      PageSize = 0
+      TabOrder = 3
+      OnChange = sbRotationChange
+    end
+    object sbScaleX: TScrollBar
+      Left = 199
+      Height = 17
+      Top = 60
+      Width = 130
+      Min = 10
+      PageSize = 0
+      Position = 50
+      TabOrder = 4
+      OnChange = sbRotationChange
+    end
+    object sbScaleY: TScrollBar
+      Left = 413
+      Height = 17
+      Top = 60
+      Width = 130
+      Min = 10
+      PageSize = 0
+      Position = 50
+      TabOrder = 5
+      OnChange = sbRotationChange
+    end
+    object Button1: TButton
+      Left = 8
+      Height = 25
+      Top = 13
+      Width = 77
+      Caption = 'F&ont ...'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 8
+      Height = 25
+      Top = 46
+      Width = 77
+      Cancel = True
+      Caption = 'E&xit'
+      OnClick = Button2Click
+      TabOrder = 6
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 329
+    Top = 0
+    Width = 592
+    TabStop = False
+    ActivePage = TabSheet1
+    Align = alClient
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentFont = False
+    TabIndex = 0
+    TabOrder = 1
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'Page &1'
+      ClientHeight = 300
+      ClientWidth = 584
+      object Image: TImage32
+        Left = 0
+        Height = 300
+        Top = 0
+        Width = 584
+        Align = alClient
+        AutoSize = True
+        Bitmap.ResamplerClassName = 'TNearestResampler'
+        BitmapAlign = baTopLeft
+        Scale = 1
+        ScaleMode = smNormal
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Page &2'
+      ClientHeight = 0
+      ClientWidth = 0
+      ImageIndex = 2
+      object Image2: TImage32
+        Left = 0
+        Height = 298
+        Top = 0
+        Width = 584
+        Align = alClient
+        AutoSize = True
+        Bitmap.ResamplerClassName = 'TNearestResampler'
+        BitmapAlign = baTopLeft
+        Scale = 1
+        ScaleMode = smNormal
+        TabOrder = 0
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Page &3'
+      ClientHeight = 0
+      ClientWidth = 0
+      ImageIndex = 3
+      object Image3: TImage32
+        Left = 0
+        Height = 298
+        Top = 0
+        Width = 584
+        Align = alClient
+        AutoSize = True
+        Bitmap.ResamplerClassName = 'TNearestResampler'
+        BitmapAlign = baTopLeft
+        Scale = 1
+        ScaleMode = smNormal
+        TabOrder = 0
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Page &4'
+      ClientHeight = 0
+      ClientWidth = 0
+      ImageIndex = 3
+      object Image4: TImage32
+        Left = 0
+        Height = 298
+        Top = 0
+        Width = 584
+        Align = alClient
+        AutoSize = True
+        Bitmap.ResamplerClassName = 'TNearestResampler'
+        BitmapAlign = baTopLeft
+        Scale = 1
+        ScaleMode = smNormal
+        TabOrder = 0
+      end
+    end
+  end
+  object FontDialog1: TFontDialog
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    Options = [fdTrueTypeOnly, fdEffects]
+    Left = 52
+    Top = 120
+  end
+end

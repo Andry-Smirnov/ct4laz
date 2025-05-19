@@ -1,0 +1,14 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_Graphics32EXT
+
+Version: 7.2.1 Date: 2020-09-19 08:11
+
+
+
+
+

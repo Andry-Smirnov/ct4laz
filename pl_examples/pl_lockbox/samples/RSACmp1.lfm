@@ -1,0 +1,163 @@
+object Form1: TForm1
+  Left = 416
+  Height = 362
+  Top = 259
+  Width = 542
+  Caption = 'RSACmp - Encrypt Strings with RSA component'
+  ClientHeight = 362
+  ClientWidth = 542
+  Font.Color = clWindowText
+  Font.Height = 13
+  Font.Name = 'MS Sans Serif'
+  Font.Pitch = fpVariable
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object Label5: TLabel
+    Left = 14
+    Height = 13
+    Top = 62
+    Width = 44
+    Caption = 'PlainText'
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 361
+    Height = 13
+    Top = 62
+    Width = 44
+    Caption = 'PlainText'
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 187
+    Height = 13
+    Top = 62
+    Width = 142
+    Caption = 'CipherText (Base64 Encoded)'
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 30
+    Width = 41
+    Caption = 'Key Size'
+    ParentColor = False
+  end
+  object btnEncrypt: TButton
+    Left = 55
+    Height = 22
+    Top = 284
+    Width = 65
+    Caption = 'Encrypt'
+    Enabled = False
+    OnClick = btnEncryptClick
+    TabOrder = 0
+  end
+  object btnDecrypt: TButton
+    Left = 236
+    Height = 22
+    Top = 284
+    Width = 65
+    Caption = 'Decrypt'
+    Enabled = False
+    OnClick = btnDecryptClick
+    TabOrder = 1
+  end
+  object mmoPlainText1: TMemo
+    Left = 14
+    Height = 195
+    Top = 76
+    Width = 160
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    Font.Pitch = fpVariable
+    Lines.Strings = (
+      '123456789012345678901'
+      '2'
+      '345678901234567890123'
+      '4'
+      '567890123456789012345'
+      '6'
+      '789012345678901234567'
+      '8'
+      '901234567890123456789'
+      '0'
+      '123456789012345678901'
+      '2'
+      '345678901234567890123'
+      '4'
+      '567890'
+    )
+    ParentFont = False
+    TabOrder = 2
+  end
+  object mmoCipherText: TMemo
+    Left = 187
+    Height = 195
+    Top = 76
+    Width = 161
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    Font.Pitch = fpVariable
+    ParentFont = False
+    TabOrder = 3
+  end
+  object mmoPlainText2: TMemo
+    Left = 361
+    Height = 195
+    Top = 76
+    Width = 160
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    Font.Pitch = fpVariable
+    ParentFont = False
+    TabOrder = 4
+  end
+  object btnGenKeys: TButton
+    Left = 144
+    Height = 25
+    Top = 24
+    Width = 81
+    Caption = 'New key pair'
+    OnClick = btnGenKeysClick
+    TabOrder = 5
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 339
+    Width = 542
+    Panels = <>
+  end
+  object cbxKeySize: TComboBox
+    Left = 64
+    Height = 21
+    Top = 26
+    Width = 65
+    ItemHeight = 13
+    Items.Strings = (
+      '128'
+      '256'
+      '512'
+      '768'
+      '1024'
+    )
+    OnChange = cbxKeySizeChange
+    Style = csDropDownList
+    TabOrder = 7
+  end
+  object LbRSA1: TLbRSA
+    PrimeTestIterations = 20
+    KeySize = aks128
+    left = 256
+    top = 24
+  end
+end

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="pl_Graphics32Magic"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Lazarus port: PilotLogic Software House"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source;source\Channels;source\Commands;source\Layers;source\Paths;source\Utils"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="Graphics32 Magic library"/>
+    <License Value="MPL 1.1"/>
+    <Version Major="6" Minor="7" Release="1"/>
+    <Files Count="136">
+      <Item1>
+        <Filename Value="source\AllGraphic32MagicReg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="AllGraphic32MagicReg"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\Channels\gmChannelIO.pas"/>
+        <UnitName Value="gmChannelIO"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\Channels\gmChannelManager.pas"/>
+        <UnitName Value="gmChannelManager"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\Channels\gmChannels.pas"/>
+        <UnitName Value="gmChannels"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\Channels\gmChannelViewer.pas"/>
+        <UnitName Value="gmChannelViewer"/>
+      </Item5>
+      <Item6>
+        <Filename Value="source\Channels\gmRGBChannelManager.pas"/>
+        <UnitName Value="gmRGBChannelManager"/>
+      </Item6>
+      <Item7>
+        <Filename Value="source\Commands\gmChannelCommands.pas"/>
+        <UnitName Value="gmChannelCommands"/>
+      </Item7>
+      <Item8>
+        <Filename Value="source\Commands\gmCommandViewer.pas"/>
+        <UnitName Value="gmCommandViewer"/>
+      </Item8>
+      <Item9>
+        <Filename Value="source\Commands\gmComplexCommands.pas"/>
+        <UnitName Value="gmComplexCommands"/>
+      </Item9>
+      <Item10>
+        <Filename Value="source\Commands\gmHistoryCommands.pas"/>
+        <UnitName Value="gmHistoryCommands"/>
+      </Item10>
+      <Item11>
+        <Filename Value="source\Commands\gmLayerCommands.pas"/>
+        <UnitName Value="gmLayerCommands"/>
+      </Item11>
+      <Item12>
+        <Filename Value="source\Commands\gmMiscCommandIcons.pas"/>
+        <UnitName Value="gmMiscCommandIcons"/>
+      </Item12>
+      <Item13>
+        <Filename Value="source\Commands\gmPathCommands.pas"/>
+        <UnitName Value="gmPathCommands"/>
+      </Item13>
+      <Item14>
+        <Filename Value="source\Commands\gmRichTextLayerCommands.pas"/>
+        <UnitName Value="gmRichTextLayerCommands"/>
+      </Item14>
+      <Item15>
+        <Filename Value="source\Commands\gmSelectionCommands.pas"/>
+        <UnitName Value="gmSelectionCommands"/>
+      </Item15>
+      <Item16>
+        <Filename Value="source\Commands\gmShapeRegionLayerCommands.pas"/>
+        <UnitName Value="gmShapeRegionLayerCommands"/>
+      </Item16>
+      <Item17>
+        <Filename Value="source\Commands\gmVectorLayerCommands.pas"/>
+        <UnitName Value="gmVectorLayerCommands"/>
+      </Item17>
+      <Item18>
+        <Filename Value="source\gmAddNoise.pas"/>
+        <UnitName Value="gmAddNoise"/>
+      </Item18>
+      <Item19>
+        <Filename Value="source\gmAlphaFuncs.pas"/>
+        <UnitName Value="gmAlphaFuncs"/>
+      </Item19>
+      <Item20>
+        <Filename Value="source\gmAntialias.pas"/>
+        <UnitName Value="gmAntialias"/>
+      </Item20>
+      <Item21>
+        <Filename Value="source\gmApplyImage.pas"/>
+        <UnitName Value="gmApplyImage"/>
+      </Item21>
+      <Item22>
+        <Filename Value="source\gmArtFragmentationFilter.pas"/>
+        <UnitName Value="gmArtFragmentationFilter"/>
+      </Item22>
+      <Item23>
+        <Filename Value="source\gmBlendModes.pas"/>
+        <UnitName Value="gmBlendModes"/>
+      </Item23>
+      <Item24>
+        <Filename Value="source\gmBoxBlurFilter.pas"/>
+        <UnitName Value="gmBoxBlurFilter"/>
+      </Item24>
+      <Item25>
+        <Filename Value="source\gmBrushes.pas"/>
+        <UnitName Value="gmBrushes"/>
+      </Item25>
+      <Item26>
+        <Filename Value="source\gmChannelMixer.pas"/>
+        <UnitName Value="gmChannelMixer"/>
+      </Item26>
+      <Item27>
+        <Filename Value="source\gmColorBalance.pas"/>
+        <UnitName Value="gmColorBalance"/>
+      </Item27>
+      <Item28>
+        <Filename Value="source\gmColorRange.pas"/>
+        <UnitName Value="gmColorRange"/>
+      </Item28>
+      <Item29>
+        <Filename Value="source\gmColorSpace.pas"/>
+        <UnitName Value="gmColorSpace"/>
+      </Item29>
+      <Item30>
+        <Filename Value="source\gmColorTransfer.pas"/>
+        <UnitName Value="gmColorTransfer"/>
+      </Item30>
+      <Item31>
+        <Filename Value="source\gmColorTransform.pas"/>
+        <UnitName Value="gmColorTransform"/>
+      </Item31>
+      <Item32>
+        <Filename Value="source\gmCommonDataModule.pas"/>
+        <FRMtype Value="300"/>
+        <UnitName Value="gmCommonDataModule"/>
+      </Item32>
+      <Item33>
+        <Filename Value="source\gmCommonFuncs.pas"/>
+        <UnitName Value="gmCommonFuncs"/>
+      </Item33>
+      <Item34>
+        <Filename Value="source\gmConstants.pas"/>
+        <UnitName Value="gmConstants"/>
+      </Item34>
+      <Item35>
+        <Filename Value="source\gmConvolve.pas"/>
+        <UnitName Value="gmConvolve"/>
+      </Item35>
+      <Item36>
+        <Filename Value="source\gmConvolveFilter.pas"/>
+        <UnitName Value="gmConvolveFilter"/>
+      </Item36>
+      <Item37>
+        <Filename Value="source\gmCrop.pas"/>
+        <UnitName Value="gmCrop"/>
+      </Item37>
+      <Item38>
+        <Filename Value="source\gmCurvesTool.pas"/>
+        <UnitName Value="gmCurvesTool"/>
+      </Item38>
+      <Item39>
+        <Filename Value="source\gmDiagonal.pas"/>
+        <UnitName Value="gmDiagonal"/>
+      </Item39>
+      <Item40>
+        <Filename Value="source\gmExpBlur.pas"/>
+        <UnitName Value="gmExpBlur"/>
+      </Item40>
+      <Item41>
+        <Filename Value="source\gmFigures.pas"/>
+        <UnitName Value="gmFigures"/>
+      </Item41>
+      <Item42>
+        <Filename Value="source\gmFill.pas"/>
+        <UnitName Value="gmFill"/>
+      </Item42>
+      <Item43>
+        <Filename Value="source\gmFlareFX.pas"/>
+        <UnitName Value="gmFlareFX"/>
+      </Item43>
+      <Item44>
+        <Filename Value="source\gmGammaTuner.pas"/>
+        <UnitName Value="gmGammaTuner"/>
+      </Item44>
+      <Item45>
+        <Filename Value="source\gmGaussianBlurFilter.pas"/>
+        <UnitName Value="gmGaussianBlurFilter"/>
+      </Item45>
+      <Item46>
+        <Filename Value="source\gmGimpBaseCurves.pas"/>
+        <UnitName Value="gmGimpBaseCurves"/>
+      </Item46>
+      <Item47>
+        <Filename Value="source\gmGimpBaseEnums.pas"/>
+        <UnitName Value="gmGimpBaseEnums"/>
+      </Item47>
+      <Item48>
+        <Filename Value="source\gmGimpColorBar.pas"/>
+        <UnitName Value="gmGimpColorBar"/>
+      </Item48>
+      <Item49>
+        <Filename Value="source\gmGimpColorSpace.pas"/>
+        <UnitName Value="gmGimpColorSpace"/>
+      </Item49>
+      <Item50>
+        <Filename Value="source\gmGimpColorTypes.pas"/>
+        <UnitName Value="gmGimpColorTypes"/>
+      </Item50>
+      <Item51>
+        <Filename Value="source\gmGimpCommonFuncs.pas"/>
+        <UnitName Value="gmGimpCommonFuncs"/>
+      </Item51>
+      <Item52>
+        <Filename Value="source\gmGimpDrawTool.pas"/>
+        <UnitName Value="gmGimpDrawTool"/>
+      </Item52>
+      <Item53>
+        <Filename Value="source\gmGimpEmboss.pas"/>
+        <UnitName Value="gmGimpEmboss"/>
+      </Item53>
+      <Item54>
+        <Filename Value="source\gmGimpGaussianBlur.pas"/>
+        <UnitName Value="gmGimpGaussianBlur"/>
+      </Item54>
+      <Item55>
+        <Filename Value="source\gmGimpGlassTile.pas"/>
+        <UnitName Value="gmGimpGlassTile"/>
+      </Item55>
+      <Item56>
+        <Filename Value="source\gmGimpHistogram.pas"/>
+        <UnitName Value="gmGimpHistogram"/>
+      </Item56>
+      <Item57>
+        <Filename Value="source\gmGimpLut.pas"/>
+        <UnitName Value="gmGimpLut"/>
+      </Item57>
+      <Item58>
+        <Filename Value="source\gmGimpPaintFuncs.pas"/>
+        <UnitName Value="gmGimpPaintFuncs"/>
+      </Item58>
+      <Item59>
+        <Filename Value="source\gmGimpRGB.pas"/>
+        <UnitName Value="gmGimpRGB"/>
+      </Item59>
+      <Item60>
+        <Filename Value="source\gmGradientMap.pas"/>
+        <UnitName Value="gmGradientMap"/>
+      </Item60>
+      <Item61>
+        <Filename Value="source\gmGtkEnums.pas"/>
+        <UnitName Value="gmGtkEnums"/>
+      </Item61>
+      <Item62>
+        <Filename Value="source\gmGTypes.pas"/>
+        <UnitName Value="gmGTypes"/>
+      </Item62>
+      <Item63>
+        <Filename Value="source\gmGUIFuncs.pas"/>
+        <UnitName Value="gmGUIFuncs"/>
+      </Item63>
+      <Item64>
+        <Filename Value="source\gmHighPass.pas"/>
+        <UnitName Value="gmHighPass"/>
+      </Item64>
+      <Item65>
+        <Filename Value="source\gmHistogramEqualize.pas"/>
+        <UnitName Value="gmHistogramEqualize"/>
+      </Item65>
+      <Item66>
+        <Filename Value="source\gmHueCircling.pas"/>
+        <UnitName Value="gmHueCircling"/>
+      </Item66>
+      <Item67>
+        <Filename Value="source\gmIllusion.pas"/>
+        <UnitName Value="gmIllusion"/>
+      </Item67>
+      <Item68>
+        <Filename Value="source\gmImageMath.pas"/>
+        <UnitName Value="gmImageMath"/>
+      </Item68>
+      <Item69>
+        <Filename Value="source\gmImageProcessFuncs.pas"/>
+        <UnitName Value="gmImageProcessFuncs"/>
+      </Item69>
+      <Item70>
+        <Filename Value="source\gmImageTile.pas"/>
+        <UnitName Value="gmImageTile"/>
+      </Item70>
+      <Item71>
+        <Filename Value="source\gmIO.pas"/>
+        <UnitName Value="gmIO"/>
+      </Item71>
+      <Item72>
+        <Filename Value="source\gmJHSmartBlurFilter.pas"/>
+        <UnitName Value="gmJHSmartBlurFilter"/>
+      </Item72>
+      <Item73>
+        <Filename Value="source\gmKernel.pas"/>
+        <UnitName Value="gmKernel"/>
+      </Item73>
+      <Item74>
+        <Filename Value="source\gmLevels.pas"/>
+        <UnitName Value="gmLevels"/>
+      </Item74>
+      <Item75>
+        <Filename Value="source\gmLevelsTool.pas"/>
+        <UnitName Value="gmLevelsTool"/>
+      </Item75>
+      <Item76>
+        <Filename Value="source\gmLinearAutoContrast.pas"/>
+        <UnitName Value="gmLinearAutoContrast"/>
+      </Item76>
+      <Item77>
+        <Filename Value="source\gmLinearAutoLevel.pas"/>
+        <UnitName Value="gmLinearAutoLevel"/>
+      </Item77>
+      <Item78>
+        <Filename Value="source\gmMagneticLasso.pas"/>
+        <UnitName Value="gmMagneticLasso"/>
+      </Item78>
+      <Item79>
+        <Filename Value="source\gmMath.pas"/>
+        <UnitName Value="gmMath"/>
+      </Item79>
+      <Item80>
+        <Filename Value="source\gmMeasure.pas"/>
+        <UnitName Value="gmMeasure"/>
+      </Item80>
+      <Item81>
+        <Filename Value="source\gmMosaic.pas"/>
+        <UnitName Value="gmMosaic"/>
+      </Item81>
+      <Item82>
+        <Filename Value="source\gmMotionBlur.pas"/>
+        <UnitName Value="gmMotionBlur"/>
+      </Item82>
+      <Item83>
+        <Filename Value="source\gmMotionBlurFilter.pas"/>
+        <UnitName Value="gmMotionBlurFilter"/>
+      </Item83>
+      <Item84>
+        <Filename Value="source\gmOilPaintingFilter.pas"/>
+        <UnitName Value="gmOilPaintingFilter"/>
+      </Item84>
+      <Item85>
+        <Filename Value="source\gmPaintBucket.pas"/>
+        <UnitName Value="gmPaintBucket"/>
+      </Item85>
+      <Item86>
+        <Filename Value="source\gmPaintFuncs.pas"/>
+        <UnitName Value="gmPaintFuncs"/>
+      </Item86>
+      <Item87>
+        <Filename Value="source\gmPatterns.pas"/>
+        <UnitName Value="gmPatterns"/>
+      </Item87>
+      <Item88>
+        <Filename Value="source\gmPencilSketch.pas"/>
+        <UnitName Value="gmPencilSketch"/>
+      </Item88>
+      <Item89>
+        <Filename Value="source\gmPenTools.pas"/>
+        <UnitName Value="gmPenTools"/>
+      </Item89>
+      <Item90>
+        <Filename Value="source\gmPluginFuncs.pas"/>
+        <UnitName Value="gmPluginFuncs"/>
+      </Item90>
+      <Item91>
+        <Filename Value="source\gmPluginManager.pas"/>
+        <UnitName Value="gmPluginManager"/>
+      </Item91>
+      <Item92>
+        <Filename Value="source\gmPrintOptions.pas"/>
+        <UnitName Value="gmPrintOptions"/>
+      </Item92>
+      <Item93>
+        <Filename Value="source\gmRandomRipple.pas"/>
+        <UnitName Value="gmRandomRipple"/>
+      </Item93>
+      <Item94>
+        <Filename Value="source\gmRegions.pas"/>
+        <UnitName Value="gmRegions"/>
+      </Item94>
+      <Item95>
+        <Filename Value="source\gmRemoveRedEyes.pas"/>
+        <UnitName Value="gmRemoveRedEyes"/>
+      </Item95>
+      <Item96>
+        <Filename Value="source\gmReplaceColor.pas"/>
+        <UnitName Value="gmReplaceColor"/>
+      </Item96>
+      <Item97>
+        <Filename Value="source\gmResamplers.pas"/>
+        <UnitName Value="gmResamplers"/>
+      </Item97>
+      <Item98>
+        <Filename Value="source\gmResynth.pas"/>
+        <UnitName Value="gmResynth"/>
+      </Item98>
+      <Item99>
+        <Filename Value="source\gmReversalFilm.pas"/>
+        <UnitName Value="gmReversalFilm"/>
+      </Item99>
+      <Item100>
+        <Filename Value="source\gmSelection.pas"/>
+        <UnitName Value="gmSelection"/>
+      </Item100>
+      <Item101>
+        <Filename Value="source\gmSepia.pas"/>
+        <UnitName Value="gmSepia"/>
+      </Item101>
+      <Item102>
+        <Filename Value="source\gmShapes.pas"/>
+        <UnitName Value="gmShapes"/>
+      </Item102>
+      <Item103>
+        <Filename Value="source\gmSharpen.pas"/>
+        <UnitName Value="gmSharpen"/>
+      </Item103>
+      <Item104>
+        <Filename Value="source\gmSmartBlurFilter.pas"/>
+        <UnitName Value="gmSmartBlurFilter"/>
+      </Item104>
+      <Item105>
+        <Filename Value="source\gmSolarize.pas"/>
+        <UnitName Value="gmSolarize"/>
+      </Item105>
+      <Item106>
+        <Filename Value="source\gmSplitBlur.pas"/>
+        <UnitName Value="gmSplitBlur"/>
+      </Item106>
+      <Item107>
+        <Filename Value="source\gmSplitColor.pas"/>
+        <UnitName Value="gmSplitColor"/>
+      </Item107>
+      <Item108>
+        <Filename Value="source\gmSplitImage.pas"/>
+        <UnitName Value="gmSplitImage"/>
+      </Item108>
+      <Item109>
+        <Filename Value="source\gmSqueeze.pas"/>
+        <UnitName Value="gmSqueeze"/>
+      </Item109>
+      <Item110>
+        <Filename Value="source\gmSwatches.pas"/>
+        <UnitName Value="gmSwatches"/>
+      </Item110>
+      <Item111>
+        <Filename Value="source\gmTwist.pas"/>
+        <UnitName Value="gmTwist"/>
+      </Item111>
+      <Item112>
+        <Filename Value="source\gmTypes.pas"/>
+        <UnitName Value="gmTypes"/>
+      </Item112>
+      <Item113>
+        <Filename Value="source\gmUnsharpMask.pas"/>
+        <UnitName Value="gmUnsharpMask"/>
+      </Item113>
+      <Item114>
+        <Filename Value="source\gmWave.pas"/>
+        <UnitName Value="gmWave"/>
+      </Item114>
+      <Item115>
+        <Filename Value="source\Layers\gmBrightContrastLayer.pas"/>
+        <UnitName Value="gmBrightContrastLayer"/>
+      </Item115>
+      <Item116>
+        <Filename Value="source\Layers\gmChannelMixerLayer.pas"/>
+        <UnitName Value="gmChannelMixerLayer"/>
+      </Item116>
+      <Item117>
+        <Filename Value="source\Layers\gmColorBalanceLayer.pas"/>
+        <UnitName Value="gmColorBalanceLayer"/>
+      </Item117>
+      <Item118>
+        <Filename Value="source\Layers\gmCurvesLayer.pas"/>
+        <UnitName Value="gmCurvesLayer"/>
+      </Item118>
+      <Item119>
+        <Filename Value="source\Layers\gmGradientMapLayer.pas"/>
+        <UnitName Value="gmGradientMapLayer"/>
+      </Item119>
+      <Item120>
+        <Filename Value="source\Layers\gmHueSaturationLayer.pas"/>
+        <UnitName Value="gmHueSaturationLayer"/>
+      </Item120>
+      <Item121>
+        <Filename Value="source\Layers\gmInvertLayer.pas"/>
+        <UnitName Value="gmInvertLayer"/>
+      </Item121>
+      <Item122>
+        <Filename Value="source\Layers\gmLayerFigureManager.pas"/>
+        <UnitName Value="gmLayerFigureManager"/>
+      </Item122>
+      <Item123>
+        <Filename Value="source\Layers\gmLayerIO.pas"/>
+        <UnitName Value="gmLayerIO"/>
+      </Item123>
+      <Item124>
+        <Filename Value="source\Layers\gmLayerPanelManager.pas"/>
+        <UnitName Value="gmLayerPanelManager"/>
+      </Item124>
+      <Item125>
+        <Filename Value="source\Layers\gmLayers.pas"/>
+        <UnitName Value="gmLayers"/>
+      </Item125>
+      <Item126>
+        <Filename Value="source\Layers\gmLevelsLayer.pas"/>
+        <UnitName Value="gmLevelsLayer"/>
+      </Item126>
+      <Item127>
+        <Filename Value="source\Layers\gmPatternLayer.pas"/>
+        <UnitName Value="gmPatternLayer"/>
+      </Item127>
+      <Item128>
+        <Filename Value="source\Layers\gmPosterizeLayer.pas"/>
+        <UnitName Value="gmPosterizeLayer"/>
+      </Item128>
+      <Item129>
+        <Filename Value="source\Layers\gmRichTextLayer.pas"/>
+        <UnitName Value="gmRichTextLayer"/>
+      </Item129>
+      <Item130>
+        <Filename Value="source\Layers\gmShapeRegionLayer.pas"/>
+        <UnitName Value="gmShapeRegionLayer"/>
+      </Item130>
+      <Item131>
+        <Filename Value="source\Layers\gmSolidColorLayer.pas"/>
+        <UnitName Value="gmSolidColorLayer"/>
+      </Item131>
+      <Item132>
+        <Filename Value="source\Layers\gmThresholdLayer.pas"/>
+        <UnitName Value="gmThresholdLayer"/>
+      </Item132>
+      <Item133>
+        <Filename Value="source\Layers\gmVectorLayer.pas"/>
+        <UnitName Value="gmVectorLayer"/>
+      </Item133>
+      <Item134>
+        <Filename Value="source\Paths\gmPathIO.pas"/>
+        <UnitName Value="gmPathIO"/>
+      </Item134>
+      <Item135>
+        <Filename Value="source\Paths\gmPathManager.pas"/>
+        <UnitName Value="gmPathManager"/>
+      </Item135>
+      <Item136>
+        <Filename Value="source\Paths\gmPaths.pas"/>
+        <UnitName Value="gmPaths"/>
+      </Item136>
+    </Files>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="pl_graphics32vpr"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_graphics32ext"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="pl_graphics32"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="FCL"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
