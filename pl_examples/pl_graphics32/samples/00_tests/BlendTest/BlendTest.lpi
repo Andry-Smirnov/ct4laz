@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="fpcunittestrunner"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_Graphics32"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="BlendTest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="34" Y="19"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="TestGuiBlend.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="20" Y="35"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\Source\GR32_Blend.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3061"/>
+        <CursorPos X="23" Y="3076"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="GR32_BlendReference.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="19"/>
+        <CursorPos X="20" Y="39"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\Source\GR32.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="202"/>
+        <CursorPos X="5" Y="216"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="TestGR32Blend.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1262"/>
+        <CursorPos X="41" Y="1302"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\..\typhon\components\lz_FpcUnitRunner\source\guitestrunner.pas"/>
+        <FRMtype Value="0"/>
+        <ComponentName Value="GUITestRunner"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="GuiTestRunner"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="434"/>
+        <CursorPos X="76" Y="454"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32.inc"/>
+        <FRMtype Value="0"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="290"/>
+        <CursorPos X="26" Y="316"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="18" HistoryIndex="17">
+      <Position1>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="31" Column="13" TopLine="10"/>
+      </Position1>
+      <Position2>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="16" TopLine="16"/>
+      </Position2>
+      <Position3>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="38" Column="5" TopLine="16"/>
+      </Position3>
+      <Position4>
+        <Filename Value="GR32_BlendReference.pas"/>
+        <Caret Line="35" Column="35" TopLine="16"/>
+      </Position4>
+      <Position5>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="29" Column="10"/>
+      </Position5>
+      <Position6>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="16" Column="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="2" Column="17"/>
+      </Position7>
+      <Position8>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="10" Column="20"/>
+      </Position8>
+      <Position9>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="12" Column="23"/>
+      </Position9>
+      <Position10>
+        <Filename Value="TestGR32Blend.pas"/>
+        <Caret Line="36" Column="27" TopLine="14"/>
+      </Position10>
+      <Position11>
+        <Filename Value="GR32_BlendReference.pas"/>
+        <Caret Line="39" Column="20" TopLine="19"/>
+      </Position11>
+      <Position12>
+        <Filename Value="TestGR32Blend.pas"/>
+        <Caret Line="1025" Column="4" TopLine="1004"/>
+      </Position12>
+      <Position13>
+        <Filename Value="TestGR32Blend.pas"/>
+        <Caret Line="1167" Column="4" TopLine="1146"/>
+      </Position13>
+      <Position14>
+        <Filename Value="TestGR32Blend.pas"/>
+        <Caret Line="1301" Column="37" TopLine="1262"/>
+      </Position14>
+      <Position15>
+        <Filename Value="BlendTest.lpr"/>
+        <Caret Line="19" Column="34"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\..\typhon\components\lz_FpcUnitRunner\source\guitestrunner.pas"/>
+        <Caret Line="454" Column="76" TopLine="434"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32.inc"/>
+        <Caret Line="298" Column="65" TopLine="290"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32.inc"/>
+        <Caret Line="316" Column="9" TopLine="290"/>
+      </Position18>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\..\xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <CPPInline Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

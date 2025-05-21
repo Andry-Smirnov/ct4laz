@@ -1,0 +1,330 @@
+object FormColorPicker: TFormColorPicker
+  Left = 86
+  Height = 303
+  Top = 86
+  Width = 563
+  Caption = 'Color Picker'
+  ClientHeight = 303
+  ClientWidth = 563
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poScreenCenter
+  LCLVersion = '6.8'
+  object LabelWebColor: TLabel
+    Left = 432
+    Height = 13
+    Top = 178
+    Width = 23
+    Anchors = [akTop, akRight]
+    Caption = 'Hex:'
+    ParentColor = False
+  end
+  object LabelRed: TLabel
+    Left = 272
+    Height = 14
+    Top = 88
+    Width = 23
+    AutoSize = False
+    Caption = 'Red:'
+    ParentColor = False
+  end
+  object LabelGreen: TLabel
+    Left = 270
+    Height = 13
+    Top = 48
+    Width = 33
+    Caption = 'Green:'
+    ParentColor = False
+  end
+  object LabelBlue: TLabel
+    Left = 270
+    Height = 14
+    Top = 8
+    Width = 19
+    AutoSize = False
+    Caption = 'Blue:'
+    ParentColor = False
+  end
+  object LabelAlpha: TLabel
+    Left = 270
+    Height = 13
+    Top = 128
+    Width = 31
+    Caption = 'Alpha:'
+    ParentColor = False
+  end
+  object LabelPreview: TLabel
+    Left = 311
+    Height = 13
+    Top = 178
+    Width = 42
+    Caption = 'Preview:'
+    ParentColor = False
+  end
+  object LabelPalette: TLabel
+    Left = 270
+    Height = 13
+    Top = 244
+    Width = 38
+    Caption = 'Palette:'
+    ParentColor = False
+    Visible = False
+  end
+  object PanelControl: TPanel
+    Left = 0
+    Height = 33
+    Top = 270
+    Width = 563
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 33
+    ClientWidth = 563
+    TabOrder = 0
+    object ButtonOK: TButton
+      Left = 411
+      Height = 23
+      Top = 6
+      Width = 64
+      Anchors = [akRight, akBottom]
+      Caption = 'OK'
+      Default = True
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object ButtonCancel: TButton
+      Left = 486
+      Height = 23
+      Top = 6
+      Width = 65
+      Anchors = [akRight, akBottom]
+      Cancel = True
+      Caption = '&Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+    object ButtonPickFromScreen: TButton
+      Left = 8
+      Height = 23
+      Top = 4
+      Width = 105
+      Anchors = [akLeft, akBottom]
+      Caption = 'Pick from screen'
+      ModalResult = 1
+      OnClick = ButtonPickFromScreenClick
+      TabOrder = 2
+    end
+    object CheckBoxWebSafe: TCheckBox
+      Left = 228
+      Height = 19
+      Top = 8
+      Width = 64
+      Caption = 'WebSafe'
+      OnClick = CheckBoxWebSafeClick
+      TabOrder = 3
+    end
+  end
+  object EditColor: TEdit
+    Left = 474
+    Height = 21
+    Top = 175
+    Width = 81
+    Alignment = taCenter
+    Anchors = [akTop, akRight]
+    OnChange = EditColorChange
+    TabOrder = 1
+    Text = '$00000000'
+  end
+  object ColorPickerGTK: TColorPickerGTK
+    Left = 8
+    Height = 256
+    Top = 8
+    Width = 256
+    ParentBackground = False
+    SelectedColor = -16777216
+    TabOrder = 2
+    OnChanged = ColorPickerChanged
+  end
+  object ColorPickerRed: TColorPickerComponent
+    Left = 311
+    Height = 22
+    Top = 8
+    Width = 192
+    Anchors = [akTop, akRight]
+    Border = True
+    ColorComponent = ccRed
+    ParentBackground = False
+    SelectedColor = -16777216
+    TabOrder = 3
+    OnChanged = ColorPickerChanged
+  end
+  object ColorPickerGreen: TColorPickerComponent
+    Left = 311
+    Height = 22
+    Top = 48
+    Width = 192
+    Anchors = [akTop, akRight]
+    Border = True
+    ColorComponent = ccGreen
+    ParentBackground = False
+    SelectedColor = -16777216
+    TabOrder = 4
+    OnChanged = ColorPickerChanged
+  end
+  object ColorPickerBlue: TColorPickerComponent
+    Left = 311
+    Height = 22
+    Top = 88
+    Width = 192
+    Anchors = [akTop, akRight]
+    Border = True
+    ColorComponent = ccBlue
+    ParentBackground = False
+    SelectedColor = -16777216
+    TabOrder = 5
+    OnChanged = ColorPickerChanged
+  end
+  object ColorPickerAlpha: TColorPickerComponent
+    Left = 311
+    Height = 22
+    Top = 128
+    Width = 192
+    Anchors = [akTop, akRight]
+    Border = True
+    ColorComponent = ccAlpha
+    ParentBackground = False
+    SelectedColor = -16777216
+    TabOrder = 6
+    OnChanged = ColorPickerChanged
+  end
+  object SpinEditRed: TSpinEdit
+    Left = 509
+    Height = 21
+    Top = 8
+    Width = 46
+    Anchors = [akTop, akRight]
+    MaxValue = 255
+    OnChange = SpinEditColorChange
+    TabOrder = 7
+  end
+  object SpinEditGreen: TSpinEdit
+    Left = 509
+    Height = 21
+    Top = 48
+    Width = 46
+    Anchors = [akTop, akRight]
+    MaxValue = 255
+    OnChange = SpinEditColorChange
+    TabOrder = 8
+  end
+  object SpinEditBlue: TSpinEdit
+    Left = 509
+    Height = 21
+    Top = 88
+    Width = 46
+    Anchors = [akTop, akRight]
+    MaxValue = 255
+    OnChange = SpinEditColorChange
+    TabOrder = 9
+  end
+  object SpinEditAlpha: TSpinEdit
+    Left = 509
+    Height = 21
+    Top = 128
+    Width = 46
+    Anchors = [akTop, akRight]
+    MaxValue = 255
+    OnChange = SpinEditColorChange
+    TabOrder = 10
+  end
+  object ColorSwatch: TColorSwatch
+    Left = 359
+    Height = 32
+    Top = 164
+    Width = 33
+    Border = True
+    Color = -360334
+    TabOrder = 11
+  end
+  object ColorSwatchBlack: TColorSwatch
+    Left = 321
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -16777216
+    TabOrder = 12
+    OnClick = ColorSwatchClick
+  end
+  object ColorSwatchWhite: TColorSwatch
+    Left = 351
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -1
+    TabOrder = 13
+    OnClick = ColorSwatchClick
+  end
+  object ColorSwatchGreen: TColorSwatch
+    Left = 411
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -16711936
+    TabOrder = 14
+    OnClick = ColorSwatchClick
+  end
+  object ColorSwatchRed: TColorSwatch
+    Left = 381
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -65536
+    TabOrder = 15
+    OnClick = ColorSwatchClick
+  end
+  object ColorSwatchAqua: TColorSwatch
+    Left = 531
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -16711681
+    TabOrder = 16
+    OnClick = ColorSwatchClick
+  end
+  object ColorSwatchFuchsia: TColorSwatch
+    Left = 501
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -65281
+    TabOrder = 17
+    OnClick = ColorSwatchClick
+  end
+  object ColorSwatchYellow: TColorSwatch
+    Left = 471
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -256
+    TabOrder = 18
+    OnClick = ColorSwatchClick
+  end
+  object ColorSwatchBlue: TColorSwatch
+    Left = 441
+    Height = 24
+    Top = 238
+    Width = 24
+    Border = True
+    Color = -16776961
+    TabOrder = 19
+    OnClick = ColorSwatchClick
+  end
+end

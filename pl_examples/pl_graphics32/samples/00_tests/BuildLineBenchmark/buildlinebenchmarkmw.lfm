@@ -1,0 +1,91 @@
+object FrmBuildLineBenchmark: TFrmBuildLineBenchmark
+  Left = 1615
+  Height = 636
+  Top = 884
+  Width = 934
+  Caption = 'BuildLine Benchmark'
+  ClientHeight = 636
+  ClientWidth = 934
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '7.2'
+  object LblLineWidth: TLabel
+    Left = 844
+    Height = 13
+    Top = 20
+    Width = 32
+    Anchors = [akTop, akRight]
+    Caption = 'Width:'
+    ParentColor = False
+  end
+  object Image32: TImage32
+    Left = 8
+    Height = 620
+    Top = 8
+    Width = 671
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smNormal
+    TabOrder = 0
+    OnClick = Image32Click
+    OnResize = Image32Resize
+  end
+  object MemoOutput: TMemo
+    Left = 685
+    Height = 587
+    Top = 39
+    Width = 241
+    Anchors = [akTop, akRight, akBottom]
+    TabOrder = 1
+  end
+  object BtnBenchmark: TButton
+    Left = 685
+    Height = 25
+    Top = 8
+    Width = 65
+    Anchors = [akTop, akRight]
+    Caption = '&Benchmark'
+    OnClick = BtnBenchmarkClick
+    TabOrder = 2
+  end
+  object BtnClear: TButton
+    Left = 756
+    Height = 25
+    Top = 8
+    Width = 40
+    Anchors = [akTop, akRight]
+    Caption = '&Clear'
+    OnClick = BtnClearClick
+    TabOrder = 3
+  end
+  object BtnDraw: TButton
+    Left = 802
+    Height = 25
+    Top = 8
+    Width = 36
+    Anchors = [akTop, akRight]
+    Caption = '&Draw'
+    OnClick = BtnDrawClick
+    TabOrder = 4
+  end
+  object GaugeBar32: TGaugeBar
+    Left = 844
+    Height = 12
+    Top = 8
+    Width = 82
+    Anchors = [akTop, akRight]
+    Color = clScrollBar
+    Backgnd = bgPattern
+    Max = 200
+    Min = 10
+    ShowHandleGrip = True
+    Position = 10
+    OnChange = GaugeBar32Change
+  end
+end

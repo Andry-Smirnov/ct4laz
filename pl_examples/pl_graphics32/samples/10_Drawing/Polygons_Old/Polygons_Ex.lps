@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Debug"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="Polygons_Ex.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="14" Y="12"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="polygonsmf.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPolygons"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Polygonsmf"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="70"/>
+        <CursorPos X="11" Y="90"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\typhon\lcl\include\customform.inc"/>
+        <TopLine Value="913"/>
+        <CursorPos Y="934"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_PolygonsExt.inc"/>
+        <CursorPos X="85" Y="8"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Polygons.pas"/>
+        <TopLine Value="826"/>
+        <CursorPos X="25" Y="850"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_PolygonsExt_imp.inc"/>
+        <TopLine Value="1607"/>
+        <CursorPos X="83" Y="1628"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="polygonsmf.pas"/>
+        <Caret Line="256" Column="22" TopLine="214"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Polygons_Ex.lpr"/>
+        <Caret Line="12" Column="14"/>
+      </Position2>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

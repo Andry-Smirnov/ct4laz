@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Debug"/>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="ImgView_Layers.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="17" Y="15"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="imgviewlaymf.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ImgViewLaymf"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="152"/>
+        <CursorPos X="10" Y="172"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="NewImageUnit.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewImageForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="20"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="RGBALoaderUnit.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RGBALoaderForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="55"/>
+        <CursorPos Y="73"/>
+        <UsageCount Value="20"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Layers.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="278"/>
+        <CursorPos X="24" Y="301"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="imgviewlaymf.pas"/>
+        <Caret Line="648" Column="20" TopLine="631"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Layers.pas"/>
+        <Caret Line="394" Column="29" TopLine="379"/>
+      </Position2>
+      <Position3>
+        <Filename Value="imgviewlaymf.pas"/>
+        <Caret Line="648" Column="34" TopLine="631"/>
+      </Position3>
+      <Position4>
+        <Filename Value="imgviewlaymf.pas"/>
+        <Caret Line="149" Column="149" TopLine="132"/>
+      </Position4>
+      <Position5>
+        <Filename Value="imgviewlaymf.pas"/>
+        <Caret Line="648" Column="30" TopLine="632"/>
+      </Position5>
+      <Position6>
+        <Filename Value="ImgView_Layers.lpr"/>
+        <Caret Line="15" Column="17"/>
+      </Position6>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

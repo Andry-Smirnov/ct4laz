@@ -1,0 +1,21 @@
+{"version":1,"strings":[
+{"hash":260273698,"name":"tpictureeditorform.caption","sourcebytes":[66,105,116,109,97,112,51,50,32,69,100,105,116,111,114],"value":"Bitmap32 Editor"},
+{"hash":191236306,"name":"tpictureeditorform.toolbar.caption","sourcebytes":[84,111,111,108,66,97,114],"value":"ToolBar"},
+{"hash":24461424,"name":"tpictureeditorform.load.caption","sourcebytes":[32,32,32,32,32,76,111,97,100,32,32,32],"value":"     Load   "},
+{"hash":366789,"name":"tpictureeditorform.save.caption","sourcebytes":[83,97,118,101],"value":"Save"},
+{"hash":4860802,"name":"tpictureeditorform.clear.caption","sourcebytes":[67,108,101,97,114],"value":"Clear"},
+{"hash":160486418,"name":"tpictureeditorform.toolbutton2.caption","sourcebytes":[84,111,111,108,66,117,116,116,111,110,50],"value":"ToolButton2"},
+{"hash":304761,"name":"tpictureeditorform.copy.caption","sourcebytes":[67,111,112,121],"value":"Copy"},
+{"hash":5671589,"name":"tpictureeditorform.paste.caption","sourcebytes":[80,97,115,116,101],"value":"Paste"},
+{"hash":72376677,"name":"tpictureeditorform.imagesheet.caption","sourcebytes":[82,71,66,32,73,109,97,103,101],"value":"RGB Image"},
+{"hash":30586812,"name":"tpictureeditorform.alphasheet.caption","sourcebytes":[65,108,112,104,97,32,67,104,97,110,110,101,108],"value":"Alpha Channel"},
+{"hash":5471770,"name":"tpictureeditorform.label1.caption","sourcebytes":[77,97,103,110,58],"value":"Magn:"},
+{"hash":1339,"name":"tpictureeditorform.okbutton.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tpictureeditorform.cancel.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":56062302,"name":"tpictureeditorform.mnload.caption","sourcebytes":[76,111,97,100,46,46,46],"value":"Load..."},
+{"hash":160203102,"name":"tpictureeditorform.mnsave.caption","sourcebytes":[83,97,118,101,46,46,46],"value":"Save..."},
+{"hash":4860802,"name":"tpictureeditorform.mnclear.caption","sourcebytes":[67,108,101,97,114],"value":"Clear"},
+{"hash":304761,"name":"tpictureeditorform.mncopy.caption","sourcebytes":[67,111,112,121],"value":"Copy"},
+{"hash":5671589,"name":"tpictureeditorform.mnpaste.caption","sourcebytes":[80,97,115,116,101],"value":"Paste"},
+{"hash":84266132,"name":"tpictureeditorform.mninvert.caption","sourcebytes":[73,110,118,101,114,116],"value":"Invert"}
+]}

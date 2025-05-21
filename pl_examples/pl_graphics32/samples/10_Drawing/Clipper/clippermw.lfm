@@ -1,0 +1,135 @@
+object FrmClipper: TFrmClipper
+  Left = 86
+  Height = 508
+  Top = 86
+  Width = 834
+  Caption = 'Clipper'
+  ClientHeight = 508
+  ClientWidth = 834
+  Color = clBtnFace
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Arial'
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '7.3'
+  object PnlControl: TPanel
+    Left = 0
+    Height = 508
+    Top = 0
+    Width = 169
+    Align = alLeft
+    ClientHeight = 508
+    ClientWidth = 169
+    TabOrder = 0
+    object BtnExit: TButton
+      Left = 36
+      Height = 25
+      Top = 420
+      Width = 75
+      Cancel = True
+      Caption = 'Exit'
+      OnClick = BtnExitClick
+      TabOrder = 5
+    end
+    object rgClipping: TRadioGroup
+      Left = 16
+      Height = 127
+      Top = 26
+      Width = 138
+      AutoFill = True
+      Caption = 'Clipping Op'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 107
+      ClientWidth = 134
+      ItemIndex = 1
+      Items.Strings = (
+        '&Intersection'
+        '&Union'
+        '&Difference'
+        '&XOR'
+      )
+      TabOrder = 0
+    end
+    object BtnClear: TButton
+      Left = 35
+      Height = 25
+      Top = 384
+      Width = 75
+      Caption = '&Clear'
+      OnClick = BtnClearClick
+      TabOrder = 4
+    end
+    object RgpObject: TRadioGroup
+      Left = 15
+      Height = 98
+      Top = 176
+      Width = 138
+      AutoFill = True
+      Caption = 'Shape'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 78
+      ClientWidth = 134
+      ItemIndex = 0
+      Items.Strings = (
+        '&Star'
+        '&Ellipse'
+        '&Rectangle'
+      )
+      TabOrder = 1
+    end
+    object BtnInflate: TButton
+      Left = 35
+      Height = 25
+      Top = 296
+      Width = 75
+      Caption = 'In&flate'
+      OnClick = BtnInflateClick
+      TabOrder = 2
+    end
+    object BtnDeflate: TButton
+      Left = 35
+      Height = 25
+      Top = 330
+      Width = 75
+      Caption = 'Defla&te'
+      OnClick = BtnDeflateClick
+      TabOrder = 3
+    end
+  end
+  object ImgView32: TImgView32
+    Left = 169
+    Height = 508
+    Top = 0
+    Width = 665
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baCustom
+    Scale = 1
+    ScaleMode = smScale
+    ScrollBars.Color = clScrollBar
+    ScrollBars.ShowHandleGrip = True
+    ScrollBars.Style = rbsDefault
+    ScrollBars.Size = 16
+    ScrollBars.Visibility = svAuto
+    OverSize = 0
+    TabOrder = 1
+    OnMouseDown = ImgView32MouseDown
+    OnMouseLeave = ImgView32MouseLeave
+    OnMouseMove = ImgView32MouseMove
+  end
+end

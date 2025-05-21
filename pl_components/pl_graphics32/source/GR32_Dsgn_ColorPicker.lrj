@@ -1,0 +1,15 @@
+{"version":1,"strings":[
+{"hash":29996930,"name":"tformcolorpicker.caption","sourcebytes":[67,111,108,111,114,32,80,105,99,107,101,114],"value":"Color Picker"},
+{"hash":322746,"name":"tformcolorpicker.labelwebcolor.caption","sourcebytes":[72,101,120,58],"value":"Hex:"},
+{"hash":363386,"name":"tformcolorpicker.labelred.caption","sourcebytes":[82,101,100,58],"value":"Red:"},
+{"hash":82361370,"name":"tformcolorpicker.labelgreen.caption","sourcebytes":[71,114,101,101,110,58],"value":"Green:"},
+{"hash":4799370,"name":"tformcolorpicker.labelblue.caption","sourcebytes":[66,108,117,101,58],"value":"Blue:"},
+{"hash":75722314,"name":"tformcolorpicker.labelalpha.caption","sourcebytes":[65,108,112,104,97,58],"value":"Alpha:"},
+{"hash":147651034,"name":"tformcolorpicker.labelpreview.caption","sourcebytes":[80,114,101,118,105,101,119,58],"value":"Preview:"},
+{"hash":137150442,"name":"tformcolorpicker.labelpalette.caption","sourcebytes":[80,97,108,101,116,116,101,58],"value":"Palette:"},
+{"hash":1339,"name":"tformcolorpicker.buttonok.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":177752476,"name":"tformcolorpicker.buttoncancel.caption","sourcebytes":[38,67,97,110,99,101,108],"value":"&Cancel"},
+{"hash":183661022,"name":"tformcolorpicker.buttonpickfromscreen.caption","sourcebytes":[80,105,99,107,32,102,114,111,109,32,115,99,114,101,101,110],"value":"Pick from screen"},
+{"hash":230135701,"name":"tformcolorpicker.checkboxwebsafe.caption","sourcebytes":[87,101,98,83,97,102,101],"value":"WebSafe"},
+{"hash":53679104,"name":"tformcolorpicker.editcolor.text","sourcebytes":[36,48,48,48,48,48,48,48,48],"value":"$00000000"}
+]}

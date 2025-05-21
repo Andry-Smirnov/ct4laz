@@ -1,0 +1,167 @@
+object FormGradientLines: TFormGradientLines
+  Left = 291
+  Height = 423
+  Top = 201
+  Width = 623
+  Caption = 'Gradient Lines Example'
+  ClientHeight = 423
+  ClientWidth = 623
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblTotal: TLabel
+    Left = 510
+    Height = 13
+    Top = 92
+    Width = 28
+    Anchors = [akTop, akRight]
+    Caption = 'Total:'
+    ParentColor = False
+  end
+  object PaintBox: TPaintBox32
+    Left = 8
+    Height = 409
+    Top = 8
+    Width = 496
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+  end
+  object BtnAddOne: TButton
+    Left = 510
+    Height = 21
+    Top = 8
+    Width = 105
+    Anchors = [akTop, akRight]
+    Caption = 'Add One'
+    OnClick = BtnAddOneClick
+    TabOrder = 1
+  end
+  object BtnAddTen: TButton
+    Left = 510
+    Height = 21
+    Top = 34
+    Width = 105
+    Anchors = [akTop, akRight]
+    Caption = 'Add Ten'
+    OnClick = BtnAddTenClick
+    TabOrder = 2
+  end
+  object BtnClear: TButton
+    Left = 510
+    Height = 21
+    Top = 60
+    Width = 105
+    Anchors = [akTop, akRight]
+    Caption = 'Clear'
+    OnClick = BtnClearClick
+    TabOrder = 3
+  end
+  object RgpFade: TRadioGroup
+    Left = 510
+    Height = 89
+    Top = 224
+    Width = 105
+    Anchors = [akTop, akRight]
+    AutoFill = True
+    Caption = 'Fade'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 71
+    ClientWidth = 101
+    ItemIndex = 0
+    Items.Strings = (
+      'None'
+      'Slow'
+      'Fast'
+    )
+    OnClick = RgpFadeClick
+    TabOrder = 4
+  end
+  object RgpDraw: TRadioGroup
+    Left = 510
+    Height = 81
+    Top = 136
+    Width = 105
+    Anchors = [akTop, akRight]
+    AutoFill = True
+    Caption = 'Draw'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 63
+    ClientWidth = 101
+    ItemIndex = 0
+    Items.Strings = (
+      'Slow'
+      'Normal'
+      'Fast'
+    )
+    OnClick = RgpDrawClick
+    TabOrder = 5
+  end
+  object PnlTotalLines: TPanel
+    Left = 511
+    Height = 17
+    Top = 108
+    Width = 104
+    Anchors = [akTop, akRight]
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    Caption = '0'
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 6
+  end
+  object RepaintOpt: TCheckBox
+    Left = 509
+    Height = 19
+    Top = 320
+    Width = 106
+    Anchors = [akTop, akRight]
+    Caption = 'Repaint Optimization'
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    OnClick = RepaintOptClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Memo: TMemo
+    Left = 510
+    Height = 74
+    Top = 343
+    Width = 105
+    Anchors = [akTop, akRight]
+    Color = clInfoBk
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Tahoma'
+    Lines.Strings = (
+      'Disable fading to see '
+      'effect of repaint '
+      'optimization.'
+      ''
+      '(Maximize application'
+      'on modern CPUs)'
+    )
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 8
+    TabStop = False
+  end
+end

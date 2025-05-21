@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Grow.lpr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="9"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="growmw.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormGrow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Growmw"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="53" Y="9"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="growmw.pas"/>
+        <Caret Line="125" Column="22" TopLine="100"/>
+      </Position1>
+      <Position2>
+        <Filename Value="growmw.pas"/>
+        <Caret Line="48" TopLine="25"/>
+      </Position2>
+      <Position3>
+        <Filename Value="growmw.pas"/>
+        <Caret Line="125" Column="14" TopLine="100"/>
+      </Position3>
+      <Position4>
+        <Filename Value="growmw.pas"/>
+        <Caret Line="122" Column="17" TopLine="100"/>
+      </Position4>
+      <Position5>
+        <Filename Value="growmw.pas"/>
+        <Caret Line="48" Column="11" TopLine="24"/>
+      </Position5>
+      <Position6>
+        <Filename Value="growmw.pas"/>
+        <Caret Line="122" Column="16" TopLine="100"/>
+      </Position6>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

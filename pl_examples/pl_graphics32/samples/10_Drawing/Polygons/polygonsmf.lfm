@@ -1,0 +1,244 @@
+object FormPolygons: TFormPolygons
+  Left = 1581
+  Height = 533
+  Top = 736
+  Width = 665
+  Caption = 'Polygons Example'
+  ClientHeight = 533
+  ClientWidth = 665
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '6.8'
+  object Image: TImage32
+    Left = 0
+    Height = 533
+    Top = 0
+    Width = 520
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TKernelResampler'
+    Bitmap.Resampler.KernelClassName = 'TCubicKernel'
+    Bitmap.Resampler.Kernel.Coeff = -0.800000011920929
+    Bitmap.Resampler.KernelMode = kmDynamic
+    Bitmap.Resampler.TableSize = 32
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smStretch
+    TabOrder = 0
+    OnMouseDown = ImageMouseDown
+    OnResize = ImageResize
+  end
+  object PanelControl: TPanel
+    Left = 520
+    Height = 533
+    Top = 0
+    Width = 145
+    Align = alRight
+    BevelOuter = bvNone
+    ClientHeight = 533
+    ClientWidth = 145
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    ParentFont = False
+    TabOrder = 1
+    object LblLineOpacity: TLabel
+      Left = 16
+      Height = 13
+      Top = 47
+      Width = 59
+      Caption = 'Line Opacity'
+      ParentColor = False
+    end
+    object LblFillOpacity: TLabel
+      Left = 16
+      Height = 13
+      Top = 87
+      Width = 52
+      Caption = 'Fill Opacity'
+      ParentColor = False
+    end
+    object LblOutlineThickness: TLabel
+      Left = 16
+      Height = 13
+      Top = 267
+      Width = 50
+      Caption = 'Thickness:'
+      ParentColor = False
+    end
+    object LblOutlineThicknessValue: TLabel
+      Left = 72
+      Height = 13
+      Top = 267
+      Width = 14
+      Caption = '(1)'
+      ParentColor = False
+    end
+    object LblMiterLimit: TLabel
+      Left = 16
+      Height = 13
+      Top = 396
+      Width = 48
+      Caption = 'Miter Limit'
+      ParentColor = False
+    end
+    object LineAlpha: TScrollBar
+      Left = 16
+      Height = 16
+      Top = 63
+      Width = 121
+      Max = 255
+      PageSize = 0
+      Position = 255
+      TabOrder = 0
+      OnChange = LineAlphaChange
+    end
+    object FillAlpha: TScrollBar
+      Left = 16
+      Height = 16
+      Top = 103
+      Width = 121
+      Max = 255
+      PageSize = 0
+      Position = 127
+      TabOrder = 1
+      OnChange = FillAlphaChange
+    end
+    object RgpFillMode: TRadioGroup
+      Left = 16
+      Height = 65
+      Top = 126
+      Width = 121
+      AutoFill = True
+      Caption = 'Fill Mode'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 47
+      ClientWidth = 117
+      ItemIndex = 0
+      Items.Strings = (
+        'pfAlternate'
+        'pfWinding'
+      )
+      OnClick = FillModeChange
+      TabOrder = 2
+    end
+    object BtnNewLine: TButton
+      Left = 24
+      Height = 25
+      Top = 8
+      Width = 105
+      Caption = 'New Line'
+      OnClick = BtnNewLineClick
+      TabOrder = 3
+    end
+    object LineThickness: TScrollBar
+      Left = 16
+      Height = 16
+      Top = 284
+      Width = 121
+      Enabled = False
+      Max = 200
+      Min = 1
+      PageSize = 0
+      Position = 10
+      TabOrder = 4
+      OnChange = ThicknessChanged
+    end
+    object CbxThickOutline: TCheckBox
+      Left = 16
+      Height = 19
+      Top = 244
+      Width = 95
+      Caption = 'Outline Enabled'
+      OnClick = ThickOutlineChange
+      TabOrder = 5
+    end
+    object MemoHint: TMemo
+      Left = 16
+      Height = 47
+      Top = 471
+      Width = 121
+      Color = clInfoBk
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'LMB - Add vertex'
+        'RMB - Clear'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 6
+      TabStop = False
+    end
+    object CbxPattern: TCheckBox
+      Left = 16
+      Height = 19
+      Top = 197
+      Width = 83
+      Caption = 'Pattern filling'
+      OnClick = PatternFillingChange
+      TabOrder = 7
+    end
+    object RgpJointMode: TRadioGroup
+      Left = 16
+      Height = 84
+      Top = 306
+      Width = 121
+      AutoFill = True
+      Caption = 'Joint Mode'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 66
+      ClientWidth = 117
+      Enabled = False
+      ItemIndex = 0
+      Items.Strings = (
+        'jmMiter'
+        'jmBevel'
+        'jmRound'
+      )
+      OnClick = JointModeChange
+      TabOrder = 8
+    end
+    object MiterLimit: TScrollBar
+      Left = 16
+      Height = 16
+      Top = 412
+      Width = 121
+      Enabled = False
+      Max = 255
+      Min = 1
+      PageSize = 0
+      Position = 127
+      TabOrder = 9
+      OnChange = MiterLimitChange
+    end
+  end
+  object BitmapList: TBitmap32List
+    Bitmaps = <    
+      item
+        Bitmap.ResamplerClassName = 'TNearestResampler'
+      end    
+      item
+        Bitmap.ResamplerClassName = 'TNearestResampler'
+      end>
+    Left = 312
+    Top = 328
+  end
+end

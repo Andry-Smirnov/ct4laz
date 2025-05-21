@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectGroup FileVersion="1">
+    <Targets Count="45">
+      <Target0 FileName="samples\00_General\ByteMaps\ByteMaps.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target0>
+      <Target1 FileName="samples\00_General\ColorPicker\ColorPicker.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Target1>
+      <Target2 FileName="samples\00_General\Image32\Image32.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target2>
+      <Target3 FileName="samples\00_General\Mandelbrot\Mandelbrot.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target3>
+      <Target4 FileName="samples\00_General\Rotate\Rotate.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target4>
+      <Target5 FileName="samples\10_Drawing\AntiAliasing\AntiAliasing.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target5>
+      <Target6 FileName="samples\10_Drawing\ArrowHead\ArrowHead.ctpr"/>
+      <Target7 FileName="samples\10_Drawing\Benchmark\Benchmark.ctpr"/>
+      <Target8 FileName="samples\10_Drawing\Blurs\Blurs.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target8>
+      <Target9 FileName="samples\10_Drawing\Clipper\Clipper.ctpr"/>
+      <Target10 FileName="samples\10_Drawing\CubicSpline\CubicSpline.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target10>
+      <Target11 FileName="samples\10_Drawing\Curves\Curves.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target11>
+      <Target12 FileName="samples\10_Drawing\GammaBlur\GammaBlur.ctpr"/>
+      <Target13 FileName="samples\10_Drawing\GammaCorrection\GammaCorrection.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="default"/>
+      </Target13>
+      <Target14 FileName="samples\10_Drawing\GradFills\GradFills.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target14>
+      <Target15 FileName="samples\10_Drawing\GradLines\GradLines.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target15>
+      <Target16 FileName="samples\10_Drawing\GradSampler\GradSampler.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target16>
+      <Target17 FileName="samples\10_Drawing\Grow\Grow.ctpr"/>
+      <Target18 FileName="samples\10_Drawing\LineStippling\LineStippling_Ex.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target18>
+      <Target19 FileName="samples\10_Drawing\Lion\Lion.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target19>
+      <Target20 FileName="samples\10_Drawing\MeshGradients\MeshGradients.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target20>
+      <Target21 FileName="samples\10_Drawing\Polygons\Polygons.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target21>
+      <Target22 FileName="samples\10_Drawing\Polygons_Old\Polygons_Ex.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target22>
+      <Target23 FileName="samples\10_Drawing\RenderText\RenderText.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target23>
+      <Target24 FileName="samples\10_Drawing\ScatterPlot\ScatterPlot.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target24>
+      <Target25 FileName="samples\10_Drawing\TextVPR\TextVPR.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="default"/>
+      </Target25>
+      <Target26 FileName="samples\10_Drawing\VertexReduction\LineSimplification.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target26>
+      <Target27 FileName="samples\20_Layers\ImgView_Layers\ImgView_Layers.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target27>
+      <Target28 FileName="samples\20_Layers\RotLayer\RotLayer.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target28>
+      <Target29 FileName="samples\20_Layers\Sprites\Sprites.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target29>
+      <Target30 FileName="samples\30_Blending\BlendVsMerge\BlendVsMerge.ctpr"/>
+      <Target31 FileName="samples\30_Blending\PixelCombine\PixelCombine.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target31>
+      <Target32 FileName="samples\30_Blending\TextureBlend\TextureBlend.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target32>
+      <Target33 FileName="samples\40_Resampling\NestedSampling\NestedSampling.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target33>
+      <Target34 FileName="samples\40_Resampling\PixelF\PixelF.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Release" Compile="True"/>
+        <Mode2 Name="Debug"/>
+      </Target34>
+      <Target35 FileName="samples\40_Resampling\Resamplers\Resamplers.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target35>
+      <Target36 FileName="samples\50_Transformation\ImgWarping\ImgWarping.ctpr"/>
+      <Target37 FileName="samples\50_Transformation\Transform\Transform.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target37>
+      <Target38 FileName="samples\50_Transformation\Visualization\Visualization.lpi">
+        <BuildModes Count="2"/>
+        <Mode1 Name="Debug" Compile="True"/>
+        <Mode2 Name="Release"/>
+      </Target38>
+      <Target39 FileName="samples\70_Comp\TColor32Dialog\Color32Dialog.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Target39>
+      <Target40 FileName="samples\70_Comp\TColorPickerComp\ColorPickerComp.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Target40>
+      <Target41 FileName="samples\70_Comp\TColorPickerGTK\ColorPickerGTK.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Target41>
+      <Target42 FileName="samples\70_Comp\TColorPickerHS\ColorPickerHS.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Target42>
+      <Target43 FileName="samples\70_Comp\TColorPickerHSV\ColorPickerHSV.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Target43>
+      <Target44 FileName="samples\70_Comp\TColorPickerRGBA\ColorPickerRGBA.lpi">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Target44>
+    </Targets>
+  </ProjectGroup>
+</CONFIG>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="ColorPickerComp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="colorpickercompmw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ColorPickerCompmw"/>
+        <CursorPos X="34" Y="16"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_VPR.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="136"/>
+        <CursorPos Y="171"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1109"/>
+        <CursorPos X="89" Y="1141"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Polygons.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="177"/>
+        <CursorPos X="11" Y="205"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="424"/>
+        <CursorPos X="10" Y="451"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="15" HistoryIndex="14">
+      <Position1>
+        <Filename Value="colorpickercompmw.pas"/>
+        <Caret Line="16" Column="36"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="332" Column="60" TopLine="304"/>
+      </Position2>
+      <Position3>
+        <Filename Value="colorpickercompmw.pas"/>
+        <Caret Line="16" Column="36"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_VPR.pas"/>
+        <Caret Line="143" Column="49" TopLine="134"/>
+      </Position4>
+      <Position5>
+        <Filename Value="colorpickercompmw.pas"/>
+        <Caret Line="16" Column="36"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_VPR.pas"/>
+        <Caret Line="155" Column="40" TopLine="140"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_VPR.pas"/>
+        <Caret Line="154" Column="20" TopLine="140"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1150" Column="23" TopLine="1123"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1115" Column="36" TopLine="1093"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1014" Column="14" TopLine="993"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1142" Column="10" TopLine="1114"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1146" Column="21" TopLine="1114"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1148" Column="5" TopLine="1114"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1139" Column="23" TopLine="1114"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_Graphics32\source\GR32_ColorPicker.pas"/>
+        <Caret Line="1142" Column="11" TopLine="1114"/>
+      </Position15>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

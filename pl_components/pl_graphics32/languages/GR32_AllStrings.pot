@@ -1,0 +1,164 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: gr32_allstrings.rcstrbadformat
+msgid "Bad format - Photoshop .msh expected!"
+msgstr ""
+
+#: gr32_allstrings.rcstrbaseisempty
+msgid "Base is empty!"
+msgstr ""
+
+#: gr32_allstrings.rcstrcannotallocatedibhandle
+msgid "Can't allocate the DIB handle"
+msgstr ""
+
+#: gr32_allstrings.rcstrcannotallocatememory
+msgid "Can't allocate memory for the DIB"
+msgstr ""
+
+#: gr32_allstrings.rcstrcannotallocatethepixbuf
+msgid "Can't allocate the Pixbuf"
+msgstr ""
+
+#: gr32_allstrings.rcstrcannotcreatecompatibledc
+msgid "Can't create compatible DC"
+msgstr ""
+
+#: gr32_allstrings.rcstrcannotselectanobjectintodc
+msgid "Can't select an object into DC"
+msgstr ""
+
+#: gr32_allstrings.rcstrcannotsetsize
+#, object-pascal-format
+msgid "Can't set size from '%s'"
+msgstr ""
+
+#: gr32_allstrings.rcstrcantallocatevectormap
+msgid "Can't allocate VectorMap!"
+msgstr ""
+
+#: gr32_allstrings.rcstrfailedtocreatemapfile
+#, object-pascal-format
+msgid "Failed to create map file (%s)"
+msgstr ""
+
+#: gr32_allstrings.rcstrfailedtomapfile
+msgid "Failed to map file"
+msgstr ""
+
+#: gr32_allstrings.rcstrfailedtomapviewoffile
+msgid "Failed to map view of file."
+msgstr ""
+
+#: gr32_allstrings.rcstrfilenotfound
+msgid "File not found!"
+msgstr ""
+
+#: gr32_allstrings.rcstrforwardtransformationnotimplemented
+#, object-pascal-format
+msgid "Forward transformation is not implemented in %s."
+msgstr ""
+
+#: gr32_allstrings.rcstrindexoutofbounds
+#, object-pascal-format
+msgid "Index out of bounds (%d)"
+msgstr ""
+
+#: gr32_allstrings.rcstrinpropriatebackend
+msgid "Inappropriate Backend"
+msgstr ""
+
+#: gr32_allstrings.rcstrinsufficientpointsinarray
+msgid "Insufficient points in array"
+msgstr ""
+
+#: gr32_allstrings.rcstrinvalidsrcrect
+msgid "Invalid SrcRect"
+msgstr ""
+
+#: gr32_allstrings.rcstrinvalidstageindex
+msgid "Invalid stage index"
+msgstr ""
+
+#: gr32_allstrings.rcstrmappingrectisempty
+msgid "MappingRect is empty!"
+msgstr ""
+
+#: gr32_allstrings.rcstrnolookuptablepassed
+msgid "No lookup table passed!"
+msgstr ""
+
+#: gr32_allstrings.rcstrnosamplerspecified
+msgid "No sampler specified!"
+msgstr ""
+
+#: gr32_allstrings.rcstrnotcolor32gradient
+msgid "No TColor32Gradient specified"
+msgstr ""
+
+#: gr32_allstrings.rcstrnotcolor32lookuptable
+msgid "No TColor32LookupTable object specified"
+msgstr ""
+
+#: gr32_allstrings.rcstronlyexactly3point
+msgid "Only exactly 3 points expected!"
+msgstr ""
+
+#: gr32_allstrings.rcstrpointcountmismatch
+msgid "Point count mismatch"
+msgstr ""
+
+#: gr32_allstrings.rcstrreversetransformationnotimplemented
+#, object-pascal-format
+msgid "Reverse transformation is not implemented in %s."
+msgstr ""
+
+#: gr32_allstrings.rcstrsrcisempty
+msgid "Src is empty!"
+msgstr ""
+
+#: gr32_allstrings.rcstrsrcrectisempty
+msgid "SrcRect is empty!"
+msgstr ""
+
+#: gr32_allstrings.rcstrtopbottomcurvenil
+msgid "Top or bottom curve is nil"
+msgstr ""
+
+#: gr32_allstrings.rcstrunmatchedreferencecounting
+msgid "Unmatched reference counting."
+msgstr ""
+
+#: gr32_allstrings.rcstrwrongformat
+msgid "Wrong format"
+msgstr ""
+
+#: gr32_allstrings.rsclipper_clippingerr
+msgid "Undefined clipping error"
+msgstr ""
+
+#: gr32_allstrings.rsclipper_openpatherr
+msgid "Only subject paths can be open."
+msgstr ""
+
+#: gr32_allstrings.rstrstackempty
+msgid "Stack empty"
+msgstr ""
+
+#: gr32_allstrings.sdstnil
+msgid "Destination bitmap is nil"
+msgstr ""
+
+#: gr32_allstrings.ssamplernil
+msgid "Nested sampler is nil"
+msgstr ""
+
+#: gr32_allstrings.ssrcinvalid
+msgid "Source rectangle is invalid"
+msgstr ""
+
+#: gr32_allstrings.ssrcnil
+msgid "Source bitmap is nil"
+msgstr ""
+

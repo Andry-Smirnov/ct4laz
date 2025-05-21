@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Debug"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="NestedSampling.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="17" Y="16"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="nestedsamplingmf.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="NestedSamplingmf"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="185"/>
+        <CursorPos X="10" Y="208"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="SimplePropEdit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="19"/>
+        <CursorPos X="57" Y="34"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="NestedSampling.lpr"/>
+        <Caret Line="13" Column="17"/>
+      </Position1>
+      <Position2>
+        <Filename Value="SimplePropEdit.pas"/>
+        <Caret Line="38" Column="22" TopLine="18"/>
+      </Position2>
+      <Position3>
+        <Filename Value="SimplePropEdit.pas"/>
+        <Caret Line="34" Column="57" TopLine="19"/>
+      </Position3>
+      <Position4>
+        <Filename Value="nestedsamplingmf.pas"/>
+        <Caret Line="255" Column="5" TopLine="255"/>
+      </Position4>
+      <Position5>
+        <Filename Value="NestedSampling.lpr"/>
+        <Caret Line="16" Column="17"/>
+      </Position5>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
