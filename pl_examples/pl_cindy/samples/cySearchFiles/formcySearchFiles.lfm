@@ -1,0 +1,302 @@
+object FrmCySearchFiles: TFrmCySearchFiles
+  Left = 360
+  Height = 585
+  Top = 251
+  Width = 849
+  Caption = 'FrmDemo'
+  ClientHeight = 585
+  ClientWidth = 849
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblCurrentFile: TLabel
+    Left = 0
+    Height = 18
+    Top = 567
+    Width = 849
+    Align = alBottom
+    Caption = 'Done.'
+    ParentColor = False
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 433
+    Top = 0
+    Width = 312
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 433
+    ClientWidth = 312
+    TabOrder = 0
+    object cySplitter1: TcySplitter
+      Left = 300
+      Height = 429
+      Top = 0
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object RichEditInfo: TMemo
+      Left = 0
+      Height = 429
+      Top = 0
+      Width = 300
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+      TabStop = False
+    end
+  end
+  object Panel1: TPanel
+    Left = 312
+    Height = 433
+    Top = 0
+    Width = 537
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 433
+    ClientWidth = 537
+    TabOrder = 2
+    object Label63: TLabel
+      Left = 2
+      Height = 18
+      Top = 3
+      Width = 108
+      Caption = 'Scan from path :'
+      ParentColor = False
+    end
+    object Label83: TLabel
+      Left = 146
+      Height = 18
+      Top = 83
+      Width = 83
+      Caption = 'File Mask(s) :'
+      ParentColor = False
+    end
+    object Label84: TLabel
+      Left = 282
+      Height = 18
+      Top = 83
+      Width = 136
+      Caption = 'Exclude file mask(s) :'
+      ParentColor = False
+    end
+    object Label85: TLabel
+      Left = 146
+      Height = 18
+      Top = 201
+      Width = 179
+      Caption = '(Both masks can be empty)'
+      ParentColor = False
+    end
+    object MemScanIncMask: TMemo
+      Left = 146
+      Height = 93
+      Top = 102
+      Width = 125
+      Lines.Strings = (
+        '*.jpeg'
+        '*.jpg'
+        '*.exe'
+        '*.ico'
+      )
+      TabOrder = 0
+      WordWrap = False
+    end
+    object MemScanExMask: TMemo
+      Left = 282
+      Height = 93
+      Top = 102
+      Width = 125
+      TabOrder = 1
+      WordWrap = False
+    end
+    object CBScanArchive: TCheckBox
+      Left = 2
+      Height = 21
+      Top = 102
+      Width = 70
+      AllowGrayed = True
+      Caption = 'Archive'
+      State = cbGrayed
+      TabOrder = 2
+    end
+    object CBScanHidden: TCheckBox
+      Left = 2
+      Height = 21
+      Top = 121
+      Width = 68
+      AllowGrayed = True
+      Caption = 'Hidden'
+      State = cbGrayed
+      TabOrder = 3
+    end
+    object CBScanReadOnly: TCheckBox
+      Left = 2
+      Height = 21
+      Top = 140
+      Width = 86
+      AllowGrayed = True
+      Caption = 'Read Only'
+      State = cbGrayed
+      TabOrder = 4
+    end
+    object CBScanSystem: TCheckBox
+      Left = 2
+      Height = 21
+      Top = 159
+      Width = 72
+      AllowGrayed = True
+      Caption = 'System'
+      State = cbGrayed
+      TabOrder = 5
+    end
+    object CBScanSubDirs: TCheckBox
+      Left = 4
+      Height = 21
+      Top = 52
+      Width = 167
+      Caption = 'Include sub-directories'
+      Checked = True
+      State = cbChecked
+      TabOrder = 6
+    end
+    object CBScanTemporary: TCheckBox
+      Left = 2
+      Height = 21
+      Top = 178
+      Width = 90
+      AllowGrayed = True
+      Caption = 'Temporary'
+      State = cbGrayed
+      TabOrder = 7
+    end
+    object GroupBox1: TGroupBox
+      Left = 4
+      Height = 186
+      Top = 236
+      Width = 403
+      Caption = ' Personalize result with OnValidateFile Event '
+      ClientHeight = 167
+      ClientWidth = 399
+      TabOrder = 8
+      object Label88: TLabel
+        Left = 30
+        Height = 18
+        Top = 26
+        Width = 108
+        Caption = 'Modified Date > '
+        ParentColor = False
+      end
+      object DTPModifiedDate: TCalendar
+        Left = 146
+        Height = 160
+        Top = 0
+        Width = 211
+        DateTime = 40706
+        TabOrder = 0
+      end
+    end
+    object SBExecute: TSpeedButton
+      Left = 435
+      Height = 45
+      Top = 70
+      Width = 87
+      Caption = 'SBExecute'
+      OnClick = SBExecuteClick
+    end
+    object SBPause: TSpeedButton
+      Left = 435
+      Height = 38
+      Top = 126
+      Width = 87
+      Caption = 'SBPause'
+      OnClick = SBPauseClick
+    end
+    object SBClose: TSpeedButton
+      Left = 414
+      Height = 56
+      Top = 318
+      Width = 111
+      Caption = 'SBClose'
+      OnClick = SBCloseClick
+    end
+    object SBResume: TSpeedButton
+      Left = 435
+      Height = 40
+      Top = 182
+      Width = 87
+      Caption = ' SBResume'
+      OnClick = SBResumeClick
+    end
+    object SBAbort: TSpeedButton
+      Left = 435
+      Height = 33
+      Top = 238
+      Width = 87
+      Caption = 'SBAbort'
+      OnClick = SBAbortClick
+    end
+    object EScanPath: TDirectoryEdit
+      Left = 6
+      Height = 27
+      Top = 22
+      Width = 448
+      ShowHidden = False
+      ButtonWidth = 23
+      NumGlyphs = 1
+      MaxLength = 0
+      TabOrder = 9
+    end
+  end
+  object LBScanFilesMatch: TListBox
+    Left = 0
+    Height = 134
+    Top = 433
+    Width = 849
+    Align = alBottom
+    ItemHeight = 0
+    ScrollWidth = 847
+    TabOrder = 1
+    TopIndex = -1
+  end
+  object cySearchFiles1: TcySearchFiles
+    SubDirectories = True
+    OnPause = cySearchFiles1Pause
+    OnResume = cySearchFiles1Resume
+    OnValidateFile = cySearchFiles1ValidateFile
+    OnTerminate = cySearchFiles1Terminate
+    left = 72
+    top = 135
+  end
+end

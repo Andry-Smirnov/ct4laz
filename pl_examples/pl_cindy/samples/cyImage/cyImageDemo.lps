@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="cyImageDemo.lpr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="9" Y="10"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="formcyImage.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCyImage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="3"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\AllCindyRegister.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <CursorPos X="18" Y="111"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyBevel.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="17"/>
+        <CursorPos X="35" Y="49"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <FRMtype Value="0"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="28"/>
+        <CursorPos Y="48"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyScrollBox.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos X="3" Y="83"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyAdvButton.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\lcl\extctrls.pp"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="537"/>
+        <CursorPos X="3" Y="573"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="277" Column="6" TopLine="275"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="321" Column="39" TopLine="289"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="276" Column="17" TopLine="273"/>
+      </Position3>
+      <Position4>
+        <Filename Value="formcyImage.pas"/>
+        <Caret Line="25" Column="15"/>
+      </Position4>
+      <Position5>
+        <Filename Value="formcyImage.pas"/>
+        <Caret Line="135" Column="3" TopLine="80"/>
+      </Position5>
+      <Position6>
+        <Filename Value="formcyImage.pas"/>
+        <Caret Line="136" Column="28" TopLine="102"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="101" Column="14" TopLine="76"/>
+      </Position7>
+      <Position8>
+        <Filename Value="formcyImage.pas"/>
+        <Caret Line="136" Column="27" TopLine="107"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="103" Column="37" TopLine="76"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="193" Column="25" TopLine="156"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="362" Column="12" TopLine="326"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyCustomImage.pas"/>
+        <Caret Line="62" Column="28" TopLine="43"/>
+      </Position12>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

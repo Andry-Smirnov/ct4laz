@@ -1,0 +1,28 @@
+The TcyModalContainer component
+
+Create a form and show it in modal with any control inside.
+
+Public properties
+- Active: Boolean
+
+Published properties
+- AlphaBlend: Boolean
+- AlphaBlendvalue: byte
+- BorderStyle: TFormBorderStyle
+- BorderIcons: TBorderIcons
+- Caption: TCaption - popup caption
+- Control: TControl - control for popup localization
+- EscKeyAction: TModalResult - close with escape key
+- TransparentColor: Boolean
+- TransparentColorValue: TColor
+
+Events 
+- OnShow
+- OnClose
+- OnKeyPress
+
+Methods
+- ExecuteFromControl(aControl: TControl; posX, posY: integer)
+- ExecuteFromGrid(aGrid: TCustomGrid; Align: TAlignment)
+- Execute(ScreenCoord: TPoint)
+- Close

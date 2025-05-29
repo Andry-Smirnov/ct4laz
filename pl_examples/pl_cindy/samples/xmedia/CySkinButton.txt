@@ -1,0 +1,26 @@
+The TcySkinButton component
+
+Non-rectangular graphic button that allow to skin the button with any graphic for each state. 
+
+Public properties
+- MouseIsDown: Boolean - get/set if mouse is clicked
+- MouseIsOver: Boolean - get/set if mouse is over the component
+
+Published properties
+- AllowAllUp: Boolean
+- Down: Boolean
+- GroupIndex: Integer
+- PicDisabled: TPicture
+- PicDown: TPicture
+- PicDownMouseDown: TPicture
+- PicDownMouseOver: TPicture
+- PicMouseDown: TPicture
+- PicMouseOver: TPicture
+- PicNormal: TPicture
+- Stretch: Boolean
+- Transparent: Boolean
+
+Events 
+- 
+
+

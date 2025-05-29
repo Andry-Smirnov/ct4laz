@@ -1,0 +1,21 @@
+The TcyLed component
+
+A simple led with Group feature
+
+Published properties
+- AllowAllOff: boolean - Allow all Off on group 
+- Bevels: TcyBevels - Add multi-colored frames 
+- GroupIndex: Integer
+- LedStatus: TLedStatus =  (lsOn, lsOff, lsDisabled);
+- LedValue: Boolean - true if led is On
+- ReadOnly: Boolean
+- Transparent: Boolean
+- ValueOn: String - String value for On
+- ValueOff - String value for Off
+
+Events 
+- 
+
+Methods
+- Switch - switch LedValue
+

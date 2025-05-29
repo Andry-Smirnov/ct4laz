@@ -1,0 +1,25 @@
+The TcyHotLabel component
+
+A Label based on TcyLabel plus mouse over rendering feature
+
+Published properties
+- Bevels: TcyBevels - Add multi-colored frames 
+- CaptionIndentLeft: Integer
+- CaptionIndentRight: Integer
+- CaptionIndentTop: Integer
+- CaptionIndentBottom: Integer
+- CaptionRender: TCaptionRender = (crNormal, crPathEllipsis, crEndEllipsis, crWordEllipsis);
+- CaptionOrientation: TCaptionOrientation - depends on selected font
+- DegradeEnter: TcyGradient - background gradient effect when mouse on the control
+- DegradeLeave: TcyGradient - background gradient effect when mouse outside the control
+- DegradeMouseDown: TcyGradient - background gradient effect when mouse down
+- FontEnter: TFont - font when mouse on the control
+- FontLeave: TFont - font when mouse outside the control
+- FontMouseDown: TFont - font when mouse down 
+- ShadowEnter: TcyShadowText - shadow effect on the caption when mouse on the control
+- ShadowLeave: TcyShadowText - shadow effect on the caption when mouse outside the control
+- ShadowMouseDown: TcyShadowText - shadow effect on the caption when mouse down 
+
+Events 
+- No particular events 
+

@@ -1,0 +1,26 @@
+The TcyAdvSpeedButton component
+
+Advanced speedbutton with customizable rendering for each state. 
+
+Published properties
+- BordersDisabled: TcyBevels - Disabled state borders rendering 
+- BordersDown: TcyBevels - Down state borders rendering 
+- BordersHot: TcyBevels - Mouse over state borders rendering 
+- BordersNormal: TcyBevels - Normal state borders rendering 
+- ButtonDisabled: TRenderProp - Disabled state rendering (set gradient background, glyph, font etc ...) 
+- ButtonDown: TRenderProp - Down state rendering
+- ButtonHot: TRenderProp - Mouse over state rendering
+- ButtonNormal: TRenderProp - normal state rendering
+- CaptionOrientation: TCaptionOrientation - depends on selected font
+- FlatDownStyle: TFlatDownStyle - flat rendering personalization when down
+- FlatHotStyle: TFlatHotStyle - flat rendering personalization when mouse over
+- ImageList: TImageList
+- Wallpaper: TcyBgPicture - image background
+- Wordwrap: Boolean
+
+Events 
+- OnMouseEnter
+- OnMouseLeave
+- OnPaint
+
+

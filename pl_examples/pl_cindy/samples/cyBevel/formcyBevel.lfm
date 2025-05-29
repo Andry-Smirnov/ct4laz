@@ -1,0 +1,544 @@
+object FrmCyBevel: TFrmCyBevel
+  Left = 354
+  Height = 605
+  Top = 225
+  Width = 770
+  Caption = 'FrmDemo'
+  ClientHeight = 605
+  ClientWidth = 770
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 555
+    Width = 770
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 770
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 3
+      Height = 35
+      Top = 2
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      NumGlyphs = 0
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 514
+    Top = 41
+    Width = 250
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 514
+    ClientWidth = 250
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 240
+      Height = 485
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 485
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Free TcyComponents for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 246
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 485
+      Top = 27
+      Width = 222
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 582
+    Width = 770
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 250
+    Height = 514
+    Top = 41
+    Width = 520
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 514
+    ClientWidth = 520
+    TabOrder = 3
+    object cyBevel7: TcyBevel
+      Left = 17
+      Height = 28
+      Top = 353
+      Width = 130
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBtnFace
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end>
+    end
+    object cyBevel3: TcyBevel
+      Left = 22
+      Height = 97
+      Top = 182
+      Width = 137
+      Bevels = <      
+        item
+          Style = bcLowered
+          Width = 2
+        end      
+        item
+        end      
+        item
+          Style = bcLowered
+          Width = 2
+        end      
+        item
+        end      
+        item
+          Style = bcLowered
+          Width = 2
+        end      
+        item
+        end      
+        item
+          Style = bcLowered
+          Width = 2
+        end      
+        item
+        end      
+        item
+          Style = bcLowered
+          Width = 2
+        end>
+    end
+    object cyBevel1: TcyBevel
+      Left = 126
+      Height = 97
+      Top = 222
+      Width = 137
+      Bevels = <      
+        item
+          HighlightColor = clNavy
+          ShadowColor = clBlue
+          Style = bcLowered
+          Width = 4
+        end      
+        item
+          Width = 2
+        end      
+        item
+          HighlightColor = clMaroon
+          ShadowColor = clRed
+          Style = bcLowered
+          Width = 4
+        end      
+        item
+          Width = 2
+        end      
+        item
+          HighlightColor = 4210688
+          ShadowColor = clGreen
+          Style = bcLowered
+          Width = 4
+        end      
+        item
+          Width = 2
+        end      
+        item
+          HighlightColor = clBlack
+          Style = bcLowered
+          Width = 4
+        end      
+        item
+          Width = 2
+        end>
+    end
+    object cyBevel2: TcyBevel
+      Left = 199
+      Height = 97
+      Top = 182
+      Width = 137
+      Bevels = <      
+        item
+          DrawRight = False
+          DrawBottom = False
+          HighlightColor = clNavy
+          ShadowColor = clBlue
+          Style = bcLowered
+          Width = 8
+        end      
+        item
+          Width = 2
+        end      
+        item
+          DrawRight = False
+          DrawBottom = False
+          HighlightColor = clMaroon
+          ShadowColor = clRed
+          Style = bcLowered
+          Width = 8
+        end      
+        item
+          Width = 2
+        end      
+        item
+          DrawRight = False
+          DrawBottom = False
+          HighlightColor = 4210688
+          ShadowColor = clGreen
+          Style = bcLowered
+          Width = 8
+        end      
+        item
+          Width = 2
+        end      
+        item
+          DrawRight = False
+          DrawBottom = False
+          HighlightColor = clBlack
+          Style = bcLowered
+          Width = 8
+        end      
+        item
+          Width = 2
+        end>
+    end
+    object cyBevel5: TcyBevel
+      Left = 126
+      Height = 105
+      Top = 14
+      Width = 137
+      Bevels = <      
+        item
+          HighlightColor = clBtnShadow
+          ShadowColor = clBlack
+          Style = bcLowered
+          Width = 5
+        end      
+        item
+          HighlightColor = clBtnFace
+          Style = bcLowered
+          Width = 6
+        end>
+    end
+    object cyBevel6: TcyBevel
+      Left = 199
+      Height = 105
+      Top = 54
+      Width = 137
+      Bevels = <      
+        item
+          HighlightColor = clBtnShadow
+          ShadowColor = clBlack
+          Width = 5
+        end      
+        item
+          HighlightColor = clBtnFace
+        end>
+    end
+    object cyBevel4: TcyBevel
+      Left = 22
+      Height = 105
+      Top = 54
+      Width = 137
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBtnFace
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end>
+    end
+    object cyBevel8: TcyBevel
+      Left = 153
+      Height = 31
+      Top = 353
+      Width = 175
+      Bevels = <      
+        item
+          HighlightColor = clGreen
+          ShadowColor = clGreen
+          Style = bcLowered
+          Width = 2
+        end      
+        item
+          HighlightColor = clGreen
+          ShadowColor = 48896
+          Style = bcLowered
+          Width = 4
+        end>
+    end
+    object Label1: TLabel
+      Left = 160
+      Height = 17
+      Top = 360
+      Width = 161
+      AutoSize = False
+      Caption = ' Label1'
+      Color = clLime
+      ParentColor = False
+      Transparent = False
+    end
+    object cyBevel10: TcyBevel
+      Left = 335
+      Height = 91
+      Top = 353
+      Width = 134
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clWhite
+          ShadowColor = clSilver
+          Width = 2
+        end      
+        item
+          HighlightColor = clGray
+          ShadowColor = clGray
+          Style = bcLowered
+        end>
+    end
+    object cyBevel9: TcyBevel
+      Left = 7
+      Height = 115
+      Top = 395
+      Width = 240
+      Bevels = <      
+        item
+          HighlightColor = 4227327
+          ShadowColor = 4227327
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clWhite
+          ShadowColor = clSilver
+          Width = 2
+        end      
+        item
+          HighlightColor = 875519
+          ShadowColor = 875519
+          Style = bcLowered
+          Width = 2
+        end>
+    end
+    object Edit1: TEdit
+      Left = 22
+      Height = 24
+      Top = 358
+      Width = 121
+      BorderStyle = bsNone
+      Color = clBlack
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      ParentFont = False
+      TabOrder = 0
+      Text = ' Edit1'
+    end
+    object Memo1: TMemo
+      Left = 12
+      Height = 105
+      Top = 400
+      Width = 230
+      BorderStyle = bsNone
+      Color = 4227327
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'Memo1'
+      )
+      ParentFont = False
+      TabOrder = 1
+    end
+    object ListBox1: TListBox
+      Left = 342
+      Height = 78
+      Top = 360
+      Width = 121
+      BorderStyle = bsNone
+      Items.Strings = (
+        'ListBox1'
+        'ListBox1'
+        'ListBox1'
+        'ListBox1'
+        'ListBox1'
+        'ListBox1'
+        'ListBox1'
+        'ListBox1'
+        'ListBox1'
+      )
+      ItemHeight = 16
+      TabOrder = 2
+    end
+  end
+end

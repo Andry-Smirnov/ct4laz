@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="20">
+      <Unit0>
+        <Filename Value="TDbf_Demo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="16" Y="23"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="EditTopics.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditTopicsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="EditTopics"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="37"/>
+        <CursorPos X="50" Y="76"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Filter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FilterForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Filter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="42"/>
+        <CursorPos X="6" Y="49"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Index.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="IndexForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Index"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="40" Y="22"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="tdbf_demomw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TDbf_Demomw"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="47" Y="9"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="schema.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Schema1Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Schema"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="schema2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Schema2Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Schema2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="search.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SearchForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Search"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="13"/>
+        <CursorPos X="6" Y="35"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="simple.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SimpleForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Simple"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="19"/>
+        <CursorPos X="56" Y="32"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="Pack.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PackTableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Pack"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="59" Y="9"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="CopyTable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CopyTableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CopyTable"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="35" Y="9"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="CreateTable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CreateTableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CreateTable"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="50" Y="10"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="multipleuse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MultipleUseForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="multipleuse"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="34" Y="9"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="Compatibility.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CompatibilityForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Compatibility"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="24"/>
+        <CursorPos X="5" Y="58"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="Calc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CalcForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Calc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="17" Y="26"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="constvalues.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="constvalues"/>
+        <EditorIndex Value="6"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="6" Y="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\fpcsrc\packages\fcl-db\src\dbase\dbf.pas"/>
+        <UnitName Value="dbf"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="278"/>
+        <CursorPos X="59" Y="313"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\..\fpcsrc\packages\fcl-db\src\base\db.pas"/>
+        <UnitName Value="db"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1236"/>
+        <CursorPos X="3" Y="1257"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\typhon\lcl\dbctrls.pp"/>
+        <UnitName Value="DbCtrls"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="817"/>
+        <CursorPos X="24" Y="824"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\..\typhon\lcl\stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="785"/>
+        <CursorPos X="36" Y="794"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="22" HistoryIndex="21">
+      <Position1>
+        <Filename Value="multipleuse.pas"/>
+        <Caret Line="35" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Pack.pas"/>
+        <Caret Line="75" Column="1" TopLine="53"/>
+      </Position2>
+      <Position3>
+        <Filename Value="CopyTable.pas"/>
+        <Caret Line="50" Column="1" TopLine="28"/>
+      </Position3>
+      <Position4>
+        <Filename Value="TDbf_Demo.lpr"/>
+        <Caret Line="14" Column="3" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="tdbf_demomw.pas"/>
+        <Caret Line="199" Column="35" TopLine="177"/>
+      </Position5>
+      <Position6>
+        <Filename Value="tdbf_demomw.pas"/>
+        <Caret Line="198" Column="35" TopLine="176"/>
+      </Position6>
+      <Position7>
+        <Filename Value="tdbf_demomw.pas"/>
+        <Caret Line="197" Column="35" TopLine="175"/>
+      </Position7>
+      <Position8>
+        <Filename Value="tdbf_demomw.pas"/>
+        <Caret Line="196" Column="35" TopLine="174"/>
+      </Position8>
+      <Position9>
+        <Filename Value="tdbf_demomw.pas"/>
+        <Caret Line="195" Column="35" TopLine="173"/>
+      </Position9>
+      <Position10>
+        <Filename Value="tdbf_demomw.pas"/>
+        <Caret Line="194" Column="35" TopLine="172"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Pack.pas"/>
+        <Caret Line="98" Column="47" TopLine="98"/>
+      </Position11>
+      <Position12>
+        <Filename Value="CopyTable.pas"/>
+        <Caret Line="54" Column="1" TopLine="31"/>
+      </Position12>
+      <Position13>
+        <Filename Value="multipleuse.pas"/>
+        <Caret Line="35" Column="1" TopLine="1"/>
+      </Position13>
+      <Position14>
+        <Filename Value="CreateTable.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position14>
+      <Position15>
+        <Filename Value="Compatibility.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position15>
+      <Position16>
+        <Filename Value="CreateTable.pas"/>
+        <Caret Line="60" Column="28" TopLine="5"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Pack.pas"/>
+        <Caret Line="75" Column="2" TopLine="61"/>
+      </Position17>
+      <Position18>
+        <Filename Value="CopyTable.pas"/>
+        <Caret Line="87" Column="7" TopLine="52"/>
+      </Position18>
+      <Position19>
+        <Filename Value="multipleuse.pas"/>
+        <Caret Line="36" Column="2" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="Compatibility.pas"/>
+        <Caret Line="55" Column="31" TopLine="15"/>
+      </Position20>
+      <Position21>
+        <Filename Value="tdbf_demomw.pas"/>
+        <Caret Line="12" Column="1" TopLine="1"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Compatibility.pas"/>
+        <Caret Line="46" Column="48" TopLine="24"/>
+      </Position22>
+    </JumpHistory>
+  </ProjectSession>
+  <EditorMacros Count="0"/>
+</CONFIG>

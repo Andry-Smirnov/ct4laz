@@ -1,0 +1,48 @@
+The TcyColorMatrix component
+
+This is a 2 dimensions array of TColor rendering. 
+
+Published properties
+- BackGround: TcyGradient
+- BorderWidth: Integer
+- Bevels: TcyBevels
+- CellHeight: Integer
+- CellWidth: Integer
+- CellFrameColor: TColor
+- CellFrameWidth: Integer
+- CellSpacingWidth: Integer
+- CellSpacingHeight: Integer
+- ColCount: Integer
+- DefaultColor: TColor
+- LeftColumnValue: Double
+- RightColumnValue: Double
+- TopRowValue: Double
+- BottomRowValue: Double
+- RowCount: Integer
+- WallPaper: TcyBgPicture
+
+Events 
+- OnCustomDrawCell - personalize custom cell drawing
+- OnCellClick
+- OnPaint
+
+Functions
+- BeginUpdate
+- EndUpdate
+- DrawText(aText: String; fromRow, fromCol, toRow, toCol: Integer; TextFormat: LongInt)
+- DrawCanvas(StartRow, StartColumn: Integer; Canvas: TCanvas; CanvasRect: TRect; TransparentColor: TColor; Transparent: Boolean)
+- DrawGraphic(StartRow, StartColumn: Integer; Graphic: TGraphic; TransparentColor: TColor; Transparent: Boolean)
+- LoadFromBitmap(Bitmap: TBitmap)
+- SaveToBitmap(Bitmap: TBitmap)
+- FindCellColor(fromRow, toRow, fromCol, toCol: Integer; aColor: TColor; var aRow: Integer; var aCol: Integer): Boolean
+- GetCellAtPos(aPoint: TPoint; var aRow: Integer; var aCol: Integer; ExactPos: Boolean): Boolean
+- GetColumnPosition(aCol: Integer): Integer
+- GetRowPosition(aRow: Integer): Integer
+- GetColorGrid(aRow: Integer; aCol: integer): TColor
+- ReplaceColor(old, New: TColor)
+- SetColorGrid(aRow: Integer; aCol: integer; withColor: TColor)
+- SetColorGridRange(fromRow, toRow, fromCol, toCol: Integer; withColor: TColor)
+- RowToValue(Row: Integer): Double
+- ValueToRow(Value: Double): Integer
+- ColumnToValue(Column: Integer): Double
+- ValueToColumn(Value: Double): Integer

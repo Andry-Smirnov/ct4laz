@@ -1,0 +1,31 @@
+The TcyComboBox component
+
+TComboBox with some added features
+
+Published properties
+* DropDownControl: TControl - control droppe dinstead of the popup list
+* DropDownWidth: Integer 
+* TagStr: String
+
+
+
+
+The TcyFilterComboBox component
+
+TcyComboBox with user filter feature
+
+Published properties
+* DropDownControl: TControl - control droppe dinstead of the popup list
+* DropDownWidth: Integer 
+* TagStr: String
+* FilterOptions: TStrFilterOptions
+
+Public properties
+* FilteredItems: TStrings
+* InbuiltFilter: String
+
+Events
+* BeforeDropDown
+* OnInbuiltDrawItem
+
+

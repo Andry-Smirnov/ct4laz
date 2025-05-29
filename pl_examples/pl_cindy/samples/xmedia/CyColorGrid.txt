@@ -1,0 +1,32 @@
+The TcyColorGrid component
+
+Color list grid with current selection and mouse over rendering feature. 
+
+Published properties
+- Autosize: Boolean
+- background: TColor
+- BoxCols: Integer - number of column color boxes
+- BoxFrameColor: TColor 
+- BoxFrameWidth: Integer
+- BoxHeight: Integer
+- BoxIntervalX: Integer - Horizontal spacing between boxes
+- BoxIntervalX: Integer - Vertical spacing between boxes
+- BoxRows: Integer - number of row color boxes
+- BoxWidth: Integer
+- ColorList: TStrings - color list
+- Enabled: Boolean
+- HideSelection: Boolean
+- Hot: Boolean
+- HotRender: TcyCursorRender - hot box rendering
+- ReadOnly: Boolean
+- Selection: TColor - current color selected
+- SelectionRender: TcyCursorRender - Selected color box rendering
+- Transparent: Boolean;
+
+Events 
+- OnCustomDrawBox
+- OnCustomDrawBkgnd
+- OnAfterPaint
+- OnBoxClick
+
+

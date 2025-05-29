@@ -1,0 +1,25 @@
+The TcyMathParser component
+
+Mathematical parser component that can evaluate an expression using common operators, some functions and variables. 
+We can add new operations with AddCustomOperation() function and parse it in OnCustomOperationParse event. 
+The method used to parse is called RPN (Reverse Polish Notation).
+
+Public properties
+- property Expression: String - expression to parse
+- property ParserResult: Extended - expression result
+- property Operations[Index: Integer]: TOperationInfo - Defined operations
+- property OperationsCount: Integer
+- Variables: TVariables; Variables list
+
+Events 
+- property OnCustomOperationParse
+
+Methods
+- function Parse: Boolean
+- function GetLastError: Integer
+- function GetlastErrorString: String
+- function ValidVariableName(Name: string): Boolean
+- function GetOperationIndex(OperationName: String): Integer
+- function GetOperationInfo(OperationName: string): TOperationInfo
+- function RenameOperation(CurrentName, NewName: String): Boolean
+- function AddCustomOperation(Name: String; Arguments: Integer; Priority: Byte = 0): Boolean

@@ -1,0 +1,504 @@
+object FrmCyComboBox: TFrmCyComboBox
+  Left = 558
+  Height = 605
+  Top = 594
+  Width = 1212
+  Caption = 'FrmDemo'
+  ClientHeight = 605
+  ClientWidth = 1212
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.3'
+  Scaled = False
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 555
+    Width = 1212
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 1212
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 3
+      Height = 35
+      Top = 2
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 514
+    Top = 41
+    Width = 553
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 514
+    ClientWidth = 553
+    TabOrder = 1
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 485
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Free TcyComponents for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object cySplitter1: TcySplitter
+      Left = 543
+      Height = 485
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 549
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 485
+      Top = 27
+      Width = 525
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 582
+    Width = 1212
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 553
+    Height = 514
+    Top = 41
+    Width = 659
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 514
+    ClientWidth = 659
+    TabOrder = 3
+    object Label11: TLabel
+      Left = 33
+      Height = 16
+      Top = 196
+      Width = 211
+      Caption = 'Without DropDownControl assigned :'
+      ParentColor = False
+    end
+    object Label12: TLabel
+      Left = 33
+      Height = 16
+      Top = 252
+      Width = 193
+      Caption = 'With DropDownControl assigned :'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 33
+      Height = 16
+      Top = 28
+      Width = 231
+      Caption = 'TComboBox (original CT component)'
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 33
+      Height = 16
+      Top = 156
+      Width = 88
+      Caption = 'TcyComboBox'
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 33
+      Height = 16
+      Top = 340
+      Width = 120
+      Caption = 'TcyFilterComboBox'
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object cyCombobox1: TcyCombobox
+      Left = 34
+      Height = 24
+      Top = 218
+      Width = 181
+      ItemHeight = 16
+      Items.Strings = (
+        'aa bb1'
+        'aa bb2'
+        'aa cc1'
+        'aa cc2'
+        '11 22 33 44 55 66 77 88 99'
+        'bb bb1'
+        'bb cc1'
+      )
+      TabOrder = 0
+      Text = 'cyCombobox1'
+      DropDownWidth = 250
+    end
+    object cyCombobox3: TcyCombobox
+      Left = 34
+      Height = 24
+      Top = 274
+      Width = 181
+      ItemHeight = 16
+      Items.Strings = (
+        'aa bb1'
+        'aa bb2'
+        'aa cc1'
+        'aa cc2'
+        '11 22 33 44 55 66 77 88 99'
+        'bb bb1'
+        'bb cc1'
+      )
+      OnDropDown = cyCombobox3DropDown
+      Style = csDropDownList
+      TabOrder = 1
+      DropDownControl = PanSelectCity
+      DropDownWidth = 290
+    end
+    object cyFilterCombobox1: TcyFilterCombobox
+      Left = 33
+      Height = 24
+      Top = 375
+      Width = 170
+      ItemHeight = 16
+      ItemIndex = 4
+      Items.Strings = (
+        'aa 11 22 yy'
+        'aa 11 cc'
+        'aa 111'
+        'aa 222'
+        'aaa'
+        'abcdef'
+        'bbb'
+        'ccc'
+      )
+      Sorted = False
+      TabOrder = 2
+      Text = 'aaa'
+      DropDownWidth = 200
+    end
+    object cyFilterCombobox2: TcyFilterCombobox
+      Left = 34
+      Height = 24
+      Top = 415
+      Width = 170
+      DropDownCount = 20
+      ItemHeight = 16
+      Items.Strings = (
+        'aa 11 22 yy'
+        'aa 11 cc'
+        'aa 111'
+        'aa 222'
+        'aaa'
+        'abcdef'
+        'bbb'
+        'ccc'
+        'xxx'
+      )
+      Sorted = True
+      Style = csDropDownList
+      TabOrder = 3
+    end
+    object ComboBox1: TComboBox
+      Left = 33
+      Height = 24
+      Top = 50
+      Width = 227
+      ItemHeight = 16
+      Items.Strings = (
+        'aa bb1'
+        'aa bb2'
+        'aa cc1'
+        'aa cc2'
+        '11 22 33 44 55 66 77 88 99'
+        'bb bb1'
+        'bb cc1'
+      )
+      TabOrder = 4
+      Text = 'ComboBox1'
+    end
+    object ComboBox2: TComboBox
+      Left = 33
+      Height = 24
+      Top = 80
+      Width = 227
+      ItemHeight = 16
+      Items.Strings = (
+        'aa bb1'
+        'aa bb2'
+        'aa cc1'
+        'aa cc2'
+        '11 22 33 44 55 66 77 88 99'
+        'bb bb1'
+        'bb cc1'
+      )
+      Style = csDropDownList
+      TabOrder = 5
+    end
+    object cyFilterCombobox4: TcyFilterCombobox
+      Left = 283
+      Height = 24
+      Top = 415
+      Width = 170
+      DropDownCount = 20
+      ItemHeight = 16
+      Items.Strings = (
+        'abcdef'
+        'aaa'
+        'aa 111'
+        'aa 222'
+        'aa 11 cc'
+        'aa 11 22 yy'
+        'bbb'
+        'ccc'
+      )
+      Sorted = False
+      Style = csDropDownList
+      TabOrder = 6
+    end
+    object Button1: TButton
+      Left = 213
+      Height = 25
+      Top = 375
+      Width = 114
+      Caption = 'Add 1000 items'
+      OnClick = Button1Click
+      TabOrder = 7
+    end
+    object CBCols: TComboBox
+      Left = 313
+      Height = 24
+      Top = 50
+      Width = 227
+      ItemHeight = 16
+      Items.Strings = (
+        'aa bb1'
+        'aa bb2'
+        ''
+      )
+      Style = csDropDownList
+      TabOrder = 8
+    end
+    object Button2: TButton
+      Left = 310
+      Height = 25
+      Top = 80
+      Width = 75
+      Caption = 'Button2'
+      OnClick = Button2Click
+      TabOrder = 9
+    end
+  end
+  object PanSelectCity: TCyPanel
+    Left = 180
+    Height = 229
+    Top = 144
+    Width = 289
+    Caption = ' '
+    TabOrder = 4
+    Visible = False
+    Bevels = <    
+      item
+        HighlightColor = clBtnShadow
+      end>
+    RunTimeDesign.AllowMove = True
+    RunTimeDesign.AllowResizeTop = True
+    RunTimeDesign.AllowResizeLeft = True
+    RunTimeDesign.AllowResizeRight = True
+    RunTimeDesign.AllowResizeBottom = True
+    RunTimeDesign.ParentControl = True
+    Degrade.Balance = 75
+    Degrade.FromColor = clWhite
+    Degrade.Orientation = dgdAngle
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clGreen
+    object ListBox1: TListBox
+      Left = 16
+      Height = 201
+      Top = 16
+      Width = 209
+      BorderStyle = bsNone
+      Color = clGreen
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Items.Strings = (
+        'aa bb1'
+        'aa bb2'
+        'aa cc1'
+        'aa cc2'
+        '11 22 33 44 55 66 77 88 99'
+        'bb bb1'
+        'bb cc1'
+      )
+      ItemHeight = 18
+      OnKeyUp = ListBox1KeyUp
+      OnMouseUp = ListBox1MouseUp
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+end

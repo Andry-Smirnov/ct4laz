@@ -1,0 +1,26 @@
+The TcyAdvFlowPanel component
+
+A FlowPanel with gradient, multi-bevels, shadow and wallpaper features. 
+
+Published properties
+-	Bevels: TcyBevels - Bevels
+-	CaptionOrientation: TCaptionOrientation
+-	Degrade: TcyGradient - gradient background rendering
+-	Layout: TTextLayout - vertical alignment
+-	RunTimeDesign: TcyRunTimeDesign - Moving/resizing feature at run-time
+-	Shadow: TcyShadowText - shadow text rendering
+-	Wallpaper: TcyBgPicture - image background
+-	WordWrap: Boolean
+
+Events 
+-	OnMouseEnter
+-	OnMouseLeave
+-	OnMouseWheel
+-	OnMouseWheelDown
+-	OnMouseWheelUp
+-	OnPaint
+-	OnVisibleChanging
+-	OnStartRunTimeDesign
+-	OnDoRunTimeDesign
+-	OnEndRunTimeDesign
+

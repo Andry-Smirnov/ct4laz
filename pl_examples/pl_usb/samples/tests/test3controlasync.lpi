@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <LaunchingApplication PathPlusParams="/usr/bin/rxvt-unicode -T 'Typhon Run Output' -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/bin/rxvt-unicode -T 'Typhon Run Output' -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="pl_0_libs"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_USB"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="18">
+      <Unit0>
+        <Filename Value="test3controlasync.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Test3ControlAsync"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="17" Y="39"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="test2controlsync.pas"/>
+        <UnitName Value="Test2ControlSync"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="29" Y="65"/>
+        <UsageCount Value="10"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../libusboop.pas"/>
+        <UnitName Value="LibUsbOop"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="652"/>
+        <CursorPos Y="674"/>
+        <UsageCount Value="10"/>
+        <Bookmarks Count="1">
+          <Item0 X="3" Y="683" ID="1"/>
+        </Bookmarks>
+      </Unit2>
+      <Unit3>
+        <Filename Value="mydevice.pas"/>
+        <UnitName Value="MyDevice"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="267"/>
+        <CursorPos X="19" Y="92"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../libusb.pas"/>
+        <UnitName Value="LibUsb"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="777"/>
+        <CursorPos X="10" Y="803"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="/usr/share/fpcsrc/2.6.0/rtl/inc/objpash.inc"/>
+        <TopLine Value="329"/>
+        <CursorPos X="51" Y="363"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="/usr/share/fpcsrc/2.6.0/rtl/inc/systemh.inc"/>
+        <TopLine Value="1108"/>
+        <CursorPos X="3" Y="1134"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="/usr/share/fpcsrc/2.6.0/rtl/objpas/sysutils/sysutilh.inc"/>
+        <TopLine Value="110"/>
+        <CursorPos X="52" Y="144"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../paslibusbutils.pas"/>
+        <UnitName Value="PasLibUsbUtils"/>
+        <TopLine Value="2"/>
+        <CursorPos X="20" Y="22"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../usb.pas"/>
+        <UnitName Value="USB"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="208"/>
+        <CursorPos X="39" Y="38"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="test1library.pas"/>
+        <UnitName Value="Test1Library"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="93" Y="52"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/usr/share/fpcsrc/2.6.0/rtl/objpas/classes/classesh.inc"/>
+        <TopLine Value="284"/>
+        <CursorPos X="3" Y="310"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../ezusb.pas"/>
+        <UnitName Value="EZUSB"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="32" Y="97"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../libusbutil.pas"/>
+        <UnitName Value="LibUsbUtil"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="77"/>
+        <CursorPos Y="119"/>
+        <UsageCount Value="20"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="/usr/share/fpcsrc/2.6.0/rtl/objpas/sysutils/osutilsh.inc"/>
+        <CursorPos X="11" Y="27"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="/usr/share/fpcsrc/2.6.0/rtl/unix/aliasptp.inc"/>
+        <CursorPos X="5" Y="65"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="/usr/share/fpcsrc/2.6.0/rtl/objpas/math.pp"/>
+        <TopLine Value="1949"/>
+        <CursorPos X="3" Y="1965"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="testfirmware.pas"/>
+        <UnitName Value="TestFirmware"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos Y="78"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+    </Units>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="test3controlasync.pas"/>
+        <Caret Line="134" Column="13" TopLine="82"/>
+      </Position1>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="../xbin"/>
+    </SearchPaths>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

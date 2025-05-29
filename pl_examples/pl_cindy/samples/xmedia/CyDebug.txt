@@ -1,0 +1,29 @@
+The TcyDebug component
+
+Component that help you debugging the code like :
+- identify where your code is spending more time.
+- Show occurences and statistics.
+- In/out code portions
+
+Published properties
+- Active: Boolean 
+- ProcessGrid: TStringGrid - Specify a TStringGrid where to see statistics data 
+
+Public properties
+- ProcessCount: Integer - number of declared processes
+- ProcessName[Index: Integer]
+- ProcessDurationMs[Index: Integer]
+- ProcessMinDurationMs[Index: Integer]
+- ProcessMaxDurationMs[Index: Integer]
+- ProcessEnterCount[Index: Integer]
+- ProcessExitCount[Index: Integer]
+
+Events 
+- OnEnterProcess
+- OnExitProcess
+
+Functions
+- function GetProcessIndex(aProcessName: String): Integer
+- procedure ProcessEnter(aProcessName: String)
+- procedure ProcessExit(aProcessName: String)
+- procedure InitializeProcesses

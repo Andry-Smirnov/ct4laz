@@ -1,0 +1,15 @@
+The TcyAdvPaintBox component
+
+A PaintBox component with gradient and wallpaper features. 
+
+Published properties
+- Degrade: TcyGradient - gradient background rendering
+- Wallpaper: TcyBgPicture - image background
+
+Events 
+- OnPaint
+- OnMouseEnter
+- OnMouseLeave
+
+
+

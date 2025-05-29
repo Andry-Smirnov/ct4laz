@@ -1,0 +1,25 @@
+The TcyPageControl component
+
+Customizable PageControl component 
+
+Published properties
+* ActiveTabColors: TcyGradient - Active tab gradient definitions
+* ActiveTabFont: TFont - Active tab font
+* InactiveTabColors: TcyGradient - Inactive tab gradient definitions
+* InactiveTabFont: TFont - Inactive tab font
+* Style: TcyTabStyle - Tab style (tab, button or flat button)
+* ThinBorder: Boolean - Remove border with (you will be able tu put a panel with align = alClient that occupies al space avaible)
+
+Events 
+* OnAdvancedDrawTab - personalize tab painting
+* OnAdvancedDrawTabBackground - personalize tab background painting
+
+Methods 
+* function GetTabBoundsRect(Tab: Integer): TRect;
+* procedure HideTabs - use TcyPageControl as a TNotebook
+* procedure ShowTabs - Revert after use HideTabs
+
+Remarks
+* No ImageList handling for now
+
+

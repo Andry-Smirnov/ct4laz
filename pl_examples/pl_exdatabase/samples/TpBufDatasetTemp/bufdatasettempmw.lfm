@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 1103
+  Height = 240
+  Top = 725
+  Width = 548
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 548
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '6.4'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 256
+    Align = alLeft
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'ID'
+        Width = 32
+        FieldName = 'ID'
+      end    
+      item
+        Title.Caption = 'NAME'
+        Width = 100
+        FieldName = 'NAME'
+      end>
+    DataSource = DataSource1
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgMultiselect]
+    TabOrder = 0
+  end
+  object DBGrid2: TDBGrid
+    Left = 296
+    Height = 240
+    Top = 0
+    Width = 252
+    Align = alRight
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'ID'
+        Width = 32
+        FieldName = 'ID'
+      end    
+      item
+        Title.Caption = 'NAME'
+        Width = 100
+        FieldName = 'NAME'
+      end>
+    DataSource = DataSource2
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgMultiselect]
+    TabOrder = 1
+  end
+  object BufDatasetTemp1: TpBufDatasetTemp
+    FieldDefs = <>
+    Left = 80
+    Top = 160
+    object BufDatasetTemp1ID1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object BufDatasetTemp1NAME1: TStringField
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = BufDatasetTemp1
+    Left = 80
+    Top = 96
+  end
+  object DataSource2: TDataSource
+    DataSet = BufDataset1
+    Left = 362
+    Top = 94
+  end
+  object BufDataset1: TBufDataset
+    FieldDefs = <>
+    Left = 365
+    Top = 162
+    object BufDataset1ID1: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object BufDataset1NAME1: TStringField
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+end

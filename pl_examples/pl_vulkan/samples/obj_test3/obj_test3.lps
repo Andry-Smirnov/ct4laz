@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="obj_test3.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="13"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanapi.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="6124"/>
+        <CursorPos X="7" Y="6153"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanutils.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="323"/>
+        <CursorPos X="36" Y="19"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="6234"/>
+        <CursorPos X="21" Y="6268"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="26" HistoryIndex="25">
+      <Position1>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanapi.pas"/>
+        <Caret Line="6785" Column="38" TopLine="6730"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="2614" Column="39" TopLine="2602"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="2613" Column="19" TopLine="2584"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="3631" Column="20" TopLine="3602"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4040" Column="35" TopLine="4011"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4042" Column="26" TopLine="4013"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4069" Column="21" TopLine="4040"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4121" Column="26" TopLine="4092"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4218" Column="26" TopLine="4189"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4226" Column="19" TopLine="4197"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4252" Column="26" TopLine="4223"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4281" Column="21" TopLine="4252"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4349" Column="26" TopLine="4318"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4376" Column="21" TopLine="4347"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4450" Column="26" TopLine="4421"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4814" Column="21" TopLine="4775"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4861" Column="26" TopLine="4827"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="4888" Column="21" TopLine="4859"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="5506" Column="21" TopLine="5478"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="5904" Column="26" TopLine="5873"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="5953" Column="26" TopLine="5913"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="5980" Column="21" TopLine="5951"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="6134" Column="23" TopLine="6106"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="6104" Column="29" TopLine="6075"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanobjects.pas"/>
+        <Caret Line="6268" Column="21" TopLine="6234"/>
+      </Position25>
+      <Position26>
+        <Filename Value="obj_test3.lpr"/>
+        <Caret Line="64" Column="13" TopLine="41"/>
+      </Position26>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

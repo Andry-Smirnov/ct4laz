@@ -1,0 +1,254 @@
+object FilterForm: TFilterForm
+  Left = 448
+  Height = 390
+  Top = 402
+  Width = 398
+  BorderStyle = bsSingle
+  Caption = 'Filter Demo'
+  ClientHeight = 390
+  ClientWidth = 398
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnHide = FormHide
+  OnShow = FormShow
+  LCLVersion = '6.2'
+  object Button1: TButton
+    Left = 7
+    Height = 25
+    Top = 361
+    Width = 75
+    Caption = 'Close'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 155
+    Top = 200
+    Width = 385
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'YEAR'
+        FieldName = 'YEAR'
+      end    
+      item
+        Title.Caption = 'COUNTRY'
+        FieldName = 'COUNTRY'
+      end    
+      item
+        Title.Caption = 'AUTHOR'
+        FieldName = 'AUTHOR'
+      end    
+      item
+        Title.Caption = 'TITLE'
+        FieldName = 'TITLE'
+      end    
+      item
+        Title.Caption = 'COMPANY'
+        FieldName = 'COMPANY'
+      end    
+      item
+        Title.Caption = 'PRICE'
+        FieldName = 'PRICE'
+      end    
+      item
+        Title.Caption = 'NOTE'
+        FieldName = 'NOTE'
+      end    
+      item
+        Title.Caption = 'QTY'
+        FieldName = 'QTY'
+      end    
+      item
+        Title.Caption = 'CALCPRICE'
+        FieldName = 'CALCPRICE'
+      end    
+      item
+        Title.Caption = 'HIGHPRICE'
+        FieldName = 'HIGHPRICE'
+      end    
+      item
+        Title.Caption = 'LAST_SELL'
+        FieldName = 'LAST_SELL'
+      end    
+      item
+        Title.Caption = 'IN_STOCK'
+        FieldName = 'IN_STOCK'
+      end>
+    DataSource = MainForm.DatasourceDisco
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 63
+    Top = 123
+    Width = 385
+    Caption = 'Country'
+    ClientHeight = 45
+    ClientWidth = 381
+    TabOrder = 2
+    object cbITA: TCheckBox
+      Left = 126
+      Height = 19
+      Top = 26
+      Width = 37
+      Caption = 'ITA'
+      OnClick = FilterChange
+      TabOrder = 0
+    end
+    object cbUSA: TCheckBox
+      Left = 14
+      Height = 19
+      Top = 2
+      Width = 42
+      Caption = 'USA'
+      Checked = True
+      OnClick = FilterChange
+      State = cbChecked
+      TabOrder = 1
+    end
+    object cbHOL: TCheckBox
+      Left = 126
+      Height = 19
+      Top = 2
+      Width = 42
+      Caption = 'HOL'
+      Checked = True
+      OnClick = FilterChange
+      State = cbChecked
+      TabOrder = 2
+    end
+    object cbUK: TCheckBox
+      Left = 70
+      Height = 19
+      Top = 2
+      Width = 35
+      Caption = 'UK'
+      OnClick = FilterChange
+      TabOrder = 3
+    end
+    object cbGER: TCheckBox
+      Left = 70
+      Height = 19
+      Top = 26
+      Width = 43
+      Caption = 'GER'
+      Checked = True
+      OnClick = FilterChange
+      State = cbChecked
+      TabOrder = 4
+    end
+    object cbSWE: TCheckBox
+      Left = 14
+      Height = 19
+      Top = 26
+      Width = 45
+      Caption = 'SWE'
+      OnClick = FilterChange
+      TabOrder = 5
+    end
+    object cbOTH: TCheckBox
+      Left = 182
+      Height = 19
+      Top = 2
+      Width = 51
+      Caption = 'Others'
+      OnClick = FilterChange
+      TabOrder = 6
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 49
+    Top = 64
+    Width = 385
+    Caption = 'Years'
+    ClientHeight = 31
+    ClientWidth = 381
+    TabOrder = 3
+    object Label1: TLabel
+      Left = 22
+      Height = 13
+      Top = 6
+      Width = 27
+      Caption = 'Years'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 93
+      Height = 13
+      Top = 6
+      Width = 9
+      Caption = 'to'
+      ParentColor = False
+    end
+    object Year_From: TEdit
+      Tag = 75
+      Left = 62
+      Height = 21
+      Top = 2
+      Width = 25
+      OnChange = Year_FromChange
+      OnExit = FilterChange
+      TabOrder = 0
+      Text = '75'
+    end
+    object Year_To: TEdit
+      Tag = 95
+      Left = 109
+      Height = 21
+      Top = 2
+      Width = 25
+      OnChange = Year_ToChange
+      OnExit = FilterChange
+      TabOrder = 1
+      Text = '95'
+    end
+    object cbBLANK: TCheckBox
+      Left = 142
+      Height = 19
+      Top = 4
+      Width = 47
+      Caption = 'Blank'
+      Checked = True
+      OnClick = FilterChange
+      State = cbChecked
+      TabOrder = 2
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 8
+    Height = 49
+    Top = 8
+    Width = 385
+    Caption = 'Filter'
+    ClientHeight = 31
+    ClientWidth = 381
+    TabOrder = 4
+    object Filter_on: TRadioButton
+      Left = 30
+      Height = 19
+      Top = 2
+      Width = 36
+      Caption = 'ON'
+      OnClick = FilterChange
+      TabOrder = 0
+    end
+    object Filter_off: TRadioButton
+      Left = 78
+      Height = 19
+      Top = 2
+      Width = 40
+      Caption = 'OFF'
+      Checked = True
+      OnClick = FilterChange
+      TabOrder = 1
+      TabStop = True
+    end
+  end
+end

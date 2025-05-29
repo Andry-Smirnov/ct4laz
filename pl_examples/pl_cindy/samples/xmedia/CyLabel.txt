@@ -1,0 +1,18 @@
+The TcyLabel component
+
+A Label with bevels, caption rendering/orientation/shadow features
+
+Published properties
+- Bevels: TcyBevels - Add multi-colored frames 
+- CaptionIndentLeft: Integer
+- CaptionIndentRight: Integer
+- CaptionIndentTop: Integer
+- CaptionIndentBottom: Integer
+- CaptionRender: TCaptionRender = (crNormal, crPathEllipsis, crEndEllipsis, crWordEllipsis);
+- CaptionOrientation: TCaptionOrientation - depends on selected font
+- Degrade: TcyGradient - Background gradient effect 
+- Shadow: TcyShadowText - shadow effect on the caption
+
+Events 
+- No particular events 
+

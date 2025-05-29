@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="pl_Cindy"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Júlio Maurício Antunes Piao; Lazarus port: PilotLogic Software House"/>
+    <HasRegisterProc Value="True"/>
+    <ComponentCount Value="148"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="Packages with 86 components to build rich 32/64 bit applications.
+VCL controls (labels, buttons, panels, Edits, TabControls, StaticText) with features like background gradient, colored bevels, wallpaper, shadowText, caption orientation etc...
+TcyCommunicate and TcyCommRoomConnector allows communication between applications running in same computer session.
+TcySearchFiles and TcyCopyfiles allow respectively search and copy files with pause/resume/abort features.
+TcyResizer allow move and resize components at run-time like delphi 2009 does.
+Advanced DB Express components (tested with mySQL) for easy table data handling (tcyDbxTable or TcyDbxSimpleTable), schema modifications (TcyDbxUpdateSql), reconcile handling (TcyDBXReconcileError) and table creation (cyDbxImportDataset1).
+TcyMathParser can parse matematical expressions.
+TcyWebBrowser allows view/edit html documents.
+TcyDbAdvGrid is a DBGrid with advanced feature etc ..."/>
+    <License Value="MPL 1.1"/>
+    <Version Major="6" Minor="8" Release="1"/>
+    <Files Count="99">
+      <Item1>
+        <Filename Value="source\AllCindyRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="AllCindyRegister"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\cyAdvButton.pas"/>
+        <UnitName Value="cyAdvButton"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\cyAdvFlowPanel.pas"/>
+        <UnitName Value="cyAdvFlowPanel"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\cyAdvGridPanel.pas"/>
+        <UnitName Value="cyAdvGridPanel"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\cyAdvLed.pas"/>
+        <UnitName Value="cyAdvLed"/>
+      </Item5>
+      <Item6>
+        <Filename Value="source\cyAdvPaintBox.pas"/>
+        <UnitName Value="cyAdvPaintBox"/>
+      </Item6>
+      <Item7>
+        <Filename Value="source\cyAdvPanel.pas"/>
+        <UnitName Value="cyAdvPanel"/>
+      </Item7>
+      <Item8>
+        <Filename Value="source\cyAdvProgressionPanel.pas"/>
+        <UnitName Value="cyAdvProgressionPanel"/>
+      </Item8>
+      <Item9>
+        <Filename Value="source\cyAdvSpeedButton.pas"/>
+        <UnitName Value="cyAdvSpeedButton"/>
+      </Item9>
+      <Item10>
+        <Filename Value="source\cyAdvStaticText.pas"/>
+        <UnitName Value="cyAdvStaticText"/>
+      </Item10>
+      <Item11>
+        <Filename Value="source\cyAttract.pas"/>
+        <UnitName Value="cyAttract"/>
+      </Item11>
+      <Item12>
+        <Filename Value="source\cyBaseButton.pas"/>
+        <UnitName Value="cyBaseButton"/>
+      </Item12>
+      <Item13>
+        <Filename Value="source\cyBaseColorMatrix.pas"/>
+        <UnitName Value="cyBaseColorMatrix"/>
+      </Item13>
+      <Item14>
+        <Filename Value="source\cyBaseCombobox.pas"/>
+        <UnitName Value="cyBaseCombobox"/>
+      </Item14>
+      <Item15>
+        <Filename Value="source\cyBaseContainer.pas"/>
+        <UnitName Value="cyBaseContainer"/>
+      </Item15>
+      <Item16>
+        <Filename Value="source\cyBaseExtCtrls.pas"/>
+        <UnitName Value="cyBaseExtCtrls"/>
+      </Item16>
+      <Item17>
+        <Filename Value="source\cyBaseFilterComboBox.pas"/>
+        <UnitName Value="cyBaseFilterComboBox"/>
+      </Item17>
+      <Item18>
+        <Filename Value="source\cyBaseFlowPanel.pas"/>
+        <UnitName Value="cyBaseFlowPanel"/>
+      </Item18>
+      <Item19>
+        <Filename Value="source\cyBaseGridPanel.pas"/>
+        <UnitName Value="cyBaseGridPanel"/>
+      </Item19>
+      <Item20>
+        <Filename Value="source\cyBaseLabel.pas"/>
+        <UnitName Value="cyBaseLabel"/>
+      </Item20>
+      <Item21>
+        <Filename Value="source\cyBaseLed.pas"/>
+        <UnitName Value="cyBaseLed"/>
+      </Item21>
+      <Item22>
+        <Filename Value="source\cyBaseMeasure.pas"/>
+        <UnitName Value="cyBaseMeasure"/>
+      </Item22>
+      <Item23>
+        <Filename Value="source\cyBasePanel.pas"/>
+        <UnitName Value="cyBasePanel"/>
+      </Item23>
+      <Item24>
+        <Filename Value="source\cyBaseSpeedButton.pas"/>
+        <UnitName Value="cyBaseSpeedButton"/>
+      </Item24>
+      <Item25>
+        <Filename Value="source\cyBaseStaticText.pas"/>
+        <UnitName Value="cyBaseStaticText"/>
+      </Item25>
+      <Item26>
+        <Filename Value="source\cyBevel.pas"/>
+        <UnitName Value="cyBevel"/>
+      </Item26>
+      <Item27>
+        <Filename Value="source\cyBitBtn.pas"/>
+        <UnitName Value="cyBitBtn"/>
+      </Item27>
+      <Item28>
+        <Filename Value="source\cyBook.pas"/>
+        <UnitName Value="cyBook"/>
+      </Item28>
+      <Item29>
+        <Filename Value="source\cyBookmarkList.pas"/>
+        <UnitName Value="cyBookmarkList"/>
+      </Item29>
+      <Item30>
+        <Filename Value="source\cyBookmarks.pas"/>
+        <UnitName Value="cyBookmarks"/>
+      </Item30>
+      <Item31>
+        <Filename Value="source\cyButton.pas"/>
+        <UnitName Value="cyButton"/>
+      </Item31>
+      <Item32>
+        <Filename Value="source\cyButtonedEdit.pas"/>
+        <UnitName Value="cyButtonedEdit"/>
+      </Item32>
+      <Item33>
+        <Filename Value="source\cyCheckbox.pas"/>
+        <UnitName Value="cyCheckbox"/>
+      </Item33>
+      <Item34>
+        <Filename Value="source\cyClasses.pas"/>
+        <UnitName Value="cyClasses"/>
+      </Item34>
+      <Item35>
+        <Filename Value="source\cyColorGrid.pas"/>
+        <UnitName Value="cyColorGrid"/>
+      </Item35>
+      <Item36>
+        <Filename Value="source\cyColorMatrix.pas"/>
+        <UnitName Value="cyColorMatrix"/>
+      </Item36>
+      <Item37>
+        <Filename Value="source\cyCompilerDefines.inc"/>
+        <Type Value="Include"/>
+      </Item37>
+      <Item38>
+        <Filename Value="source\cyCustomGauge.pas"/>
+        <UnitName Value="cyCustomGauge"/>
+      </Item38>
+      <Item39>
+        <Filename Value="source\cyCustomImage.pas"/>
+        <UnitName Value="cyCustomImage"/>
+      </Item39>
+      <Item40>
+        <Filename Value="source\cyCustomMeasure.pas"/>
+        <UnitName Value="cyCustomMeasure"/>
+      </Item40>
+      <Item41>
+        <Filename Value="source\cyCustomProgressionPanel.pas"/>
+        <UnitName Value="cyCustomProgressionPanel"/>
+      </Item41>
+      <Item42>
+        <Filename Value="source\cyDateUtils.pas"/>
+        <UnitName Value="cyDateUtils"/>
+      </Item42>
+      <Item43>
+        <Filename Value="source\cyDBAdvLed.pas"/>
+        <UnitName Value="cyDBAdvLed"/>
+      </Item43>
+      <Item44>
+        <Filename Value="source\cyDBEdit.pas"/>
+        <UnitName Value="cyDBEdit"/>
+      </Item44>
+      <Item45>
+        <Filename Value="source\cyDBHotLabel.pas"/>
+        <UnitName Value="cyDBHotLabel"/>
+      </Item45>
+      <Item46>
+        <Filename Value="source\cyDBLabel.pas"/>
+        <UnitName Value="cyDBLabel"/>
+      </Item46>
+      <Item47>
+        <Filename Value="source\cyDBLed.pas"/>
+        <UnitName Value="cyDBLed"/>
+      </Item47>
+      <Item48>
+        <Filename Value="source\cyDBSimpleGauge.pas"/>
+        <UnitName Value="cyDBSimpleGauge"/>
+      </Item48>
+      <Item49>
+        <Filename Value="source\cyDebug.pas"/>
+        <UnitName Value="cyDebug"/>
+      </Item49>
+      <Item50>
+        <Filename Value="source\cyDmmCanvas.pas"/>
+        <UnitName Value="cyDmmCanvas"/>
+      </Item50>
+      <Item51>
+        <Filename Value="source\cyEdit.pas"/>
+        <UnitName Value="cyEdit"/>
+      </Item51>
+      <Item52>
+        <Filename Value="source\cyEditDate.pas"/>
+        <UnitName Value="cyEditDate"/>
+      </Item52>
+      <Item53>
+        <Filename Value="source\cyEditFilename.pas"/>
+        <UnitName Value="cyEditFilename"/>
+      </Item53>
+      <Item54>
+        <Filename Value="source\cyEditFloat.pas"/>
+        <UnitName Value="cyEditFloat"/>
+      </Item54>
+      <Item55>
+        <Filename Value="source\cyEditInteger.pas"/>
+        <UnitName Value="cyEditInteger"/>
+      </Item55>
+      <Item56>
+        <Filename Value="source\cyEditMail.pas"/>
+        <UnitName Value="cyEditMail"/>
+      </Item56>
+      <Item57>
+        <Filename Value="source\cyEditTime.pas"/>
+        <UnitName Value="cyEditTime"/>
+      </Item57>
+      <Item58>
+        <Filename Value="source\cyEditWebsite.pas"/>
+        <UnitName Value="cyEditWebsite"/>
+      </Item58>
+      <Item59>
+        <Filename Value="source\cyFieldLink.pas"/>
+        <UnitName Value="cyFieldLink"/>
+      </Item59>
+      <Item60>
+        <Filename Value="source\cyFlowPanel.pas"/>
+        <UnitName Value="cyFlowPanel"/>
+      </Item60>
+      <Item61>
+        <Filename Value="source\cyFlyingContainer.pas"/>
+        <UnitName Value="cyFlyingContainer"/>
+      </Item61>
+      <Item62>
+        <Filename Value="source\cyGraphics.pas"/>
+        <UnitName Value="cyGraphics"/>
+      </Item62>
+      <Item63>
+        <Filename Value="source\cyGridPanel.pas"/>
+        <UnitName Value="cyGridPanel"/>
+      </Item63>
+      <Item64>
+        <Filename Value="source\cyHotLabel.pas"/>
+        <UnitName Value="cyHotLabel"/>
+      </Item64>
+      <Item65>
+        <Filename Value="source\cyImage.pas"/>
+        <UnitName Value="cyImage"/>
+      </Item65>
+      <Item66>
+        <Filename Value="source\cyIniForm.pas"/>
+        <UnitName Value="cyIniForm"/>
+      </Item66>
+      <Item67>
+        <Filename Value="source\cyLabel.pas"/>
+        <UnitName Value="cyLabel"/>
+      </Item67>
+      <Item68>
+        <Filename Value="source\cyLed.pas"/>
+        <UnitName Value="cyLed"/>
+      </Item68>
+      <Item69>
+        <Filename Value="source\cyMaskEdit.pas"/>
+        <UnitName Value="cyMaskEdit"/>
+      </Item69>
+      <Item70>
+        <Filename Value="source\cyMathParser.pas"/>
+        <UnitName Value="cyMathParser"/>
+      </Item70>
+      <Item71>
+        <Filename Value="source\cyModalContainer.pas"/>
+        <UnitName Value="cyModalContainer"/>
+      </Item71>
+      <Item72>
+        <Filename Value="source\cyNavPanel.pas"/>
+        <UnitName Value="cyNavPanel"/>
+      </Item72>
+      <Item73>
+        <Filename Value="source\cyObjUtils.pas"/>
+        <UnitName Value="cyObjUtils"/>
+      </Item73>
+      <Item74>
+        <Filename Value="source\cyPageControl.pas"/>
+        <UnitName Value="cyPageControl"/>
+      </Item74>
+      <Item75>
+        <Filename Value="source\cyPaintBox.pas"/>
+        <UnitName Value="cyPaintBox"/>
+      </Item75>
+      <Item76>
+        <Filename Value="source\cyPanel.pas"/>
+        <UnitName Value="cyPanel"/>
+      </Item76>
+      <Item77>
+        <Filename Value="source\cyPieGauge.pas"/>
+        <UnitName Value="cyPieGauge"/>
+      </Item77>
+      <Item78>
+        <Filename Value="source\cyProgressionPanel.pas"/>
+        <UnitName Value="cyProgressionPanel"/>
+      </Item78>
+      <Item79>
+        <Filename Value="source\cyRadioGroup.pas"/>
+        <UnitName Value="cyRadioGroup"/>
+      </Item79>
+      <Item80>
+        <Filename Value="source\cyResizer.pas"/>
+        <UnitName Value="cyResizer"/>
+      </Item80>
+      <Item81>
+        <Filename Value="source\cyRunTimeResize.pas"/>
+        <UnitName Value="cyRunTimeResize"/>
+      </Item81>
+      <Item82>
+        <Filename Value="source\cyScrollBox.pas"/>
+        <UnitName Value="cyScrollBox"/>
+      </Item82>
+      <Item83>
+        <Filename Value="source\cySearchFiles.pas"/>
+        <UnitName Value="cySearchFiles"/>
+      </Item83>
+      <Item84>
+        <Filename Value="source\cySimpleGauge.pas"/>
+        <UnitName Value="cySimpleGauge"/>
+      </Item84>
+      <Item85>
+        <Filename Value="source\cySkinArea.pas"/>
+        <UnitName Value="cySkinArea"/>
+      </Item85>
+      <Item86>
+        <Filename Value="source\cySkinButton.pas"/>
+        <UnitName Value="cySkinButton"/>
+      </Item86>
+      <Item87>
+        <Filename Value="source\cySpeedButton.pas"/>
+        <UnitName Value="cySpeedButton"/>
+      </Item87>
+      <Item88>
+        <Filename Value="source\cySplitter.pas"/>
+        <UnitName Value="cySplitter"/>
+      </Item88>
+      <Item89>
+        <Filename Value="source\cyStaticText.pas"/>
+        <UnitName Value="cyStaticText"/>
+      </Item89>
+      <Item90>
+        <Filename Value="source\cyStatusBar.pas"/>
+        <UnitName Value="cyStatusBar"/>
+      </Item90>
+      <Item91>
+        <Filename Value="source\cyStrUtils.pas"/>
+        <UnitName Value="cyStrUtils"/>
+      </Item91>
+      <Item92>
+        <Filename Value="source\cyTabControl.pas"/>
+        <UnitName Value="cyTabControl"/>
+      </Item92>
+      <Item93>
+        <Filename Value="source\cyTypes.pas"/>
+        <UnitName Value="cyTypes"/>
+      </Item93>
+      <Item94>
+        <Filename Value="source\cyVirtualChart.pas"/>
+        <UnitName Value="cyVirtualChart"/>
+      </Item94>
+      <Item95>
+        <Filename Value="source\cyVirtualGrid.pas"/>
+        <UnitName Value="cyVirtualGrid"/>
+      </Item95>
+      <Item96>
+        <Filename Value="source\cyDBAdvSpeedButton.pas"/>
+        <UnitName Value="cyDBAdvSpeedButton"/>
+      </Item96>
+      <Item97>
+        <Filename Value="source\cyDBRadioButton.pas"/>
+        <UnitName Value="cyDBRadioButton"/>
+      </Item97>
+      <Item98>
+        <Filename Value="source\cyDBMemo.pas"/>
+        <UnitName Value="cyDBMemo"/>
+      </Item98>
+      <Item99>
+        <Filename Value="source\cyDBSpeedButton.pas"/>
+        <UnitName Value="cyDBSpeedButton"/>
+      </Item99>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+        <MinVersion Valid="True"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

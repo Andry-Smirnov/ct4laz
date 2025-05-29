@@ -1,0 +1,18 @@
+The TcyRunTimeResize component
+
+If you don' t want to use a TcyResizer component that implement a design framework, TcyRunTimeResize allows simple interactive (the component still respond to events like onClick) move and resize management of a single component. 
+
+
+Published properties
+- Control: TControl - Handled control
+- Options: TcyRunTimeDesign - Move and resize options
+
+Events 
+- 
+
+Methods
+- StartJob - Called on OnMouseDown of handled component
+- DoJob - Called on OnMouseMove of handled component
+- EndJob - Called on OnMouseUp of handled component
+
+

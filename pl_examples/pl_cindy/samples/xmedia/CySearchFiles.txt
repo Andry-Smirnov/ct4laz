@@ -1,0 +1,33 @@
+The TcySearchFiles component
+
+Search files from a directory. 
+
+Published properties
+- FileAttributes: TcyFileAttributes - specify files attributes for search.  
+- MaskInclude: TStrings
+- MaskExclude: TStrings
+- FromPath: String - source path
+- Options: TOptions - search options
+- SubDirectories: boolean - specify if subdirectories will be processed or not. 
+- ActiveSearchRec: TSearchRecInstance - current TSearchRecInstance with state and process properties
+- Aborted: boolean 
+- CurrentFileName: String 
+- CurrentDirectory: String 
+- MatchedDirectories: Integer - current number of directories matched
+- MatchedFiles: Integer  - current number of files matched
+- SearchState: TSearchState - state of file search idle, paused, searching etc ...)
+
+Events 
+- OnAbort
+- OnPause
+- OnResume
+- OnValidateFile - you can accept or reject files manually and check validation flags. 
+- OnValidateDirectory - you can accept or reject sub-directories manually 
+- OnExitDirectory - when a sub-directories complete ...
+- OnTerminate
+
+Methods
+- Abort
+- Pause
+- Resume
+- Execute

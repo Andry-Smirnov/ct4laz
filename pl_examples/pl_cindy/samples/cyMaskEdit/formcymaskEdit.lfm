@@ -1,0 +1,438 @@
+object FrmCyMaskEdit: TFrmCyMaskEdit
+  Left = 510
+  Height = 722
+  Top = 611
+  Width = 770
+  Caption = 'FrmDemo'
+  ClientHeight = 722
+  ClientWidth = 770
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.3'
+  Scaled = False
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 672
+    Width = 770
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 770
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 8
+      Height = 35
+      Top = 2
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 631
+    Top = 41
+    Width = 250
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 631
+    ClientWidth = 250
+    TabOrder = 1
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 602
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Free TcyComponents for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object cySplitter1: TcySplitter
+      Left = 240
+      Height = 602
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 246
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 602
+      Top = 27
+      Width = 222
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 699
+    Width = 770
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 250
+    Height = 631
+    Top = 41
+    Width = 520
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 631
+    ClientWidth = 520
+    TabOrder = 3
+    object Label1: TLabel
+      Left = 22
+      Height = 16
+      Top = 22
+      Width = 133
+      Caption = 'Mask chars definition : '
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 22
+      Height = 16
+      Top = 262
+      Width = 142
+      Caption = 'Postal code (0000-000) :'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 238
+      Height = 16
+      Top = 278
+      Width = 110
+      Caption = '(Mask = 0000-000)'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 22
+      Height = 16
+      Top = 374
+      Width = 206
+      Caption = 'Only 5 letters (passwordChar = *) :'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 238
+      Height = 16
+      Top = 390
+      Width = 96
+      Caption = '(Mask = AAAAA)'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 22
+      Height = 16
+      Top = 318
+      Width = 137
+      Caption = 'Only 5 uppercase char :'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 238
+      Height = 16
+      Top = 334
+      Width = 96
+      Caption = '(Mask = UUUUU)'
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 22
+      Height = 16
+      Top = 430
+      Width = 140
+      Caption = 'Only 5 letters/numbers :'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 238
+      Height = 16
+      Top = 446
+      Width = 96
+      Caption = '(Mask = XXXXX)'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 22
+      Height = 16
+      Top = 486
+      Width = 155
+      Caption = '3 numbers prefixed by ABC'
+      ParentColor = False
+    end
+    object Label11: TLabel
+      Left = 238
+      Height = 16
+      Top = 502
+      Width = 100
+      Caption = '(Mask = ABC000)'
+      ParentColor = False
+    end
+    object Label12: TLabel
+      Left = 22
+      Height = 16
+      Top = 598
+      Width = 460
+      Caption = 'Note: for dates, integers, floats, use TcyEditdate, TcyEditInteger, TcyFloat etc ...'
+      ParentColor = False
+    end
+    object Label13: TLabel
+      Left = 22
+      Height = 16
+      Top = 542
+      Width = 141
+      Caption = 'Custom charset exemple'
+      ParentColor = False
+    end
+    object Label14: TLabel
+      Left = 238
+      Height = 16
+      Top = 558
+      Width = 87
+      Caption = '(Mask = [456])'
+      ParentColor = False
+    end
+    object cyMaskEdit1: TcyMaskEdit
+      Left = 22
+      Height = 24
+      Top = 278
+      Width = 209
+      MaxLength = 8
+      TabOrder = 0
+      Text = '1234-567'
+      Mask = '0000''-''000'
+    end
+    object Memo1: TMemo
+      Left = 4
+      Height = 230
+      Top = 4
+      Width = 377
+      Color = clBtnFace
+      Lines.Strings = (
+        ' Hi   - String Hi (must be quoted) expected'
+        '[;,-]  - Custom chars ";,-" expected'
+        ' 0      - Number expected'
+        ' A      - Alphabetic expected'
+        ' U      - Uppercase letter expected'
+        ' L      - Lowercase letter expected'
+        ' X      - Alpha numeric expected'
+        ' S      - Other char expected'
+        ' *      - Any char'
+        ''
+        'Not implemented yet :'
+        '9      - Optional number'
+        '%    - Optional char on Custom chars'
+      )
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+    object cyMaskEdit2: TcyMaskEdit
+      Left = 22
+      Height = 24
+      Top = 390
+      Width = 209
+      EchoMode = emPassword
+      MaxLength = 5
+      PasswordChar = '*'
+      TabOrder = 2
+      Text = 'ABcdE'
+      Mask = 'AAAAA'
+    end
+    object cyMaskEdit3: TcyMaskEdit
+      Left = 22
+      Height = 24
+      Top = 334
+      Width = 209
+      MaxLength = 5
+      TabOrder = 3
+      Text = 'ABCDE'
+      Mask = 'UUUUU'
+    end
+    object cyMaskEdit4: TcyMaskEdit
+      Left = 22
+      Height = 24
+      Top = 446
+      Width = 209
+      MaxLength = 5
+      TabOrder = 4
+      Text = 'AB123'
+      Mask = 'XXXXX'
+    end
+    object cyMaskEdit5: TcyMaskEdit
+      Left = 22
+      Height = 24
+      Top = 502
+      Width = 209
+      MaxLength = 6
+      TabOrder = 5
+      Text = 'ABC123'
+      Mask = '''ABC''000'
+    end
+    object CBAllowEmpty: TCheckBox
+      Left = 382
+      Height = 20
+      Top = 279
+      Width = 90
+      Caption = 'Allow empty'
+      Checked = True
+      OnClick = CBAllowEmptyClick
+      State = cbChecked
+      TabOrder = 6
+      TabStop = False
+    end
+    object cyMaskEdit6: TcyMaskEdit
+      Left = 22
+      Height = 24
+      Top = 558
+      Width = 209
+      MaxLength = 3
+      TabOrder = 7
+      Text = '4'
+      Mask = '999'
+    end
+  end
+end

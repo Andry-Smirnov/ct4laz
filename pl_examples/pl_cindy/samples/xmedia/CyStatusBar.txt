@@ -1,0 +1,10 @@
+The TcyStatusBar component
+
+A StatusBar that accept controls at Design time. 
+Also use Color for background painting 
+
+Published properties
+
+Events 
+
+

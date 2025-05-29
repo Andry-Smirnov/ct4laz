@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <LaunchingApplication PathPlusParams="/usr/bin/rxvt-unicode -T 'Typhon Run Output' -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/bin/rxvt-unicode -T 'Typhon Run Output' -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="pl_0_libs"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_USB"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="test2controlsync.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Test2ControlSync"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="9"/>
+        <CursorPos X="21" Y="39"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="../libusboop.pas"/>
+        <UnitName Value="LibUsbOop"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="976"/>
+        <CursorPos X="43" Y="391"/>
+        <UsageCount Value="11"/>
+        <Bookmarks Count="2">
+          <Item0 Y="840" ID="1"/>
+          <Item1 Y="507" ID="2"/>
+        </Bookmarks>
+      </Unit1>
+      <Unit2>
+        <Filename Value="test1library.pas"/>
+        <UnitName Value="Test1Library"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="20"/>
+        <CursorPos Y="86"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../libusb.pas"/>
+        <UnitName Value="LibUsb"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="379"/>
+        <CursorPos X="3" Y="390"/>
+        <UsageCount Value="11"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../usb.pas"/>
+        <UnitName Value="USB"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="392"/>
+        <CursorPos Y="420"/>
+        <UsageCount Value="11"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../../typhon/components/pl_USB/source/libusboop.pas"/>
+        <UnitName Value="LibUsbOop"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1167"/>
+        <CursorPos Y="803"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../../pl_components/pl_usb/source/libusboop.pas"/>
+        <UnitName Value="LibUsbOop"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1488"/>
+        <CursorPos X="129" Y="1509"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../pl_components/pl_usb/source/libusbdyn.pas"/>
+        <UnitName Value="LibUsbDyn"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="9" HistoryIndex="8">
+      <Position1>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="170" TopLine="124"/>
+      </Position1>
+      <Position2>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="65" Column="20" TopLine="39"/>
+      </Position2>
+      <Position3>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="65" TopLine="39"/>
+      </Position3>
+      <Position4>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="188" Column="13" TopLine="136"/>
+      </Position4>
+      <Position5>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="76" Column="3" TopLine="48"/>
+      </Position5>
+      <Position6>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="35" Column="34"/>
+      </Position6>
+      <Position7>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="44" Column="46" TopLine="17"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../../../pl_components/pl_usb/source/libusboop.pas"/>
+        <Caret Line="1521"/>
+      </Position8>
+      <Position9>
+        <Filename Value="test2controlsync.pas"/>
+        <Caret Line="39" Column="21" TopLine="9"/>
+      </Position9>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="../xbin"/>
+    </SearchPaths>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

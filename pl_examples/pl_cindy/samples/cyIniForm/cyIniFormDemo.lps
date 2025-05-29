@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="cyIniFormDemo.lpr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="9" Y="10"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="formcyIniForm.pas"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCyIniForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="23" Y="25"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyIniForm.pas"/>
+        <FRMtype Value="0"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="151"/>
+        <CursorPos X="18" Y="168"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="formcyIniForm.pas"/>
+        <Caret Line="71" Column="10" TopLine="55"/>
+      </Position1>
+      <Position2>
+        <Filename Value="formcyIniForm.pas"/>
+        <Caret Line="25" Column="23"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyIniForm.pas"/>
+        <Caret Line="168" TopLine="144"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyIniForm.pas"/>
+        <Caret Line="165" Column="26" TopLine="144"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyIniForm.pas"/>
+        <Caret Line="739" Column="31" TopLine="708"/>
+      </Position5>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <SkipCheckLCLInterfaces Value="True"/>
+</CONFIG>

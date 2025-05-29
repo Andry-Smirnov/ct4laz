@@ -1,0 +1,72 @@
+object CalcForm: TCalcForm
+  Left = 501
+  Height = 289
+  Top = 366
+  Width = 405
+  Caption = 'Calculated fields'
+  ClientHeight = 289
+  ClientWidth = 405
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '6.2'
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 240
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 240
+    DataSource = MainForm.DatasourceDisco
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 217
+    Top = 40
+    Width = 385
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'AUTHOR'
+        FieldName = 'AUTHOR'
+      end    
+      item
+        Title.Caption = 'PRICE'
+        FieldName = 'PRICE'
+      end    
+      item
+        Title.Caption = 'QTY'
+        FieldName = 'QTY'
+      end    
+      item
+        Title.Caption = 'CALCPRICE'
+        FieldName = 'CALCPRICE'
+      end    
+      item
+        Title.Caption = 'HIGHPRICE'
+        FieldName = 'HIGHPRICE'
+      end    
+      item
+        Title.Caption = 'TITLE'
+        FieldName = 'TITLE'
+      end    
+      item
+        Title.Caption = 'COMPANY'
+        FieldName = 'COMPANY'
+      end>
+    DataSource = MainForm.DatasourceDisco
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+  end
+end

@@ -1,0 +1,328 @@
+object FrmCyRadioGroup: TFrmCyRadioGroup
+  Left = 510
+  Height = 722
+  Top = 611
+  Width = 1195
+  Caption = 'FrmDemo'
+  ClientHeight = 722
+  ClientWidth = 1195
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.3'
+  Scaled = False
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 672
+    Width = 1195
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 1195
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 8
+      Height = 35
+      Top = 2
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 631
+    Top = 41
+    Width = 250
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 631
+    ClientWidth = 250
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 240
+      Height = 602
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 246
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 2
+      Height = 602
+      Top = 27
+      Width = 238
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 699
+    Width = 1195
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 271
+    Height = 518
+    Top = 68
+    Width = 594
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 518
+    ClientWidth = 594
+    Font.Color = clBlue
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    ParentFont = False
+    TabOrder = 3
+    object cyRadioGroup1: TcyRadioGroup
+      Left = 54
+      Height = 105
+      Top = 25
+      Width = 257
+      AutoFill = True
+      Caption = ' Select '
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 84
+      ClientWidth = 253
+      Color = 16744703
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Items.Strings = (
+        'Male'
+        'Female'
+        'Don t know yet'
+      )
+      ParentFont = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object BtnChange: TButton
+      Left = 54
+      Height = 41
+      Top = 190
+      Width = 97
+      Caption = 'Customize'
+      OnClick = BtnChangeClick
+      TabOrder = 1
+    end
+    object RadioGroup1: TRadioGroup
+      Left = 54
+      Height = 105
+      Top = 358
+      Width = 185
+      AutoFill = True
+      Caption = 'RadioGroup1'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 79
+      ClientWidth = 181
+      Items.Strings = (
+        'aaaa'
+        'bbb'
+        'ccc'
+      )
+      TabOrder = 2
+    end
+    object cyRadioButton1: TcyRadioButton
+      Left = 334
+      Height = 25
+      Top = 46
+      Width = 177
+      Caption = 'cyRadioButton1 aaaa'
+      Color = clBtnFace
+      Font.Color = clBlue
+      Font.Height = -17
+      Font.Name = 'Tahoma'
+      ParentBidiMode = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 3
+    end
+    object cyRadioButton2: TcyRadioButton
+      Left = 278
+      Height = 25
+      Top = 294
+      Width = 136
+      Caption = 'cyRadioButton2'
+      TabOrder = 4
+    end
+    object cyRadioGroup2: TcyRadioGroup
+      Left = 278
+      Height = 105
+      Top = 358
+      Width = 185
+      AutoFill = True
+      Caption = 'cyRadioGroup2'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      TabOrder = 5
+    end
+    object cyCheckBox2: TcyCheckBox
+      Left = 365
+      Height = 25
+      Top = 202
+      Width = 116
+      Caption = 'cyCheckBox2'
+      TabOrder = 6
+    end
+    object cyCheckBox1: TcyCheckBox
+      Left = 190
+      Height = 25
+      Top = 182
+      Width = 116
+      Caption = 'cyCheckBox1'
+      Color = clBtnFace
+      Font.Color = clBlue
+      Font.Height = -17
+      Font.Name = 'Tahoma'
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 7
+    end
+  end
+end

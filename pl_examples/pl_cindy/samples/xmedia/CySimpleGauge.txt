@@ -1,0 +1,48 @@
+The TcySimpleGauge component
+
+Simple interactive gauge with double values feature. 
+
+Published properties
+- Bevels: TcyBevels - Bevels
+// Gradient definitions: 
+- DegradeBalance: Integer
+- DegradeBalanceMode: TDgradBalanceMode
+- DegradeBalanceSpeed: Integer
+//Gauge item rendering for unreached level:
+- ItemOffBrush: TBrush
+- ItemOffPen: TPen
+- ItemOffStyle: TItemStyle - item shape 
+//Gauge item rendering for reached level:
+- ItemOffBrush: TBrush
+- ItemOffPen: TPen
+- ItemOnStyle: TItemStyle - item shape 
+
+- ItemsCount: Integer - numbers of items
+- ItemsHeight: Integer
+- ItemsSpacing: Integer - space between items
+- ItemsWidth: Integer
+- MarginBottom: Integer
+- MarginLeft: Integer
+- MarginRight: Integer
+- MarginTop: Integer
+- Min: Double
+- Max: Double
+- Orientation: TGaugeOrientation
+- PartialPaint: Boolean - allow partial painting
+- Position: Double - gauge position
+- Precision: Integer
+- ReadOnly: Boolean
+- Smooth: Boolean
+- Step: Double
+- Transparent
+
+Events 
+- OnAfterpaint
+- OnBeforePaint
+- OnChange
+- OnClick
+- OnCustomDrawItem
+- OnMouseDown
+- OnMouseUp
+
+

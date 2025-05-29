@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="cyTabControlDemo.lpr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="19" Y="11"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="formcyTabControl.pas"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCyTabControl"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="20" Y="29"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyPageControl.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="67"/>
+        <CursorPos X="29" Y="557"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="65"/>
+        <CursorPos X="12" Y="74"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\lcl\comctrls.pp"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="ComCtrls"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="833"/>
+        <CursorPos X="55" Y="856"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\lcl\include\tabcontrol.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="639"/>
+        <CursorPos X="30" Y="659"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\lcl\include\pagecontrol.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="146"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\AllCindyRegister.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="80"/>
+        <CursorPos X="20" Y="115"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="..\..\..\..\typhon\lcl\include\tabcontrol.inc"/>
+        <Caret Line="764" Column="10" TopLine="727"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\typhon\lcl\include\tabcontrol.inc"/>
+        <Caret Line="765" Column="25" TopLine="727"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\lcl\include\tabcontrol.inc"/>
+        <Caret Line="771" Column="10" TopLine="727"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\..\typhon\lcl\include\tabcontrol.inc"/>
+        <Caret Line="653" Column="57" TopLine="642"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\..\typhon\lcl\include\tabcontrol.inc"/>
+        <Caret Line="655" Column="12" TopLine="642"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="122" Column="29" TopLine="114"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="123" Column="25" TopLine="114"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="149" Column="10" TopLine="114"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="420" Column="67" TopLine="391"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="433" Column="38" TopLine="391"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="436" Column="36" TopLine="392"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="439" Column="64" TopLine="395"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="442" Column="11" TopLine="398"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="451" Column="34" TopLine="406"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="453" Column="31" TopLine="409"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="472" Column="39" TopLine="430"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="474" Column="39" TopLine="430"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="475" Column="39" TopLine="431"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="482" Column="24" TopLine="438"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="488" Column="36" TopLine="444"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="489" Column="37" TopLine="445"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="515" Column="36" TopLine="472"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="516" Column="28" TopLine="472"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyTabControl.pas"/>
+        <Caret Line="518" Column="28" TopLine="474"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyPageControl.pas"/>
+        <Caret Line="157" Column="6" TopLine="127"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyPageControl.pas"/>
+        <Caret Line="106" Column="44" TopLine="70"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyPageControl.pas"/>
+        <Caret Line="131" Column="26" TopLine="105"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyPageControl.pas"/>
+        <Caret Line="157" Column="11" TopLine="131"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyPageControl.pas"/>
+        <Caret Line="489" Column="32" TopLine="460"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyPageControl.pas"/>
+        <Caret Line="528" Column="37" TopLine="487"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

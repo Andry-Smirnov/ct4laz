@@ -1,0 +1,26 @@
+The TcyGridPanel component
+
+A GridPanel with gradient, multi-bevels and shadow features. 
+
+Published properties
+-	Bevels: TcyBevels - Bevels
+-	CaptionOrientation: TCaptionOrientation
+-	Degrade: TcyGradient - gradient background rendering
+-	Layout: TTextLayout - vertical alignment
+-	RunTimeDesign: TcyRunTimeDesign - Moving/resizing feature at run-time
+-	Shadow: TcyShadowText - shadow text rendering
+-	WordWrap: Boolean
+
+Events 
+-	OnMouseEnter
+-	OnMouseLeave
+-	OnMouseWheel
+-	OnMouseWheelDown
+-	OnMouseWheelUp
+-	OnPaint
+-	OnVisibleChanging
+-	OnStartRunTimeDesign
+-	OnDoRunTimeDesign
+-	OnEndRunTimeDesign
+
+

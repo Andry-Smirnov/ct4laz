@@ -1,0 +1,265 @@
+object EditTopicsForm: TEditTopicsForm
+  Left = 556
+  Height = 458
+  Top = 383
+  Width = 397
+  Caption = 'MemoFields Demo'
+  ClientHeight = 458
+  ClientWidth = 397
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '6.2'
+  object Grid1: TDBGrid
+    Left = 4
+    Height = 80
+    Top = 32
+    Width = 369
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'ID'
+        FieldName = 'ID'
+      end    
+      item
+        Title.Caption = 'TITLE'
+        FieldName = 'TITLE'
+      end    
+      item
+        Title.Caption = 'Demo program'
+        Width = 80
+        FieldName = 'DEMO'
+      end>
+    DataSource = MainForm.DataSourceDemo
+    Options = [dgEditing, dgTitles, dgIndicator, dgColLines, dgRowLines, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 0
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 4
+    Height = 25
+    Top = 4
+    Width = 280
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 280
+    DataSource = MainForm.DataSourceDemo
+    Options = []
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 4
+    Height = 25
+    Top = 416
+    Width = 75
+    Caption = 'Close'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object DBRichEdit1: TDBMemo
+    Left = 3
+    Height = 277
+    Top = 136
+    Width = 369
+    DataField = 'DESCR'
+    DataSource = MainForm.DataSourceDemo
+    OnEnter = DBRichEdit1Enter
+    ScrollBars = ssVertical
+    TabOrder = 3
+  end
+  object Panel1: TPanel
+    Left = 4
+    Height = 18
+    Top = 115
+    Width = 365
+    BevelOuter = bvNone
+    ClientHeight = 18
+    ClientWidth = 365
+    TabOrder = 4
+    object SpeedButton1: TSpeedButton
+      Left = 126
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = 'B'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton2: TSpeedButton
+      Tag = 1
+      Left = 146
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = 'I'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Serif'
+      Font.Style = [fsItalic]
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton3: TSpeedButton
+      Tag = 2
+      Left = 166
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = 'U'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Serif'
+      Font.Style = [fsUnderline]
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton4: TSpeedButton
+      Tag = 3
+      Left = 198
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = '8'
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton5: TSpeedButton
+      Tag = 4
+      Left = 218
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = '10'
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton6: TSpeedButton
+      Tag = 5
+      Left = 238
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = '12'
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton7: TSpeedButton
+      Tag = 7
+      Left = 286
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = 'X'
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton8: TSpeedButton
+      Tag = 6
+      Left = 266
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = 'X'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton9: TSpeedButton
+      Tag = 8
+      Left = 306
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = 'X'
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton10: TSpeedButton
+      Tag = 11
+      Left = 78
+      Height = 18
+      Top = 0
+      Width = 39
+      Caption = 'Cour.'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton11: TSpeedButton
+      Tag = 9
+      Left = 0
+      Height = 18
+      Top = 0
+      Width = 41
+      Caption = 'Arial'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton12: TSpeedButton
+      Tag = 10
+      Left = 38
+      Height = 18
+      Top = 0
+      Width = 41
+      Caption = 'Times'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Times New Roman'
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton13: TSpeedButton
+      Tag = 12
+      Left = 326
+      Height = 18
+      Top = 0
+      Width = 19
+      Caption = 'X'
+      Font.Color = clGreen
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+  end
+  object Pack: TButton
+    Left = 288
+    Height = 25
+    Top = 4
+    Width = 75
+    Caption = 'Pack'
+    OnClick = PackClick
+    TabOrder = 5
+  end
+end

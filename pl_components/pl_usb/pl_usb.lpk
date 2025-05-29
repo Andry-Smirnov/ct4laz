@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="pl_USB"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Johann Glaser; Revived by PilotLogic Software House"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="https://github.com/hansiglaser/pas-libusb"/>
+    <License Value="LGPL 2.1+ with linking exception"/>
+    <Version Major="6" Minor="9" Release="1"/>
+    <Files Count="6">
+      <Item1>
+        <Filename Value="source\ezusb.pas"/>
+        <UnitName Value="EZUSB"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\intelhex.pas"/>
+        <UnitName Value="IntelHex"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\libusbdyn.pas"/>
+        <UnitName Value="LibUsbDyn"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\libusboop.pas"/>
+        <UnitName Value="LibUsbOop"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\libusbutil.pas"/>
+        <UnitName Value="LibUsbUtil"/>
+      </Item5>
+      <Item6>
+        <Filename Value="source\paslibusbutils.pas"/>
+        <UnitName Value="PasLibUsbUtils"/>
+      </Item6>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="FCL"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

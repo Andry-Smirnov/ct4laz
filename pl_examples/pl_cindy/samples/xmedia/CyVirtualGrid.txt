@@ -1,0 +1,26 @@
+The TcyVirtualGrid component
+
+Generate virtual cells grid coordinates from any TRect with some parameters like rows and columns count. 
+
+Published properties
+- CellWidth: Word - Specify column width when CellWidthMode = smManual
+- CellHeight: Word - Specify row height when CellHeightMode = smManual
+- CellWidthMode:TSizeMode - manual, fixed or use all avaible space size. 
+- CellHeightMode:TSizeMode - manual, fixed or use all avaible space size. 
+- FromCoordX: Integer - first column index value
+- ToCoordX: Integer - last column index value
+- FromCoordY: Integer - first row index value
+- ToCoordY: Integer - last row index value
+- ValidCells: Boolean - to know if GenerateCells was called 
+
+Events 
+- OnRowSize: TProcRowSize - personalize row size
+- OnColumnSize - personalize column size
+- OnGeneratedCell - called when a cell coordinates has beeb calculated
+
+Methods
+- GenerateCells(fromRect: TRect)
+- ColumnWidth(CoordX: Integer): Integer
+- RowHeight(CoordY: Integer): Integer
+- GetCellRect(CoordX, CoordY: Integer): TRect
+- GetCellCoord(X, Y: Integer; var CoordX, CoordY: Integer): Boolean

@@ -1,0 +1,24 @@
+The TcyAdvLed component
+
+An advanced control led (custom image rendering) with Group feature
+
+Published properties
+- AllowAllOff: boolean - Allow all Off on group 
+- GroupIndex: Integer
+- LedStatus: TLedStatus =  (lsOn, lsOff, lsDisabled);
+- LedValue: Boolean - true if led is On
+- PictureOn: TPicture - visualized when LedStatus = lsOn
+- PictureOff: TPicture - visualized when LedStatus = lsOff
+- PictureDisabled: TPicture - visualized when LedStatus = lsDisabled
+- ReadOnly: Boolean
+- Transparent: Boolean
+- ValueOn: String - String value for On
+- ValueOff - String value for Off
+
+Events 
+- 
+
+Methods
+- Switch - switch LedValue
+
+

@@ -1,0 +1,748 @@
+object FrmCySplitter: TFrmCySplitter
+  Left = 307
+  Height = 698
+  Top = 230
+  Width = 991
+  Caption = 'FrmDemo'
+  ClientHeight = 698
+  ClientWidth = 991
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 648
+    Width = 991
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object cySplitter9: TcySplitter
+    Left = 958
+    Height = 607
+    Top = 41
+    Width = 33
+    Align = alRight
+    Anchors = []
+    Bevels = <    
+      item
+        HighlightColor = clGray
+        ShadowColor = clGray
+      end>
+    Degrade.AngleDegree = 0
+    Degrade.BalanceMode = bmReverseFromColor
+    Degrade.FromColor = clWhite
+    Degrade.Orientation = dgdHorizontal
+    Degrade.SpeedPercent = 100
+    Degrade.ToColor = clFuchsia
+    DegradeHot.AngleDegree = 0
+    DegradeHot.BalanceMode = bmReverseFromColor
+    DegradeHot.FromColor = clWhite
+    DegradeHot.Orientation = dgdHorizontal
+    DegradeHot.SpeedPercent = 100
+    DegradeHot.ToColor = 16744703
+    Grip.Count = 4
+    Grip.Height = 80
+    Grip.Width = 2
+    Grip.Spacing = 3
+    Grip.Style = gsLoweredLine
+    ResizeStyle = rsUpdate
+    ResizeSide = rsRight
+    Wallpaper.Transparent = False
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 991
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 4
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 607
+    Top = 41
+    Width = 444
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 607
+    ClientWidth = 444
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 434
+      Height = 578
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 578
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Cindy Components for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 440
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 578
+      Top = 27
+      Width = 416
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 675
+    Width = 991
+    Panels = <>
+  end
+  object Panel1: TPanel
+    Left = 444
+    Height = 607
+    Top = 41
+    Width = 514
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 607
+    ClientWidth = 514
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 3
+    object Label104: TLabel
+      Left = 16
+      Height = 16
+      Top = 24
+      Width = 443
+      Caption = 'ResizeMode = rmClassic: Same as TSplitter component fonctionalities'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object Label105: TLabel
+      Left = 16
+      Height = 65
+      Top = 368
+      Width = 401
+      AutoSize = False
+      Caption = 'ResizeMode = rmParent: TcySplitter manipulates his parent control instead of manipulating the nearest control in the same parent control.'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object Panel18: TPanel
+      Left = 16
+      Height = 249
+      Top = 72
+      Width = 401
+      BevelOuter = bvNone
+      Caption = 'Panel18'
+      ClientHeight = 249
+      ClientWidth = 401
+      TabOrder = 0
+      object cySplitter6: TcySplitter
+        Left = 185
+        Height = 249
+        Top = 0
+        Width = 27
+        Align = alLeft
+        Anchors = []
+        AutoSnap = True
+        Bevels = <>
+        Degrade.AngleDegree = 0
+        Degrade.BalanceMode = bmReverseFromColor
+        Degrade.FromColor = clGray
+        Degrade.Orientation = dgdHorizontal
+        Degrade.SpeedPercent = 100
+        Degrade.ToColor = clBlack
+        DegradeHot.AngleDegree = 0
+        DegradeHot.BalanceMode = bmReverseFromColor
+        DegradeHot.FromColor = clGray
+        DegradeHot.Orientation = dgdHorizontal
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = clBlack
+        Grip.Count = 0
+        Grip.Height = 80
+        Grip.Width = 2
+        Grip.Spacing = 3
+        Grip.Style = gsLoweredLine
+        ResizeMode = rmClassic
+        ResizeStyle = rsUpdate
+        ResizeSide = rsRight
+        Wallpaper.IntervalY = 5
+        Wallpaper.RepeatY = 5
+        Wallpaper.Picture.Data = {
+          07544269746D6170B6040000424DB60400000000000036000000280000001700
+          000010000000010018000000000080040000C30E0000C30E0000000000000000
+          0000241CED241CED241CED241CED241CED241CED241CED241CED8F3833962D19
+          8E2A21241CED8F2C21962D198F3833241CED241CED241CED241CED241CED241C
+          ED241CED241CED000000241CED241CED241CED241CED241CED241CED241CED80
+          150ED36F33FFB052E6893F8E2314E6893FFFAF52D36F3380150E241CED241CED
+          241CED241CED241CED241CED241CED000000241CED241CED241CED241CED241C
+          EDA05D5D992A0EE7812EFFA23CFF9C38FFA43C973016FFA43CFF9C38FFA23CE7
+          812E992A0EA05D5D241CED241CED241CED241CED241CED000000241CED241CED
+          241CED241CED913E3EAB380CFB8D22FF9625FF9123FF9023FF95249B3316FF95
+          24FF9023FF9123FF9625FB8D22AB380C913E3E241CED241CED241CED241CED00
+          0000241CED241CED241CED872826BD4404FD870EFF870EFF850DFF850DFF850D
+          FF890D9F3514FF890DFF850DFF850DFF850DFF870EFD870EBD4404872826241C
+          ED241CED241CED000000241CED241CED851E17CF5300FF8600FF8100FF7E00FF
+          7E00FF7E00FF7E00FF8200A43A14FF8300FF8100FF8100FF8000FF7E00FF8100
+          FF8600CF5300851E17241CED241CED000000241CED871807DD6403FF8F05FF88
+          05FF8504FF8400FF8200FF8200FF8200FF8600A83E16FF8904FF890CFF890BFF
+          890BFF880AFF8605FF8400FF8A00DD6200871807241CED000000811308E8780E
+          FF9D25FF9422FF9522FF9422FF931FFF921DFF921EFF8C0FFF8800AC4517FF91
+          12FF992CFF982AFF982AFF9728FF9828FF9725FF9320FF9A20E8780E81130800
+          0000811208E87A14FFAC45FFA649FFA545FFA545FFA546FFA646FFA646FFA647
+          FF9316AF4B18FF9921FFAA4FFFA84BFFA84BFFA748FFA749FFA94CFFAB50FFAF
+          4BE87C16811208000000241CED8B1B07DF7520FFB95EFFB96CFFB565FFB565FF
+          B565FFB565FFB86BFF9E2EB24F1BFF9F30FFBA70FFB76AFFB76AFFB76AFFB76A
+          FFBC71FFBB63E077218B1B07241CED000000241CED241CED912917D56D20FFBF
+          6FFFCA8FFFC486FFC485FFC485FFC88DFFA53BB7541CFFA63DFFCA92FFC68AFF
+          C68AFFC68BFFCC94FFC173D56E21912A17241CED241CED000000241CED241CED
+          241CED9A3B29C9601CFEBF77FFD9AFFFD4A5FFD3A4FFD7AEFFAB49BA591EFFAC
+          4BFFD8B1FFD4A7FFD5A8FFDBB1FEC079CA611C9A3C29241CED241CED241CED00
+          0000241CED241CED241CED241CEDAA5945C15818FCB972FFE5C3FFE4C7FFE6CC
+          FFB257BE5D20FFB258FFE7CEFFE5C8FFE6C4FCBA72C15818AA5A45241CED241C
+          ED241CED241CED000000241CED241CED241CED241CED241CEDBB7965BB4E0DF2
+          A354FFEDD3FFFFFEFFBB68C36220FFBB68FFFFFFFFEDD3F2A454BC4F0CBB7A65
+          241CED241CED241CED241CED241CED000000241CED241CED241CED241CED241C
+          ED241CED241CEDAF470EE5944BFFDCAEF29D46C26425F29D46FFDCAEE6944BB0
+          480F241CED241CED241CED241CED241CED241CED241CED000000241CED241CED
+          241CED241CED241CED241CED241CED241CEDC07042C9661AC76E32241CEDC871
+          32CA661AC17143241CED241CED241CED241CED241CED241CED241CED241CED00
+          0000
+        }
+        Wallpaper.Transparent = True
+      end
+      object Panel15: TPanel
+        Left = 0
+        Height = 249
+        Top = 0
+        Width = 185
+        Align = alLeft
+        BevelOuter = bvNone
+        Caption = 'Panel15'
+        ClientHeight = 249
+        ClientWidth = 185
+        TabOrder = 0
+        object cySplitter2: TcySplitter
+          Cursor = crVSplit
+          Left = 0
+          Height = 16
+          Top = 65
+          Width = 185
+          Align = alTop
+          Anchors = [akBottom]
+          Bevels = <>
+          Degrade.AngleDegree = 0
+          Degrade.FromColor = 4227327
+          Degrade.SpeedPercent = 95
+          Degrade.ToColor = 16512
+          DegradeHot.AngleDegree = 0
+          DegradeHot.FromColor = 8454143
+          DegradeHot.SpeedPercent = 100
+          DegradeHot.ToColor = 4227327
+          Grip.Style = gsLoweredRect
+          ResizeMode = rmClassic
+          ResizeStyle = rsUpdate
+          ResizeSide = rsBottom
+          Wallpaper.Transparent = False
+        end
+        object Panel16: TPanel
+          Left = 0
+          Height = 65
+          Top = 0
+          Width = 185
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = ' '
+          ClientHeight = 65
+          ClientWidth = 185
+          Color = 8454143
+          ParentColor = False
+          TabOrder = 0
+          object SpeedButton1: TSpeedButton
+            Left = 16
+            Height = 22
+            Top = 16
+            Width = 23
+          end
+          object SpeedButton2: TSpeedButton
+            Left = 48
+            Height = 22
+            Top = 16
+            Width = 23
+          end
+        end
+        object Panel17: TPanel
+          Left = 0
+          Height = 168
+          Top = 81
+          Width = 185
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = ' '
+          ClientHeight = 168
+          ClientWidth = 185
+          TabOrder = 1
+          object SpeedButton3: TSpeedButton
+            Left = 104
+            Height = 22
+            Top = 16
+            Width = 23
+          end
+          object SpeedButton4: TSpeedButton
+            Left = 136
+            Height = 22
+            Top = 16
+            Width = 23
+          end
+        end
+      end
+      object Panel19: TPanel
+        Left = 212
+        Height = 249
+        Top = 0
+        Width = 189
+        Align = alClient
+        BevelOuter = bvNone
+        Caption = 'Panel15'
+        ClientHeight = 249
+        ClientWidth = 189
+        TabOrder = 1
+        object cySplitter7: TcySplitter
+          Cursor = crVSplit
+          Left = 0
+          Height = 19
+          Top = 152
+          Width = 189
+          Align = alTop
+          Anchors = [akBottom]
+          AutoSnap = True
+          Bevels = <          
+            item
+              HighlightColor = clNavy
+              ShadowColor = clNavy
+            end>
+          Degrade.AngleDegree = 0
+          Degrade.FromColor = 12687240
+          Degrade.Orientation = dgdHorizontal
+          Degrade.SpeedPercent = 100
+          Degrade.ToColor = clNavy
+          DegradeHot.AngleDegree = 0
+          DegradeHot.FromColor = 14666433
+          DegradeHot.Orientation = dgdRectangle
+          DegradeHot.SpeedPercent = 100
+          DegradeHot.ToColor = 12687240
+          Grip.Count = 5
+          ResizeMode = rmClassic
+          ResizeSide = rsBottom
+          Wallpaper.Transparent = False
+        end
+        object Panel20: TPanel
+          Left = 0
+          Height = 152
+          Top = 0
+          Width = 189
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Panel'
+          Color = 8454143
+          ParentColor = False
+          TabOrder = 0
+        end
+        object Panel21: TPanel
+          Left = 0
+          Height = 78
+          Top = 171
+          Width = 189
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'Panel'
+          TabOrder = 1
+        end
+      end
+    end
+    object Panel23: TPanel
+      Left = 16
+      Height = 125
+      Top = 441
+      Width = 165
+      BevelOuter = bvNone
+      Caption = 'Panel23'
+      ClientHeight = 125
+      ClientWidth = 165
+      Color = clBtnShadow
+      Constraints.MaxHeight = 247
+      Constraints.MaxWidth = 250
+      ParentColor = False
+      TabOrder = 1
+      object cySplitter3: TcySplitter
+        Cursor = crVSplit
+        Left = 0
+        Height = 12
+        Top = 113
+        Width = 154
+        Anchors = [akLeft, akRight, akBottom]
+        Bevels = <        
+          item
+            HighlightColor = clBtnShadow
+          end>
+        Degrade.AngleDegree = 0
+        Degrade.BalanceMode = bmReverse
+        Degrade.FromColor = clWhite
+        Degrade.SpeedPercent = 100
+        Degrade.ToColor = clSilver
+        DegradeHot.AngleDegree = 0
+        DegradeHot.FromColor = clWhite
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = 15066597
+        Grip.Style = gsLoweredRect
+        MinSize = 50
+        ResizeStyle = rsUpdate
+        ResizeSide = rsBottom
+        Wallpaper.Transparent = False
+      end
+      object cySplitter4: TcySplitter
+        Left = 153
+        Height = 114
+        Top = 0
+        Width = 12
+        Anchors = [akTop, akRight, akBottom]
+        Bevels = <        
+          item
+            HighlightColor = clBtnShadow
+          end>
+        Degrade.AngleDegree = 0
+        Degrade.BalanceMode = bmReverse
+        Degrade.FromColor = clWhite
+        Degrade.Orientation = dgdHorizontal
+        Degrade.SpeedPercent = 100
+        Degrade.ToColor = clSilver
+        DegradeHot.AngleDegree = 0
+        DegradeHot.FromColor = clWhite
+        DegradeHot.Orientation = dgdHorizontal
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = 15066597
+        Grip.Style = gsLoweredRect
+        MinSize = 50
+        ResizeStyle = rsUpdate
+        ResizeSide = rsRight
+        Wallpaper.Transparent = False
+      end
+      object ListBox1: TListBox
+        Left = 0
+        Height = 114
+        Top = 0
+        Width = 154
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        Items.Strings = (
+          'This a TListBox!'
+          'line 2'
+          'line 3'
+          'line 4'
+          'line 5'
+          'line 6'
+          'line 7'
+          'line 8'
+          'line 9'
+        )
+        ItemHeight = 16
+        ScrollWidth = 139
+        TabOrder = 0
+      end
+    end
+    object Panel24: TPanel
+      Left = 208
+      Height = 126
+      Top = 439
+      Width = 73
+      BevelOuter = bvNone
+      Caption = 'Panel'
+      ClientHeight = 126
+      ClientWidth = 73
+      Color = 12615680
+      ParentColor = False
+      TabOrder = 2
+      object cySplitter5: TcySplitter
+        Cursor = crVSplit
+        Left = 0
+        Height = 16
+        Top = 110
+        Width = 73
+        Align = alBottom
+        Anchors = [akBottom]
+        Bevels = <>
+        Degrade.AngleDegree = 0
+        Degrade.FromColor = 12687240
+        Degrade.SpeedPercent = 95
+        Degrade.ToColor = clNavy
+        DegradeHot.AngleDegree = 0
+        DegradeHot.FromColor = 14666433
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = 12687240
+        Grip.Count = 3
+        Grip.Height = 2
+        Grip.Width = 20
+        Grip.Style = gsRaisedLine
+        MinSize = 100
+        ResizeStyle = rsUpdate
+        ResizeSide = rsBottom
+        Wallpaper.Transparent = False
+      end
+    end
+    object Panel3: TPanel
+      Left = 344
+      Height = 126
+      Top = 439
+      Width = 129
+      BevelOuter = bvNone
+      Caption = 'Panel'
+      ClientHeight = 126
+      ClientWidth = 129
+      Color = 12615680
+      ParentColor = False
+      TabOrder = 3
+      object cySplitter8: TcySplitter
+        Cursor = crVSplit
+        Left = 104
+        Height = 8
+        Top = 118
+        Width = 16
+        Anchors = [akRight, akBottom]
+        Bevels = <>
+        Degrade.AngleDegree = 0
+        Degrade.FromColor = 12687240
+        Degrade.SpeedPercent = 95
+        Degrade.ToColor = clNavy
+        DegradeHot.AngleDegree = 0
+        DegradeHot.FromColor = 14666433
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = 12687240
+        Grip.Count = 3
+        ResizeStyle = rsUpdate
+        ResizeSide = rsBottom
+        Wallpaper.Transparent = False
+      end
+      object cySplitter10: TcySplitter
+        Left = 120
+        Height = 16
+        Top = 102
+        Width = 8
+        Anchors = [akRight, akBottom]
+        Bevels = <>
+        Degrade.AngleDegree = 0
+        Degrade.FromColor = 12687240
+        Degrade.Orientation = dgdHorizontal
+        Degrade.SpeedPercent = 95
+        Degrade.ToColor = clNavy
+        DegradeHot.AngleDegree = 0
+        DegradeHot.FromColor = 14666433
+        DegradeHot.Orientation = dgdHorizontal
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = 12687240
+        Grip.Count = 3
+        ResizeStyle = rsUpdate
+        ResizeSide = rsRight
+        Wallpaper.Transparent = False
+      end
+      object cySplitter11: TcySplitter
+        Cursor = crVSplit
+        Left = 8
+        Height = 8
+        Top = 0
+        Width = 16
+        Bevels = <>
+        Degrade.AngleDegree = 0
+        Degrade.FromColor = 12687240
+        Degrade.SpeedPercent = 95
+        Degrade.ToColor = clNavy
+        DegradeHot.AngleDegree = 0
+        DegradeHot.FromColor = 14666433
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = 12687240
+        Grip.Count = 3
+        ResizeStyle = rsUpdate
+        ResizeSide = rsTop
+        Wallpaper.Transparent = False
+      end
+      object cySplitter12: TcySplitter
+        Left = 0
+        Height = 16
+        Top = 9
+        Width = 8
+        Bevels = <>
+        Degrade.AngleDegree = 0
+        Degrade.FromColor = 12687240
+        Degrade.Orientation = dgdHorizontal
+        Degrade.SpeedPercent = 95
+        Degrade.ToColor = clNavy
+        DegradeHot.AngleDegree = 0
+        DegradeHot.FromColor = 14666433
+        DegradeHot.Orientation = dgdHorizontal
+        DegradeHot.SpeedPercent = 100
+        DegradeHot.ToColor = 12687240
+        Grip.Count = 3
+        ResizeStyle = rsUpdate
+        Wallpaper.Transparent = False
+      end
+    end
+  end
+end

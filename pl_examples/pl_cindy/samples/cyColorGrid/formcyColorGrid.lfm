@@ -1,0 +1,799 @@
+object FrmCyColorGrid: TFrmCyColorGrid
+  Left = 487
+  Height = 657
+  Top = 387
+  Width = 821
+  Caption = 'FrmDemo'
+  ClientHeight = 657
+  ClientWidth = 821
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.3'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 607
+    Width = 821
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 821
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBDoubleBuffer: TcySpeedButton
+      Left = 4
+      Height = 35
+      Top = 3
+      Width = 117
+      AllowAllUp = True
+      Caption = 'DoubleBuffered'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      GroupIndex = 1
+      OnClick = SBDoubleBufferClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      Wallpaper.Transparent = False
+    end
+    object SBClose: TcySpeedButton
+      Left = 126
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 566
+    Top = 41
+    Width = 497
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 566
+    ClientWidth = 497
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 487
+      Height = 537
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 537
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Free TcyComponents for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 493
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 537
+      Top = 27
+      Width = 469
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 634
+    Width = 821
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 497
+    Height = 566
+    Top = 41
+    Width = 324
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 566
+    ClientWidth = 324
+    TabOrder = 3
+    object Label34: TLabel
+      Left = 14
+      Height = 16
+      Top = 22
+      Width = 83
+      Caption = 'Pick list color :'
+      ParentColor = False
+    end
+    object cyColorGridPick: TcyColorGrid
+      Left = 13
+      Height = 150
+      Top = 46
+      Width = 114
+      OnMouseMove = cyColorGridPickMouseMove
+      BoxRows = 8
+      BoxCols = 6
+      ColorList.Strings = (
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+        'clMoneyGreen'
+        'clSkyBlue'
+        'clCream'
+        'clMedGray'
+        'clActiveBorder'
+        'clActiveCaption'
+        'clAppWorkSpace'
+        'clBackground'
+        'clBtnFace'
+        'clBtnHighlight'
+        'clBtnShadow'
+        'clBtnText'
+        'clCaptionText'
+        'clDefault'
+        'clGrayText'
+        'clHighlight'
+        'clHighlightText'
+        'clInactiveBorder'
+        'clInactiveCaption'
+        'clInactiveCaptionText'
+        'clInfoBk'
+        'clInfoText'
+        'clMenu'
+        'clMenuText'
+        'clNone'
+        'clScrollBar'
+        'cl3DDkShadow'
+        'cl3DLight'
+        'clWindow'
+        'clWindowFrame'
+        'clWindowText'
+      )
+      Hot = True
+      Selection = clWhite
+      OnBoxClick = cyColorGridPickBoxClick
+    end
+    object cyColorGrid1: TcyColorGrid
+      Left = 150
+      Height = 37
+      Top = 46
+      Width = 109
+      OnMouseMove = cyColorGridPickMouseMove
+      Background = clBlack
+      BoxHeight = 8
+      BoxWidth = 8
+      BoxRows = 4
+      BoxCols = 12
+      BoxFrameColor = clBlack
+      BoxFrameWidth = 0
+      BoxSpacingWidth = 1
+      BoxSpacingHeight = 1
+      ColorList.Strings = (
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+        'clMoneyGreen'
+        'clSkyBlue'
+        'clCream'
+        'clMedGray'
+        'clActiveBorder'
+        'clActiveCaption'
+        'clAppWorkSpace'
+        'clBackground'
+        'clBtnFace'
+        'clBtnHighlight'
+        'clBtnShadow'
+        'clBtnText'
+        'clCaptionText'
+        'clDefault'
+        'clGrayText'
+        'clHighlight'
+        'clHighlightText'
+        'clInactiveBorder'
+        'clInactiveCaption'
+        'clInactiveCaptionText'
+        'clInfoBk'
+        'clInfoText'
+        'clMenu'
+        'clMenuText'
+        'clNone'
+        'clScrollBar'
+        'cl3DDkShadow'
+        'cl3DLight'
+        'clWindow'
+        'clWindowFrame'
+        'clWindowText'
+      )
+      Hot = True
+      HideSelection = True
+      Selection = clWhite
+      OnBoxClick = cyColorGridPickBoxClick
+    end
+    object cyColorGridCustom: TcyColorGrid
+      Cursor = crHandPoint
+      Left = 150
+      Height = 84
+      Top = 96
+      Width = 136
+      OnMouseMove = cyColorGridPickMouseMove
+      BoxHeight = 20
+      BoxWidth = 20
+      BoxRows = 3
+      BoxCols = 5
+      ColorList.Strings = (
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+      )
+      Hot = True
+      HotRender.FrameColor = clAqua
+      HotRender.FrameWidth = 0
+      HotRender.Color = clAqua
+      Selection = clRed
+      SelectionRender.FrameColor = 16744448
+      SelectionRender.FrameWidth = 2
+      SelectionRender.Color = 16744576
+      OnCustomDrawBox = cyColorGridCustomCustomDrawBox
+      OnCustomDrawBkgnd = cyColorGridCustomCustomDrawBkgnd
+      OnBoxClick = cyColorGridPickBoxClick
+    end
+    object cyColorGridFill: TcyColorGrid
+      Left = 14
+      Height = 50
+      Top = 255
+      Width = 80
+      OnMouseMove = cyColorGridPickMouseMove
+      Background = clBlack
+      BoxHeight = 10
+      BoxWidth = 10
+      BoxFrameWidth = 0
+      BoxSpacingWidth = 0
+      BoxSpacingHeight = 0
+      ColorList.Strings = (
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+        'clMoneyGreen'
+        'clSkyBlue'
+        'clCream'
+        'clMedGray'
+        'clActiveBorder'
+        'clActiveCaption'
+        'clAppWorkSpace'
+        'clBackground'
+        'clBtnFace'
+        'clBtnHighlight'
+        'clBtnShadow'
+        'clBtnText'
+        'clCaptionText'
+        'clDefault'
+        'clGrayText'
+        'clHighlight'
+        'clHighlightText'
+        'clInactiveBorder'
+        'clInactiveCaption'
+        'clInactiveCaptionText'
+        'clInfoBk'
+        'clInfoText'
+        'clMenu'
+        'clMenuText'
+        'clNone'
+        'clScrollBar'
+        'cl3DDkShadow'
+        'cl3DLight'
+        'clWindow'
+        'clWindowFrame'
+        'clWindowText'
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+        'clMoneyGreen'
+        'clSkyBlue'
+        'clCream'
+        'clMedGray'
+        'clActiveBorder'
+        'clActiveCaption'
+        'clAppWorkSpace'
+        'clBackground'
+        'clBtnFace'
+        'clBtnHighlight'
+        'clBtnShadow'
+        'clBtnText'
+        'clCaptionText'
+        'clDefault'
+        'clGrayText'
+        'clHighlight'
+        'clHighlightText'
+        'clInactiveBorder'
+        'clInactiveCaption'
+        'clInactiveCaptionText'
+        'clInfoBk'
+        'clInfoText'
+        'clMenu'
+        'clMenuText'
+        'clNone'
+        'clScrollBar'
+        'cl3DDkShadow'
+        'cl3DLight'
+        'clWindow'
+        'clWindowFrame'
+        'clWindowText'
+        ''
+      )
+      Hot = True
+      HotRender.FrameWidth = 0
+      HotRender.Color = clWhite
+      SelectionRender.FrameColor = clBlack
+      SelectionRender.Color = clBlack
+      OnBoxClick = cyColorGridPickBoxClick
+    end
+    object SBFill: TcySpeedButton
+      Left = 14
+      Height = 35
+      Top = 214
+      Width = 160
+      Caption = 'Fill with custom colors'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      OnClick = SBFillClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      Wallpaper.Transparent = False
+    end
+    object Image1: TImage
+      Left = 14
+      Height = 59
+      Top = 364
+      Width = 97
+      Picture.Data = {
+        07544269746D6170D2150000424DD21500000000000036040000280000005900
+        00003100000001000800000000009C1100007412000074120000000100000000
+        0000000000004000000080000000FF000000002000004020000080200000FF20
+        0000004000004040000080400000FF400000006000004060000080600000FF60
+        0000008000004080000080800000FF80000000A0000040A0000080A00000FFA0
+        000000C0000040C0000080C00000FFC0000000FF000040FF000080FF0000FFFF
+        0000000020004000200080002000FF002000002020004020200080202000FF20
+        2000004020004040200080402000FF402000006020004060200080602000FF60
+        2000008020004080200080802000FF80200000A0200040A0200080A02000FFA0
+        200000C0200040C0200080C02000FFC0200000FF200040FF200080FF2000FFFF
+        2000000040004000400080004000FF004000002040004020400080204000FF20
+        4000004040004040400080404000FF404000006040004060400080604000FF60
+        4000008040004080400080804000FF80400000A0400040A0400080A04000FFA0
+        400000C0400040C0400080C04000FFC0400000FF400040FF400080FF4000FFFF
+        4000000060004000600080006000FF006000002060004020600080206000FF20
+        6000004060004040600080406000FF406000006060004060600080606000FF60
+        6000008060004080600080806000FF80600000A0600040A0600080A06000FFA0
+        600000C0600040C0600080C06000FFC0600000FF600040FF600080FF6000FFFF
+        6000000080004000800080008000FF008000002080004020800080208000FF20
+        8000004080004040800080408000FF408000006080004060800080608000FF60
+        8000008080004080800080808000FF80800000A0800040A0800080A08000FFA0
+        800000C0800040C0800080C08000FFC0800000FF800040FF800080FF8000FFFF
+        80000000A0004000A0008000A000FF00A0000020A0004020A0008020A000FF20
+        A0000040A0004040A0008040A000FF40A0000060A0004060A0008060A000FF60
+        A0000080A0004080A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0
+        A00000C0A00040C0A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFF
+        A0000000C0004000C0008000C000FF00C0000020C0004020C0008020C000FF20
+        C0000040C0004040C0008040C000FF40C0000060C0004060C0008060C000FF60
+        C0000080C0004080C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0
+        C00000C0C00040C0C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFF
+        C0000000FF004000FF008000FF00FF00FF000020FF004020FF008020FF00FF20
+        FF000040FF004040FF008040FF00FF40FF000060FF004060FF008060FF00FF60
+        FF000080FF004080FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0
+        FF0000C0FF0040C0FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFF
+        FF00DBDBB7B7DBFFBBDBBBB7B7BBDBDBBBBB979397B79797BBBB97979797B7BB
+        97B797B7DBBBDBDBBBBBDBDBDBDBDBBBB7B7BBB7BBBBBBBBBBB7979797979797
+        9797BBBBB79797B7BBDBBBBBBB9797BBDBBBB7BBDFBBBBDBDFDBDF000000DBBB
+        B7BBDFDBBBBBB7B7B7DBDBBBB79797B797B7B7BBBB9793979797BBBB9797B797
+        97BBDBDBBBBBDBDBDBDBDBB797DBB7DBBBBBBBBBBBB7979797979797B7B7BBB7
+        9797B7B7B7B7BBBB9797BBDFDBB7BBDBDBBBBBDBDBDBDB000000BB97B7DBFFBB
+        BBBBB7BBBBDBBBB7939297BBB7BBDBBBB797939393B7DB97BB9797B7BBB7DBDB
+        DBDBB7BBDBDBBBB7BBDBBBBBBBBBBBBBBBBBB7B797B7939797BBBBBB97979797
+        BBB7BB7397B7DFDBBBDBDBDFBBBBDBDBDBBBDB000000B797BBFFDBBBBBBBB7BB
+        DBBBB7979297B797BBDBDBBBB7979797B7DBBB97739397B7BBBBBBBBDBDBB7BB
+        DBDBBB97BBBBBBDBBBBBBBBBBBB7BBBBBB97B79797BBB7B7B79797B797BB9797
+        97DBDFDBBBDBDFBBBBDBDBDBDBBBBB00000097B7DBFFBBDBBB97BBDBDBBB9793
+        97B797B7DBDFBBBBB7979797BBBBB773727397B7B7B7B7DBBBBBBBB7DBBB97B7
+        BBBBBBBBBBBBBBDBBBBBBBDB9797BBB7BBBBB7B7B79797B7BB97737397B7DBB7
+        BBDBBBDBDBDBDFDBBBDBBB00000097BBDFDBBBBB9797DBDFDBB79797B79797BB
+        DFDBDBBB979797BBBBB793727397979797B7B7BBBBDBBBB7DB9797B7BBBBB7BB
+        BBBBDBDBBBBBDBB797BBB7B7BBBBBB979797B7BBB797937373BB9797BBDBDBBB
+        DBDBDBDBDBDBBB000000B7DBDBBBBBB797BBDFDBBB9797BBB797B7DFDFDBDBBB
+        B7B7B7DBDB97937393979797B7B7B797BBDBBBBBBB9797DBB7B7BBB7BBDBDBBB
+        BBDBBB97B7BBB7B7BBBBB7B7B7B7BBBB9797939397BB93B7B7B7BBDBDFDBDBDB
+        DBDBDB000000BBDFB7B7BB97BBDBDBDBB797B7B79797B7BBDBDFDBDBBBBBBBDB
+        BB9793979397939797B7B7BBBBBBB7DB9797BBBBBBBBBBB7BBDBDFDBDBDB9797
+        BBBBBBBBBBBBB79797DBBBB797979397BB9797BB9797B7BBDBDBDBDBBBBBBB00
+        0000DBBBB7B7B796BBDFDFBBB7B7B7979797B7DBBBDBDBDBDBDBDBDB9797BB97
+        9393979797B79797BBBBBBBB93BBB7BBBBBBBBBBBBDBDBDBDBB797BBDBBBBBBB
+        BBB7B797BBBBB797B79797B7BB97BB97979797B7BBBBBBB7BBBBBB000000DB97
+        B79792B7DBDBDBB7B7B797979797B7BBBBDBBBBBDBDBDFB797BB979797979397
+        B7B797B7BBB7DB97B7BB9797979797BBDBDBDFDBBB97B7DBDBDBBBDBDBBBBBBB
+        BBB797BB979397BB97BBBB97977272B7BBBBB7B7B7B7BB000000BB97979797DB
+        BBDFBBBBBBB797979797B7BBBBDB97BBBBDBDBBBBBBB979797979797B7B797BB
+        B7BBBBB7BB979797977297BBBBDBDFBBB7BBDBDFDBDBDBDBDBBBBBDBB797B793
+        9397B7B797DB97B7977297B7BBBB9797B7B7DB00000097979797BBBBBBDBBBDB
+        B7B797979797BBBBDB9797BBDBDBB7BBDBB7979797979797979797BB97BBBBBB
+        BB979772729797B7B7DBBBBBBBBBDFDFDFDFDBDBDBDBDFBBB79797939797BB93
+        DB979797729797B797B7979797B7BB000000BB979797BBBBDBBBBBBBB7979797
+        9797B7DBBB97BBBBDBBBBBDBBBB7B797979797BBDB9797B797DBBBDBB7977272
+        739397B7DBBB9797B7DBFFDFDFFFDFDBDBFFDBBBBBB7979797B797B7B7B7B793
+        73B797B797979797B7B7DB000000B7979397B7DBDBBBBBB7B7B797979397BBBB
+        97B7BBDBDBBBDBBBB7B7B79797B7B7DBBB93BB93BBBBBBBB97937293979797BB
+        BB979797BBBBDBDFDFDFDFDFFFDFDFDBBBB7BB9797B773B7BBB773739797B7B7
+        9797979797BBDB00000097939797BBDBDBDBBB979797979397B7BB9797BBDBDB
+        BBDBDBBBB7B7B7979797DBBB97B79797BBDBDBBB979393979797B7DB97929397
+        BBDBDBDBDBDBDFDFDBDFDFDBDBDBBBBBBB9797B7DB9772739797B7B7B7979797
+        97DBBB000000979797BBDBDBDBDBBB979797979797BB9797BBBBDBDBBBDBDBBB
+        B7B7979797BBDB97979797BBDBDBBB97979397979797DBBB729293B7B7BBBBDB
+        DBDBDBDBDBDBDBDFDFDBDBDBDB9797DBBB9373979797B7B797979797BBB7B700
+        000097B7B7BBDBDBDBBBBB9797979797BB979797BBDBDBDBDBDBDBDBBBB7B797
+        B7BBBBB797B7B7BBDBDBB79797B7979797DBBB97727297BBB7BBBBDBDBDBDBDB
+        DBDBDBBBDBDFDFDFBBBBDBBB979397B79797B7B7979397B7DBB797000000BBBB
+        BBDBDBDBDBBBBBB7979397B7979797BBBBBBDBDBDBDBDBBBBBBBB7BBBBDB97BB
+        BBB797BBDBDB9797B7B7B797BBBBB7937293B797B7BBBBBBBBBBBBBBBBBBBBBB
+        DBDBDFDFDBDBDB979397BBB797979797977397B7979397000000BBBBBBDBDBDB
+        DBBBB7B79797BB979393B7BBBBBBDBDBDBDBDBDBBBBBBBDBB7B797BBB797BBDB
+        DBBBB7BBBBB797BBBBB797727397B797B7BBBBBBBBBBBBBBBBB7BBBBBBDBDBDB
+        DBDBB79797BBDBB7979797939797B797B79797000000BBB7BBDBDBDBDBDFDBBB
+        97BBBB979297BB9797DBDBDBDBDBDBDBDBDBDBBBBBB7BBBBB7B7DBDBDB97B7BB
+        BB97BBBB9797977397B797B7B7BBBBBBBBBBBBBBB797B7B7BBBBDBDBDBBBB797
+        B7DBBBB797979297B7DBB79797B7BB000000B7BBBBDBDBDBDBDBDB97DBDB9793
+        97BBB7B79797B7BBDFDFDBDBDBDBBBBBBBB7BBBB97BBBBDBBBB7DBB7BBBBBBBB
+        979797B79797979797B7BBBBBBBBBBB7B79797B7B7BBDBDBBBB79797BBDBBB97
+        979797BBDBBBBBBBBBB7BB000000BBBBBBDBDBDBDBDBB7BBDBBB979797BBBBB7
+        979797979797BBDBDBBBB7BBBBDBDBBBBBBBBBDBBBDBBBDBBBDBBBB797B7B797
+        B79797979797BBBBBBBBBBB7B79797B7BBBBDBBBB797B7BBDBDBB79797B7BBDF
+        DBBBDBB797BBBB000000BBBBDBDBDBDFDBB7BBDBBB979797BBBBDBBB97979797
+        BBBBDBDBBBBB97BBBBBBBBBBDBBBDBBBBBDBDBBBDBBBB797B7BBBBB797979393
+        97BBBBBBBBBBB7B7B797B7B7BBDBBBB797B7B7BBDBBBB797DBDBDFDFDBDBBBBB
+        B7BBDB000000BBDBBBDBDBDFBBBBDBBBB79797B7DBDBBB97979796B7BBDBDBDB
+        BB97B797DBBBBBBBBBBBDBBBDBDBBBDBDBBBBBB7BBB797BB97929297B7BBBBBB
+        BBBBB7B7B797B7B7DBDBBB9797BBBBDBDBB797B7DBBBB7BBDBDBDBDBBBDBDB00
+        0000DFDBBBDBDFDBBBDFDBBBBB9797BBB7BBB797939797BBDBDBDBBBB797B7BB
+        B7BBBBBBBBDBBBDBDBBBDBDFDBBBBBBBBBBBBBB7939297B7BBBBBBBBBBBBB7B7
+        B797B7DBDBBB9797B7BBDBDBBB97B7DBDBB7B797BBDBDBDBDBDBDF000000DFBB
+        DBDBDBBBFFDBBBBBBBB7BBDBBBBB97979297BBDBDBDBDBBB97B7B7BBBBBB97B7
+        B7DBDBBBBBDFDFDFDBDBBBDBBBBBBB97929797BBBBBBBBBBBBBBB7B7B7B7DBDB
+        BBB7B7B7BBBBBBDBB7BBB7DBBBB79797DBBBDBDFDFDFFF000000DBBBDBDBB7DB
+        DBBBBBBBDBBBDBDBDBBB979797B7DBBBDBBBDB9797B7BBB7DBB7B7B7BBBBBBBB
+        B797BBDFDFDBDBDBBBDBBB9797B7BBBBBBBBBBBBBBB7B7B7B7BBDBBBB7BBDBDB
+        BBDBDBBBBBB7BBDBBB9797BBDBB7B7BBFFFFFF000000DBBBDBBBBBDBBBB7BBBB
+        BBBBDBDBDBB79797B7BBBBDBDBDBBB97B7BBBBBBBB979797BBBBDB979397B7DB
+        DFDFDBDBDBBB9797B7BBBBBBBBBBBBBBBBB7B7B7BBDBBBBBB7B7DBBBDBDBBBBB
+        B7BBDBBBB797BBDBBBB7BBDBDFFFFF000000DBDBBBBBDBBBBBB7B7B7BBDBDBDB
+        BBBB97B7BBBBDBDBBBDB9797BBDBBBBBB7979797BBDBBB9397BBBBDBDBBBDFDF
+        DBBB9797BBB7B7BBBBDBBBBBBBBBB7BBDBDBBBBBBBDBDBBBDBBBDBBBBBDBDBBB
+        B7BBDBBB97B7BBDBDFFFFF000000DBBBBBDBBBB7979797BBBBDBDBDFBBBBB7BB
+        BBDBDBBBDBBBBBB7BBBBBBBB979797B7DBBB979397B7B7DBBBB7B7DBBB9797B7
+        B7B7B7BBBBDBDBDBBBBBBBDFDBDBBBBBFFDFDBDBDBDFBBBBDBDBBBBBBBBBDBBB
+        BBDBB7DBFFFFBB000000BBBBDBBBBB97979797BBDBDBDFDB9797BBDBDBDBBBB7
+        DBBBB7BBDBDBBBBB9797B7DBBB979297B797BBBB9797BBBB9797B7BBB7B7DBFF
+        FFFFDFBBBBBBDFDFDBDBDBDBDFDFFFDFFFFFFFDBDBDBBBBBDBBBDBBBDBBBBBBB
+        DFDB97000000B7DBDBBBBB979797B7DBDBDBDBBBB7BBDBBBDBBBBBDBDBB7B7BB
+        DBBBBBBBB7B7B7DBB797979797B7DBB79797DBBB97B7BBDBDFDBDFDBDBDFDBBB
+        BBDBBBDBDFDBDBDBDBDBDBDFDFFFFFDBDBBBBBDBBBDBBBBBDBB7B7DBDBB7BB00
+        0000DBDBDBBBBBB797B7B7BBDBDBBBB7B7DBBBDFDBBBB7DBBBBBBBDBBBDBBBBB
+        BBBBDBBB979797BBB7BB979797B7BB9797BB97DBDBBBBBBBDBDBDBBBBBBBBBBB
+        DBDFDFDBDBDBDBDBDFFFDBDBDBBBDBDBBBDBBBDBBBB7BBFFDB97BB000000B7DB
+        DBDBBBB7B7B7BBBBDBBB9797BBBBDBDBBBBBBBDB97B7DBDBBBBBBBDBDBDBBBBB
+        9797B797BB97979397BBB797B797BBBBBBB7BBDBDBDBBBBBBBBBBBBBDBDBDBDF
+        DFDFBBDBFFDBDFDFDBDBDBDBBBBBDBDBBBB7DBDBBBBBDB000000B7BBDBDBDBBB
+        BBBBBBB7DBB797B7BBDBDBDBDBBBDBB7B7BBDBB7BBBBBBDBDBBBB79797B7BBBB
+        BB979797B7B797979797B7B797B7DBDBBBBBDBBBDBBBBBBBBBBBBBDBDFDBDBDF
+        DBDFDFDFDBDFDBDBBBDBDBDBB7DBDBBBBBBBDB000000B7BBBBBBBBDBDBDBB7BB
+        DB9797BBBBB7BBDBDBDBDBB7B7BBBBBBBBBBBBDBBBB79797B7BBDBBB97979397
+        BBB797B7979797739397DBBBDBBBDBDBDBDBBBBBDBDBDBBBBBDBDBDFDFDFDFDB
+        DFDFDBBBBBDBDBBBBBBBDFDBDBDBBB000000BBDBBBBBBBBBDBDBBBBBBB97BB97
+        BB979797DBDBDBBBBBBB97B7B7BBDBDBB7979797BBDBDBBBB79797B7BB97BB93
+        9797739397B797B7BBBBDBDBDBDBDBDBBBBBDBB7DBDBDFDBDBDBDBDBDFDFBBDB
+        DBDBDBB7DBBBDBDBDBBB97000000DBBBBBB7B7BBBBBBBBDBB7BBB7BBB79797B7
+        BBDBDBDBBB979797BBDBBBB79797B7B7DBDBBB97979797BBB797979797977273
+        9793979797B7BBBBDBDBDBDBBBBBB7BBBBDFDBDBDBDBDBDBDFBBBBBBDBDFBBDB
+        BBDFDBDFBB97B7000000DBDBBBBBB7B7BBBBBBDBB7BBBBDB979397BBDBBBBBBB
+        B7979797BBDB97979797B7BBDBBB97979797B7DBBBBB9797979373B797979397
+        97B7B7BBBBDBDFDBBBDBB7BBDBDBDBDBDBDBDBDBBBB7BBBBDBDFDBBBDBDBDBDB
+        B797B7000000DBDBBBBBBBBBBBDBDBBBBBBBDBBB9797B7BBDBBBBB97979797B7
+        BBBB97939797BBDBBBBBB79797B7BBBBBBB7B797979297B7979797939397B7B7
+        DBBBDBDBBBBBBBDBDBDBBBBBDBDBDBDBBBBBDBDBDFDBBBDBDBDFDBBBB7BBBB00
+        0000DBDBBBBBBBBBBBBBDBDBBBBBDBBB97BBBBDBBBDBB7979797B7BBBB979397
+        97B7DFBBBBB797B797BBDB97979797979397BB97B79797939797B7DBBBDBB7BB
+        BBB7BBDFDBBBDBDBDBDBDBB7BBBBDBDBDFDBBBDBDFDBDBDBBBBBDB000000DFDB
+        BBBBBBBBDBDBBBDBDBDBDBB7BBBBB7DBDBB7B7B79797DBBBBB937397B7DFDBBB
+        B7979797B7DBBB979797937393BB97B7B79797979793DBBBDBDBB7B797B7DBBB
+        BBBBBBDBDBDBBBB7B7DBDBDBDBB7B7DBDFDBDBB7B7BBBB000000DBDBDBDBBBDB
+        DBDBDBBBDBDBBBB7BBB7BBBBBBBBBBB7BBDFDBBBB7939397DBDBDBBBB7B797B7
+        BBDBB79797979792979397979797B79797B7DBBBDBBBB79797DBBBBBBBBBBBBB
+        DBBB97B7BBDBDBDBBBBBBBDFDBDBBBB7BBBBB7000000DBDBDBDBDBDBDBDBDBDB
+        BBBBB7BBBBBBDBDBB797B7BBDFDFDBDBBBB79797BBDBDBBBBB9797BBDBDBB7B7
+        979772979797979797979797B7BBB7DBBBB79793BBDBB7B7B7B7B7DBBB97B7BB
+        DBDBDBDBBBBBDFDFDFDBB7B7BBBBDB000000DBDBDBDBDBDFDFDBDBBBDBBBB7B7
+        BBBBDBBBB79797BB97BBDFDBDBBBB7B7BBBB97BBBBB7BBDBDBDBBBB797977297
+        979797979797B7B7BBB7DBDB97979397DBBBB7B7B7BBDBBB9797BBDBBBDBDBBB
+        BBDBDBDBDFBBB7BBDBDBDB000000DBDBDBDBDBDBFFDFDBBBDBB7BBBBDBDBDBBB
+        979797B797B7BBDBDBDBBBDBBBBB979397DBDBDBDBBBBBB79793979797979797
+        9797BBDBB7BBDFB7B79393BBBBB7B7B7BBDBDBB79797BBBBDBBBDBBBDBDBDBFF
+        DBBBBBDBDBDFDB000000BBBBDBDBDBDFDFDBBBDBBBBBDBDBDBDBDBBB97979797
+        B7BBDBBBBBDBDFDBDBB79797BB97DBDBDBBBBBBBB79797979797979797B7DBBB
+        97DBDBBBB793B7B7BBB7B7B7DBDBB79797B7DBDBDBBBBBDBDBBBFFDFBBB7BBDB
+        DFDBDB000000BBBBBBBBDBDFDFDBBBDBDBDBDBDBDBDFBBB797B79797B7B7BBBB
+        BBB7DBDBDB979797B7DBDBDBBBBBBBBB979797B79797979797FFDFDBBBFFBBB7
+        9793BBB7BB97B7BBDBBB979397BBDBDBBBDBBBDBBBDBFFDFBBBBDBDBDFDBB700
+        0000B7B7BBB7DBDBDBBBDBDBDBDBDBDBDFDBBBBBBB9797B7BBB7BB9797B7B7DB
+        BB939797BBDBDBDBDBBBDBBBBBB7B7B7B7BBB7B7DBDFDFDBDFFFFFDFB7B7B7BB
+        BB97B7DBBB979797B7DBDBBBBBBBDBDBBBDBFFDBBBDBDBDBDFDB97000000
+      }
+      Visible = False
+    end
+    object PanSelected: TPanel
+      Left = 0
+      Height = 24
+      Top = 518
+      Width = 324
+      Align = alBottom
+      BevelOuter = bvLowered
+      Caption = 'Selected'
+      TabOrder = 0
+    end
+    object PanUnderMouse: TPanel
+      Left = 0
+      Height = 24
+      Top = 542
+      Width = 324
+      Align = alBottom
+      BevelOuter = bvLowered
+      Caption = 'Under mouse'
+      TabOrder = 1
+    end
+  end
+end

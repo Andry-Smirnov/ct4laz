@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="librarytestusb.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="9"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="librarytestusbmw.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="83"/>
+        <CursorPos X="22" Y="116"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="ctglrep.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="103"/>
+        <CursorPos X="7" Y="126"/>
+        <UsageCount Value="26"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\typhon\components\pl_SDL2\source\sdl2lib.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Vulkan\source\vulkanlib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7448"/>
+        <CursorPos X="53" Y="7527"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\fpcsrc\rtl\inc\dynlibh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="10" Y="56"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\typhon\components\pl_SDL2\source\sdl2lib.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="12"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\opengllib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14588"/>
+        <CursorPos X="37" Y="14643"/>
+        <UsageCount Value="11"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\opengllibrep.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3284"/>
+        <CursorPos X="130" Y="3338"/>
+        <UsageCount Value="11"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\fpcsrc\rtl\win\wininc\base.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="6" Y="163"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\ctglu.pp"/>
+        <UnitName Value="ctGLU"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="13"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\ctgl.pas"/>
+        <UnitName Value="ctGL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14229"/>
+        <CursorPos X="58" Y="14253"/>
+        <UsageCount Value="13"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\ctgl.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\ctglrep.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="46" Y="54"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\typhon\components\pl_AsphyreSphinx\source\Providers\opengl\GLTypesAsphyre.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="5" Y="95"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\typhon\components\pl_AsphyreSphinx\source\Providers\opengl\GLDevicesWin.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="27"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\typhon\components\pl_AsphyreSphinx\source\Providers\opengl\GLCanvas2.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="528"/>
+        <CursorPos X="65" Y="564"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\..\typhon\components\pl_AsphyreSphinx\source\Providers\opengl\GLRasterizer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="482"/>
+        <CursorPos X="73" Y="525"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\OpenGLPanel.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="85"/>
+        <CursorPos X="15" Y="103"/>
+        <UsageCount Value="11"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\dglOpenGL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20693"/>
+        <CursorPos X="33" Y="19814"/>
+        <UsageCount Value="11"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\OpenGL_Shaders.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="70"/>
+        <CursorPos X="55" Y="96"/>
+        <UsageCount Value="11"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\OpenGLCanvas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="532"/>
+        <CursorPos X="37" Y="549"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\ctgles1.pas"/>
+        <UnitName Value="ctGLES1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10430"/>
+        <CursorPos X="30" Y="10460"/>
+        <UsageCount Value="10"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\..\typhon\components\pl_OpenGL\source\ctgles2.pas"/>
+        <UnitName Value="ctGLES2"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9687"/>
+        <CursorPos X="48" Y="9722"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\typhon\components\pl_TitanSound\source\libopenals.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2446"/>
+        <CursorPos X="25" Y="2423"/>
+        <UsageCount Value="11"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\..\..\typhon\components\pl_USB\source\libusbdyn.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="LibUsbDyn"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1354"/>
+        <CursorPos X="43" Y="1418"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit25>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="10" Column="23" TopLine="106"/>
+      </Position1>
+      <Position2>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="68" Column="19" TopLine="64"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\..\typhon\components\pl_USB\source\libusbdyn.pas"/>
+        <Caret Line="1372" Column="12" TopLine="1344"/>
+      </Position3>
+      <Position4>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="124" Column="29" TopLine="207"/>
+      </Position4>
+      <Position5>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="224" Column="5" TopLine="75"/>
+      </Position5>
+      <Position6>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="223" Column="5" TopLine="171"/>
+      </Position6>
+      <Position7>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="222" Column="5" TopLine="170"/>
+      </Position7>
+      <Position8>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="62" Column="18" TopLine="37"/>
+      </Position8>
+      <Position9>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="211" Column="12" TopLine="177"/>
+      </Position9>
+      <Position10>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="186" Column="21" TopLine="137"/>
+      </Position10>
+      <Position11>
+        <Filename Value="librarytestusbmw.pas"/>
+        <Caret Line="26" Column="35"/>
+      </Position11>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,30 @@
+The TcyAdvStaticText component
+
+StaticText with gradient, wallpaper, glyph etc ...
+
+Published properties
+* Bevels: TcyBevels - Bevels
+* CaptionAlignment: TAlignment
+* CaptionLayout: TLayout
+* CaptionOrientation: TCaptionOrientation
+* CaptionRender: TCaptionRender
+* Degrade: TcyGradient
+* GlyphAlignment: TGlyphAlignment
+* GlyphLayout: TGlyphLayout
+* GlyphX: TPicture
+* ImageListOptions: TcyImagelistOptions
+* Layout: TStaticTextLayout
+* NumGlyphs: Integer
+* Spacing: Integer
+* WallPaper: (TcyBgPicture)
+* Transparent
+
+Events 
+* OnMouseEnter
+* OnMouseLeave
+* OnActivate
+* OnPaint
+* OnDragDropFiles()
+
+
+

@@ -1,0 +1,13 @@
+The TcyBevel component
+
+Customizable multi-bevels component 
+
+Published properties
+- Bevels: TcyBevels - Bevels
+
+Events 
+- OnMouseEnter
+- OnMouseLeave
+- OnPaint
+
+

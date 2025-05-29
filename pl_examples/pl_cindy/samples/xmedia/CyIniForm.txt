@@ -1,0 +1,31 @@
+The TcyIniForm component
+
+Component that load (on create) and save (on destroy) owner form position and size. 
+You can also use this component for access and store application configurations. 
+
+New: storing definitions in a file can now be set on common application data directory or current user application data directory using  IniDirectory property. 
+
+Published properties
+* Attributes: TAttributes - form properties to load and save
+* AutoLoad: Boolean 
+* AutoSave: Boolean 
+* IniCustomfile: String - personalize ini file name and/or location
+* IniCustomSection - personalize section on ini file
+* IniDirectory - Default directory (if not specified on IniCustomFile property)
+* IniSubDirs: String - Custom subdirectories (if not specified on IniCustomFile property)
+* Mode: TMode - saving mode: file and/or registry
+* RegRoot: TRegRoot - personalize root on registry
+* RegCustomKey: String - personalize key on registry
+
+Events 
+* OnCustomLoadFromFile
+* OnCustomSaveToFile
+* OnCustomLoadFromRegistry
+* OnCustomSaveToRegistry
+
+Methods
+* function GetFile: String
+* function GetRootKey: HKey
+* function LoadDefinitions: Boolean
+* function SaveDefinitions: Boolean
+* procedure DeleteDefinitions

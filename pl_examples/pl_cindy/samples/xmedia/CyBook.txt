@@ -1,0 +1,29 @@
+The TcyBook component
+
+Virtual book with turn page effect, page view handling, page rendering etc ...
+
+Published properties
+- Borders: TcyBevels
+- CurrentLeftPage: Integer
+- CurrentRightPage: Integer
+- Pages: Integer
+- FromColor: TColor
+- ToColor: TColor
+- HeadBand: THeadBand
+- LeftPageView: TBookPageView
+- RightPageView: TBookPageView
+- Options: TBookOptions
+- PageRender: TPageRender
+- TurnPageAnimation: TTurnPageAnimation
+
+Public properties
+- Canvas: TCanvas
+
+Events 
+- OnEnterProcess
+- OnExitProcess
+
+Functions
+- function New() - initialize book
+- function ViewNext2Pages
+- function ViewPrior2Pages

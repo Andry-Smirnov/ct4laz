@@ -1,0 +1,10 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_USB
+
+Version: 6.9.1 Date: 2020-05-12 08:56
+Sync Src GIT hash: aaaf69f5bc54b4617c874187c94ec1bfaee216a1

@@ -1,0 +1,1274 @@
+object FrmCyLed: TFrmCyLed
+  Left = 328
+  Height = 483
+  Top = 290
+  Width = 923
+  Caption = 'FrmDemo'
+  ClientHeight = 483
+  ClientWidth = 923
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 433
+    Width = 923
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 923
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 4
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      NumGlyphs = 0
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 392
+    Top = 41
+    Width = 451
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 392
+    ClientWidth = 451
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 441
+      Height = 363
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 363
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Cindy Components for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 447
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 363
+      Top = 27
+      Width = 423
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 460
+    Width = 923
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 451
+    Height = 392
+    Top = 41
+    Width = 472
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 392
+    ClientWidth = 472
+    TabOrder = 3
+    object cyLed27: TcyLed
+      Left = 246
+      Height = 30
+      Top = 46
+      Width = 30
+      Color = clBlack
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+    end
+    object cyLed217: TcyLed
+      Left = 206
+      Height = 30
+      Top = 46
+      Width = 30
+      Color = clBlack
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stRoundRect
+      ShapeRoundRectX = 6
+      ShapeRoundRectY = 6
+    end
+    object cyLed218: TcyLed
+      Left = 166
+      Height = 30
+      Top = 46
+      Width = 30
+      Color = clBlack
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed25: TcyLed
+      Left = 326
+      Height = 30
+      Top = 46
+      Width = 30
+      Color = clBlack
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed28: TcyLed
+      Left = 406
+      Height = 30
+      Top = 46
+      Width = 30
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          Style = bcTransparent
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+    end
+    object cyLed29: TcyLed
+      Left = 366
+      Height = 30
+      Top = 46
+      Width = 30
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 2
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          Style = bcTransparent
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+    end
+    object cyLed26: TcyLed
+      Left = 6
+      Height = 30
+      Top = 46
+      Width = 30
+      Color = clBlack
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed210: TcyLed
+      Left = 86
+      Height = 30
+      Top = 46
+      Width = 30
+      Color = clBlack
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed211: TcyLed
+      Left = 46
+      Height = 30
+      Top = 46
+      Width = 30
+      Color = clBlack
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stRoundRect
+      ShapeRoundRectX = 7
+      ShapeRoundRectY = 7
+    end
+    object cyLed213: TcyLed
+      Left = 246
+      Height = 30
+      Top = 78
+      Width = 30
+      Color = clBlack
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+    end
+    object cyLed214: TcyLed
+      Left = 206
+      Height = 30
+      Top = 78
+      Width = 30
+      Color = clBlack
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stRoundRect
+      ShapeRoundRectX = 6
+      ShapeRoundRectY = 6
+    end
+    object cyLed215: TcyLed
+      Left = 166
+      Height = 30
+      Top = 78
+      Width = 30
+      Color = clBlack
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed216: TcyLed
+      Left = 326
+      Height = 30
+      Top = 78
+      Width = 30
+      Color = clBlack
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed219: TcyLed
+      Left = 406
+      Height = 30
+      Top = 78
+      Width = 30
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          Style = bcTransparent
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+    end
+    object cyLed220: TcyLed
+      Left = 366
+      Height = 30
+      Top = 78
+      Width = 30
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 2
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          Style = bcTransparent
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+    end
+    object cyLed221: TcyLed
+      Left = 6
+      Height = 30
+      Top = 78
+      Width = 30
+      Color = clBlack
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed222: TcyLed
+      Left = 86
+      Height = 30
+      Top = 78
+      Width = 30
+      Color = clBlack
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed223: TcyLed
+      Left = 46
+      Height = 30
+      Top = 78
+      Width = 30
+      Color = clBlack
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = clRed
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stRoundRect
+      ShapeRoundRectX = 7
+      ShapeRoundRectY = 7
+    end
+    object cyLed224: TcyLed
+      Left = 246
+      Height = 30
+      Top = 110
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+    end
+    object cyLed225: TcyLed
+      Left = 206
+      Height = 30
+      Top = 110
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stRoundRect
+      ShapeRoundRectX = 6
+      ShapeRoundRectY = 6
+    end
+    object cyLed226: TcyLed
+      Left = 166
+      Height = 30
+      Top = 110
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed227: TcyLed
+      Left = 326
+      Height = 30
+      Top = 110
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed228: TcyLed
+      Left = 406
+      Height = 30
+      Top = 110
+      Width = 30
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          Style = bcTransparent
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+    end
+    object cyLed229: TcyLed
+      Left = 366
+      Height = 30
+      Top = 110
+      Width = 30
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 2
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          Style = bcTransparent
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+    end
+    object cyLed230: TcyLed
+      Left = 6
+      Height = 30
+      Top = 110
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed231: TcyLed
+      Left = 86
+      Height = 30
+      Top = 110
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stEllipse
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed232: TcyLed
+      Left = 46
+      Height = 30
+      Top = 110
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      LedValue = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clLime
+      LedColorOff = clGreen
+      LedColorDisabled = 13416
+      ShapeLedColorOn = clGreen
+      ShapeLedColorOff = 16384
+      ShapeLedColorDisabled = 13416
+      ShapeType = stRoundRect
+      ShapeRoundRectX = 7
+      ShapeRoundRectY = 7
+    end
+    object Label67: TLabel
+      Left = 6
+      Height = 17
+      Top = 150
+      Width = 256
+      Caption = 'Grouped Leds with at least one Led turn on :'
+      ParentColor = False
+    end
+    object cyLed234: TcyLed
+      Left = 6
+      Height = 30
+      Top = 170
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed235: TcyLed
+      Left = 36
+      Height = 30
+      Top = 170
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed236: TcyLed
+      Left = 66
+      Height = 30
+      Top = 170
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed237: TcyLed
+      Left = 96
+      Height = 30
+      Top = 170
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed238: TcyLed
+      Left = 6
+      Height = 30
+      Top = 200
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed239: TcyLed
+      Left = 36
+      Height = 30
+      Top = 200
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed240: TcyLed
+      Left = 66
+      Height = 30
+      Top = 200
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed241: TcyLed
+      Left = 96
+      Height = 30
+      Top = 200
+      Width = 30
+      Color = clBlack
+      Enabled = False
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = 13416
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed242: TcyLed
+      Left = 126
+      Height = 30
+      Top = 170
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+    object cyLed243: TcyLed
+      Left = 126
+      Height = 30
+      Top = 200
+      Width = 30
+      Color = clBlack
+      GroupIndex = 1
+      LedValue = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+          Width = 2
+        end>
+      LedColorOn = clAqua
+      LedColorOff = 4194304
+      LedColorDisabled = clRed
+      ShapeLedColorOn = 8404992
+      ShapeLedColorOff = 4194304
+      ShapeLedColorDisabled = 13416
+      ShapePenWidth = 0
+      ShapeRoundRectX = 5
+      ShapeRoundRectY = 5
+    end
+  end
+end

@@ -1,0 +1,24 @@
+The TcyBitBtn component
+
+Advanced windows button with wallpaper and caption orientation features. 
+
+Public properties 
+    // Properties defined after selecting Degrade colors, can be set by code :
+- DefaultHotFromColor: TColor
+- DefaultHotToColor: TColor
+- DefaultDownFromColor: TColor
+- DefaultDownToColor: TColor
+- DefaultDisabledFromColor: TColor
+- DefaultDisabledToColor: TColor
+
+Published properties
+- CaptionOrientation: TCaptionOrientation - depends on selected font
+- Canvas: TCanvas
+- Degrade: TcyGradient - gradient background rendering
+- ImageListOptions: TcyImageListOptions - To use TImageList instead of glyph
+- Wallpaper: TcyBgPicture - image background
+
+Events 
+- 
+
+

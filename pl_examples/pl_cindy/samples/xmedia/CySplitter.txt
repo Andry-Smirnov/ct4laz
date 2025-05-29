@@ -1,0 +1,32 @@
+The TcySplitter component
+
+Splitter component that can be used like TSplitter. 
+You can also resize its parent and define the side to be resized with ResizeSide property. 
+
+So, why another Splitter component?
+- Because some controls like TCategoryPanelGroup (Delphi 2009) don't accept components between panels and i want to resize each TCategoryPanels with a splitter component aligned to bottom. Just put a TcySplitter component aligned to bottom on each TCategoryPanel and set ResizeSide property to rmParent.
+- TcySplitter doesn' t need to be aligned on ResizeMode = rmParent.
+- You can specify ResizeSide property to manually define splitter job.
+- Visual features added: Bevels, Gradient, hot and grip.
+- You can define handled control with OnDetermineHandledControl event.
+
+Published properties
+- Autosnap: Boolean
+- Bevels: TcyBevels - Bevels
+- Degrade: TcyGradient - gradient background rendering
+- DegradeHot: TcyGradient - gradient background rendering when mouse over
+- Grip: TGrip - subproperties for grip rendering
+- MaxSizeRule: TMaxSizeRule - allow/avoid to be sized more tha avaible space. 
+- MinSize: Integer
+- ResizeMode: TResizeMode - resize side or parent component. 
+- ResizeSide: Determine wich side will be resized
+- ResizeStyle: TResizeStyle
+- Wallpaper: TcyBgPicture - image background
+
+Events 
+- OnCanResize
+- OnDetermineHandledControl
+- OnMoved
+- OnPaint
+
+

@@ -1,0 +1,14 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_Vulkan
+
+Version: 7.3.1 Date: 2020-09-07 11:11
+Khronos REF Ver: 1.2.152
+
+--------------------------------------------------
+vk.xml REF GIT hash: 77d9f42e075e6a483a37351c14c5e9e3122f9113
+

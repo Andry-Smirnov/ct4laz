@@ -1,0 +1,184 @@
+object IndexForm: TIndexForm
+  Left = 399
+  Height = 447
+  Top = 299
+  Width = 473
+  Caption = 'Index Demo'
+  ClientHeight = 447
+  ClientWidth = 473
+  Color = clBtnFace
+  Constraints.MinHeight = 295
+  Constraints.MinWidth = 445
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '6.2'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 391
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Caption = 'Close'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 212
+    Top = 40
+    Width = 452
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clWindow
+    Columns = <>
+    DataSource = MainForm.DatasourceDisco
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 115
+    Caption = 'Sort by author (MDX)'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 123
+    Height = 25
+    Top = 8
+    Width = 115
+    Caption = 'Sort by title (NDX)'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 353
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'No Sort'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 238
+    Height = 25
+    Top = 8
+    Width = 115
+    Caption = 'Sort by price (NDX)'
+    OnClick = Button5Click
+    TabOrder = 5
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 73
+    Top = 257
+    Width = 452
+    Anchors = [akLeft, akRight, akBottom]
+    Caption = 'Index Bracketing && Searching'
+    ClientHeight = 55
+    ClientWidth = 448
+    TabOrder = 6
+    object Label1: TLabel
+      Left = 16
+      Height = 13
+      Top = 7
+      Width = 20
+      Caption = 'Low'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 171
+      Height = 13
+      Top = 6
+      Width = 22
+      Caption = 'High'
+      ParentColor = False
+    end
+    object SearchLabel: TLabel
+      Left = 16
+      Height = 13
+      Top = 34
+      Width = 166
+      Caption = 'Search using index (try uppercase):'
+      ParentColor = False
+    end
+    object SearchResultLabel: TLabel
+      Left = 313
+      Height = 21
+      Top = 31
+      Width = 96
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Search Result'
+      Color = clRed
+      ParentColor = False
+      Transparent = False
+    end
+    object SearchEdit: TEdit
+      Left = 188
+      Height = 21
+      Top = 31
+      Width = 121
+      OnChange = SearchEditChange
+      TabOrder = 3
+    end
+    object ApplyButton: TButton
+      Left = 318
+      Height = 25
+      Top = 2
+      Width = 91
+      Caption = 'Apply'
+      OnClick = ApplyButtonClick
+      TabOrder = 2
+    end
+    object Edit1: TEdit
+      Left = 48
+      Height = 21
+      Top = 4
+      Width = 106
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 203
+      Height = 21
+      Top = 3
+      Width = 106
+      TabOrder = 1
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 10
+    Height = 51
+    Top = 331
+    Width = 449
+    Anchors = [akLeft, akRight, akBottom]
+    Caption = 'Index Create'
+    ClientHeight = 33
+    ClientWidth = 445
+    TabOrder = 7
+    object ExpressionCheckBox: TCheckBox
+      Left = 23
+      Height = 19
+      Top = 6
+      Width = 205
+      Caption = 'Use expression to sort on price and title'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object RebuildButton: TButton
+      Left = 268
+      Height = 25
+      Top = 1
+      Width = 101
+      Caption = 'Rebuild indexes'
+      OnClick = RebuildButtonClick
+      TabOrder = 0
+    end
+  end
+end

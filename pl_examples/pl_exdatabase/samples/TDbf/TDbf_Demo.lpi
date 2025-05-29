@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="TDbf_Demo"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="TDbf_Demo.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="EditTopics.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditTopicsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="EditTopics"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Filter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FilterForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Filter"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Index.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="IndexForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Index"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="tdbf_demomw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TDbf_Demomw"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="schema.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Schema1Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Schema"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="schema2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Schema2Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Schema2"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="search.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SearchForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Search"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="simple.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SimpleForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Simple"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="Pack.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PackTableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Pack"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="CopyTable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CopyTableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CopyTable"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="CreateTable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CreateTableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CreateTable"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="multipleuse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MultipleUseForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="multipleuse"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="Compatibility.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CompatibilityForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Compatibility"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="Calc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CalcForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Calc"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="constvalues.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="constvalues"/>
+      </Unit15>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <MsgFileName Value=""/>
+      </CompilerMessages>
+      <CustomOptions Value="-dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL"/>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

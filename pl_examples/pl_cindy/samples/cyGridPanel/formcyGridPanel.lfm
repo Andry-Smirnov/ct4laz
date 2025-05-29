@@ -1,0 +1,424 @@
+object FrmCyGridPanel: TFrmCyGridPanel
+  Left = 469
+  Height = 605
+  Top = 259
+  Width = 954
+  Caption = 'FrmDemo'
+  ClientHeight = 605
+  ClientWidth = 954
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 555
+    Width = 954
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 954
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 148
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+    object SBAllowRuntimeDesign: TcySpeedButton
+      Left = 1
+      Height = 35
+      Top = 2
+      Width = 141
+      AllowAllUp = True
+      Caption = 'Allow moving/resizing'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      GroupIndex = 1
+      OnClick = SBAllowRuntimeDesignClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 514
+    Top = 41
+    Width = 529
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 514
+    ClientWidth = 529
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 519
+      Height = 485
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 485
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Free TcyComponents for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 525
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 485
+      Top = 27
+      Width = 501
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 582
+    Width = 954
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 529
+    Height = 514
+    Top = 41
+    Width = 425
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 5
+    Caption = ' '
+    ClientHeight = 514
+    ClientWidth = 425
+    TabOrder = 3
+    object CyPanel6: TCyPanel
+      Left = 5
+      Height = 504
+      Top = 5
+      Width = 415
+      Align = alClient
+      Caption = ' '
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = clBtnShadow
+        end>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clBtnFace
+      object CyPanel5: TCyPanel
+        Left = 0
+        Height = 504
+        Top = 0
+        Width = 40
+        Align = alLeft
+        Alignment = taLeftJustify
+        BorderWidth = 5
+        Caption = 'TCyPanel exemples'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = 7405568
+        Font.Height = -20
+        Font.Name = 'Arial'
+        ParentFont = False
+        TabOrder = 0
+        Bevels = <>
+        CaptionOrientation = coVertical
+        Layout = tlBottom
+        Shadow.Color = 16743291
+        Shadow.ZoomPercent = 120
+        Shadow.RelativePosX = 3
+        Shadow.RelativePosY = -5
+        Degrade.AngleDegree = 0
+        Degrade.FromColor = 16777088
+        Degrade.SpeedPercent = 100
+        Degrade.ToColor = 16744576
+      end
+      object CyGridPanel4: TCyGridPanel
+        Left = 72
+        Height = 222
+        Top = 8
+        Width = 257
+        BorderWidth = 5
+        Caption = 'Multi bevel'
+        DragKind = dkDock
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -15
+        Font.Name = 'Arial'
+        ParentFont = False
+        TabOrder = 1
+        TabStop = True
+        OnClick = CyGridPanel4Click
+        Bevels = <        
+          item
+            DrawLeft = False
+            DrawTop = False
+            HighlightColor = clYellow
+            ShadowColor = 20303
+            Style = bcLowered
+            Width = 5
+          end        
+          item
+            HighlightColor = clRed
+            ShadowColor = clMaroon
+            Style = bcLowered
+            Width = 8
+          end        
+          item
+            HighlightColor = clNavy
+            ShadowColor = clNavy
+            Style = bcTransparent
+            Width = 10
+          end        
+          item
+            Width = 5
+          end        
+          item
+            HighlightColor = clAqua
+            ShadowColor = clNavy
+            Width = 5
+          end>
+        RunTimeDesign.OutsideParentRect = False
+        WordWrap = True
+        OnStartRunTimeDesign = CyGridPanel4StartRunTimeDesign
+        OnDoRunTimeDesign = CyGridPanel4DoRunTimeDesign
+        OnEndRunTimeDesign = CyGridPanel4EndRunTimeDesign
+        Degrade.BalanceMode = bmReverse
+        Degrade.FromColor = clYellow
+        Degrade.Orientation = dgdAngle
+        Degrade.SpeedPercent = 100
+        Degrade.ToColor = 33023
+      end
+      object CyGridPanel3: TCyGridPanel
+        Left = 80
+        Height = 177
+        Top = 279
+        Width = 257
+        Alignment = taLeftJustify
+        Caption = 'TcyPanel'
+        Constraints.MaxHeight = 500
+        Constraints.MaxWidth = 500
+        Constraints.MinHeight = 100
+        Constraints.MinWidth = 100
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clGray
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        ParentFont = False
+        TabOrder = 2
+        TabStop = True
+        OnClick = CyGridPanel3Click
+        OnMouseWheelDown = CyGridPanel3MouseWheelDown
+        OnMouseWheelUp = CyGridPanel3MouseWheelUp
+        Bevels = <        
+          item
+            HighlightColor = clBlack
+            ShadowColor = clBlack
+          end        
+          item
+            HighlightColor = clSilver
+            ShadowColor = clGray
+            Style = bcGradientToNext
+            Width = 6
+          end        
+          item
+            HighlightColor = clWhite
+            ShadowColor = clSilver
+            Style = bcLowered
+          end        
+          item
+            Style = bcTransparent
+            Width = 15
+          end        
+          item
+            HighlightColor = clBlack
+            ShadowColor = clBlack
+          end>
+        Layout = tlBottom
+        Shadow.Color = clBlack
+        Shadow.ZoomPercent = 120
+        Shadow.RelativePosX = 3
+        Shadow.RelativePosY = 3
+        WordWrap = True
+        OnStartRunTimeDesign = CyGridPanel4StartRunTimeDesign
+        OnDoRunTimeDesign = CyGridPanel4DoRunTimeDesign
+        OnEndRunTimeDesign = CyGridPanel4EndRunTimeDesign
+        Degrade.AngleDegree = 0
+        Degrade.FromColor = 6381921
+        Degrade.SpeedPercent = 90
+        Degrade.ToColor = clBlack
+        object CyPanel4: TCyPanel
+          Left = 24
+          Height = 58
+          Top = 27
+          Width = 104
+          Anchors = []
+          Caption = 'CyPanel4'
+          TabOrder = 0
+          Bevels = <          
+            item
+            end>
+          Degrade.FromColor = clWhite
+          Degrade.SpeedPercent = 100
+          Degrade.ToColor = clBtnFace
+        end
+      end
+    end
+  end
+end

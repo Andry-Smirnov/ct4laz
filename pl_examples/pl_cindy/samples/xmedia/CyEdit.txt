@@ -1,0 +1,107 @@
+The TcyEdit component
+
+A Edit with CharRules property to define several rules like: 
+- Accepted chars (can specify position/range)
+- Reject chars sequences (can specify position/range)
+- Auto chars insertion at position
+- Max char repetition (can specify position/range)
+
+Public properties
+-	MaxChars: Integer
+
+Published properties
+-	CharRules: TcyEditRules
+
+Events 
+-	OnChange
+
+Functions
+-	SetTextIgnoringRules
+-	ApplyRulesToText
+-	ValidRulesForChar
+-	ApplyRulesToChar
+
+
+
+The TcyEditInteger component
+
+Based on TcyEdit, it will control integers input
+
+Published properties
+-	AllowEmpty: Boolean
+-	AllowNegative: Boolean
+-	IgnoreRules: Boolean
+-	ErrorHandling: TcyAdvEditErrorHandling
+-	MinValue: Integer
+-	MaxValue: Integer
+
+Events 
+-	OnValidateError
+
+Functions
+-	ValidateText
+
+
+
+The TcyEditFloat component
+
+Based on TcyEdit, it will control floats  input
+
+Published properties
+-	AllowEmpty: Boolean
+-	AllowNegative: Boolean
+-	IgnoreRules: Boolean
+-	ErrorHandling: TcyAdvEditErrorHandling
+-	MinValue: Float
+-	MaxValue: Float
+
+Events 
+-	OnValidateError
+
+Functions
+-	ValidateText
+
+
+
+The TcyEditTime component
+
+Based on TcyEdit, it will control time input
+
+Published properties
+-	AllowEmpty: Boolean
+-	AutoComplete: Boolean
+-	CustomHoursSymbol: String
+-	CustomMinutesSymbol: String
+-	CustomSecondsSymbol: String
+-	Seconds: Boolean
+-	IgnoreRules: Boolean
+-	ErrorHandling: TcyAdvEditErrorHandling
+
+Events 
+-	OnValidateError
+-	OnNeedDefaultValue
+
+Functions
+-	GetTimeDetailsFromText
+-	ValidateText
+
+
+
+The TcyEditDate component
+
+Based on TcyEdit, it will control date input
+
+Published properties
+-	AllowEmpty: Boolean
+-	AutoComplete: Boolean
+-	CustomDateSeparator: String
+-	IgnoreRules: Boolean
+-	ErrorHandling: TcyAdvEditErrorHandling
+
+Events 
+-	OnValidateError
+-	OnNeedDefaultValue
+
+Functions
+-	GetDateDetailsFromText
+-	ValidateText

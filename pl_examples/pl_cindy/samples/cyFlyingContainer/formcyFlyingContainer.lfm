@@ -1,0 +1,512 @@
+object FrmCyFlyingContainer: TFrmCyFlyingContainer
+  Left = 510
+  Height = 605
+  Top = 611
+  Width = 904
+  AlphaBlendValue = 200
+  Caption = 'FrmDemo'
+  ClientHeight = 605
+  ClientWidth = 904
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.3'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 555
+    Width = 904
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 904
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBEscKey: TcySpeedButton
+      Left = 4
+      Height = 35
+      Top = 3
+      Width = 141
+      AllowAllUp = True
+      Caption = 'Close with Esc key'
+      Down = True
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      GroupIndex = 1
+      OnClick = SBEscKeyClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      Wallpaper.Transparent = False
+    end
+    object SBClose: TcySpeedButton
+      Left = 149
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 514
+    Top = 41
+    Width = 489
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 514
+    ClientWidth = 489
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 479
+      Height = 485
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 485
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Cindy Components for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 485
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 485
+      Top = 27
+      Width = 461
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+    object PanSplashScreen: TcyAdvPanel
+      Cursor = crHourGlass
+      Left = 134
+      Height = 118
+      Top = 298
+      Width = 281
+      Wallpaper.Transparent = False
+      Caption = 'Now loading ...'
+      Font.Color = clWhite
+      Font.Height = -23
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+      TabOrder = 2
+      Visible = False
+      Bevels = <      
+        item
+        end>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clBlack
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clGray
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 582
+    Width = 904
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 489
+    Height = 514
+    Top = 41
+    Width = 415
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 514
+    ClientWidth = 415
+    TabOrder = 3
+    object Label1: TLabel
+      Left = 85
+      Height = 16
+      Top = 400
+      Width = 106
+      Caption = 'Window Caption : '
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 6
+      Height = 16
+      Top = 347
+      Width = 212
+      Caption = 'Set cyFlying Container border style : '
+      ParentColor = False
+    end
+    object Panel5: TPanel
+      Left = 5
+      Height = 239
+      Top = 8
+      Width = 394
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Caption = ' '
+      ClientHeight = 235
+      ClientWidth = 390
+      TabOrder = 1
+      object Panel6: TPanel
+        Left = 0
+        Height = 27
+        Top = 0
+        Width = 390
+        Align = alTop
+        BevelOuter = bvNone
+        Caption = ' '
+        ClientHeight = 27
+        ClientWidth = 390
+        TabOrder = 0
+        object btnBGColor: TSpeedButton
+          Left = 0
+          Height = 24
+          Top = 0
+          Width = 25
+          Flat = True
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000000000000000000000000000000000000FF00FF000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000FF00FF00FF00FF000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000FF00FF00FF00FF000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000FF00FF00FF00FF000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000FF00FF00FF00FF00FF00
+            FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00EF5B6500FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF00FF00FF000000000000000000FF00FF00FF00FF00FF00FF00FF00
+            FF00EF5B6500FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF0000000000CFC7C400BFB5B20000000000FF00FF00FF00FF00FF00
+            FF00EF5B6500BF4F5900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF0000000000E3DEDD00F1F1F200E3DEDD00BFB5B20000000000FF00FF00FF00
+            FF00EF5B6500BF4F5900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF000000
+            0000E3DEDD00F1F1F200FFFFFF00F1F1F200E3DEDD00BFB5B20000000000FF00
+            FF00EF5B6500BF4F5900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF005C4B
+            4600F1F1F200FFFFFF00FFFFFF00FFFFFF00F1F1F200E3DEDD00BFB5B2000000
+            0000EF5B6500BF4F5900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF005C4B4600F1F1F200FFFFFF00FFFFFF005C4B4600F1F1F200E3DEDD005C4B
+            4600EF5B6500BF4F5900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF005C4B4600F1F1F200FFFFFF0000000000FFFFFF005C4B4600EF5B
+            6500EF5B6500BF4F5900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF00000000005C4B4600F1F1F200000000005C4B4600EF5B6500EF5B
+            6500BF4F5900FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF0000000000FF00FF005C4B460000000000EF5B6500EF5B6500FF00
+            FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF0000000000FF00FF00FF00FF0000000000FF00FF00FF00FF00FF00
+            FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF00FF00FF000000000000000000FF00FF00FF00FF00FF00FF00FF00
+            FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          }
+          OnClick = btnBGColorClick
+        end
+      end
+      object Memo1: TMemo
+        Left = 0
+        Height = 208
+        Top = 27
+        Width = 390
+        Align = alClient
+        BorderStyle = bsNone
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Lines.Strings = (
+          'Click the button to show panel selection color. '
+          ''
+          'Click outside the panel to close it!'
+          ''
+        )
+        ParentFont = False
+        TabOrder = 1
+      end
+    end
+    object ECaption: TEdit
+      Left = 197
+      Height = 24
+      Top = 397
+      Width = 202
+      TabOrder = 2
+      Text = 'Hello'
+    end
+    object RBNone: TRadioButton
+      Left = 6
+      Height = 20
+      Top = 374
+      Width = 49
+      Caption = 'None'
+      Checked = True
+      TabOrder = 3
+      TabStop = True
+    end
+    object RBSingle: TRadioButton
+      Left = 6
+      Height = 20
+      Top = 401
+      Width = 55
+      Caption = 'Single'
+      TabOrder = 4
+    end
+    object PanSelectFontColor: TPanel
+      Left = 236
+      Height = 165
+      Top = 56
+      Width = 155
+      BevelOuter = bvNone
+      Caption = ' '
+      ClientHeight = 165
+      ClientWidth = 155
+      TabOrder = 0
+      Visible = False
+      object Shape1: TShape
+        Left = 0
+        Height = 165
+        Top = 0
+        Width = 155
+        Align = alClient
+        Pen.Color = clGray
+      end
+      object cyColorGridFont: TcyColorGrid
+        Left = 0
+        Height = 95
+        Top = 33
+        Width = 148
+        BoxFrameColor = 10987431
+        ColorList.Strings = (
+          'clBlack'
+          'clMaroon'
+          'clGreen'
+          'clOlive'
+          'clNavy'
+          'clPurple'
+          'clTeal'
+          'clGray'
+          'clSilver'
+          'clRed'
+          'clLime'
+          'clYellow'
+          'clBlue'
+          'clFuchsia'
+          'clAqua'
+          'clWhite'
+          'clMoneyGreen'
+          'clSkyBlue'
+          'clCream'
+          'clMedGray'
+          'clActiveBorder'
+          'clActiveCaption'
+          'clAppWorkSpace'
+          'clBackground'
+          'clBtnFace'
+          'clBtnHighlight'
+          'clBtnShadow'
+          'clBtnText'
+          'clCaptionText'
+          'clDefault'
+          'clGrayText'
+          'clHighlight'
+          'clHighlightText'
+          'clInactiveBorder'
+          'clInactiveCaption'
+          'clInactiveCaptionText'
+          'clInfoBk'
+          'clInfoText'
+          'clMenu'
+          'clMenuText'
+          'clNone'
+          'clScrollBar'
+          'cl3DDkShadow'
+          'cl3DLight'
+          'clWindow'
+          'clWindowFrame'
+          'clWindowText'
+        )
+        Hot = True
+        SelectionIndex = 0
+        Transparent = True
+        OnBoxClick = cyColorGridFontBoxClick
+      end
+      object SBFontMoreColor: TSpeedButton
+        Left = 7
+        Height = 25
+        Top = 131
+        Width = 137
+        Caption = 'More colors ...'
+        Flat = True
+        OnClick = SBFontMoreColorClick
+      end
+      object Shape5: TShape
+        Left = 16
+        Height = 17
+        Top = 10
+        Width = 17
+        Brush.Color = clBlack
+        Pen.Color = 10987431
+      end
+      object SBAutoFontColor: TSpeedButton
+        Left = 7
+        Height = 25
+        Top = 6
+        Width = 137
+        Caption = 'Automatic'
+        Flat = True
+        OnClick = SBAutoFontColorClick
+      end
+    end
+  end
+  object cyFlyingContainer1: TcyFlyingContainer
+    Left = 139
+    Top = 146
+  end
+end

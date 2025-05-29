@@ -1,0 +1,1360 @@
+object FrmCyEdit: TFrmCyEdit
+  Left = 1391
+  Height = 763
+  Top = 617
+  Width = 1010
+  Caption = 'FrmDemo'
+  ClientHeight = 763
+  ClientWidth = 1010
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '6.8'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 713
+    Width = 1010
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 1010
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 132
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+    object SBIgnoreRules: TcySpeedButton
+      Left = 3
+      Height = 35
+      Top = 3
+      Width = 125
+      AllowAllUp = True
+      Caption = 'Deactivate rules'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      GroupIndex = 1
+      OnClick = SBIgnoreRulesClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 672
+    Top = 41
+    Width = 417
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 672
+    ClientWidth = 417
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 407
+      Height = 643
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 643
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Free TcyComponents for CodeTyphon.'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 413
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 643
+      Top = 27
+      Width = 389
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      ScrollBars = ssBoth
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 740
+    Width = 1010
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 417
+    Height = 672
+    Top = 41
+    Width = 593
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 672
+    ClientWidth = 593
+    TabOrder = 3
+    object PageControl1: TPageControl
+      Left = 0
+      Height = 672
+      Top = 0
+      Width = 593
+      ActivePage = TabSheet1
+      Align = alClient
+      TabIndex = 0
+      TabOrder = 0
+      object TabSheet1: TTabSheet
+        Caption = 'TcyEdit component'
+        ClientHeight = 643
+        ClientWidth = 585
+        object Label1: TLabel
+          Left = 8
+          Height = 16
+          Top = 42
+          Width = 119
+          Caption = 'Date (dd/mm/yyyy) :'
+          ParentColor = False
+        end
+        object Label2: TLabel
+          Left = 8
+          Height = 16
+          Top = 120
+          Width = 142
+          Caption = 'Postal code (0000-000) :'
+          ParentColor = False
+        end
+        object Label3: TLabel
+          Left = 8
+          Height = 16
+          Top = 290
+          Width = 154
+          Caption = 'Integer (can be negative) :'
+          ParentColor = False
+        end
+        object Label4: TLabel
+          Left = 184
+          Height = 16
+          Top = 290
+          Width = 141
+          Caption = 'Float (can be negative) :'
+          ParentColor = False
+        end
+        object Label5: TLabel
+          Left = 239
+          Height = 16
+          Top = 42
+          Width = 85
+          Caption = 'Time (00:00) :'
+          ParentColor = False
+        end
+        object Label6: TLabel
+          Left = 8
+          Height = 16
+          Top = 450
+          Width = 44
+          Caption = 'Binary :'
+          ParentColor = False
+        end
+        object Label7: TLabel
+          Left = 152
+          Height = 16
+          Top = 450
+          Width = 81
+          Caption = 'Hexadecimal :'
+          ParentColor = False
+        end
+        object Label8: TLabel
+          Left = 344
+          Height = 16
+          Top = 40
+          Width = 76
+          Caption = 'Change Log :'
+          ParentColor = False
+        end
+        object Label9: TLabel
+          Left = 8
+          Height = 16
+          Top = 184
+          Width = 249
+          Caption = 'Phone number letting some liberty to user :'
+          ParentColor = False
+        end
+        object Label10: TLabel
+          Left = 8
+          Height = 16
+          Top = 378
+          Width = 62
+          Caption = 'IP adress :'
+          ParentColor = False
+        end
+        object Label12: TLabel
+          Left = 8
+          Height = 16
+          Top = 530
+          Width = 176
+          Caption = 'Only can tape "CINDY" letters :'
+          ParentColor = False
+        end
+        object Label13: TLabel
+          Left = 8
+          Height = 16
+          Top = 586
+          Width = 169
+          Caption = 'Only can tape "CINDY" word :'
+          ParentColor = False
+        end
+        object Label24: TLabel
+          Left = 9
+          Height = 16
+          Top = 12
+          Width = 414
+          Caption = 'Configure TcyEdit.CharRules property to create your own rules!'
+          Font.Color = clBlue
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object EDitDate: TcyEdit
+          Left = 9
+          Height = 24
+          Top = 64
+          Width = 121
+          MaxLength = 10
+          OnChange = EDitDateChange
+          TabOrder = 0
+          Text = 'EDitDate'
+          CharRules = <          
+            item
+              AllowedChars = '0123'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 2
+              ToPosition = 2
+            end          
+            item
+              AllowedChars = '/'
+              AutoInsertChars = '/'
+              FromPosition = 3
+              ToPosition = 3
+            end          
+            item
+              AllowedChars = '01'
+              FromPosition = 4
+              ToPosition = 4
+            end          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 5
+              ToPosition = 5
+            end          
+            item
+              AllowedChars = '/'
+              AutoInsertChars = '/'
+              FromPosition = 6
+              ToPosition = 6
+            end          
+            item
+              AllowedChars = '12'
+              FromPosition = 7
+              ToPosition = 7
+            end          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 8
+              ToPosition = 11
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 5
+              ForbiddenCharsSequence = '00'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '32'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '33'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '34'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '35'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '36'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '37'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '38'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '39'
+            end          
+            item
+              FromPosition = 4
+              ToPosition = 5
+              ForbiddenCharsSequence = '13'
+            end          
+            item
+              FromPosition = 4
+              ToPosition = 5
+              ForbiddenCharsSequence = '14'
+            end          
+            item
+              FromPosition = 4
+              ToPosition = 5
+              ForbiddenCharsSequence = '15'
+            end          
+            item
+              FromPosition = 4
+              ToPosition = 5
+              ForbiddenCharsSequence = '16'
+            end          
+            item
+              FromPosition = 4
+              ToPosition = 5
+              ForbiddenCharsSequence = '17'
+            end          
+            item
+              FromPosition = 4
+              ToPosition = 5
+              ForbiddenCharsSequence = '18'
+            end          
+            item
+              FromPosition = 4
+              ToPosition = 5
+              ForbiddenCharsSequence = '19'
+            end>
+        end
+        object EditPostalCode: TcyEdit
+          Left = 8
+          Height = 24
+          Top = 144
+          Width = 142
+          Alignment = taCenter
+          MaxLength = 8
+          OnChange = EDitDateChange
+          TabOrder = 1
+          Text = 'EditPost'
+          CharRules = <          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 1
+              ToPosition = 4
+            end          
+            item
+              AllowedChars = '-'
+              AutoInsertChars = '-'
+              FromPosition = 5
+              ToPosition = 5
+            end          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 6
+              ToPosition = 9
+            end>
+        end
+        object EditNegNumber: TcyEdit
+          Left = 8
+          Height = 24
+          Top = 312
+          Width = 121
+          Alignment = taRightJustify
+          OnChange = EDitDateChange
+          TabOrder = 2
+          Text = 'EditNegNumber'
+          CharRules = <          
+            item
+              AllowedChars = '-0123456789'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 2
+            end>
+        end
+        object EditNegFloat: TcyEdit
+          Left = 184
+          Height = 24
+          Top = 312
+          Width = 121
+          Alignment = taRightJustify
+          OnChange = EDitDateChange
+          TabOrder = 3
+          Text = 'EditNegFloat'
+          CharRules = <          
+            item
+              AllowedChars = '-0123456789'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = ',0123456789'
+              FromPosition = 2
+            end          
+            item
+              RepeatOptions.MaxRepeat = 1
+              RepeatOptions.CharsConcerned = ','
+            end          
+            item
+              ForbiddenCharsSequence = '-,'
+            end>
+        end
+        object EditTime: TcyEdit
+          Left = 239
+          Height = 24
+          Top = 64
+          Width = 90
+          MaxLength = 5
+          OnChange = EDitDateChange
+          TabOrder = 4
+          Text = 'EditT'
+          CharRules = <          
+            item
+              AllowedChars = '012'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 2
+              ToPosition = 2
+            end          
+            item
+              AllowedChars = ':'
+              AutoInsertChars = ':'
+              FromPosition = 3
+              ToPosition = 3
+            end          
+            item
+              AllowedChars = '012345'
+              FromPosition = 4
+              ToPosition = 4
+            end          
+            item
+              AllowedChars = '0123456789'
+              FromPosition = 5
+              ToPosition = 5
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '24'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '25'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '26'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '27'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '28'
+            end          
+            item
+              FromPosition = 1
+              ToPosition = 2
+              ForbiddenCharsSequence = '29'
+            end>
+        end
+        object Button1: TButton
+          Left = 136
+          Height = 25
+          Top = 64
+          Width = 89
+          Caption = 'Set by code'
+          OnClick = Button1Click
+          TabOrder = 5
+        end
+        object EditBinary: TcyEdit
+          Left = 8
+          Height = 24
+          Top = 472
+          Width = 121
+          Alignment = taRightJustify
+          OnChange = EDitDateChange
+          TabOrder = 6
+          Text = 'EditBinary'
+          CharRules = <          
+            item
+              AllowedChars = '1'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = '01'
+              FromPosition = 2
+            end>
+        end
+        object EditHexa: TcyEdit
+          Left = 152
+          Height = 24
+          Top = 472
+          Width = 121
+          Alignment = taRightJustify
+          CharCase = ecUppercase
+          OnChange = EDitDateChange
+          TabOrder = 7
+          Text = 'EDITHEXA'
+          CharRules = <          
+            item
+              AllowedChars = '123456789ABCDEFGH'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = '0123456789ABCDEFGH'
+              FromPosition = 2
+            end>
+        end
+        object Button2: TButton
+          Left = 156
+          Height = 25
+          Top = 143
+          Width = 173
+          Caption = 'Set any text bypassing rules'
+          OnClick = Button2Click
+          TabOrder = 8
+        end
+        object MemLog: TMemo
+          Left = 344
+          Height = 543
+          Top = 64
+          Width = 225
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          TabOrder = 9
+          WordWrap = False
+        end
+        object EditPhone: TcyEdit
+          Left = 8
+          Height = 24
+          Top = 208
+          Width = 217
+          OnChange = EDitDateChange
+          TabOrder = 10
+          Text = 'EditPhone'
+          CharRules = <          
+            item
+              AllowedChars = '(+0123456789'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = '() -+/0123456789'
+              FromPosition = 2
+            end          
+            item
+              ForbiddenCharsSequence = '  '
+              RepeatOptions.MaxRepeat = 1
+              RepeatOptions.CharsConcerned = '+/()'
+            end>
+        end
+        object EditIP: TcyEdit
+          Left = 8
+          Height = 24
+          Top = 400
+          Width = 121
+          TabOrder = 11
+          Text = 'EditIP'
+          CharRules = <          
+            item
+              AllowedChars = '123456789'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = '.0123456789'
+              ForbiddenCharsSequence = '..'
+              RepeatOptions.MaxRepeat = 3
+              RepeatOptions.CharsConcerned = '.'
+            end>
+        end
+        object cyEdit1: TcyEdit
+          Left = 8
+          Height = 24
+          Top = 552
+          Width = 121
+          CharCase = ecUppercase
+          OnChange = EDitDateChange
+          TabOrder = 12
+          CharRules = <          
+            item
+              AllowedChars = 'CINDY'
+              RepeatOptions.MaxRepeat = 1
+              RepeatOptions.CharsConcerned = 'CINDY'
+            end>
+        end
+        object cyEdit2: TcyEdit
+          Left = 8
+          Height = 24
+          Top = 610
+          Width = 121
+          CharCase = ecUppercase
+          OnChange = EDitDateChange
+          TabOrder = 13
+          CharRules = <          
+            item
+              AllowedChars = 'C'
+              FromPosition = 1
+              ToPosition = 1
+            end          
+            item
+              AllowedChars = 'I'
+              FromPosition = 2
+              ToPosition = 2
+              RepeatOptions.CharsConcerned = 'I'
+            end          
+            item
+              AllowedChars = 'N'
+              FromPosition = 3
+              ToPosition = 3
+            end          
+            item
+              AllowedChars = 'D'
+              FromPosition = 4
+              ToPosition = 4
+            end          
+            item
+              AllowedChars = 'Y'
+              FromPosition = 5
+              ToPosition = 5
+            end>
+        end
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'TcyEditInteger, TcyEditFloat, TcyEditDate, TcyEditTime components'
+        ClientHeight = 0
+        ClientWidth = 0
+        ImageIndex = 1
+        object Label11: TLabel
+          Left = 16
+          Height = 16
+          Top = 178
+          Width = 50
+          Caption = 'Integer :'
+          ParentColor = False
+        end
+        object Label14: TLabel
+          Left = 16
+          Height = 16
+          Top = 298
+          Width = 37
+          Caption = 'Float :'
+          ParentColor = False
+        end
+        object Label15: TLabel
+          Left = 264
+          Height = 16
+          Top = 230
+          Width = 29
+          Caption = 'Min :'
+          ParentColor = False
+        end
+        object Label16: TLabel
+          Left = 368
+          Height = 16
+          Top = 230
+          Width = 32
+          Caption = 'Max :'
+          ParentColor = False
+        end
+        object Label17: TLabel
+          Left = 264
+          Height = 16
+          Top = 350
+          Width = 29
+          Caption = 'Min :'
+          ParentColor = False
+        end
+        object Label18: TLabel
+          Left = 368
+          Height = 16
+          Top = 350
+          Width = 32
+          Caption = 'Max :'
+          ParentColor = False
+        end
+        object LblEditIntegerInfo: TLabel
+          Left = 16
+          Height = 16
+          Top = 253
+          Width = 165
+          Caption = 'Last error information demo.'
+          Font.Color = clRed
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label21: TLabel
+          Left = 16
+          Height = 16
+          Top = 418
+          Width = 38
+          Caption = 'Time :'
+          ParentColor = False
+        end
+        object Label22: TLabel
+          Left = 16
+          Height = 16
+          Top = 538
+          Width = 35
+          Caption = 'Date :'
+          ParentColor = False
+        end
+        object Label23: TLabel
+          Left = 249
+          Height = 16
+          Top = 590
+          Width = 84
+          Caption = 'Arrangement :'
+          ParentColor = False
+        end
+        object Label25: TLabel
+          Left = 16
+          Height = 16
+          Top = 501
+          Width = 271
+          Caption = 'Custom hour, minutes and seconds prefix char:'
+          ParentColor = False
+        end
+        object Label26: TLabel
+          Left = 313
+          Height = 16
+          Top = 501
+          Width = 14
+          Caption = '00'
+          ParentColor = False
+        end
+        object Label27: TLabel
+          Left = 377
+          Height = 16
+          Top = 501
+          Width = 14
+          Caption = '00'
+          ParentColor = False
+        end
+        object Label28: TLabel
+          Left = 441
+          Height = 16
+          Top = 501
+          Width = 14
+          Caption = '00'
+          ParentColor = False
+        end
+        object Label29: TLabel
+          Left = 16
+          Height = 16
+          Top = 616
+          Width = 140
+          Caption = 'Custom date separator :'
+          ParentColor = False
+        end
+        object cyEditInteger1: TcyEditInteger
+          Left = 16
+          Height = 24
+          Top = 200
+          Width = 121
+          OnChange = cyEditInteger1Change
+          TabOrder = 0
+          Text = '-10'
+          MinValue = -100
+          MaxValue = 100
+          ErrorHandling.MsgOutOfMinRange = 'Value out of range'
+          ErrorHandling.MsgOutOfMaxRange = 'Value out of range'
+          ErrorHandling.MsgInvalidValue = 'Invalid integer value'
+          OnValidateError = cyEditInteger1ValidateError
+        end
+        object BtnGetInteger: TButton
+          Left = 151
+          Height = 25
+          Top = 200
+          Width = 171
+          Caption = 'Get Value >>'
+          OnClick = BtnGetIntegerClick
+          TabOrder = 1
+        end
+        object EditRsltInteger: TEdit
+          Left = 336
+          Height = 24
+          Top = 200
+          Width = 160
+          Color = clBtnFace
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 2
+          Text = ' '
+        end
+        object cyEditFloat1: TcyEditFloat
+          Left = 16
+          Height = 24
+          Top = 320
+          Width = 121
+          TabOrder = 3
+          Text = '-500'
+          AutoComplete = True
+        end
+        object BtnGetFloat: TButton
+          Left = 151
+          Height = 25
+          Top = 320
+          Width = 171
+          Caption = 'Get Value >>'
+          OnClick = BtnGetFloatClick
+          TabOrder = 4
+        end
+        object EditRsltFloat: TEdit
+          Left = 336
+          Height = 24
+          Top = 320
+          Width = 160
+          Color = clBtnFace
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 5
+          Text = ' '
+        end
+        object CBIntegerAllowEmpty: TCheckBox
+          Left = 16
+          Height = 17
+          Top = 230
+          Width = 97
+          Caption = 'Allow empty'
+          Checked = True
+          OnClick = CBIntegerAllowEmptyClick
+          State = cbChecked
+          TabOrder = 6
+          TabStop = False
+        end
+        object CBIntegerAllowNegative: TCheckBox
+          Left = 127
+          Height = 17
+          Top = 230
+          Width = 113
+          Caption = 'Allow negative'
+          Checked = True
+          OnClick = CBIntegerAllowNegativeClick
+          State = cbChecked
+          TabOrder = 7
+          TabStop = False
+        end
+        object GroupBox1: TGroupBox
+          Left = 16
+          Height = 145
+          Top = 11
+          Width = 425
+          Caption = ' Error Handling '
+          ClientHeight = 124
+          ClientWidth = 421
+          TabOrder = 8
+          object Label19: TLabel
+            Left = 198
+            Height = 16
+            Top = 15
+            Width = 196
+            Caption = 'Personalize msg for invalid value :'
+            ParentColor = False
+          end
+          object Label20: TLabel
+            Left = 198
+            Height = 16
+            Top = 71
+            Width = 198
+            Caption = 'Personalize msg for out of bound :'
+            ParentColor = False
+          end
+          object CBErrorHandlingBeep: TCheckBox
+            Left = 30
+            Height = 17
+            Top = 42
+            Width = 129
+            Caption = 'Play beep sound'
+            Checked = True
+            OnClick = CBErrorHandlingBeepClick
+            State = cbChecked
+            TabOrder = 0
+            TabStop = False
+          end
+          object CBErrorHandlingKeepFocus: TCheckBox
+            Left = 30
+            Height = 17
+            Top = 65
+            Width = 129
+            Caption = 'Keep focus'
+            Checked = True
+            OnClick = CBErrorHandlingBeepClick
+            State = cbChecked
+            TabOrder = 1
+            TabStop = False
+          end
+          object CBErrorHandlingClearText: TCheckBox
+            Left = 30
+            Height = 17
+            Top = 89
+            Width = 129
+            Caption = 'Clear text'
+            OnClick = CBErrorHandlingBeepClick
+            TabOrder = 2
+            TabStop = False
+          end
+          object CBErrorHandlingRaiseMsgError: TCheckBox
+            Left = 30
+            Height = 17
+            Top = 16
+            Width = 161
+            Caption = 'Raise message error ->'
+            Checked = True
+            OnClick = CBErrorHandlingBeepClick
+            State = cbChecked
+            TabOrder = 3
+            TabStop = False
+          end
+          object EMsgInvalidValue: TEdit
+            Left = 198
+            Height = 24
+            Top = 37
+            Width = 209
+            OnChange = CBErrorHandlingBeepClick
+            TabStop = False
+            TabOrder = 4
+          end
+          object EMsgOutOfBoundValue: TEdit
+            Left = 198
+            Height = 24
+            Top = 93
+            Width = 209
+            OnChange = CBErrorHandlingBeepClick
+            TabStop = False
+            TabOrder = 5
+          end
+        end
+        object CBFloatAllowEmpty: TCheckBox
+          Left = 16
+          Height = 17
+          Top = 350
+          Width = 97
+          Caption = 'Allow empty'
+          Checked = True
+          OnClick = CBFloatAllowEmptyClick
+          State = cbChecked
+          TabOrder = 9
+          TabStop = False
+        end
+        object CBFloatAllowNegative: TCheckBox
+          Left = 127
+          Height = 17
+          Top = 350
+          Width = 113
+          Caption = 'Allow negative'
+          Checked = True
+          OnClick = CBFloatAllowNegativeClick
+          State = cbChecked
+          TabOrder = 10
+          TabStop = False
+        end
+        object EIntegerMinValue: TcyEditInteger
+          Left = 299
+          Height = 24
+          Top = 228
+          Width = 46
+          Alignment = taRightJustify
+          OnChange = EIntegerMinValueChange
+          TabStop = False
+          TabOrder = 11
+          Text = '-100'
+          AllowEmpty = False
+        end
+        object EIntegerMaxValue: TcyEditInteger
+          Left = 411
+          Height = 24
+          Top = 228
+          Width = 46
+          Alignment = taRightJustify
+          OnChange = EIntegerMaxValueChange
+          TabStop = False
+          TabOrder = 12
+          Text = '100'
+          AllowEmpty = False
+        end
+        object EFloatMinValue: TcyEditFloat
+          Left = 299
+          Height = 24
+          Top = 348
+          Width = 46
+          Alignment = taRightJustify
+          OnChange = EFloatMinValueChange
+          TabStop = False
+          TabOrder = 13
+          Text = '-100'
+          AutoComplete = True
+        end
+        object EFloatMaxValue: TcyEditFloat
+          Left = 411
+          Height = 24
+          Top = 348
+          Width = 46
+          Alignment = taRightJustify
+          OnChange = EFloatMaxValueChange
+          TabStop = False
+          TabOrder = 14
+          Text = '100'
+          AutoComplete = True
+        end
+        object cyEditTime1: TcyEditTime
+          Left = 16
+          Height = 24
+          Top = 440
+          Width = 121
+          TabOrder = 15
+          Text = 'cyEditTime1'
+        end
+        object CBTimeAllowEmpty: TCheckBox
+          Left = 151
+          Height = 17
+          Top = 470
+          Width = 97
+          Caption = 'Allow empty'
+          Checked = True
+          OnClick = CBTimeAllowEmptyClick
+          State = cbChecked
+          TabOrder = 16
+          TabStop = False
+        end
+        object CBTimeWithSeconds: TCheckBox
+          Left = 254
+          Height = 17
+          Top = 470
+          Width = 113
+          Caption = 'Edit seconds'
+          OnClick = CBTimeWithSecondsClick
+          TabOrder = 17
+          TabStop = False
+        end
+        object BtnGetTime: TButton
+          Left = 151
+          Height = 25
+          Top = 439
+          Width = 171
+          Caption = 'Get Value >>'
+          OnClick = BtnGetTimeClick
+          TabOrder = 18
+        end
+        object EditRsltTime: TEdit
+          Left = 336
+          Height = 24
+          Top = 440
+          Width = 160
+          Color = clBtnFace
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 19
+          Text = ' '
+        end
+        object cyEditDate1: TcyEditDate
+          Left = 16
+          Height = 24
+          Top = 560
+          Width = 121
+          TabOrder = 20
+          Text = 'cyEditDate1'
+        end
+        object BtnGetDate: TButton
+          Left = 151
+          Height = 25
+          Top = 559
+          Width = 171
+          Caption = 'Get Value >>'
+          OnClick = BtnGetDateClick
+          TabOrder = 21
+        end
+        object EditRsltDate: TEdit
+          Left = 336
+          Height = 24
+          Top = 560
+          Width = 160
+          Color = clBtnFace
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 22
+          Text = ' '
+        end
+        object CBDateAllowEmpty: TCheckBox
+          Left = 151
+          Height = 17
+          Top = 590
+          Width = 97
+          Caption = 'Allow empty'
+          Checked = True
+          OnClick = CBDateAllowEmptyClick
+          State = cbChecked
+          TabOrder = 23
+          TabStop = False
+        end
+        object CBTimeAutoComplete: TCheckBox
+          Left = 16
+          Height = 17
+          Top = 470
+          Width = 121
+          Caption = 'Auto complete'
+          Checked = True
+          OnClick = CBTimeAutoCompleteClick
+          State = cbChecked
+          TabOrder = 24
+        end
+        object CBDateAutoComplete: TCheckBox
+          Left = 16
+          Height = 17
+          Top = 590
+          Width = 121
+          Caption = 'Auto complete'
+          Checked = True
+          OnClick = CBDateAutoCompleteClick
+          State = cbChecked
+          TabOrder = 25
+        end
+        object CBDateFormat: TComboBox
+          Left = 336
+          Height = 24
+          Top = 586
+          Width = 160
+          ItemHeight = 16
+          ItemIndex = 0
+          Items.Strings = (
+            'DayMonthYear4Digits'
+            'Year4DigitsMonthDay'
+            'MonthDayYear4Digits'
+            'DayMonthYear2Digits'
+            'Year2DigitsMonthDay'
+            'MonthDayYear2Digits'
+          )
+          OnClick = CBDateFormatClick
+          Style = csDropDownList
+          TabOrder = 26
+          Text = 'DayMonthYear4Digits'
+        end
+        object ETimeHourPrefix: TEdit
+          Left = 338
+          Height = 24
+          Top = 495
+          Width = 30
+          MaxLength = 1
+          OnChange = ETimeHourPrefixChange
+          TabOrder = 27
+        end
+        object ETimeMinutePrefix: TEdit
+          Left = 402
+          Height = 24
+          Top = 495
+          Width = 30
+          MaxLength = 1
+          OnChange = ETimeHourPrefixChange
+          TabOrder = 28
+        end
+        object ETimeSecondsPrefix: TEdit
+          Left = 466
+          Height = 24
+          Top = 495
+          Width = 30
+          MaxLength = 1
+          OnChange = ETimeHourPrefixChange
+          TabOrder = 29
+        end
+        object EDateSeparator: TEdit
+          Left = 162
+          Height = 24
+          Top = 613
+          Width = 30
+          MaxLength = 1
+          OnChange = EDateSeparatorChange
+          TabOrder = 30
+        end
+      end
+    end
+  end
+end

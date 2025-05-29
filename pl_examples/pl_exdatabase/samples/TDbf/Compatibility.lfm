@@ -1,0 +1,102 @@
+object CompatibilityForm: TCompatibilityForm
+  Left = 468
+  Height = 385
+  Top = 326
+  Width = 398
+  Caption = 'CompatibilityForm'
+  ClientHeight = 385
+  ClientWidth = 398
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  LCLVersion = '6.2'
+  object Label1: TLabel
+    Left = 8
+    Height = 13
+    Top = 256
+    Width = 29
+    Caption = 'Memo'
+    ParentColor = False
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Height = 25
+    Top = 104
+    Width = 240
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 240
+    DataSource = DataSource1
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 113
+    Top = 136
+    Width = 377
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 8
+    Height = 89
+    Top = 8
+    Width = 185
+    AutoFill = True
+    Caption = 'Table'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 71
+    ClientWidth = 181
+    Items.Strings = (
+      'dBase III + '
+      'dBase IV'
+      'dBase for Windows'
+      'Visual dBase'
+    )
+    OnClick = RadioGroup1Click
+    TabOrder = 2
+  end
+  object DBMemo1: TDBMemo
+    Left = 40
+    Height = 97
+    Top = 256
+    Width = 345
+    DataField = 'MEMO'
+    DataSource = DataSource1
+    ScrollBars = ssVertical
+    TabOrder = 3
+  end
+  object Dbf1: TDbf
+    FilePath = '..\xmedia\database1\'
+    IndexDefs = <>
+    OpenMode = omAutoCreate
+    TableLevel = 4
+    FilterOptions = []
+    left = 232
+    top = 8
+  end
+  object DataSource1: TDataSource
+    DataSet = Dbf1
+    left = 296
+    top = 8
+  end
+end

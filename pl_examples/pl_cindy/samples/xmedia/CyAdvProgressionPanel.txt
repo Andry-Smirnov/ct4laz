@@ -1,0 +1,33 @@
+The TcyAdvProgressionPanel component
+
+Run-time threaded Progression panel component that show a gauge while running undetermined time blocking process. 
+
+Published properties
+- Alignment: TAlignment - title alignment
+- Autosize: boolean
+- BorderWidth: integer
+- Caption: String - progression title
+- Degrade: TcyGradient
+- FlashWindow: boolean
+- Font: TFont
+- Height: integer
+- Glyph: TPicture
+- GlyphAlign: TAlign
+- Layout: TTextLayout - Text layout 
+- property Gauge;
+- GaugeMax: Double
+- GaugeMin: Double
+- Width: integer
+- GaugeStepInterval: Cardinal
+
+Events 
+- OnOpen
+- OnClose
+
+Methods
+- DropMessages(ExceptFromControl: TWinControl) - allow to drop windows messages 
+- GetPanel: TcyPanel - get panel component used on showing progression
+- GetImage: TImage - get image component used on showing progression
+- GetGauge: TCySimpleGauge - get gauge component used on showing progression
+- GetLabel: TLabel - get label component used on showing progression
+- GetCancelButton: TButton - get cancelbutton component used on showing progression

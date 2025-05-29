@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\bin\xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="pl_cindy"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="cyAdvLedDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="formcyAdvLed.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCyAdvLed"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="44" Y="93"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="46"/>
+        <CursorPos X="6" Y="49"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\fpcsrc\packages\fcl-db\src\base\db.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="80"/>
+        <CursorPos X="50" Y="106"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBHotLabel.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="21"/>
+        <CursorPos X="42" Y="49"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBLed.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="195"/>
+        <CursorPos X="9" Y="218"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="19" HistoryIndex="18">
+      <Position1>
+        <Filename Value="formcyAdvLed.pas"/>
+        <Caret Line="85" Column="44" TopLine="47"/>
+      </Position1>
+      <Position2>
+        <Filename Value="formcyAdvLed.pas"/>
+        <Caret Line="89" Column="44" TopLine="51"/>
+      </Position2>
+      <Position3>
+        <Filename Value="formcyAdvLed.pas"/>
+        <Caret Line="90" Column="44" TopLine="52"/>
+      </Position3>
+      <Position4>
+        <Filename Value="formcyAdvLed.pas"/>
+        <Caret Line="91" Column="44" TopLine="53"/>
+      </Position4>
+      <Position5>
+        <Filename Value="formcyAdvLed.pas"/>
+        <Caret Line="92" Column="44" TopLine="54"/>
+      </Position5>
+      <Position6>
+        <Filename Value="formcyAdvLed.pas"/>
+        <Caret Line="93" Column="44"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="87" Column="56" TopLine="61"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\..\fpcsrc\packages\fcl-db\src\base\db.pas"/>
+        <Caret Line="106" Column="50" TopLine="80"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="57" Column="15" TopLine="64"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="176" Column="48" TopLine="150"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="209" Column="7" TopLine="164"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="190" Column="14" TopLine="164"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="212" Column="13" TopLine="169"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="200" Column="12" TopLine="169"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBEdit.pas"/>
+        <Caret Line="49" Column="6" TopLine="46"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBHotLabel.pas"/>
+        <Caret Line="179" Column="13" TopLine="153"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBHotLabel.pas"/>
+        <Caret Line="49" Column="42" TopLine="21"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBLed.pas"/>
+        <Caret Line="226" Column="9" TopLine="197"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\typhon\components\pl_Cindy\source\cyDBLed.pas"/>
+        <Caret Line="227" Column="5" TopLine="194"/>
+      </Position19>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

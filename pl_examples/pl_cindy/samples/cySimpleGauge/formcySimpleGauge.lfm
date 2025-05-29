@@ -1,0 +1,720 @@
+object FrmCySimpleGauge: TFrmCySimpleGauge
+  Left = 308
+  Height = 735
+  Top = 207
+  Width = 880
+  Caption = 'FrmDemo'
+  ClientHeight = 735
+  ClientWidth = 880
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 685
+    Width = 880
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 880
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBReadOnly: TcySpeedButton
+      Left = 4
+      Height = 35
+      Top = 3
+      Width = 50
+      AllowAllUp = True
+      Caption = 'Read only'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      GroupIndex = 1
+      OnClick = SBReadOnlyClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      Wallpaper.Transparent = False
+      WordWrap = True
+    end
+    object SBClose: TcySpeedButton
+      Left = 57
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 644
+    Top = 41
+    Width = 369
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 644
+    ClientWidth = 369
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 359
+      Height = 615
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 615
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Cindy Components for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 365
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 615
+      Top = 27
+      Width = 341
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 712
+    Width = 880
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 369
+    Height = 644
+    Top = 41
+    Width = 511
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 644
+    ClientWidth = 511
+    TabOrder = 3
+    object cyDgradPaintbox6: TcyPaintBox
+      Left = 6
+      Height = 31
+      Top = 386
+      Width = 289
+      Degrade.AngleDegree = 0
+      Degrade.BalanceMode = bmReverse
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clGray
+    end
+    object Label16: TLabel
+      Left = 6
+      Height = 16
+      Top = 434
+      Width = 102
+      Caption = 'Custom drawing :'
+      ParentColor = False
+    end
+    object Label18: TLabel
+      Left = 326
+      Height = 16
+      Top = 54
+      Width = 56
+      Caption = 'Vertical : '
+      ParentColor = False
+    end
+    object cySimpleGauge2: TcySimpleGauge
+      Left = 6
+      Height = 37
+      Top = 78
+      Width = 283
+      DegradeBalance = 50
+      ItemOffBrush.Color = clGray
+      ItemOnBrush.Color = clAqua
+      ItemOnPen.Color = 16744448
+      Color = clBlack
+      ItemsCount = 30
+      ItemsSpacing = -1
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end>
+      Position = 60
+      Step = 1
+    end
+    object cySimpleGauge1: TcySimpleGauge
+      Left = 6
+      Height = 31
+      Top = 386
+      Width = 289
+      DegradeBalance = 50
+      ItemOffBrush.Color = clGray
+      ItemOffStyle = isNone
+      ItemOnBrush.Color = clAqua
+      ItemOnPen.Color = 16744448
+      Orientation = goRightLeft
+      MarginBottom = 2
+      MarginLeft = 2
+      MarginRight = 2
+      MarginTop = 2
+      ItemsCount = 31
+      ItemsSpacing = -1
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Transparent = True
+      Bevels = <      
+        item
+          HighlightColor = clGray
+          ShadowColor = clBlack
+        end>
+      Position = 40
+      Step = 1
+    end
+    object cySimpleGauge3: TcySimpleGauge
+      Left = 6
+      Height = 25
+      Top = 126
+      Width = 283
+      DegradeBalance = 50
+      ItemOffBrush.Color = clGray
+      ItemOffStyle = isRoundRect
+      ItemOnBrush.Color = clYellow
+      ItemOnPen.Color = 16384
+      ItemOnStyle = isRoundRect
+      Color = clBlack
+      ItemsCount = 40
+      ItemsSpacing = -1
+      ItemsWidth = 8
+      ItemsHeight = 23
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end>
+      Position = 40
+      Step = 1
+    end
+    object Label76: TLabel
+      Left = 6
+      Height = 16
+      Top = 54
+      Width = 66
+      Caption = 'Horizontal :'
+      ParentColor = False
+    end
+    object cySimpleGauge5: TcySimpleGauge
+      Left = 6
+      Height = 37
+      Top = 244
+      Width = 286
+      DegradeBalance = 50
+      ItemOffBrush.Color = clGray
+      ItemOnBrush.Color = clAqua
+      ItemOnPen.Color = clBlue
+      Color = clWhite
+      ItemsCount = 25
+      Min = -2500
+      Max = -1000
+      ReadOnly = False
+      Smooth = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end>
+      Position = -2000
+      Precision = 2
+      Step = 1
+    end
+    object cySimpleGauge6: TcySimpleGauge
+      Left = 326
+      Height = 203
+      Top = 78
+      Width = 38
+      DegradeBalance = 50
+      DegradeBalanceMode = bmNormal
+      DegradeBalanceSpeedPercent = 90
+      ItemOffBrush.Color = 33023
+      ItemOffPen.Color = 16512
+      ItemOffPen.Width = 2
+      ItemOnBrush.Color = clYellow
+      ItemOnPen.Color = 16512
+      Orientation = goTopBottom
+      MarginBottom = 2
+      MarginLeft = 2
+      MarginRight = 2
+      MarginTop = 2
+      Color = 16512
+      ItemsCount = 14
+      ItemsSpacing = -1
+      ItemsWidth = 15
+      ItemsHeight = 32
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end>
+      Position = 70
+      Step = 1
+    end
+    object cySimpleGauge7: TcySimpleGauge
+      Left = 374
+      Height = 208
+      Top = 78
+      Width = 38
+      DegradeBalance = 50
+      DegradeBalanceMode = bmInvertReverse
+      ItemOffBrush.Color = 33023
+      ItemOffPen.Color = 16512
+      ItemOffPen.Width = 2
+      ItemOnBrush.Color = clYellow
+      ItemOnPen.Color = 16512
+      Orientation = goBottomTop
+      MarginBottom = 2
+      MarginLeft = 2
+      MarginRight = 2
+      MarginTop = 2
+      Color = 16512
+      ItemsCount = 12
+      ItemsSpacing = 2
+      ItemsWidth = 15
+      ItemsHeight = 32
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Smooth = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end>
+      Position = 50
+      Step = 1
+    end
+    object cySimpleGauge8: TcySimpleGauge
+      Left = 6
+      Height = 25
+      Top = 455
+      Width = 256
+      DegradeBalance = 50
+      ItemOffBrush.Color = clGray
+      ItemOffStyle = isNone
+      ItemOnBrush.Color = clAqua
+      ItemOnPen.Color = 16744448
+      ItemOnStyle = isRectangle
+      MarginBottom = 2
+      MarginLeft = 2
+      MarginRight = 2
+      MarginTop = 2
+      ItemsCount = 25
+      ItemsSpacing = 0
+      ItemsHeight = 19
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Transparent = True
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end>
+      Position = 70
+      Step = 1
+      OnCustomDrawItem = cySimpleGauge8CustomDrawItem
+    end
+    object cySimpleGauge9: TcySimpleGauge
+      Left = 6
+      Height = 31
+      Top = 198
+      Width = 287
+      DegradeBalance = 50
+      ItemOffBrush.Color = clOlive
+      ItemOffPen.Color = 16512
+      ItemOffStyle = isEllipsis
+      ItemOnBrush.Color = clYellow
+      ItemOnPen.Color = 33023
+      ItemOnStyle = isEllipsis
+      MarginBottom = 2
+      MarginLeft = 2
+      MarginRight = 2
+      MarginTop = 2
+      Color = clBlack
+      ItemsCount = 26
+      ItemsSpacing = -5
+      ItemsWidth = 15
+      ItemsHeight = 15
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Bevels = <      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end      
+        item
+          Width = 3
+        end      
+        item
+          Style = bcLowered
+        end      
+        item
+          HighlightColor = clBlack
+          ShadowColor = clBlack
+        end>
+      Position = 60
+      Step = 1
+    end
+    object Image3: TImage
+      Left = 7
+      Height = 45
+      Top = 302
+      Width = 492
+      AutoSize = True
+      Picture.Data = {
+        0A544A706567496D616765EC0E0000FFD8FFE000104A46494600010101007800
+        780000FFDB004300080606070605080707070909080A0C140D0C0B0B0C191213
+        0F141D1A1F1E1D1A1C1C20242E2720222C231C1C2837292C30313434341F2739
+        3D38323C2E333432FFDB0043010909090C0B0C180D0D1832211C213232323232
+        3232323232323232323232323232323232323232323232323232323232323232
+        32323232323232323232323232FFC0001108002D01EC03012200021101031101
+        FFC4001F0000010501010101010100000000000000000102030405060708090A
+        0BFFC400B5100002010303020403050504040000017D01020300041105122131
+        410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+        191A25262728292A3435363738393A434445464748494A535455565758595A63
+        6465666768696A737475767778797A838485868788898A92939495969798999A
+        A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+        D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+        01010101010101010000000000000102030405060708090A0BFFC400B5110002
+        0102040403040705040400010277000102031104052131061241510761711322
+        328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+        292A35363738393A434445464748494A535455565758595A636465666768696A
+        737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+        A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+        E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00D4BE
+        D52EE1D5AD74CD3F4C92FEEEE15D96349150E14027AF1D0D3F4FD524B9BBBAB1
+        BCB392C6FED58096DA5605802320E47041A768DFF256744FFAE171FF00A2C54F
+        E2B78B5DFB67893478FF00E26BA05D4B677F6EBD66815C8FE4370FF810E71486
+        53D4756B9B5D46CB4FB2D364BEBABB12148D24087E4009EBEC7F4A7E8DABBEA7
+        F6A49ACDED27B59DA0922670C432E33C8FAD55D22F21BFF885E18B981C3C7245
+        72CA47BC555ACAF60D3F56F14DD5CC8238A3D4E72CC7EA2803A814A2B9E126BD
+        A85A2EA0F7361A069AFF00EAA4BE20CAE3B1C120007D09CD35EE75DD2ED4DFB5
+        C58EB9A62FFAD9AC789231DCE012081EC6803A4A5AE3D75CD6754D71ACF479B4
+        E30BDB0B881A747CB8E84641EB9FA5487C55712785ED6EE08E23A8DCC890244C
+        0EDF34B6D2319CF63408EB69C2B99B0D6EFADF50BFB0D6CDB2CD6D1ACAAF6E18
+        2B2107279E782315929E24F11B47A5DC30D3962D465DB1C5B1CC8A9DD8F38E9C
+        FE22981DE8AE6354F17C9A7DFDE5B43A54B72B69189269165550AA467A1FA1AE
+        9236DE81BD6B81D47FE423E2DFFAF14FFD01A803BAD3AF5750B182E954A09635
+        7DA4E71919C55A15C759EBD168DE1BD39444D71773C28B05BA7DE73B47E40773
+        5527D635F5901B9D674AB091B95B7DA1BF0258E7F2A5703BE14B5C869DE29BBB
+        7BD86CB5C8614F3CED86EE027CB73D81CF20FF003ABFAF789974C923B3B283ED
+        7A84C372459C2A2FF798F61FCE981D0D38579CBEBDE2359F0DAAE94931E96FB3
+        8FA727355E6F1B789E35BD736FA7C42D36EE464725B23A839E452B81E9E296B9
+        9D47C5B0E9BA6DB3888DC5F5CAFEEADD38DC71C927B01EB5CD4FE2AF11894192
+        FB4CB563D21D99FD49CD0337B5CF1C7F63EAB3D9269725CF911891E459428008
+        CF422A1BCF884B6CD6AB16952CE67B44BA216603606EDC8ED5C5DECF7F7B77AA
+        DDDFC51A4925AE37459D8D807919AA5A8C13DC49A72C120465D2E2624B30C8E7
+        8E2803D9743D6135BD2E0BD488C4255DDB0B648AD4AF24B1F11EA5A368BA2DBE
+        9AB6BBAE2272DE7AB1036E3A60FB9A51F103C45710AE5B4FB52091BCA9CBF3D8
+        13D28B858F5BA70AF3ED03C7776FA84563AD4508331DB0DC4390A5BFBA41E84D
+        6AF8A3C691686EB676708BAD41D776C270B1AFAB1FE94C475A3A53ABC69BE217
+        88927C9BDD3F767FD4F97F2FD339CD493FC50F10869592D2C6348C2E55D5989F
+        70430E339A571D8F62A70AA96173F6BB54978C90338FA55B14085A5A4A5A0051
+        4A290528A0070A5A414B400E14E14D14E1400E1D294520E94A2980E1D694520E
+        B4A2900E14EED4D14EED4C05A70A6D3850028A753453A8017BD38537BD385003
+        853A9A29D400B4E14DA70A0070A70A68A70A005A70EB4DA70EB400EA5A4A5A00
+        70EB4B483AD2D0078D68DFF256744FFAE171FF00A2C573967ACCFE17F885AEEB
+        2BB9EC9B56B982FA21CE62327DE03D549CFE75BD61776D65F14F459EEAE22821
+        10DC0324AE15465077359D630DBEA3A8F89D94C73432EAD725594865652DD41E
+        E0D2197ACFC38742F8AFA34B6443E8976B713D9B272A85A225901F4E847B1FAD
+        73D1C09A87C429B4D9C036F36BF3BC8A7A3841B829F6245755E07D760D2267F0
+        E6B53C51A5A933E9B7170C00D8720A6E3DC6E38F626B9099269F59D6353D3244
+        92E2D75996E2DD94E55F047191D411401AB776BFF09378CB5696FC0952CE736B
+        042FCAC6AA06481EA4F3496769FF0008E78C34CFB1011C57CE60B88578571B49
+        071D320D5946875ED464D6BC37AA5A59EA13802F74DBFC8C3818CF1CFE2060D4
+        72C91683A82EAFAFEA56B7FAAC48C965A7D8E4856618279E727A64F4F7E28039
+        F72BE1EF13CF710716DA6EA45703A2C3201B97F0CD595B56D3FC6FA80947FC4B
+        F4DF37535F43B941503E849C7D0D6858E872DDE8D7ADA860DD5FB3CB311D159B
+        B0FA7159D73A9437DE0EB6B4DC8357BA78B4EB901BE7091B31C91E98EFEF4019
+        DA95CDDEADA1E8DA9C2775D5CABE97707D496F97F3E4FE35D15BC0977E2FF262
+        E6D748B75B68BD3791C9FC0002A9E973D968B77AADADF945863D9A8DB2B30197
+        00838F53902B6BC1768E9A50BA9C66E2E9DAE253EACC73FCB1401D3A8DAA07A5
+        79FEA3FF00211F16FF00D78A7FE80D5E822BCEB559E18754F1524B2C68D25920
+        40CC0163B1B81EB43114B499D95352D408DD2D869D12400FF0E63DC7F5AD9D07
+        C2B6777A54771730C77134E824925946E2C5867A9AC98636D261B6D49E26974F
+        BAB4486F15464A8DBC3E3B8C641ABDA75C6AB6167E4E8FAAE9B71618FDDB5C64
+        BC6BE9C1E71EF40CA12D92C106BFA39626DED51668327263254B601F622A8DA6
+        A1712787F53D659FFD3659161F30FF00080140FF00D089AB727EFC4FA5D95D7D
+        B750BE7CDEDDA8F9517A11C71D3802A4BAB04D0649EDEEE263A45EA805C0CF94
+        F8C73EC78E7D68037ECFC0FA6BE9DB24B6491987CD2BF2E4F739EB5CADC6F8F4
+        1D5ED6473235A48D6E243D59548C64FB66B56DF51D6AD6C3ECB6BADD8BDA05C2
+        5C48B99157F3C1FA9AC296F2CC68DA9D9DBCEAEB1A8C48EDF34CE4E59BDE802C
+        35CB89B54BE3F3496D0A45103FC202E7F99CD74BA0783AC6EB4A49AE604B89A5
+        50CF2CA371248CF07B5625FDA369AE2FDE23269F770AC773819D840C063ED8E2
+        A5D3759D634AB2FB3E9BA8584F6607EEDAE325A31E9907071EF40146EED8E9B2
+        EB5A5AB9686D9331E4E4A864276FE1509FF8FAB2FF00B03C7FCE98F796C60D45
+        5EF45C5DCA8CF34C4801D883C0FA7A0A592448EE6C4BBAA83A3C606E38E73400
+        EFF974F0DFFD709BFA56C784FC3F69AC5B5CDDDD5BC733BCAEA378CED51C003D
+        2B15DD63B2F0E33B055F265E49C0ED5DAFC39C1D0C91C8F364FE66901E7F7086
+        CC5C40A4FF00A1DF18E324F202B8C52DF4F25D5DDF4ECE44B3DE188BF755CED1
+        F90A76AEE82FF5742CBB8EA4E42E79FBE2AFF88F46934DB99E77899B4FBA3B99
+        D467CA7EF9F63D73401DE69DE0AD31B4B588D9C2C8570772824FBE7AE6BCB358
+        B41A7CFA9582B974B694A2127271C607E15B56FE38D76CF4EFB245A959B46176
+        ACEEB9900FCF04FD457332CE26B5BAC3339C86691FABB13C93401F40E83FF20B
+        8FE83F90AD51595A10234C8C1EA31FC8543E2DD46E34AF0BDF5EDA384B889328
+        C4038391D8D311B94B5E55E07F196B5AAF881ED750BD59E1FB333802355C36E5
+        1D87A13597E23F1FF88AC7C417F6D6B7E8904329544F250E07D48A02C7B50A51
+        5E77E3CF15EA7A3697613E9B702279A42AE4A06C8C7B8AB3F0EBC4DA8EBBA6CF
+        26A5389665B828A4205F976A9EDEE4D0077A2969052D00385385345385003874
+        A51483A528A603875A51483AD28A403853BB53453BB530169C29B4E1400A29D4
+        D14EA005EF4E14DEF4E1400E14EA68A75002D385369C2801C29C29A29C280169
+        C3AD369C3AD003A969296801C3AD2D20EB4B401E29AA6876BAAC8AF710C7215F
+        BA5D41C54FA66970697018A089235272422E013EBFA55EA5A40656A7A15AEA65
+        4CF146FB738DEA0E2A4D3B46B6D3E068A18A38D58E48450013EBFA569528A607
+        3FA8784EC6FDF7CB0C6EDEA579FCE974EF0A5958481E286346F50BCFE75D00A5
+        14863563558F601C563A7866C92FFED8B6F089B3BB78419CFAE6B6E96988C6BF
+        F0DD96A32AC93C1148CA300BA02715AD6B02DB422350303D2A4A70A0051587A8
+        7862C351BAFB44D6B03C87AB32024D6E0A5A00A49A5C2B682DC2A84500000700
+        0AC29FC09A64D3190DAC593CF0B8FE55D58A5140191A6F87ED74E50228D1141C
+        E15715A175630DD4451D41046082339AB2296803927F01696D2EFF00B2C3D7B2
+        E07E5531F0469ACC19AD2DC9E3AC42BA8A70A00A2BA643F64101036818C638AC
+        09FC03A54B3799F6487279E1703F215D70A5A433953E06D35B19B4B638E3FD50
+        A9EE3C1DA75CAA092D6DD8A2845263076A8E807B57494A28039E9BC21A7CF6D1
+        C325ADBB2C43118318213D71E95A3A568F069707936F1A469CFCA8B81CD6952D
+        311CE5D78374CB9BB370D676DE6331766310C93EA6B87F1DE81359EA4DA86267
+        B29502CBE5B1FDD3018DD81D88AF5CA8AE6DE39E321C66958773C121BF10C402
+        C3A44AC0604F24637FD48F5A9F44D2A6D6F51444DD24025125C4E46039FEE8FF
+        003C57A5CFE16D25A72ED636E5B3D4C2B9ADBD334CB7B74511A0007400600A2C
+        172F69D0986D154F5EB525F5943A85A3DB4F1A49138C3238C83F854E063814E1
+        408E774FF08D869B786E2DADA08988DB98E300E3D3F4A4BEF066957B726792C6
+        D9A46397668812C7DEBA4A5A00C7BCF0E596A168905DDBC3304FB9E6206DA7DB
+        3468FE1DB5D1C15B68A38949DC4228193EB5B22945003852D20A5A0070A70A68
+        A70A0070E94A29074A514C070EB4A29075A5148070A776A68A776A602D385369
+        C2801453A9A29D400BDE9C29BDE9C2801C29D4D14EA005A70A6D385003853853
+        45385002D3875A6D3875A00752D252D003875A5A41D696803FFFD9
+      }
+      Stretch = True
+    end
+    object cySimpleGauge10: TcySimpleGauge
+      Left = 6
+      Height = 47
+      Top = 301
+      Width = 489
+      DegradeBalance = 50
+      ItemOffBrush.Color = clBlack
+      ItemOffStyle = isRectangle
+      ItemOnBrush.Color = clAqua
+      ItemOnPen.Color = 16744448
+      ItemOnStyle = isNone
+      Color = clBlack
+      ItemsCount = 54
+      ItemsSpacing = -1
+      ItemsHeight = 45
+      Min = 0
+      Max = 100
+      ReadOnly = False
+      Smooth = True
+      Transparent = True
+      Bevels = <      
+        item
+          HighlightColor = clGray
+          ShadowColor = clBlack
+        end>
+      Position = 40
+      Step = 7.3
+    end
+    object Label17: TLabel
+      Left = 6
+      Height = 16
+      Top = 366
+      Width = 243
+      Caption = 'Transparent and Orientation = goRightLeft'
+      ParentColor = False
+    end
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    left = 776
+    top = 336
+  end
+end

@@ -1,0 +1,13 @@
+The TcyPaintBox component
+
+A PaintBox component with gradient feature. 
+
+Published properties
+- Degrade: TcyGradient - gradient background rendering
+
+Events 
+- OnPaint
+- OnMouseEnter
+- OnMouseLeave
+
+

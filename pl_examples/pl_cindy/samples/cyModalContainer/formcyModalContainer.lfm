@@ -1,0 +1,339 @@
+object FrmCyModalContainer: TFrmCyModalContainer
+  Left = 1329
+  Height = 640
+  Top = 758
+  Width = 914
+  AlphaBlendValue = 200
+  Caption = 'FrmDemo'
+  ClientHeight = 640
+  ClientWidth = 914
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.8'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 590
+    Width = 914
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 914
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBEscKey: TcySpeedButton
+      Left = 4
+      Height = 35
+      Top = 3
+      Width = 141
+      AllowAllUp = True
+      Caption = 'Close with Esc key'
+      Down = True
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      GroupIndex = 1
+      OnClick = SBEscKeyClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      Wallpaper.Transparent = False
+    end
+    object SBClose: TcySpeedButton
+      Left = 149
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Serif'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 549
+    Top = 41
+    Width = 489
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 549
+    ClientWidth = 489
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 479
+      Height = 520
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 520
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Cindy Components for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 485
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 520
+      Top = 27
+      Width = 461
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 617
+    Width = 914
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 489
+    Height = 549
+    Top = 41
+    Width = 425
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 549
+    ClientWidth = 425
+    TabOrder = 3
+    object cyBitBtn1: TcyBitBtn
+      Left = 22
+      Height = 46
+      Top = 25
+      Width = 97
+      Caption = 'Click me!'
+      OnClick = cyBitBtn1Click
+      TabOrder = 0
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clYellow
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 33023
+      Wallpaper.Transparent = False
+    end
+  end
+  object PanEdit: TCyPanel
+    Left = 464
+    Height = 161
+    Top = 240
+    Width = 360
+    Caption = ' '
+    TabOrder = 4
+    Visible = False
+    Bevels = <    
+      item
+      end>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clAqua
+    Degrade.SpeedPercent = 100
+    Degrade.ToColor = 16744576
+    object Label1: TLabel
+      Left = 32
+      Height = 16
+      Top = 18
+      Width = 39
+      Caption = 'Login: '
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 32
+      Height = 16
+      Top = 74
+      Width = 68
+      Caption = 'Password : '
+      ParentColor = False
+    end
+    object Edit1: TEdit
+      Left = 32
+      Height = 24
+      Top = 40
+      Width = 200
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 32
+      Height = 24
+      Top = 96
+      Width = 200
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 256
+      Height = 25
+      Top = 40
+      Width = 75
+      Caption = '&Ok'
+      Default = True
+      ModalResult = 1
+      TabOrder = 2
+    end
+    object Button2: TButton
+      Left = 256
+      Height = 25
+      Top = 71
+      Width = 75
+      Cancel = True
+      Caption = '&Cancel'
+      ModalResult = 2
+      TabOrder = 3
+    end
+  end
+  object cyModalContainer1: TcyModalContainer
+    BorderStyle = bsSizeable
+    Caption = 'Demo'
+    Control = PanEdit
+    EscKeyAction = 2
+    Left = 240
+    Top = 208
+  end
+end

@@ -1,0 +1,13 @@
+The TcyRadioGroup component
+
+Customizable TRadioGroup component 
+
+Published properties
+* None: TcyBevels - Bevels
+
+Events 
+* OnKeyDown
+* OnKeyUp
+* OnKeyPress
+
+

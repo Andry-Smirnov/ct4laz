@@ -1,0 +1,412 @@
+object FrmCyMathParser: TFrmCyMathParser
+  Left = 291
+  Height = 688
+  Top = 244
+  Width = 980
+  Caption = 'FrmDemo'
+  ClientHeight = 688
+  ClientWidth = 980
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '6.2'
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 638
+    Width = 980
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 980
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 4
+      Height = 35
+      Top = 3
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      NumGlyphs = 0
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 597
+    Top = 41
+    Width = 297
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 597
+    ClientWidth = 297
+    TabOrder = 1
+    object cySplitter1: TcySplitter
+      Left = 287
+      Height = 568
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 568
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Cindy Components for CodeTyphon. '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.ToColor = clSilver
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 293
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 568
+      Top = 27
+      Width = 269
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 665
+    Width = 980
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 297
+    Height = 597
+    Top = 41
+    Width = 683
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 597
+    ClientWidth = 683
+    TabOrder = 3
+    object Bevel2: TBevel
+      Left = 205
+      Height = 540
+      Top = 52
+      Width = 471
+      Shape = bsFrame
+    end
+    object Bevel1: TBevel
+      Left = 2
+      Height = 540
+      Top = 52
+      Width = 198
+      Shape = bsFrame
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 17
+      Top = 80
+      Width = 77
+      Caption = 'Expressions: '
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 17
+      Top = 341
+      Width = 112
+      Caption = 'Expression Results:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 215
+      Height = 17
+      Top = 84
+      Width = 33
+      Caption = 'F(x)='
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 215
+      Height = 17
+      Top = 548
+      Width = 46
+      Caption = 'Zoom : '
+      ParentColor = False
+    end
+    object cyLabel2: TcyLabel
+      Left = 206
+      Height = 19
+      Top = 53
+      Width = 467
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Draw graphics'
+      Transparent = False
+      Layout = tlCenter
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.ToColor = clBtnFace
+    end
+    object cyLabel3: TcyLabel
+      Left = 3
+      Height = 19
+      Top = 53
+      Width = 195
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Parse mathematical  expressions'
+      Transparent = False
+      Layout = tlCenter
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.ToColor = clBtnFace
+    end
+    object Bevel3: TBevel
+      Left = 2
+      Height = 46
+      Top = 0
+      Width = 674
+      Shape = bsFrame
+    end
+    object Label5: TLabel
+      Left = 14
+      Height = 17
+      Top = 14
+      Width = 62
+      Caption = 'Calculate: '
+      ParentColor = False
+    end
+    object LblResult: TLabel
+      Left = 253
+      Height = 17
+      Top = 13
+      Width = 52
+      Caption = 'LblResult'
+      ParentColor = False
+    end
+    object MemExprs: TMemo
+      Left = 16
+      Height = 220
+      Top = 99
+      Width = 170
+      Lines.Strings = (
+        '2+2*3'
+        '2(15+25)'
+        '-1+3'
+        '1.3'
+        '1,3'
+        '-(2+3)'
+        'var1=25'
+        'var2=70'
+        'var1+var2'
+        'max(2;3;8;5)'
+      )
+      OnChange = MemExprsChange
+      TabOrder = 0
+    end
+    object MemRslts: TMemo
+      Left = 15
+      Height = 220
+      Top = 357
+      Width = 170
+      TabOrder = 1
+    end
+    object MemGraf: TMemo
+      Left = 255
+      Height = 91
+      Top = 84
+      Width = 407
+      Lines.Strings = (
+        'x'
+        '1/x'
+        'x^x'
+        'ln(x)'
+      )
+      OnChange = MemGrafChange
+      TabOrder = 2
+    end
+    object TrackBar1: TTrackBar
+      Left = 208
+      Height = 25
+      Top = 564
+      Width = 465
+      Max = 100
+      Min = 1
+      OnChange = MemGrafChange
+      Position = 60
+      TickStyle = tsNone
+      TabOrder = 3
+    end
+    object CyPanel3: TCyPanel
+      Left = 215
+      Height = 357
+      Top = 183
+      Width = 450
+      Caption = ' '
+      TabOrder = 4
+      Bevels = <      
+        item
+          HighlightColor = clSilver
+          ShadowColor = clSilver
+        end>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.ToColor = clWhite
+      object Image1: TImage
+        Left = 0
+        Height = 357
+        Top = 0
+        Width = 450
+        Align = alClient
+        OnMouseDown = Image1MouseDown
+        OnMouseUp = Image1MouseUp
+      end
+    end
+    object EditCalc: TEdit
+      Left = 78
+      Height = 24
+      Top = 10
+      Width = 169
+      OnChange = EditCalcChange
+      TabOrder = 5
+      Text = '2^3+5(3+2)'
+    end
+  end
+  object cyMathParser1: TcyMathParser
+    left = 128
+    top = 184
+  end
+end

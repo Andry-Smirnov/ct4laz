@@ -1,0 +1,137 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+pl_Cindy
+
+Version: 6.8.1 Date: 2020-05-12 09:09
+
+===== MODs ==========
+
+pl_Cindy is a port of Cindy Component Library
+to CodeTyphon Studio
+with many many mods:
+
+
+cyAdvButton.pas ### at line: 435
+cyAdvButton.pas ### at line: 521
+cyAdvButton.pas ### at line: 603
+cyAdvFlowPanel.pas ### at line: 158
+cyAdvGridPanel.pas ### at line: 166
+cyAdvSpeedButton.pas ### at line: 409
+cyAdvSpeedButton.pas ### at line: 494
+cyAdvSpeedButton.pas ### at line: 579
+cyAttract.pas ### at line: 294
+cyAttract.pas ### at line: 302
+cyBaseButton.pas ### at line: 71
+cyBaseButton.pas ### at line: 73
+cyBaseButton.pas ### at line: 74
+cyBaseButton.pas ### at line: 117
+cyBaseButton.pas ### at line: 214
+cyBaseButton.pas ### at line: 220
+cyBaseButton.pas ### at line: 241
+cyBaseButton.pas ### at line: 312
+cyBaseButton.pas ### at line: 377
+cyBaseButton.pas ### at line: 379
+cyBaseButton.pas ### at line: 381
+cyBaseButton.pas ### at line: 513
+cyBaseButton.pas ### at line: 514
+cyBaseFlowPanel.pas ### at line: 76
+cyBaseFlowPanel.pas ### at line: 77
+cyBaseFlowPanel.pas ### at line: 123
+cyBaseFlowPanel.pas ### at line: 124
+cyBaseFlowPanel.pas ### at line: 125
+cyBaseFlowPanel.pas ### at line: 132
+cyBaseFlowPanel.pas ### at line: 133
+cyBaseFlowPanel.pas ### at line: 206
+cyBaseFlowPanel.pas ### at line: 223
+cyBaseGridPanel.pas ### at line: 125
+cyBaseGridPanel.pas ### at line: 126
+cyBaseGridPanel.pas ### at line: 127
+cyBaseGridPanel.pas ### at line: 243
+cyBaseGridPanel.pas ### at line: 260
+cyBaseLabel.pas ### at line: 69
+cyBaseLabel.pas ### at line: 181
+cyBaseLed.pas ### at line: 216
+cyBasePanel.pas ### at line: 73
+cyBasePanel.pas ### at line: 74
+cyBasePanel.pas ### at line: 222
+cyBaseSpeedButton.pas ### at line: 81
+cyBaseSpeedButton.pas ### at line: 82
+cyBaseSpeedButton.pas ### at line: 470
+cyBevel.pas ### at line: 59
+cyBevel.pas ### at line: 60
+cyBookmarks.pas ### at line: 53
+cyClasses.pas ### at line: 258
+cyClasses.pas ### at line: 1221
+cyClasses.pas ### at line: 1234
+cyDateUtils.pas ### at line: 208
+cyDateUtils.pas ### at line: 231
+cyDmmCanvas.pas ### at line: 313
+cyDmmCanvas.pas ### at line: 314
+cyEdit.pas ### at line: 530
+cyEdit.pas ### at line: 781
+cyEditDate.pas ### at line: 61
+cyEditDate.pas ### at line: 98
+cyEditDate.pas ### at line: 370
+cyEditDate.pas ### at line: 399
+cyEditDate.pas ### at line: 411
+cyEditDate.pas ### at line: 445
+cyEditFloat.pas ### at line: 62
+cyEditFloat.pas ### at line: 96
+cyEditFloat.pas ### at line: 182
+cyEditFloat.pas ### at line: 194
+cyEditInteger.pas ### at line: 61
+cyEditInteger.pas ### at line: 156
+cyEditInteger.pas ### at line: 169
+cyEditTime.pas ### at line: 64
+cyEditTime.pas ### at line: 384
+cyEditTime.pas ### at line: 410
+cyFlowPanel.pas ### at line: 165
+cyFlowPanel.pas ### at line: 181
+cyFlowPanel.pas ### at line: 182
+cyFlowPanel.pas ### at line: 191
+cyFlowPanel.pas ### at line: 192
+cyFlowPanel.pas ### at line: 198
+cyGraphics.pas ### at line: 92
+cyGraphics.pas ### at line: 133
+cyGraphics.pas ### at line: 146
+cyGraphics.pas ### at line: 147
+cyGraphics.pas ### at line: 199
+cyGraphics.pas ### at line: 1114
+cyGraphics.pas ### at line: 1362
+cyGraphics.pas ### at line: 1982
+cyGraphics.pas ### at line: 2000
+cyGraphics.pas ### at line: 2245
+cyGridPanel.pas ### at line: 171
+cyGridPanel.pas ### at line: 187
+cyGridPanel.pas ### at line: 188
+cyGridPanel.pas ### at line: 197
+cyHotLabel.pas ### at line: 73
+cyHotLabel.pas ### at line: 74
+cyImage.pas ### at line: 785
+cyImage.pas ### at line: 786
+cyModalContainer.pas ### at line: 98
+cyModalContainer.pas ### at line: 105
+cyModalContainer.pas ### at line: 137
+cyModalContainer.pas ### at line: 215
+cyPaintBox.pas ### at line: 59
+cyPaintBox.pas ### at line: 60
+cyResizer.pas ### at line: 1683
+cySkinButton.pas ### at line: 430
+cySplitter.pas ### at line: 69
+cySplitter.pas ### at line: 756
+cySplitter.pas ### at line: 759
+cySplitter.pas ### at line: 766
+cySplitter.pas ### at line: 816
+cyStatusBar.pas ### at line: 80
+cyStatusBar.pas ### at line: 82
+cyTypes.pas ### at line: 83
+cyTypes.pas ### at line: 84
+
+
+
+
+

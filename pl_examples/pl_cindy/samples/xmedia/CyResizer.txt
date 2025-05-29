@@ -1,0 +1,41 @@
+The TcyResizer component
+
+Move and resize components at run-time in a Delphi like way!
+
+Public properties
+- MouseHandling: Boolean - Determine if the mouse is manipulating selected component(s)
+- MouseHandlingJob: TMouseJob - Current mouse job
+- KeyHandlingjob: TKeyJob - Current keyboard job
+
+Published properties
+- Active: Boolean 
+- HandlingControlList: THandlingControlList - list of selected controls
+- ControlsFrame: TcyControlFrame - add a frame around the controls
+- LastMouseDownControl: TControl 
+- LastMouseJob: TMouseJob - last mouse job
+- State: TResizerState - know what cyResizer is doing 
+- Grid: TcyGrid read FGrid write SetGrid;
+- GuideLines: TcyGuideLines - guidelines properties
+- HandlingSingleControl: TcyHandlingDef - set of properties for appearence when just one control is selected
+- HandlingMultipleControls: TcyHandlingDef - set of properties for appearence when several controls are selected
+- Options: TResizerOptions - options for mouse and key handling
+- ReadOnly: Boolean - handle designing only by code
+
+Events 
+- OnBeforePaint
+- OnAfterPaint
+- OnControlListInsert - Called when a component is added to the selected control list
+- OnMoveSelection - Allow changes to x and y increments when moving selected component(s)
+- OnResizeSelection - Allow changes to with and height increments when resizing selected component(s)
+- OnKeyJobChange - Allow change to the keyboard job when setting keyboard job
+- OnMouseJobChange - Allow change to the mouse job when setting mouse job
+
+Methods
+- DetermineControlAtPos(ParentControl: TWinControl; atClientPoint: TPoint): TControl
+- Activate(Surface: TWinControl)
+- Deactivate
+- GetHandlingKeyInformation()
+- MoveSelection(IncX, IncY: Integer; IgnoreSnapToGrid: Boolean)
+- ResizeSelection(ResizeEdges: TResizeEdges; IncX, IncY: Integer; IgnoreSnapToGrid: Boolean)
+
+

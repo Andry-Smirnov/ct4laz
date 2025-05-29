@@ -1,0 +1,24 @@
+The TcyImage component
+
+Image component with zoom property and Control canvas access. 
+
+Public properties
+* CanvasControl: TCanvas
+* MouseIsDown: Boolean
+* MouseDownOffsetX: Integer 
+* MouseDownOffsetY: Integer
+* MouseDownFromPos: TPoint
+* MouseDownFromPixel: TPoint
+
+Published properties
+* Color: TColor - Background color (Transparent must be false)
+* MouseOptions: TcyImageMouseOptions
+* Zoom: Float
+* OffsetX: Integer
+* OffsetY: Integer
+
+Events 
+* BeforePaint
+* OnPaint
+
+

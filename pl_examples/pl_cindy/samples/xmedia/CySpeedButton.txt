@@ -1,0 +1,28 @@
+The TcySpeedButton component
+
+Advanced graphic speedbutton with wallpaper and caption orientation features. 
+
+Public properties 
+    // Properties defined after selecting Degrade colors, can be set by code :
+- DefaultHotFromColor: TColor
+- DefaultHotToColor: TColor
+- DefaultDownFromColor: TColor
+- DefaultDownToColor: TColor
+- DefaultDisabledFromColor: TColor
+- DefaultDisabledToColor: TColor
+
+Published properties
+- CaptionOrientation: TCaptionOrientation - depends on selected font
+- Degrade: TcyGradient - gradient background rendering
+- FlatDownStyle: TFlatDownStyle - flat rendering personalization when down
+- FlatHotStyle: TFlatHotStyle - flat rendering personalization when mouse over
+- ImageListOptions: TcyImageListOptions - To use TImageList instead of glyph
+- Wallpaper: TcyBgPicture - image background
+- Wordwrap: boolean
+
+Events 
+- OnMouseEnter
+- OnMouseLeave
+- OnPaint
+
+

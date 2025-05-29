@@ -1,0 +1,20 @@
+The TcyAdvButton component
+
+Advanced windows button with wallpaper and caption orientation features. 
+You can also personalize the color, border, wallpaper and  glyph (accept png images from Delphi 2009) for each button state. 
+
+Published properties
+- ButtonDisabled: TRenderProp - Disabled state rendering (set gradient background, glyph, font etc ...) 
+- ButtonDown: TRenderProp - Down state rendering
+- ButtonHot: TRenderProp - Mouse over state rendering
+- ButtonNormal: TRenderProp - normal state rendering
+- CaptionOrientation: TCaptionOrientation - depends on selected font
+- Canvas: TCanvas
+- DoubleBuffered: Boolean - avoid flickering
+- ImageList: TImageList
+- Wallpaper: TcyBgPicture - image background
+
+Events 
+- 
+
+

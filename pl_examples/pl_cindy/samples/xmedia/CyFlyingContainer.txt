@@ -1,0 +1,28 @@
+The TcyFlyingContainer component
+
+Create a form in popup style with any control inside until it loose focus.
+
+Public properties
+- Active: Boolean
+
+Published properties
+- AlphaBlend: Boolean
+- AlphaBlendvalue: byte
+- BorderStyle: TFormBorderStyle
+- BorderIcons: TBorderIcons
+- Caption: TCaption - popup caption
+- Control: TControl - control for popup localization
+- EscKey: Boolean - close popup with escape key
+- TransparentColor: Boolean
+- TransparentColorValue: TColor
+
+Events 
+- OnShow
+- OnClose
+- OnKeyPress
+
+Methods
+- ExecuteFromControl(aControl: TControl; posX, posY: integer)
+- ExecuteFromGrid(aGrid: TCustomGrid; Align: TAlignment)
+- Execute(ScreenCoord: TPoint)
+- Close

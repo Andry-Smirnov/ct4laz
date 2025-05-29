@@ -1,0 +1,286 @@
+object PackTableForm: TPackTableForm
+  Left = 484
+  Height = 362
+  Top = 317
+  Width = 329
+  Caption = 'PackTableForm'
+  ClientHeight = 362
+  ClientWidth = 329
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '6.2'
+  object Splitter1: TSplitter
+    Left = 129
+    Height = 201
+    Top = 161
+    Width = 5
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 201
+    Top = 161
+    Width = 129
+    Align = alLeft
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'Field1'
+        FieldName = 'Field1'
+      end    
+      item
+        Title.Caption = 'Deleted'
+        FieldName = 'Deleted'
+      end    
+      item
+        Title.Caption = 'Field3'
+        FieldName = 'Field3'
+      end>
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 329
+    Align = alTop
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 329
+    DataSource = DataSource1
+    Options = []
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 136
+    Top = 25
+    Width = 329
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 136
+    ClientWidth = 329
+    TabOrder = 2
+    object Button2: TButton
+      Left = 6
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = 'Add 10'
+      OnClick = Button2Click
+      TabOrder = 0
+    end
+    object Button3: TButton
+      Left = 86
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = 'Delete 5'
+      OnClick = Button3Click
+      TabOrder = 1
+    end
+    object GroupBox1: TGroupBox
+      Left = 6
+      Height = 65
+      Top = 38
+      Width = 113
+      Caption = 'Table'
+      ClientHeight = 50
+      ClientWidth = 109
+      TabOrder = 2
+      object Label1: TLabel
+        Left = 6
+        Height = 13
+        Top = 10
+        Width = 48
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = 'Normal'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 6
+        Height = 13
+        Top = 26
+        Width = 48
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = 'Deleted'
+        ParentColor = False
+      end
+      object labnormal: TLabel
+        Left = 62
+        Height = 13
+        Top = 10
+        Width = 32
+        AutoSize = False
+        Caption = '0'
+        ParentColor = False
+      end
+      object labdeleted: TLabel
+        Left = 62
+        Height = 13
+        Top = 26
+        Width = 32
+        AutoSize = False
+        Caption = '0'
+        ParentColor = False
+      end
+    end
+    object Button5: TButton
+      Left = 166
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = 'Pack Table'
+      OnClick = Button5Click
+      TabOrder = 3
+    end
+    object ShowDeleted: TCheckBox
+      Left = 14
+      Height = 21
+      Top = 110
+      Width = 165
+      Caption = 'Show Deleted Records'
+      OnClick = ShowDeletedClick
+      TabOrder = 4
+    end
+    object GroupBox2: TGroupBox
+      Left = 126
+      Height = 65
+      Top = 38
+      Width = 113
+      Caption = 'Memo'
+      ClientHeight = 50
+      ClientWidth = 109
+      TabOrder = 5
+      object Label3: TLabel
+        Left = 6
+        Height = 13
+        Top = 10
+        Width = 48
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = 'Normal'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 6
+        Height = 13
+        Top = 26
+        Width = 48
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = 'Deleted'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 62
+        Height = 13
+        Top = 10
+        Width = 32
+        AutoSize = False
+        Caption = '0'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 62
+        Height = 13
+        Top = 26
+        Width = 32
+        AutoSize = False
+        Caption = '0'
+        ParentColor = False
+      end
+    end
+  end
+  object DBMemo1: TDBMemo
+    Left = 134
+    Height = 201
+    Top = 161
+    Width = 195
+    Align = alClient
+    DataField = 'Field2'
+    DataSource = DataSource1
+    ScrollBars = ssVertical
+    TabOrder = 3
+  end
+  object DataSource1: TDataSource
+    DataSet = Dbf1
+    left = 240
+    top = 72
+  end
+  object Dbf1: TDbf
+    FilePath = '..\xmedia\database1\/'
+    IndexDefs = <>
+    OpenMode = omAutoCreate
+    TableName = 'table1.dbf'
+    TableLevel = 4
+    FilterOptions = []
+    AfterPost = Dbf1AfterPost
+    AfterDelete = Dbf1AfterDelete
+    OnCalcFields = Dbf1CalcFields
+    left = 208
+    top = 72
+    object Dbf1Field1: TStringField
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'Field1'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 5
+    end
+    object Dbf1Deleted: TBooleanField
+      DisplayWidth = 5
+      FieldKind = fkCalculated
+      FieldName = 'Deleted'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object Dbf1Field2: TMemoField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Field2'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object Dbf1Field3: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'Field3'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+    end
+  end
+end

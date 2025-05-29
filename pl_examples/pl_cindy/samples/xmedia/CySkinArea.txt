@@ -1,0 +1,41 @@
+The TcySkinArea component
+
+Allows to define non rectangle buttons set with a single component. 
+
+How to use? 
+First, inform Area: Tbitmap property with a colored bitmap: each color represent an area (region) for a single button. 
+The property Areas: TcyAreas will be automatically filled (Areas must be empty) with items for each detected area color. 
+Each item have properties to control the area button: AllowAllUp, Down, Enabled, GroupIndex etc ... 
+
+Now that you have determined the region for each button, you need to set its visual for the different states (a picture for each state) that you want to be seen. Note that you don' t need to inform all the states properties: PictureNormal, PictureMouseOver, PictureMouseDown, PictureDownMouseOver, PictureDownMouseDown, PictureDown and PictureDisabled. 
+
+The picture seen on the screen that represent current state for each button can be accessed with Picture: TPicture property. 
+
+Published properties
+- Area: TBitmap
+- Areas: TcyAreas
+- Autosize: Boolean
+- Center: Boolean
+- Enabled: Boolean
+- Picture: TPicture
+- PictureDisabled: TPicture
+- PictureDown: TPicture
+- PictureDownMouseDown: TPicture
+- PictureDownMouseOver: TPicture
+- PictureMouseDown: TPicture
+- PictureMouseOver: TPicture
+- PictureNormal: TPicture
+- Stretch: Boolean
+- Transparent: Boolean
+
+Methods 
+- GetAreaIndexByPos(x, y: Integer): Integer
+- GetDrawAreaStateFromState(aState: TAreaState): TAreaState
+- UpdateArea(Item: TCollectionItem; withState: TAreaState)
+- DrawArea(aItem: tcyArea; aPicture: TPicture)
+- GetBitmapArea(aBitmap: TBitmap; var aLocalisationArea: TRect; aItem: tcyArea; aState: TAreaState; BckgrndColor: TColor): Boolean
+
+Events 
+- OnClickArea
+
+

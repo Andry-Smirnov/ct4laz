@@ -1,0 +1,663 @@
+object FrmCyTabControl: TFrmCyTabControl
+  Left = 1680
+  Height = 652
+  Top = 822
+  Width = 1190
+  Caption = 'FrmDemo'
+  ClientHeight = 652
+  ClientWidth = 1190
+  Color = clWhite
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.8'
+  Scaled = False
+  object LblWebSite: TcyHotLabel
+    Cursor = crHandPoint
+    Left = 0
+    Height = 27
+    Top = 602
+    Width = 1190
+    Align = alBottom
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'http://sourceforge.net/projects/tcycomponents/'
+    Transparent = False
+    Layout = tlCenter
+    OnClick = LblWebSiteClick
+    CaptionIndentRight = 5
+    CaptionIndentTop = 10
+    Bevels = <>
+    DegradeEnter.AngleDegree = 0
+    DegradeEnter.Balance = 20
+    DegradeEnter.FromColor = 16759739
+    DegradeEnter.SpeedPercent = 100
+    DegradeEnter.ToColor = clWhite
+    DegradeLeave.AngleDegree = 0
+    DegradeLeave.Balance = 20
+    DegradeLeave.FromColor = 16744576
+    DegradeLeave.SpeedPercent = 100
+    DegradeLeave.ToColor = clWhite
+    DegradeMouseDown.AngleDegree = 0
+    DegradeMouseDown.BalanceMode = bmInvertReverse
+    DegradeMouseDown.FromColor = 16777088
+    DegradeMouseDown.SpeedPercent = 100
+    DegradeMouseDown.ToColor = 16744576
+    FontEnter.CharSet = ANSI_CHARSET
+    FontEnter.Color = clBlue
+    FontEnter.Height = -13
+    FontEnter.Name = 'Arial'
+    FontLeave.CharSet = ANSI_CHARSET
+    FontLeave.Color = clWindowText
+    FontLeave.Height = -13
+    FontLeave.Name = 'Arial'
+    FontMouseDown.Color = clWindowText
+    FontMouseDown.Height = -10
+    FontMouseDown.Name = 'Tahoma'
+    ShadowEnter.Color = 16748174
+    ShadowEnter.ZoomPercent = 120
+    ShadowEnter.RelativePosX = -10
+    ShadowEnter.RelativePosY = -8
+    ShadowLeave.Color = 16755884
+    ShadowLeave.ZoomPercent = 120
+    ShadowLeave.RelativePosX = -10
+    ShadowLeave.RelativePosY = -8
+  end
+  object CyPanel1: TCyPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 1190
+    Align = alTop
+    Caption = ' '
+    TabOrder = 0
+    Bevels = <>
+    Degrade.AngleDegree = 0
+    Degrade.FromColor = clWhite
+    Degrade.SpeedPercent = 90
+    Degrade.ToColor = clSilver
+    object SBClose: TcySpeedButton
+      Left = 3
+      Height = 35
+      Top = 2
+      Width = 50
+      Caption = 'Close'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Spacing = 0
+      OnClick = SBCloseClick
+      ParentFont = False
+      MonochromeGlyphColor = clBlack
+      Degrade.AngleDegree = 0
+      Degrade.Balance = 75
+      Degrade.FromColor = 9211135
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 215
+      Wallpaper.Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 561
+    Top = 41
+    Width = 443
+    Align = alLeft
+    BevelOuter = bvNone
+    BorderWidth = 2
+    Caption = 'Panel2'
+    ClientHeight = 561
+    ClientWidth = 443
+    TabOrder = 1
+    object cyLabel1: TcyLabel
+      Left = 2
+      Height = 532
+      Top = 27
+      Width = 16
+      Align = alLeft
+      AutoSize = False
+      Caption = 'Free TcyComponents for CodeTyphon'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 4671303
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      Layout = tlBottom
+      CaptionIndentBottom = 5
+      CaptionOrientation = coVertical
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.SpeedPercent = 100
+      Degrade.ToColor = clSilver
+    end
+    object cySplitter1: TcySplitter
+      Left = 433
+      Height = 532
+      Top = 27
+      Width = 8
+      Align = alRight
+      Anchors = [akRight]
+      Bevels = <>
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = clWhite
+      Degrade.Orientation = dgdHorizontal
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = clSilver
+      DegradeHot.AngleDegree = 0
+      DegradeHot.FromColor = 16777088
+      DegradeHot.Orientation = dgdHorizontal
+      DegradeHot.SpeedPercent = 100
+      DegradeHot.ToColor = 16744576
+      ResizeSide = rsRight
+      Wallpaper.Transparent = False
+      OnMoved = cySplitter1Moved
+    end
+    object CyPanel2: TCyPanel
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 439
+      Align = alTop
+      Caption = 'Information'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = 13395456
+      Font.Height = -17
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 0
+      Bevels = <      
+        item
+          HighlightColor = 16744576
+          ShadowColor = 16744576
+          Style = bcLowered
+        end>
+      Shadow.Color = clWhite
+      Shadow.RelativePosY = 1
+      Degrade.AngleDegree = 0
+      Degrade.FromColor = 16777088
+      Degrade.SpeedPercent = 90
+      Degrade.ToColor = 16744576
+    end
+    object RichEditInfo: TMemo
+      Left = 18
+      Height = 532
+      Top = 27
+      Width = 415
+      Align = alClient
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Lines.Strings = (
+        'RichEditInfo'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      TabStop = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 629
+    Width = 1190
+    Panels = <>
+    SimplePanel = False
+  end
+  object Panel1: TPanel
+    Left = 443
+    Height = 561
+    Top = 41
+    Width = 747
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = ' '
+    ClientHeight = 561
+    ClientWidth = 747
+    TabOrder = 3
+    object RGStyle: TRadioGroup
+      Left = 4
+      Height = 105
+      Top = 0
+      Width = 185
+      AutoFill = True
+      Caption = ' Style '
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 84
+      ClientWidth = 181
+      ItemIndex = 2
+      Items.Strings = (
+        'Tabs'
+        'Buttons'
+        'Flat buttons'
+      )
+      OnClick = RGStyleClick
+      TabOrder = 0
+    end
+    object CBThinBorder: TCheckBox
+      Left = 6
+      Height = 20
+      Top = 109
+      Width = 87
+      Caption = 'Thin border'
+      Checked = True
+      OnClick = CBThinBorderClick
+      State = cbChecked
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 238
+      Height = 25
+      Top = 54
+      Width = 75
+      Caption = 'Button1'
+      OnClick = Button1Click
+      TabOrder = 2
+    end
+    object Panel4: TPanel
+      Left = 4
+      Height = 433
+      Top = 124
+      Width = 715
+      BevelOuter = bvNone
+      Caption = ' '
+      ClientHeight = 433
+      ClientWidth = 715
+      Color = 6750414
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 3
+      object cyTabControl2: TcyTabControl
+        Left = 334
+        Height = 329
+        Top = 14
+        Width = 311
+        Images = ImageList1
+        MultiLine = True
+        Style = tsFlatButton
+        TabHeight = 30
+        TabIndex = 0
+        Tabs.Strings = (
+          'aaa'
+          'bbb'
+          'ccc'
+          'ddd'
+          'eee'
+          'fff'
+          'ggg'
+        )
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        ParentFont = False
+        TabOrder = 0
+        ActiveTabColors.AngleDegree = 0
+        ActiveTabColors.Balance = 20
+        ActiveTabColors.FromColor = 12615935
+        ActiveTabColors.SpeedPercent = 100
+        ActiveTabColors.ToColor = 12615935
+        InactiveTabColors.AngleDegree = 0
+        InactiveTabColors.Balance = 20
+        InactiveTabColors.FromColor = 6750414
+        InactiveTabColors.SpeedPercent = 100
+        InactiveTabColors.ToColor = clGray
+        ActiveTabFont.Color = clWhite
+        ActiveTabFont.Height = -13
+        ActiveTabFont.Name = 'Tahoma'
+        InactiveTabFont.Color = clBlack
+        InactiveTabFont.Height = -13
+        InactiveTabFont.Name = 'Tahoma'
+        object CyPanel3: TCyPanel
+          Left = 2
+          Height = 297
+          Top = 30
+          Width = 307
+          Align = alClient
+          Caption = ' '
+          TabOrder = 0
+          Bevels = <          
+            item
+              Style = bcNone
+            end>
+          Degrade.AngleDegree = 0
+          Degrade.FromColor = 12615935
+          Degrade.SpeedPercent = 100
+          Degrade.ToColor = clSilver
+          object cyColorGrid2: TcyColorGrid
+            Left = 16
+            Height = 96
+            Top = 24
+            Width = 150
+            ColorList.Strings = (
+              'clBlack'
+              'clMaroon'
+              'clGreen'
+              'clOlive'
+              'clNavy'
+              'clPurple'
+              'clTeal'
+              'clGray'
+              'clSilver'
+              'clRed'
+              'clLime'
+              'clYellow'
+              'clBlue'
+              'clFuchsia'
+              'clAqua'
+              'clWhite'
+              'clMoneyGreen'
+              'clSkyBlue'
+              'clCream'
+              'clMedGray'
+              'clActiveBorder'
+              'clActiveCaption'
+              'clAppWorkSpace'
+              'clBackground'
+              'clBtnFace'
+              'clBtnHighlight'
+              'clBtnShadow'
+              'clBtnText'
+              'clCaptionText'
+              'clDefault'
+              'clGrayText'
+              'clHighlight'
+              'clHighlightText'
+              'clInactiveBorder'
+              'clInactiveCaption'
+              'clInactiveCaptionText'
+              'clInfoBk'
+              'clInfoText'
+              'clMenu'
+              'clMenuText'
+              'clNone'
+              'clScrollBar'
+              'cl3DDkShadow'
+              'cl3DLight'
+              'clWindow'
+              'clWindowFrame'
+              'clWindowText'
+            )
+            SelectionIndex = 0
+          end
+        end
+      end
+      object cyTabControl1: TcyTabControl
+        Left = 17
+        Height = 329
+        Top = 14
+        Width = 311
+        Images = ImageList1
+        MultiLine = True
+        Style = tsFlatButton
+        TabHeight = 30
+        TabIndex = 0
+        Tabs.Strings = (
+          'aaa'
+          'bbb'
+          'ccc'
+        )
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        ParentFont = False
+        TabOrder = 1
+        ActiveTabColors.AngleDegree = 0
+        ActiveTabColors.Balance = 20
+        ActiveTabColors.FromColor = 12615935
+        ActiveTabColors.SpeedPercent = 100
+        ActiveTabColors.ToColor = 12615935
+        InactiveTabColors.AngleDegree = 0
+        InactiveTabColors.Balance = 20
+        InactiveTabColors.FromColor = 6750414
+        InactiveTabColors.SpeedPercent = 100
+        InactiveTabColors.ToColor = clGray
+        ActiveTabFont.Color = clWhite
+        ActiveTabFont.Height = -13
+        ActiveTabFont.Name = 'Tahoma'
+        InactiveTabFont.Color = clBlack
+        InactiveTabFont.Height = -13
+        InactiveTabFont.Name = 'Tahoma'
+        object CyPanel4: TCyPanel
+          Left = 2
+          Height = 297
+          Top = 30
+          Width = 307
+          Align = alClient
+          Caption = ' '
+          TabOrder = 0
+          Bevels = <          
+            item
+              Style = bcNone
+            end>
+          Degrade.AngleDegree = 0
+          Degrade.FromColor = 12615935
+          Degrade.SpeedPercent = 100
+          Degrade.ToColor = clSilver
+          object cyColorGrid1: TcyColorGrid
+            Left = 16
+            Height = 96
+            Top = 24
+            Width = 150
+            ColorList.Strings = (
+              'clBlack'
+              'clMaroon'
+              'clGreen'
+              'clOlive'
+              'clNavy'
+              'clPurple'
+              'clTeal'
+              'clGray'
+              'clSilver'
+              'clRed'
+              'clLime'
+              'clYellow'
+              'clBlue'
+              'clFuchsia'
+              'clAqua'
+              'clWhite'
+              'clMoneyGreen'
+              'clSkyBlue'
+              'clCream'
+              'clMedGray'
+              'clActiveBorder'
+              'clActiveCaption'
+              'clAppWorkSpace'
+              'clBackground'
+              'clBtnFace'
+              'clBtnHighlight'
+              'clBtnShadow'
+              'clBtnText'
+              'clCaptionText'
+              'clDefault'
+              'clGrayText'
+              'clHighlight'
+              'clHighlightText'
+              'clInactiveBorder'
+              'clInactiveCaption'
+              'clInactiveCaptionText'
+              'clInfoBk'
+              'clInfoText'
+              'clMenu'
+              'clMenuText'
+              'clNone'
+              'clScrollBar'
+              'cl3DDkShadow'
+              'cl3DLight'
+              'clWindow'
+              'clWindowFrame'
+              'clWindowText'
+            )
+            SelectionIndex = 0
+          end
+        end
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Height = 24
+    Width = 24
+    Left = 784
+    Top = 80
+    Bitmap = {
+      4C69020000001800000018000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000FF000000FF000000FF0000
+      00FF000000FF000000FF00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000FF000000FFBFB8BFFF308830FF007800FF0080
+      00FF007800FF007000FF000000FF000000FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000FF000000FFFFF0FFFFFFF8FFFFFFF8FFFFFFF8FFFF90C890FF0F80
+      0FFF007800FF007800FF008000FF008000FF000000FF000000FF000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00FFCFC8CFFFEFE8DFFFD0C8A0FFE0D8CFFFFFF0FFFFE0F0EFFFA0F0A0FF3FE8
+      3FFF00A000FF007800FF007800FF0F7800FF008000FF007800FF000000FF0000
+      0000000000000000000000000000000000000000000000000000000000FFEFE0
+      E0FFC0C070FFD0D000FFF0E800FFE0D800FF8FB820FF0FF000FF00F000FF00F0
+      00FF00F800FF10B800FF80A000FFCFC800FFC0C000FF5F8800FF0F7800FF0000
+      00FF0000000000000000000000000000000000000000000000FFD0D0D0FFCFC8
+      90FFEFE000FFFFF000FFFFF000FFFFF000FFF0E800FF50C000FF00F000FF00F0
+      00FF0FE800FFAFB800FFFFF000FFFFF000FFFFF000FFFFF000FF609000FF0078
+      00FF000000FF00000000000000000000000000000000000000FFFFF0FFFFC0C0
+      1FFFFFF000FFFFF800FFFFF000FFFFF000FFFFF000FFCFC800FF0FE800FF00F0
+      00FF4FC000FFFFF000FFFFF000FFFFF800FFFFF000FFFFF000FFE0D800FF1F78
+      00FF000000FF000000000000000000000000000000FFFFF8FFFFEFE0D0FFDFD0
+      00FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FFEFE000FF20D000FF00F0
+      00FF9FC000FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FF4F80
+      00FF008000FF000000FF0000000000000000000000FFFFF0FFFF7FD860FFE0D8
+      00FFFFF000FFFFF000FFFFF000FFFFF800FFFFF000FFF0E800FF30C800FF00F0
+      00FFBFC000FFFFF000FFFFF000FFFFF000FFFFF800FFFFF000FFFFF000FF6F98
+      00FF007800FF000000FF00000000000000FFCFC8CFFFEFF8EFFF10E000FFDFD0
+      00FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FFEFE000FF20D000FF00F0
+      00FFB0C000FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FF6090
+      00FF007800FF008000FF000000FF000000FFFFF8FFFFC0F8C0FF00F000FFAFC0
+      00FFFFF000FFFFF000FFFFF800FFFFF000FFFFF000FFCFC800FF0FE800FF00F0
+      00FF80C000FFFFF000FFFFF800FFFFF000FFFFF000FFFFF800FFFFE800FF3080
+      00FF007800FF008000FF000000FF000000FFFFF8FFFFA0F8A0FF00F000FF3FC8
+      00FFEFE000FFFFF000FFFFF000FFFFF000FFF0E800FF50C000FF00F000FF00F0
+      00FF2FD000FFE0D800FFFFF000FFFFF000FFFFF000FFFFF000FFB0B800FF0F78
+      00FF007800FF008000FF000000FF000000FFFFF8FFFF7FF87FFF00F000FF00F0
+      00FF50C000FFD0D000FFF0E800FFE0D800FF6FB800FF00E800FF00F800FF00F0
+      00FF00F000FF5FB800FFE0E000FFFFF000FFFFF000FFCFC800FF2F7800FF0078
+      00FF007800FF008000FF000000FF000000FFFFF8FFFF50F850FF00F000FF00F0
+      00FF00F000FF10E000FF2FC800FF1FD800FF00F800FF00F000FF00F000FF00F0
+      00FF00F800FF00F000FF2FD000FF60C000FF50C000FF109800FF007800FF0078
+      00FF008000FF007800FF000000FF000000FFF0E8F0FF50F050FF00F000FF00F0
+      00FF00F000FF00F000FF00F800FF00F000FF00F000FF00F000FF00F000FF00F0
+      00FF00F000FF00F000FF00F000FF00F000FF00F000FF00A000FF007800FF0078
+      00FF007800FF008000FF000000FF00000000000000FF70F86FFF00F000FF1FD8
+      00FFA0B800FFA0C000FFAFC000FFA0C000FFAFC000FFA0C000FFAFC000FFA0C0
+      00FFAFC000FFA0C000FFAFC000FFA0C000FFAFC000FF9FA800FF0F7800FF0078
+      00FF008000FF000000FF0000000000000000000000FFA0F8AFFF00F000FF0FE8
+      00FFD0C800FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FFFFF0
+      00FFFFF000FFFFF000FFFFF000FFFFF000FFFFF000FFD0C800FF0F7800FF0080
+      00FF007800FF000000FF000000000000000000000000000000FF00F000FF00F0
+      00FF70B800FFFFF000FFFFF000FFFFF000FFFFF000FFFFF800FFFFF000FFFFF0
+      00FFFFF800FFFFF000FFFFF000FFFFF800FFFFF000FF6F9000FF007800FF0080
+      00FF000000FF00000000000000000000000000000000000000FF3FE03FFF00F0
+      00FF0FE800FF90B000FFFFF000FFFFF800FFFFF000FFFFF000FFFFF000FFFFF0
+      00FFFFF000FFFFF000FFFFF000FFF0E800FF90A000FF0F7800FF008000FF0078
+      00FF000000FF0000000000000000000000000000000000000000000000FF00B8
+      00FF00E800FF0FE800FF60B800FFD0C800FFFFF000FFFFF000FFFFF000FFFFF8
+      00FFFFF000FFFFF000FFD0C800FF609800FF007800FF007800FF008000FF0000
+      00FF000000000000000000000000000000000000000000000000000000000000
+      00FF008800FF00C800FF00F000FF10E000FF40B800FF70C000FF9FC000FF90C0
+      00FF7FB800FF40C000FF10C800FF008000FF008000FF007800FF000000FF0000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000FF000000FF009800FF00E000FF00F000FF00F000FF00E000FF00D0
+      00FF00C000FF00B800FF008000FF007800FF000000FF000000FF000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000FF000000FF008800FF007800FF007800FF0078
+      00FF007800FF007800FF000000FF000000FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000FF000000FF000000FF0000
+      00FF000000FF000000FF00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000FF000000FF000000FF0000
+      00FF000000FF000000FF00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000FF000000FFF0F0FFFF8080C0FF0F0880FF0000
+      7FFF000080FF00007FFF000000FF000000FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000FF000000FFFFF8FFFFFFF8FFFFFFF8FFFFFFF8FFFFB0B0EFFF0000
+      A0FF00007FFF000080FF000080FF000080FF000000FF000000FF000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00FFFFF8FFFFFFF8FFFFF0F0FFFFB0B0FFFF6F68FFFF2020FFFF0000FFFF0000
+      FFFF0000DFFF000080FF00007FFF000080FF00007FFF000080FF000000FF0000
+      0000000000000000000000000000000000000000000000000000000000FFFFF8
+      FFFFFFF8FFFFD0D0FFFF2020FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000C0FF000080FF00007FFF000080FF00007FFF000080FF0000
+      00FF0000000000000000000000000000000000000000000000FFFFF8FFFFFFF8
+      FFFFA0A0FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000F0FF00008FFF000080FF000080FF00007FFF000080FF0000
+      7FFF000000FF00000000000000000000000000000000000000FFFFF8FFFF6F68
+      FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0000D0FF000080FF00007FFF000080FF00007FFF0000
+      80FF000000FF000000000000000000000000000000FFE0E0FFFF3F38FFFF0000
+      FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0000FFFF00009FFF00007FFF000080FF000080FF0000
+      7FFF000080FF000000FF0000000000000000000000FF7070FFFF0000FFFF0010
+      EFFF0018DFFF0020E0FF0018DFFF0010EFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0010F0FF0018C0FF001880FF00207FFF001080FF0000
+      7FFF000080FF000000FF00000000000000FFEFF0F0FF0F70CFFF00B8CFFF00D8
+      D0FF00E8EFFF00E8EFFF00E8EFFF00D8D0FF00B8C0FF0060CFFF0008F0FF0000
+      FFFF0058CFFF00B0CFFF00D0D0FF00E8E0FF00E8EFFF00E8EFFF00D8DFFF00C0
+      C0FF0070A0FF00107FFF000000FF000000FF70C0C0FF00F8FFFF00F8FFFF00F8
+      FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF0050BFFF0038
+      C0FF00F0F0FF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8
+      FFFF00F8FFFF00709FFF000000FF000000FFCFD8F0FF0078C0FF00C8D0FF00E0
+      E0FF00F0F0FF00F0F0FF00F0F0FF00E0E0FF00C8D0FF0078CFFF0008EFFF0008
+      FFFF0068C0FF00C0D0FF00E0DFFF00E8F0FF00F0F0FF00F0F0FF00E0E0FF00D0
+      D0FF0088AFFF00107FFF000000FF000000FFD0C8FFFF0000FFFF0000FFFF0018
+      DFFF0028CFFF0030CFFF0028CFFF0018DFFF0000F0FF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0010E0FF0028CFFF0030C0FF003080FF00187FFF0000
+      80FF00007FFF000080FF000000FF000000FFDFE0FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0000FFFF0008FFFF0030CFFF0058C0FF0070C0FF0078
+      C0FF0050BFFF0028D0FF0000FFFF0000FFFF0000F0FF00007FFF000080FF0000
+      7FFF000080FF00007FFF000000FF000000FFF0F0FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0008FFFF0048C0FF00C0C0FF00F0F0FF00F8FFFF00F8FFFF00F8
+      FFFF00F8FFFF00F0EFFF00B8C0FF0040CFFF0000DFFF00007FFF000080FF0000
+      7FFF000080FF000080FF000000FF00000000000000FF2020FFFF0000FFFF0000
+      FFFF0008F0FF0088BFFF00F0F0FF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8
+      FFFF00F8FFFF00F8FFFF00F8FFFF00F0EFFF0068A0FF00007FFF000080FF0000
+      7FFF000080FF000000FF0000000000000000000000FF6F68FFFF0000FFFF0000
+      FFFF0068C0FF00F8F0FF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8
+      FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8F0FF005090FF00007FFF0000
+      80FF000080FF000000FF000000000000000000000000000000FF0000FFFF0010
+      E0FF00D8DFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8
+      FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00F8FFFF00B8C0FF00007FFF0000
+      80FF000000FF00000000000000000000000000000000000000FF0000BFFF0020
+      DFFF0088C0FF0090CFFF0090CFFF0090CFFF0090CFFF0090CFFF0090CFFF0090
+      CFFF0090CFFF0090CFFF0088CFFF0090BFFF0090AFFF0088A0FF001080FF0000
+      7FFF000000FF0000000000000000000000000000000000000000000000FF0000
+      9FFF0000EFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0000E0FF00008FFF00007FFF000080FF00007FFF0000
+      00FF000000000000000000000000000000000000000000000000000000000000
+      00FF000070FF0000BFFF0000F0FF0000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000EFFF00008FFF00007FFF000080FF000070FF000000FF0000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000FF000000FF00008FFF0000CFFF0000C0FF0000BFFF0000A0FF0000
+      90FF000080FF00007FFF000080FF00007FFF000000FF000000FF000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000FF000000FF00006FFF000070FF000080FF0000
+      7FFF00007FFF000060FF000000FF000000FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000FF000000FF000000FF0000
+      00FF000000FF000000FF00000000000000000000000000000000000000000000
+      0000000000000000000000000000
+    }
+  end
+end

@@ -1,0 +1,7 @@
+The TcyCheckBox component
+
+It's a checkBox with OnChange and OnClick (only when user changes value) event !!!
+
+Events 
+* OnClick
+OnChange
