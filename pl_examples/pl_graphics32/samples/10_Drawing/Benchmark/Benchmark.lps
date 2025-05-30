@@ -7,33 +7,28 @@
     <Units>
       <Unit>
         <Filename Value="Benchmark.lpr"/>
-        <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="9"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="benchmarkmw.pas"/>
-        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <UnitName Value="Benchmarkmw"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="292"/>
-        <CursorPos X="3" Y="320"/>
+        <TopLine Value="293"/>
+        <CursorPos X="19" Y="308"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
-  <SkipCheckLCLInterfaces Value="True"/>
 </CONFIG>

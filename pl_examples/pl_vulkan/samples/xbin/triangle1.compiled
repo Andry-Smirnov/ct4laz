@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1520657216"/>
+  <Params Value="-MObjFPC -Scghi -O1 -gw3 -gl -gh -Xg -WG -l -vewnhibq -vm5024 -FiD:\psis\repo\psis\SCADA-EISA-Lazarus-Components\ct4laz\pl_examples\pl_vulkan\samples\xbin -FiD:\psis\repo\psis\SCADA-EISA-Lazarus-Components\ct4laz\pl_examples\pl_vulkan\samples -FuD:\psis\repo\psis\SCADA-EISA-Lazarus-Components\ct4laz\pl_examples\pl_vulkan\samples\obj_triangle1\ -FuD:\psis\repo\psis\SCADA-EISA-Lazarus-Components\ct4laz\pl_components\pl_vulkan\lib\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 -FED:\psis\repo\psis\SCADA-EISA-Lazarus-Components\ct4laz\pl_examples\pl_vulkan\samples\xbin\ -oD:\psis\repo\psis\SCADA-EISA-Lazarus-Components\ct4laz\pl_examples\pl_vulkan\samples\xbin\triangle1.exe -dUseCThreads -dLCL -dLCLwin32 triangle1.lpr"/>
+</CONFIG>

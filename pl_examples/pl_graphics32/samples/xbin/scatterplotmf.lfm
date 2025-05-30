@@ -1,0 +1,30 @@
+object FmScatterPlot: TFmScatterPlot
+  Left = 331
+  Height = 400
+  Top = 218
+  Width = 400
+  Caption = 'Scatter Plot'
+  ClientHeight = 400
+  ClientWidth = 400
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '6.0'
+  object Image32: TImage32
+    Left = 0
+    Height = 400
+    Top = 0
+    Width = 400
+    Align = alClient
+    Bitmap.ResamplerClassName = 'TLinearResampler'
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smStretch
+    TabOrder = 0
+    OnClick = Image32Click
+    OnPaintStage = Image32PaintStage
+  end
+end

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <General>
       <Flags>
         <LRSInOutputDirectory Value="False"/>
+        <CompatibilityMode Value="True"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <MainUnit Value="0"/>
       <Icon Value="0"/>
     </General>
     <BuildModes Count="2">
@@ -25,8 +25,8 @@
             <SyntaxOptions>
               <SyntaxMode Value="Delphi"/>
               <CStyleOperator Value="False"/>
-              <CPPInline Value="False"/>
               <UseAnsiStrings Value="False"/>
+              <CPPInline Value="False"/>
             </SyntaxOptions>
           </Parsing>
           <CodeGeneration>
@@ -81,7 +81,6 @@
       </Unit0>
       <Unit1>
         <Filename Value="bytemapsmf.pas"/>
-        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
@@ -100,8 +99,8 @@
         <SyntaxMode Value="Delphi"/>
         <CStyleOperator Value="False"/>
         <IncludeAssertionCode Value="True"/>
-        <CPPInline Value="False"/>
         <UseAnsiStrings Value="False"/>
+        <CPPInline Value="False"/>
       </SyntaxOptions>
     </Parsing>
     <CodeGeneration>
@@ -110,6 +109,9 @@
       </Optimizations>
     </CodeGeneration>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
       <LinkSmart Value="True"/>
       <Options>
         <LinkerOptions Value="-framework carbon"/>

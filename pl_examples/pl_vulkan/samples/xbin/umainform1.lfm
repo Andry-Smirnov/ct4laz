@@ -1,0 +1,26 @@
+object MainForm: TMainForm
+  Left = 1400
+  Height = 240
+  Top = 708
+  Width = 320
+  Caption = 'Triangle'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '6.6'
+  object RenderPanel: TPanel
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+  end
+  object ApplicationProperties: TApplicationProperties
+    OnIdle = ApplicationPropertiesIdle
+    Left = 56
+    Top = 24
+  end
+end

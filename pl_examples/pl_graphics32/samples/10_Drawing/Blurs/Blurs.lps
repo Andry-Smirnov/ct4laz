@@ -8,24 +8,23 @@
       <Unit0>
         <Filename Value="Blurs.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="1"/>
         <CursorPos X="9" Y="10"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="blursmf.pas"/>
-        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrmBlurs"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Blursmf"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="94"/>
         <CursorPos X="11" Y="110"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\typhon\components\pl_Graphics32\source\GR32_Blurs.pas"/>
@@ -35,25 +34,20 @@
       </Unit2>
       <Unit3>
         <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32.pas"/>
-        <FRMtype Value="0"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="496"/>
         <CursorPos X="10" Y="449"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Math.pas"/>
-        <FRMtype Value="0"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="91"/>
         <CursorPos X="13" Y="93"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit4>
     </Units>
-    <JumpHistory Count="11" HistoryIndex="10">
+    <JumpHistory Count="10" HistoryIndex="9">
       <Position1>
         <Filename Value="Blurs.lpr"/>
       </Position1>
@@ -93,14 +87,10 @@
         <Filename Value="blursmf.pas"/>
         <Caret Line="146" Column="10" TopLine="126"/>
       </Position10>
-      <Position11>
-        <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32_Math.pas"/>
-        <Caret Line="110" Column="15" TopLine="91"/>
-      </Position11>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
+      <Modes ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

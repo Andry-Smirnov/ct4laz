@@ -1,0 +1,156 @@
+object FormMain: TFormMain
+  Left = 524
+  Height = 293
+  Top = 327
+  Width = 358
+  Caption = 'Color Picker (GR32)'
+  ClientHeight = 293
+  ClientWidth = 358
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poScreenCenter
+  LCLVersion = '6.0'
+  object LabelRed: TLabel
+    Left = 279
+    Height = 13
+    Top = 35
+    Width = 11
+    Anchors = [akTop, akRight]
+    Caption = 'R:'
+    ParentColor = False
+  end
+  object LabelColor: TLabel
+    Left = 280
+    Height = 13
+    Top = 11
+    Width = 69
+    Anchors = [akTop, akRight]
+    Caption = 'Current Color:'
+    ParentColor = False
+  end
+  object LabelGreen: TLabel
+    Left = 279
+    Height = 13
+    Top = 63
+    Width = 11
+    Anchors = [akTop, akRight]
+    Caption = 'G:'
+    ParentColor = False
+  end
+  object LabelBlue: TLabel
+    Left = 280
+    Height = 13
+    Top = 91
+    Width = 10
+    Anchors = [akTop, akRight]
+    Caption = 'B:'
+    ParentColor = False
+  end
+  object LabelWebColor: TLabel
+    Left = 271
+    Height = 13
+    Top = 124
+    Width = 69
+    Anchors = [akTop, akRight]
+    Caption = 'Current Color:'
+    ParentColor = False
+  end
+  object PageControlColorPicker: TPageControl
+    Left = 8
+    Height = 277
+    Top = 8
+    Width = 257
+    ActivePage = TabColorPickerGTK
+    Anchors = [akTop, akLeft, akBottom]
+    TabIndex = 0
+    TabOrder = 0
+    object TabColorPickerGTK: TTabSheet
+      Caption = 'GTK like'
+      ClientHeight = 251
+      ClientWidth = 249
+      object ColorPickerGTK: TColorPickerGTK
+        Left = 3
+        Height = 238
+        Top = 3
+        Width = 238
+        Hue = 0.0171568635851145
+        Saturation = 0.544000029563904
+        SelectedColor = -360334
+        TabOrder = 0
+        Value = 0.980392158031464
+        OnChanged = ColorPickerGTKChanged
+      end
+    end
+    object TabColorPickerHSV: TTabSheet
+      Caption = 'HSV'
+      ClientHeight = 0
+      ClientWidth = 0
+      ImageIndex = 1
+      object ColorPickerHSV: TColorPickerHSV
+        Left = 0
+        Height = 248
+        Top = 0
+        Width = 249
+        Hue = 0.0171568635851145
+        Saturation = 0.544000029563904
+        SelectedColor = -360334
+        TabOrder = 0
+        Value = 0.980392158031464
+        OnChanged = ColorPickerHSVChanged
+      end
+    end
+  end
+  object SpinEditRed: TSpinEdit
+    Left = 296
+    Height = 21
+    Top = 32
+    Width = 54
+    Anchors = [akTop, akRight]
+    MaxValue = 255
+    OnChange = SpinEditColorChange
+    TabOrder = 1
+  end
+  object SpinEditGreen: TSpinEdit
+    Left = 296
+    Height = 21
+    Top = 60
+    Width = 54
+    Anchors = [akTop, akRight]
+    MaxValue = 255
+    OnChange = SpinEditColorChange
+    TabOrder = 2
+  end
+  object SpinEditBlue: TSpinEdit
+    Left = 296
+    Height = 21
+    Top = 88
+    Width = 54
+    Anchors = [akTop, akRight]
+    MaxValue = 255
+    OnChange = SpinEditColorChange
+    TabOrder = 3
+  end
+  object EditColor: TEdit
+    Left = 271
+    Height = 21
+    Top = 140
+    Width = 79
+    Alignment = taCenter
+    Anchors = [akTop, akRight]
+    OnChange = EditColorChange
+    OnKeyPress = EditColorKeyPress
+    TabOrder = 4
+    Text = '$00000000'
+  end
+  object Button1: TButton
+    Left = 271
+    Height = 25
+    Top = 260
+    Width = 79
+    Caption = 'from Screen'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+end

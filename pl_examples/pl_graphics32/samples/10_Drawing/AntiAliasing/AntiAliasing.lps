@@ -4,17 +4,16 @@
     <PathDelim Value="\"/>
     <Version Value="12"/>
     <BuildModes Active="Release"/>
-    <Units Count="2">
-      <Unit0>
+    <Units>
+      <Unit>
         <Filename Value="AntiAliasing.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="17" Y="11"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit0>
-      <Unit1>
+      </Unit>
+      <Unit>
         <Filename Value="antialiasingmf.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrmAntiAliasingTest"/>
@@ -25,22 +24,20 @@
         <CursorPos X="49" Y="9"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit1>
+      </Unit>
     </Units>
-    <JumpHistory Count="2" HistoryIndex="1">
-      <Position1>
+    <JumpHistory HistoryIndex="1">
+      <Position>
         <Filename Value="AntiAliasing.lpr"/>
-      </Position1>
-      <Position2>
+      </Position>
+      <Position>
         <Filename Value="AntiAliasing.lpr"/>
         <Caret Line="11" Column="17"/>
-      </Position2>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
+      <Modes ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

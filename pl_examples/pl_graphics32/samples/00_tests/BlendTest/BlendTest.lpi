@@ -44,10 +44,10 @@
       <Unit0>
         <Filename Value="BlendTest.lpr"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <CursorPos X="34" Y="19"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="TestGuiBlend.pas"/>
@@ -68,12 +68,11 @@
       <Unit3>
         <Filename Value="GR32_BlendReference.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="19"/>
         <CursorPos X="20" Y="39"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\..\Source\GR32.inc"/>
@@ -86,39 +85,33 @@
       <Unit5>
         <Filename Value="TestGR32Blend.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="1262"/>
         <CursorPos X="41" Y="1302"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit5>
       <Unit6>
         <Filename Value="..\..\..\..\..\typhon\components\lz_FpcUnitRunner\source\guitestrunner.pas"/>
-        <FRMtype Value="0"/>
         <ComponentName Value="GUITestRunner"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="GuiTestRunner"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="434"/>
         <CursorPos X="76" Y="454"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32.inc"/>
-        <FRMtype Value="0"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="290"/>
         <CursorPos X="26" Y="316"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit7>
     </Units>
-    <JumpHistory Count="18" HistoryIndex="17">
+    <JumpHistory Count="15" HistoryIndex="14">
       <Position1>
         <Filename Value="BlendTest.lpr"/>
         <Caret Line="31" Column="13" TopLine="10"/>
@@ -179,18 +172,6 @@
         <Filename Value="BlendTest.lpr"/>
         <Caret Line="19" Column="34"/>
       </Position15>
-      <Position16>
-        <Filename Value="..\..\..\..\..\typhon\components\lz_FpcUnitRunner\source\guitestrunner.pas"/>
-        <Caret Line="454" Column="76" TopLine="434"/>
-      </Position16>
-      <Position17>
-        <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32.inc"/>
-        <Caret Line="298" Column="65" TopLine="290"/>
-      </Position17>
-      <Position18>
-        <Filename Value="..\..\..\..\..\typhon\components\pl_Graphics32\source\GR32.inc"/>
-        <Caret Line="316" Column="9" TopLine="290"/>
-      </Position18>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
@@ -214,6 +195,7 @@
     <Linking>
       <Debugging>
         <GenerateDebugInfo Value="False"/>
+        <DebugInfoType Value="dsDwarf3"/>
         <UseLineInfoUnit Value="False"/>
         <StripSymbols Value="True"/>
       </Debugging>

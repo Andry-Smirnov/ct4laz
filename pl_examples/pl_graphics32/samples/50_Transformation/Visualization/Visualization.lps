@@ -2,7 +2,7 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="9"/>
+    <Version Value="12"/>
     <BuildModes Active="Debug"/>
     <Units Count="6">
       <Unit0>
@@ -10,12 +10,9 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
         <CursorPos X="3" Y="11"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="visualizationmf.pas"/>
@@ -24,19 +21,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Visualizationmf"/>
-        <EditorIndex Value="0"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="205"/>
         <CursorPos X="3" Y="39"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\typhon\components\pl_Graphics32\source\G32_ProgressBar.pas"/>
-        <UnitName Value="G32_ProgressBar"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="76"/>
         <CursorPos X="47" Y="12"/>
         <UsageCount Value="10"/>
@@ -44,17 +35,12 @@
       </Unit2>
       <Unit3>
         <Filename Value="C:\typhon\components\pl_Graphics32\source\GR32.pas"/>
-        <UnitName Value="GR32"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
         <CursorPos X="50" Y="7"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit3>
       <Unit4>
         <Filename Value="C:\typhon\components\pl_Graphics32\source\GR32_RangeBars.pas"/>
-        <UnitName Value="GR32_RangeBars"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="27"/>
         <CursorPos X="42" Y="43"/>
         <UsageCount Value="10"/>
@@ -63,17 +49,16 @@
       <Unit5>
         <Filename Value="C:\typhon\lcl\controls.pp"/>
         <UnitName Value="Controls"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="143"/>
         <CursorPos X="3" Y="164"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit5>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="0"/>
-    </General>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
-  <EditorMacros Count="0"/>
 </CONFIG>

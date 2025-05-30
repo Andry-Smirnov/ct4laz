@@ -2,15 +2,14 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="10"/>
+    <Version Value="12"/>
     <BuildModes Active="Debug"/>
-    <Units Count="3">
+    <Units Count="5">
       <Unit0>
         <Filename Value="Mandelbrot.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="9"/>
+        <CursorPos X="49" Y="18"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -25,7 +24,6 @@
         <CursorPos X="18" Y="138"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\typhon\components\pl_Graphics32\source\GR32_ExtImage.pas"/>
@@ -33,7 +31,37 @@
         <CursorPos X="56" Y="324"/>
         <UsageCount Value="10"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\..\pl_components\pl_graphics32\source\GR32_ExtImage.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="307"/>
+        <CursorPos Y="342"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\..\pl_components\pl_graphics32\source\GR32_Rasterizers.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="205"/>
+        <CursorPos Y="229"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="Mandelbrot.lpr"/>
+        <Caret Line="18" Column="49"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\..\..\pl_components\pl_graphics32\source\GR32_ExtImage.pas"/>
+        <Caret Line="342" TopLine="307"/>
+      </Position2>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>

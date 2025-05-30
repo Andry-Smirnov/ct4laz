@@ -2,7 +2,7 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <BuildModes Active="Debug"/>
     <Units Count="2">
       <Unit0>
@@ -15,7 +15,6 @@
       </Unit0>
       <Unit1>
         <Filename Value="rotatemf.pas"/>
-        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormRotateExample"/>
         <HasResources Value="True"/>
@@ -26,7 +25,6 @@
         <CursorPos X="11" Y="61"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
     <JumpHistory Count="2" HistoryIndex="1">
@@ -41,7 +39,7 @@
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
+      <Modes ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

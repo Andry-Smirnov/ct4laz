@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <General>
       <Flags>
         <LRSInOutputDirectory Value="False"/>
+        <CompatibilityMode Value="True"/>
       </Flags>
-      <MainUnit Value="0"/>
       <Title Value="Rotate Example"/>
       <Icon Value="0"/>
     </General>
@@ -59,7 +59,6 @@
       </Unit0>
       <Unit1>
         <Filename Value="Ext_Demo3mw.pas"/>
-        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormRotateExample"/>
         <HasResources Value="True"/>
@@ -69,7 +68,6 @@
         <CursorPos X="11" Y="65"/>
         <UsageCount Value="37"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="MainUnit.lrs"/>
@@ -457,11 +455,14 @@
       <SyntaxOptions>
         <CStyleOperator Value="False"/>
         <IncludeAssertionCode Value="True"/>
-        <CPPInline Value="False"/>
         <UseAnsiStrings Value="False"/>
+        <CPPInline Value="False"/>
       </SyntaxOptions>
     </Parsing>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
       <LinkSmart Value="True"/>
       <Options>
         <LinkerOptions Value="-framework carbon"/>

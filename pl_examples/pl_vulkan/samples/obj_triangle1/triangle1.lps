@@ -30,7 +30,6 @@
         </ExtraEditor1>
         <UsageCount Value="140"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\Vulkan.pas"/>
@@ -727,17 +726,17 @@
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
+      <Modes ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
   <Debugging>
-    <Watches Count="2">
-      <Item1>
+    <Watches>
+      <Item>
         <Expression Value="self"/>
-      </Item1>
-      <Item2>
+      </Item>
+      <Item>
         <Expression Value="fDeviceCommands"/>
-      </Item2>
+      </Item>
     </Watches>
   </Debugging>
 </CONFIG>

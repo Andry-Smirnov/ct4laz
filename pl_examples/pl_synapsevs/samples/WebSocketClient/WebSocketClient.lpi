@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="10"/>
+    <Version Value="12"/>
     <General>
-      <MainUnit Value="0"/>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
       <Title Value="WebSocketClient"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
@@ -21,15 +23,19 @@
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <IgnoreBinaries Value="False"/>
-      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
-      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
     </PublishOptions>
     <RunParams>
       <local>
-        <FormatVersion Value="1"/>
         <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Typhon Run Output&apos; -e $(TyphonDir)/tools/runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
     </RunParams>
     <RequiredPackages Count="2">
       <Item1>
@@ -43,11 +49,10 @@
       <Unit0>
         <Filename Value="WebSocketClient.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="1"/>
         <CursorPos X="24"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="websocketclientmw.pas"/>
@@ -56,11 +61,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="WebSocketclientmw"/>
+        <IsVisibleTab Value="True"/>
         <CursorPos X="15" Y="13"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../../../usr/share/fpcsrc/2.4.0/packages/libpng/src/png.pp"/>
@@ -139,12 +143,10 @@
       </Unit11>
       <Unit12>
         <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="1170"/>
         <CursorPos X="20" Y="1174"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit12>
       <Unit13>
         <Filename Value="../../../../typhon/components/pl_Synapse/source/mimeinln.pas"/>
@@ -152,60 +154,7 @@
         <UsageCount Value="10"/>
       </Unit13>
     </Units>
-    <JumpHistory Count="13" HistoryIndex="12">
-      <Position1>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="7" Column="89"/>
-      </Position1>
-      <Position2>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="704" Column="3" TopLine="678"/>
-      </Position2>
-      <Position3>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="2287" Column="44" TopLine="2259"/>
-      </Position3>
-      <Position4>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="687" Column="71" TopLine="666"/>
-      </Position4>
-      <Position5>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="1162" Column="79" TopLine="1135"/>
-      </Position5>
-      <Position6>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="674" Column="16" TopLine="661"/>
-      </Position6>
-      <Position7>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="760" Column="18" TopLine="722"/>
-      </Position7>
-      <Position8>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="767" Column="18" TopLine="722"/>
-      </Position8>
-      <Position9>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="1177" Column="24" TopLine="1133"/>
-      </Position9>
-      <Position10>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="18" Column="27"/>
-      </Position10>
-      <Position11>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="674" Column="16" TopLine="636"/>
-      </Position11>
-      <Position12>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="760" Column="18" TopLine="731"/>
-      </Position12>
-      <Position13>
-        <Filename Value="../../../../typhon/components/pl_SynapseVS/source/vswebsocket.pas"/>
-        <Caret Line="767" Column="18" TopLine="731"/>
-      </Position13>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
@@ -218,13 +167,14 @@
         <SyntaxMode Value="Delphi"/>
         <CStyleOperator Value="False"/>
         <AllowLabel Value="False"/>
-        <CPPInline Value="False"/>
         <UseAnsiStrings Value="False"/>
+        <CPPInline Value="False"/>
       </SyntaxOptions>
     </Parsing>
     <Linking>
       <Debugging>
         <GenerateDebugInfo Value="False"/>
+        <DebugInfoType Value="dsDwarf3"/>
         <UseLineInfoUnit Value="False"/>
         <StripSymbols Value="True"/>
       </Debugging>
