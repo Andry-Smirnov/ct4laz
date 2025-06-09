@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <Name Value="pl_Graphics32"/>
     <Type Value="RunAndDesignTime"/>
     <Author Value="Team Graphics32; Lazarus port: PilotLogic Software House"/>
@@ -14,8 +14,6 @@
       <Parsing>
         <SyntaxOptions>
           <CStyleOperator Value="False"/>
-          <CPPInline Value="False"/>
-          <UseAnsiStrings Value="False"/>
         </SyntaxOptions>
       </Parsing>
     </CompilerOptions>
@@ -318,6 +316,7 @@ Mozilla Public License 1.1 (MPL 1.1)"/>
         <UnitName Value="GR32_Text_LCL_Wince"/>
       </Item65>
     </Files>
+    <CompatibilityMode Value="True"/>
     <i18n>
       <EnableI18N Value="True"/>
       <OutDir Value="languages"/>
