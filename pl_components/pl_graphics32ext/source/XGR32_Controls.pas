@@ -343,7 +343,7 @@ type
       Paint background to TEraseBackgroundInfo(Messsage.Unused).Bitmap32
     }
     procedure WMEraseBkgnd(var Message: TWmEraseBkgnd); message WM_ERASEBKGND;
-    procedure WMSetText(var Message: TMessage); message WM_SETTEXT;
+    //procedure WMSetText(var Message: TMessage); message WM_SETTEXT;
     property ActiveTextColor: TColor read GetActiveTextColor write
       FActiveTextColor default clNone;
     property CaptionFont: TFont32 read FCaptionFont write SetCaptionFont;
@@ -2531,6 +2531,7 @@ begin
   Message.Result := 1;
 end;
 
+(*
 procedure TGRGraphicControl.WMSetText(var Message: TMessage);
 begin
   inherited;
@@ -2541,6 +2542,7 @@ begin
   //FSelfBufferDirty := True;
   InvalidateSelfBuffer;
 end;
+*)
 
 constructor TGRBGCustomControl.Create(AOwner: TComponent);
 begin
