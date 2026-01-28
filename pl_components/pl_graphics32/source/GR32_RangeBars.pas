@@ -677,7 +677,7 @@ begin
   begin
 {$IFDEF FPC}
 {$IFNDEF Windows}
-    Canvas.Brush.Color := clButton;
+    Canvas.Brush.Color := clBtnFace;
     Canvas.FillRect(R);
     LCLIntf.DrawFrameControl(Canvas.Handle, R, DFC_BUTTON, 0);
     InflateRect(R, -2, -2);
@@ -688,12 +688,12 @@ begin
       OffsetRect(R, 1, 1);
       DrawArrow(Canvas, R, Direction, clWhite);
       OffsetRect(R, -1, -1);
-      DrawArrow(Canvas, R, Direction, clDisabledButtonText);
+      DrawArrow(Canvas, R, Direction, clGrayText);
     end
     else
     begin
       If Pushed then OffsetRect(R, 1, 1);
-      DrawArrow(Canvas, R, Direction, clButtonText);
+      DrawArrow(Canvas, R, Direction, clBtnText);
     end;
 {$ENDIF}
 {$ENDIF}
