@@ -18,6 +18,12 @@
           <CStyleOperator Value="False"/>
         </SyntaxOptions>
       </Parsing>
+      <CodeGeneration>
+        <SmartLinkUnit Value="True"/>
+        <Optimizations>
+          <OptimizationLevel Value="4"/>
+        </Optimizations>
+      </CodeGeneration>
       <Other>
         <CompilerMessages>
           <IgnoredMessages idx5024="True"/>
